@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import 'bootstrap/dist/css/bootstrap-reboot.css';
-import '../styles/global.css';
+import 'styles/global.css';
 
 import { Header } from './header';
 import { Footer } from './footer';

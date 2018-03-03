@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Paralelná Polis Košice'
+    title: 'Paralelná Polis Košice',
   },
-  plugins: ['gatsby-plugin-react-helmet']
+  plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-resolve-src'],
 };
