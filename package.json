@@ -1,0 +1,34 @@
+{
+  "name": "web",
+  "description": "Paralelna Polis Kosice Web",
+  "version": "1.0.0",
+  "author": "Paralelna Polis Kosice",
+  "homepage": "TBD",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ParalelnaPolisKE/web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ParalelnaPolisKE/web/issues"
+  },
+  "keywords": ["parallel", "polis", "kosice", "gatsby"],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^1.9.218",
+    "gatsby-link": "^1.6.37",
+    "gatsby-plugin-react-helmet": "^2.0.5",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.11.0"
+  }
+}
