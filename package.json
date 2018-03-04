@@ -32,6 +32,7 @@
     "gatsby-plugin-resolve-src": "^1.0.0",
     "gatsby-plugin-sitemap": "^1.2.14",
     "gatsby-source-filesystem": "^1.5.26",
+    "gatsby-transformer-remark": "^1.7.34",
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
