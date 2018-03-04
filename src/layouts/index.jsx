@@ -31,9 +31,10 @@ export const query = graphql`
       siteMetadata {
         title
         social {
+          facebook
           github
-          twitter
           instagram
+          twitter
         }
       }
     }

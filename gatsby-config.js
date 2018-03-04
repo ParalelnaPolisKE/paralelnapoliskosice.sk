@@ -4,9 +4,10 @@ module.exports = {
     description: '',
     siteUrl: '',
     social: {
+      facebook: 'https://www.facebook.com/paralelnapoliske',
       github: 'https://github.com/ParalelnaPolisKE',
-      twitter: 'https://twitter.com/parallelpoliske',
       instagram: 'https://www.instagram.com/paralelnapoliske',
+      twitter: 'https://twitter.com/parallelpoliske',
     },
   },
   plugins: [
@@ -14,12 +15,19 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'YOUR_GOOGLE_ANALYTICS_TRACKING_ID',
+        trackingId: 'GOOGLE_ANALYTICS_TRACKING_ID',
         head: true,
       },
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-resolve-src',
     'gatsby-plugin-sitemap',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/pages/blog/`,
+      },
+    },
   ],
 };
