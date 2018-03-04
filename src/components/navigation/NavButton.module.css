@@ -2,6 +2,5 @@
 }
 
 .activeButton {
-  /* composes: button; */
   font-weight: bold;
 }
