@@ -2,9 +2,6 @@
 title: Paralelná Polis už aj v Košiciach!
 date: "2018-01-26T23:46:37.121Z"
 layout: post
-draft: false
-path: "/blog/paralelna-polis-v-kosiciach"
-category: "Design Inspiration"
 tags:
   - "Handwriting"
   - "Learning to write"
