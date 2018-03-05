@@ -6,29 +6,51 @@
 
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
+const postsPrefix = 'blog';
 
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
 
   if (node.internal.type === 'MarkdownRemark') {
-    // TODO: separate date from the slug
     const slug = createFilePath({
       node,
       getNode,
       basePath: 'pages',
       trailingSlash: false,
     });
+    const date = slug.slice(1, 11);
+    const name = slug.slice(12);
+    const url = `/${postsPrefix}/${name}`;
 
     createNodeField({
-      name: 'slug',
       node,
+      name: 'date',
+      value: date,
+    });
+
+    createNodeField({
+      node,
+      name: 'name',
+      value: name,
+    });
+
+    createNodeField({
+      node,
+      name: 'slug',
       value: slug,
+    });
+
+    createNodeField({
+      node,
+      name: 'url',
+      value: url,
     });
   }
 };
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
+  const postTemplate = path.resolve('./src/templates/blog-post.jsx');
 
   return new Promise((resolve, reject) => {
     graphql(`
@@ -37,7 +59,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           edges {
             node {
               fields {
+                date
+                name
                 slug
+                url
               }
             }
           }
@@ -56,10 +81,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         const next = index === 0 ? false : posts[index - 1].node;
 
         createPage({
-          path: node.fields.slug,
-          component: path.resolve('./src/templates/blog-post.jsx'),
+          path: node.fields.url,
+          component: postTemplate,
           context: {
-            slug: node.fields.slug,
+            ...node.fields,
             prev,
             next,
           },

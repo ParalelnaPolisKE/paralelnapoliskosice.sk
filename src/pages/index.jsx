@@ -12,7 +12,7 @@ export default ({ data }) => {
         {articles.map(article => (
           <li key={article.node.frontmatter.title}>
             <h2>
-              <Link to={article.node.fields.slug}>
+              <Link to={article.node.fields.url}>
                 {article.node.frontmatter.title}
               </Link>
             </h2>
@@ -26,19 +26,21 @@ export default ({ data }) => {
 
 export const query = graphql`
   query QueryBlogPosts {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [fields___date], order: DESC }) {
       totalCount
       edges {
         node {
+          excerpt
           fields {
+            date
+            name
             slug
+            url
           }
-          timeToRead
           frontmatter {
             title
-            date
           }
-          excerpt
+          timeToRead
         }
       }
     }

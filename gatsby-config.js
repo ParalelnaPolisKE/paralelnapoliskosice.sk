@@ -23,9 +23,9 @@ module.exports = {
     'gatsby-plugin-resolve-src',
     'gatsby-plugin-sitemap',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `blog`,
+        name: 'posts',
         path: `${__dirname}/src/pages/blog/`,
       },
     },
