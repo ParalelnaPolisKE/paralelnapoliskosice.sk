@@ -12,7 +12,15 @@
   "bugs": {
     "url": "https://github.com/ParalelnaPolisKE/web/issues"
   },
-  "keywords": ["parallel", "polis", "kosice", "gatsby"],
+  "keywords": [
+    "parallel",
+    "polis",
+    "kosice",
+    "gatsby",
+    "static",
+    "static-site",
+    "web"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
@@ -29,6 +37,7 @@
     "gatsby-plugin-feed": "^1.3.19",
     "gatsby-plugin-google-analytics": "^1.0.20",
     "gatsby-plugin-react-helmet": "^2.0.5",
+    "gatsby-plugin-remove-trailing-slashes": "^1.0.6",
     "gatsby-plugin-resolve-src": "^1.0.0",
     "gatsby-plugin-sitemap": "^1.2.14",
     "gatsby-source-filesystem": "^1.5.26",
