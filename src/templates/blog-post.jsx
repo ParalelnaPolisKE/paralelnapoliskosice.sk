@@ -5,10 +5,10 @@ export default ({ data, pathContext }) => {
   const { prev, next } = pathContext;
 
   return (
-    <div>
+    <article>
       <h1>{post.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
-    </div>
+    </article>
   );
 };
 
