@@ -32,17 +32,7 @@ export default ({ children, data }) => {
 };
 
 export const query = graphql`
-  query Query {
-    site {
-      siteMetadata {
-        title
-        social {
-          facebook
-          github
-          instagram
-          twitter
-        }
-      }
-    }
+  query IndexQuery {
+    ...SiteFragment
   }
 `;
