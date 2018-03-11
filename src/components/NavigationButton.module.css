@@ -1,5 +1,8 @@
+@import '../styles/variables.css';
+
 .button {
   text-transform: uppercase;
+  padding: var(--defaultPadding);
 }
 
 .activeButton {

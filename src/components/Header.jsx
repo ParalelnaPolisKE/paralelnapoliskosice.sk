@@ -10,8 +10,12 @@ import { Navigation } from './Navigation';
 export const Header = () => (
   <header className={css.header}>
     <Container>
-      <Logo />
-      <Navigation />
+      <div className={css.container}>
+        <div className={css.logo}>
+          <Logo />
+        </div>
+        <Navigation />
+      </div>
     </Container>
   </header>
 );

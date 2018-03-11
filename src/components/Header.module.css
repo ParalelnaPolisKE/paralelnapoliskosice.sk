@@ -4,3 +4,11 @@
   background-color: var(--tertiaryColor);
   padding: var(--defaultPadding);
 }
+
+.container {
+  display: flex;
+}
+
+.logo {
+  flex: 1;
+}
