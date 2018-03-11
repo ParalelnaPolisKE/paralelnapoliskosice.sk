@@ -2,9 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 
-export const Social = ({ children, url }) => (
-  <Link to={url}>social {children}</Link>
-);
+export const Social = ({ children, url }) => <Link to={url}>{children}</Link>;
 
 Social.propTypes = {
   children: PropTypes.any.isRequired,

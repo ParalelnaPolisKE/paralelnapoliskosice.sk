@@ -1,13 +1,15 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import { Container } from 'components/Container';
+import { Button } from 'components/Button';
+
 export default ({ data }) => {
   const articles = data.allMarkdownRemark.edges;
 
   return (
-    <div>
-      <h1>Hi people</h1>
-      Total posts: {data.allMarkdownRemark.totalCount}
+    <Container>
+      <h1>Blog</h1>
       <ul>
         {articles.map(article => (
           <li key={article.node.frontmatter.title}>
@@ -20,14 +22,14 @@ export default ({ data }) => {
           </li>
         ))}
       </ul>
-    </div>
+      <Button>Vsetky prispevky</Button>
+    </Container>
   );
 };
 
 export const query = graphql`
   query QueryBlogPosts {
     allMarkdownRemark(sort: { fields: [fields___date], order: DESC }) {
-      totalCount
       edges {
         node {
           excerpt

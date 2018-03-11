@@ -1,0 +1,17 @@
+@import '../styles/variables.css';
+
+.button {
+  background-color: var(--secondaryColor);
+  border-radius: 100px;
+  color: var(--primaryColor);
+  font-size: var(--fontSizeSmall);
+  display: inline-block;
+  padding: 10px;
+  text-transform: lowercase;
+}
+
+.button:hover {
+  color: var(--primaryColor);
+  background-color: darkcyan;
+  text-decoration: none;
+}

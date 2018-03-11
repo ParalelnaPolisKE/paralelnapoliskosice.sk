@@ -1,7 +1,18 @@
+@import './variables.css';
+
 html {
+  background: var(--primaryColor);
   overflow-y: scroll;
 }
 
 body {
   margin: 0;
+}
+
+a {
+  color: var(--secondaryColor);
+}
+
+a:hover {
+  color: var(--secondaryColor);
 }

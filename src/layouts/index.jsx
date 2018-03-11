@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import { Header, Footer } from 'components/layout';
-
 import 'bootstrap/dist/css/bootstrap-reboot.css';
+import 'styles/variables.css';
 import 'styles/global.css';
+
+import { Header } from 'components/Header';
+import { Footer } from 'components/Footer';
 
 export default ({ children, data }) => {
   const title = data.site.siteMetadata.title;

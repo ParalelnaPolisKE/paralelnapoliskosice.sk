@@ -1,0 +1,6 @@
+@import '../styles/variables.css';
+
+.footer {
+  background-color: var(--tertiaryColor);
+  padding: var(--defaultPadding);
+}

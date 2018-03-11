@@ -1,0 +1,6 @@
+@import '../styles/variables.css';
+
+.header {
+  background-color: var(--tertiaryColor);
+  padding: var(--defaultPadding);
+}

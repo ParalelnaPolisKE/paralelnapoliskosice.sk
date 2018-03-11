@@ -11,9 +11,17 @@ module.exports = {
       instagram: 'https://www.instagram.com/paralelnapoliske',
       twitter: 'https://twitter.com/parallelpoliske',
     },
+    crypto: {
+      BTC: '1KGB5uxAZrFYrHKsydLvfhwT4VULE1tunA',
+      LTC: 'Lha1KBxm5wgtTEJdk1tyBhWgAuxJ2zV9zX',
+      XMR:
+        '49XCoar5nDSiz3QfSa25jyJ5KJSc95pkpS8YXWVoB3TY8LDVjEjhUoZRRQL5sidfLB6cUWnxH2Tv5VbGKzxxieJqQPPHuea',
+      ETH: '0x610825C5DFcbc72E284E5a5F381f4fd728263706',
+      ETC: '0x1934945354BDe5b34F0c68E6AA78492050856D38',
+    },
   },
   plugins: [
-    'gatsby-plugin-feed',
+    // 'gatsby-plugin-feed',
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {

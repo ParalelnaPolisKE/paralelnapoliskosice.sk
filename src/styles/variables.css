@@ -1,0 +1,19 @@
+@import './variables.css';
+
+:root {
+  --defaultWidth: 1200px;
+  --defaultMargin: 1rem;
+  --defaultPadding: 1rem;
+
+  --fontSizeMedium: 1rem; /* Assuming 16px as a default size */
+  --fontSizeSmall: calc(var(--fontSizeMedium) * 0.875); /* 14px */
+  --fontSizeSemiLarge: calc(var(--fontSizeMedium) * 1.125); /* 18px */
+  --fontSizeLarge: calc(var(--fontSizeMedium) * 1.25); /* 20px */
+
+  /**
+   * Colors
+   */
+  --primaryColor: #fff;
+  --secondaryColor: #000;
+  --tertiaryColor: #eee;
+}
