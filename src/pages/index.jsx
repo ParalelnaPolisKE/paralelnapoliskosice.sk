@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import { Centered } from 'components/Centered';
 import { Container } from 'components/Container';
 import { Button } from 'components/Button';
 
@@ -36,7 +37,9 @@ export default ({ data }) => {
             </li>
           ))}
         </ul>
-        <Button to="/blog">Vsetky prispevky</Button>
+        <Centered>
+          <Button to="/blog">Vsetky prispevky</Button>
+        </Centered>
       </section>
     </Container>
   );
