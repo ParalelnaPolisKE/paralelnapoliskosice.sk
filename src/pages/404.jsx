@@ -1,10 +1,12 @@
 import React from 'react';
 
+import { Container } from 'components/Container';
+
 const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
+  <Container>
+    <h1>Not found</h1>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
+  </Container>
 );
 
 export default NotFoundPage;

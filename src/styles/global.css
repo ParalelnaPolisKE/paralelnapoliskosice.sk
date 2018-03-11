@@ -16,3 +16,18 @@ a {
 a:hover {
   color: var(--secondaryColor);
 }
+
+h1 {
+  font-size: calc(var(--fontSizeLarge) * 2);
+  font-weight: normal;
+}
+
+h2,
+h3 {
+  font-weight: normal;
+}
+
+body,
+#___gatsby {
+  min-height: 100vh;
+}

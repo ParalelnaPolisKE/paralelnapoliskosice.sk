@@ -1,0 +1,12 @@
+@import '../styles/variables.css';
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  padding: calc(var(--defaultPadding) * 2) 0;
+}

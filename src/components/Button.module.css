@@ -6,7 +6,7 @@
   color: var(--primaryColor);
   font-size: var(--fontSizeSmall);
   display: inline-block;
-  padding: 10px;
+  padding: 5px 30px;
   text-transform: lowercase;
 }
 

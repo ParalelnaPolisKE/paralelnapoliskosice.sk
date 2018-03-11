@@ -1,7 +1,8 @@
 import React from 'react';
+import { Container } from 'components/Container';
 
 export default () => (
-  <div>
+  <Container>
     <h1>O Paralelnej Polis</h1>
-  </div>
+  </Container>
 );
