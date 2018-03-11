@@ -11,7 +11,7 @@ import { Header } from 'components/Header';
 import { Footer } from 'components/Footer';
 
 export default ({ children, data }) => {
-  const title = data.site.siteMetadata.title;
+  const { crypto, social, title } = data.site.siteMetadata;
 
   return (
     <div className={css.site}>
@@ -26,7 +26,7 @@ export default ({ children, data }) => {
       <main role="main" className={css.content}>
         {children()}
       </main>
-      <Footer />
+      <Footer crypto={crypto} social={social} />
     </div>
   );
 };

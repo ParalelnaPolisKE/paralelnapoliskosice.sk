@@ -1,8 +1,11 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
 
-export const Social = ({ children, url }) => <Link to={url}>{children}</Link>;
+export const Social = ({ children, url }) => (
+  <a href={url} style={{ marginRight: '1em' }}>
+    {children}
+  </a>
+);
 
 Social.propTypes = {
   children: PropTypes.any.isRequired,
