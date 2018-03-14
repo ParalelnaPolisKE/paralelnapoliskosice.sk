@@ -2,6 +2,7 @@
 
 html {
   background: var(--primaryColor);
+  font-size: var(--fontSizeSemiLarge);
   overflow-y: scroll;
 }
 
@@ -18,7 +19,7 @@ a:hover {
 }
 
 h1 {
-  font-size: calc(var(--fontSizeLarge) * 2);
+  font-size: var(--fontSizeXXL);
   font-weight: normal;
 }
 

@@ -1,13 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Social = ({ children, url }) => (
-  <a href={url} style={{ marginRight: '1em' }}>
-    {children}
-  </a>
+import css from './Social.module.css';
+
+export const Social = ({ data }) => (
+  <div className={css.social}>
+    {Object.keys(data).map(title => (
+      <a href={data[title]} className={css.socialButton} key={title}>
+        {title}
+      </a>
+    ))}
+  </div>
 );
 
 Social.propTypes = {
-  children: PropTypes.any.isRequired,
-  url: PropTypes.string.isRequired,
+  data: PropTypes.object.isRequired,
 };

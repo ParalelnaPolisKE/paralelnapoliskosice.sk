@@ -3,4 +3,5 @@
 .container {
   margin: 0 auto;
   max-width: var(--defaultWidth);
+  padding: 0 30px;
 }

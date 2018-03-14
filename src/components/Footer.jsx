@@ -21,9 +21,7 @@ export const Footer = ({ crypto, social }) => {
           ))}
         </ul>
 
-        {Object.keys(social).map(title => (
-          <Social url={social[title]}>{title}</Social>
-        ))}
+        <Social data={social} />
         <p>
           designed by <a href="https://www.matusdesign.com">matusdesign.com</a>
         </p>

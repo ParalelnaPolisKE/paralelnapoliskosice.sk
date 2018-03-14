@@ -1,0 +1,10 @@
+@import '../styles/variables.css';
+
+.social {
+  padding: 2em 0;
+}
+
+.socialButton {
+  font-size: var(--fontSizeLarge);
+  margin-right: 1em;
+}

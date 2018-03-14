@@ -4,9 +4,8 @@
   background-color: var(--secondaryColor);
   border-radius: 100px;
   color: var(--primaryColor);
-  font-size: var(--fontSizeSmall);
   display: inline-block;
-  padding: 5px 30px;
+  padding: 10px 30px;
   text-transform: lowercase;
 }
 
