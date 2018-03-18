@@ -1,4 +1,10 @@
 @import '../styles/variables.css';
 
 .logo {
+  display: block;
+  width: 10rem;
+}
+
+.image {
+  max-width: 100%;
 }
