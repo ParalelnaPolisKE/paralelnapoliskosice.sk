@@ -11,6 +11,11 @@ body {
   margin: 0;
 }
 
+body,
+#___gatsby {
+  min-height: 100vh;
+}
+
 a {
   color: var(--secondaryColor);
 }
@@ -29,7 +34,10 @@ h3 {
   font-weight: normal;
 }
 
-body,
-#___gatsby {
-  min-height: 100vh;
+main {
+  margin: 5rem 0;
+}
+
+section {
+  margin-bottom: 3rem;
 }

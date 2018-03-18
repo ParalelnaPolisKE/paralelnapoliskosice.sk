@@ -11,7 +11,7 @@ export default ({ data }) => {
   return (
     <Container>
       <section>
-        <h1>O paralelnej Polis</h1>
+        <h1>O Paralelnej Polis</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
           dolor et ad accusamus quibusdam nostrum ipsam harum consequuntur
@@ -19,9 +19,6 @@ export default ({ data }) => {
           vel libero maiores distinctio.
         </p>
         <Button to="/o-paralelnej-polis">Viac info</Button>
-      </section>
-      <section>
-        <h1>Eventy</h1>
       </section>
       <section>
         <h1>Blog</h1>
@@ -38,7 +35,7 @@ export default ({ data }) => {
           ))}
         </ul>
         <Centered>
-          <Button to="/blog">Vsetky prispevky</Button>
+          <Button to="/blog">Všetky príspevky</Button>
         </Centered>
       </section>
     </Container>
