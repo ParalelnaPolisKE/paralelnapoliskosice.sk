@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import css from './Footer.module.css';
 
@@ -9,7 +10,7 @@ import { Social } from './Social';
 export const Footer = ({ crypto, social }) => {
   return (
     <footer role="contentinfo" className={css.footer}>
-      <Container>
+      <Container className={css.container}>
         <p>
           <strong>Podporte nás!</strong>
           <br />
@@ -25,4 +26,9 @@ export const Footer = ({ crypto, social }) => {
       </Container>
     </footer>
   );
+};
+
+Footer.propTypes = {
+  crypto: PropTypes.object.isRequired,
+  social: PropTypes.object.isRequired,
 };
