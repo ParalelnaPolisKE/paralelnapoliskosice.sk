@@ -3,11 +3,10 @@
   --defaultMargin: 1rem;
   --defaultPadding: 1rem;
 
-  --fontSizeMedium: 1rem; /* Assuming 16px as a default size */
-  --fontSizeSmall: calc(var(--fontSizeMedium) * 0.875); /* 14px */
-  --fontSizeSemiLarge: calc(var(--fontSizeMedium) * 1.125); /* 18px */
-  --fontSizeLarge: calc(var(--fontSizeMedium) * 1.5); /* 24px */
-  --fontSizeXXL: calc(var(--fontSizeMedium) * 3.75); /* 60px */
+  --fontSizeS: 1.5rem;
+  --fontSizeM: 1.8rem;
+  --fontSizeL: 2.4rem;
+  --fontSizeXXL: 6rem;
 
   /**
    * Colors

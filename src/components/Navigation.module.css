@@ -1,0 +1,6 @@
+@import '../styles/variables.css';
+
+.navigation {
+  align-items: center;
+  display: flex;
+}

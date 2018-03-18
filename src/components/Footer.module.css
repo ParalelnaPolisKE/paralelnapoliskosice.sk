@@ -2,5 +2,11 @@
 
 .footer {
   background-color: var(--tertiaryColor);
+  font-size: var(--fontSizeS);
   padding: var(--defaultPadding);
+  padding-top: 5rem;
+}
+
+.author {
+  font-weight: 200;
 }

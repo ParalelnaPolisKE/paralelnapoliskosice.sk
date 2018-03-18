@@ -2,11 +2,12 @@
 
 html {
   background: var(--primaryColor);
-  font-size: var(--fontSizeSemiLarge);
+  font-size: 62.5%;
   overflow-y: scroll;
 }
 
 body {
+  font-size: var(--fontSizeM);
   margin: 0;
 }
 

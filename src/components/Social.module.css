@@ -4,7 +4,13 @@
   padding: 2em 0;
 }
 
-.socialButton {
-  font-size: var(--fontSizeLarge);
-  margin-right: 1em;
+.site {
+  font-size: var(--fontSizeL);
+  font-weight: 300;
+  margin-right: 0.25em;
+}
+
+.site:not(:last-child):after {
+  content: ',';
+  display: inline-block;
 }
