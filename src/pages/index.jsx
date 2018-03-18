@@ -1,4 +1,5 @@
 import React from 'react';
+import Img from 'gatsby-image';
 import Link from 'gatsby-link';
 
 import { Centered } from 'components/Centered';
@@ -30,6 +31,11 @@ export default ({ data }) => {
                   {article.node.frontmatter.title}
                 </Link>
               </h2>
+              <Img
+                title="Header image"
+                alt="Greek food laid out on table"
+                sizes={article.node.frontmatter.cover.childImageSharp.sizes}
+              />
               {article.node.excerpt}
             </li>
           ))}
@@ -56,6 +62,13 @@ export const query = graphql`
           }
           frontmatter {
             title
+            cover {
+              childImageSharp {
+                sizes(maxWidth: 1240) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
           }
           timeToRead
         }
