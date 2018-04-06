@@ -1,13 +1,12 @@
 import React from 'react';
-import Img from 'gatsby-image';
-import Link from 'gatsby-link';
 
+import { Posts } from 'components/Posts';
 import { Centered } from 'components/Centered';
 import { Container } from 'components/Container';
 import { Button } from 'components/Button';
 
 export default ({ data }) => {
-  const articles = data.allMarkdownRemark.edges;
+  const posts = data.allMarkdownRemark.edges;
 
   return (
     <Container>
@@ -23,23 +22,7 @@ export default ({ data }) => {
       </section>
       <section>
         <h1>Blog</h1>
-        <ul>
-          {articles.map(article => (
-            <li key={article.node.frontmatter.title}>
-              <h2>
-                <Link to={article.node.fields.url}>
-                  {article.node.frontmatter.title}
-                </Link>
-              </h2>
-              <Img
-                title="Header image"
-                alt="Greek food laid out on table"
-                sizes={article.node.frontmatter.cover.childImageSharp.sizes}
-              />
-              {article.node.excerpt}
-            </li>
-          ))}
-        </ul>
+        <Posts posts={posts} />
         <Centered>
           <Button to="/blog">Všetky príspevky</Button>
         </Centered>
@@ -50,7 +33,10 @@ export default ({ data }) => {
 
 export const query = graphql`
   query BlogPostsQuery {
-    allMarkdownRemark(sort: { fields: [fields___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [fields___date], order: DESC }
+      limit: 3
+    ) {
       edges {
         node {
           excerpt

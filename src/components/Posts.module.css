@@ -1,0 +1,5 @@
+@import '../styles/variables.css';
+
+.posts {
+  margin: 0 -var(--defaultMargin) var(--defaultMargin);
+}
