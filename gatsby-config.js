@@ -30,8 +30,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-resolve-src',
-    // 'gatsby-plugin-sitemap',
     'gatsby-plugin-remove-trailing-slashes',
     {
       resolve: 'gatsby-source-filesystem',
@@ -40,6 +38,23 @@ module.exports = {
         path: `${__dirname}/src/pages/blog/`,
       },
     },
-    'gatsby-transformer-remark',
+    'gatsby-plugin-resolve-src',
+    'gatsby-plugin-sharp',
+    // 'gatsby-plugin-sitemap',
+    // 'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
+    'gatsby-transformer-sharp',
   ],
 };
