@@ -1,11 +1,11 @@
 import React from 'react';
-import { Container } from 'components/Container';
+
+import { Page } from 'components/Page';
 
 export default () => (
-  <Container>
-    <h1>Kontakt</h1>
+  <Page title="Kontakt">
     <p>
       <a href="mailto:kosice@paralelnapolis.sk">kosice@paralelnapolis.sk</a>
     </p>
-  </Container>
+  </Page>
 );

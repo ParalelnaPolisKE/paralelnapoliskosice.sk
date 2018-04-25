@@ -2,16 +2,15 @@ import React from 'react';
 
 import { getPosts } from 'utils';
 
-import { Posts } from 'components/Posts';
-import { Centered } from 'components/Centered';
-import { Container } from 'components/Container';
 import { Button } from 'components/Button';
+import { Centered } from 'components/Centered';
+import { Page } from 'components/Page';
+import { Posts } from 'components/Posts';
 
 export default ({ data: { allMarkdownRemark: { edges: posts } } }) => (
-  <Container>
-    <h1>Blog</h1>
+  <Page title="Blog">
     <Posts posts={getPosts(posts)} />
-  </Container>
+  </Page>
 );
 
 export const query = graphql`

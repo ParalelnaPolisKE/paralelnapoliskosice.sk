@@ -1,12 +1,9 @@
 import React from 'react';
 
-import { Container } from 'components/Container';
+import { Page } from 'components/Page';
 
-const NotFoundPage = () => (
-  <Container>
-    <h1>Not found</h1>
+export default () => (
+  <Page title="Not found">
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Container>
+  </Page>
 );
-
-export default NotFoundPage;

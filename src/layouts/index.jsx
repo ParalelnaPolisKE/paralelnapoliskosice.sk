@@ -16,13 +16,7 @@ export default ({ children, data: { site: { siteMetadata } } }) => {
 
   return (
     <div className={css.site}>
-      <Helmet
-        title={title}
-        meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
-        ]}
-      />
+      <Helmet defaultTitle={title} titleTemplate={`%s | ${title}`} />
       <Header />
       <main role="main" className={css.content}>
         {children()}
