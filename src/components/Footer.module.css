@@ -3,15 +3,22 @@
 .footer {
   background-color: var(--tertiaryColor);
   font-size: var(--fontSizeS);
-  padding: var(--defaultPadding);
 }
 
 .container {
-  background-image: url(../images/logo.png);
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 10rem;
   padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .container {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.content {
+  flex: 1;
 }
 
 .author {
