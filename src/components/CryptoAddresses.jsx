@@ -6,7 +6,7 @@ import css from './CryptoAddresses.module.css';
 export const CryptoAddresses = ({ data }) => (
   <ul className={css.addresses}>
     {Object.keys(data).map(title => (
-      <li key={title}>
+      <li key={title} className={css.address}>
         <strong>{title}</strong>: {data[title]}
       </li>
     ))}
