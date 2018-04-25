@@ -16,7 +16,7 @@ export default ({ data: { allMarkdownRemark: { edges: posts } } }) => (
 
 export const query = graphql`
   query BlogQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [fields___date], order: DESC }) {
       edges {
         node {
           ...MarkdownMetadataFragment

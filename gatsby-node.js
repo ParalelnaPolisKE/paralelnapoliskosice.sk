@@ -55,7 +55,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        allMarkdownRemark {
+        allMarkdownRemark(sort: { fields: [fields___date], order: DESC }) {
           edges {
             node {
               fields {
@@ -63,6 +63,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 name
                 slug
                 url
+              }
+              frontmatter {
+                title
               }
             }
           }

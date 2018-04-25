@@ -1,0 +1,26 @@
+@import '../styles/variables.css';
+
+.wrapper {
+  border-top: 1px solid var(--tertiaryColor);
+  display: flex;
+  margin-top: 5rem;
+  padding: var(--defaultPadding) 0;
+}
+
+.link {
+  flex: 1;
+}
+
+.prev {
+  composes: link;
+}
+
+.next {
+  composes: link;
+  text-align: right;
+}
+
+.date {
+  color: var(--greyDark);
+  font-size: var(--fontSizeS);
+}

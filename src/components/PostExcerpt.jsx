@@ -6,17 +6,15 @@ import css from './Post.module.css';
 import Img from 'gatsby-image';
 import Link from 'gatsby-link';
 
+import { FormattedDate } from 'components/FormattedDate';
+
 export const PostExcerpt = ({ date, children, imageSizes, title, url }) => {
   const category = 'kategoria';
   return (
     <article className="col-12 col-md-4">
       <ul className={css.meta}>
         <li>
-          {new Date(date).toLocaleString('sk', {
-            day: 'numeric',
-            month: 'long',
-            year: 'numeric',
-          })}
+          <FormattedDate>{date}</FormattedDate>
         </li>
         <li>{category}</li>
       </ul>
