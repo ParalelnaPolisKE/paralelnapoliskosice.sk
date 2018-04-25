@@ -20,3 +20,31 @@ export const siteFragment = graphql`
     }
   }
 `;
+
+export const markdownMetadataFragment = graphql`
+  fragment MarkdownMetadataFragment on MarkdownRemark {
+    excerpt
+    timeToRead
+    fields {
+      date
+      name
+      slug
+      url
+    }
+  }
+`;
+
+export const markdownFrontmatterFragment = graphql`
+  fragment MarkdownFrontmatterFragment on MarkdownRemark {
+    frontmatter {
+      title
+      cover {
+        childImageSharp {
+          sizes(maxWidth: 1240) {
+            ...GatsbyImageSharpSizes
+          }
+        }
+      }
+    }
+  }
+`;

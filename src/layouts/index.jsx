@@ -11,8 +11,8 @@ import css from './index.module.css';
 import { Header } from 'components/Header';
 import { Footer } from 'components/Footer';
 
-export default ({ children, data }) => {
-  const { crypto, social, title } = data.site.siteMetadata;
+export default ({ children, data: { site: { siteMetadata } } }) => {
+  const { crypto, social, title } = siteMetadata;
 
   return (
     <div className={css.site}>
@@ -33,7 +33,7 @@ export default ({ children, data }) => {
 };
 
 export const query = graphql`
-  query IndexQuery {
+  query MainQuery {
     ...SiteFragment
   }
 `;

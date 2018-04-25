@@ -5,9 +5,7 @@ import { Centered } from 'components/Centered';
 import { Container } from 'components/Container';
 import { Button } from 'components/Button';
 
-export default ({ data }) => {
-  const posts = data.allMarkdownRemark.edges;
-
+export default ({ data: { allMarkdownRemark: { edges: posts } } }) => {
   return (
     <Container>
       <section>
@@ -32,31 +30,15 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query BlogPostsQuery {
+  query IndexQuery {
     allMarkdownRemark(
       sort: { fields: [fields___date], order: DESC }
       limit: 3
     ) {
       edges {
         node {
-          excerpt
-          fields {
-            date
-            name
-            slug
-            url
-          }
-          frontmatter {
-            title
-            cover {
-              childImageSharp {
-                sizes(maxWidth: 1240) {
-                  ...GatsbyImageSharpSizes
-                }
-              }
-            }
-          }
-          timeToRead
+          ...MarkdownMetadataFragment
+          ...MarkdownFrontmatterFragment
         }
       }
     }
