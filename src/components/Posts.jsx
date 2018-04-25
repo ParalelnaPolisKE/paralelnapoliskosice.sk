@@ -15,6 +15,7 @@ export const Posts = ({ posts }) => (
           imageSizes={post.imageSizes}
           title={post.title}
           url={post.url}
+          tags={post.tags}
         >
           {post.excerpt}
         </PostExcerpt>

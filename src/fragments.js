@@ -39,6 +39,7 @@ export const markdownFrontmatterFragment = graphql`
   fragment MarkdownFrontmatterFragment on MarkdownRemark {
     frontmatter {
       title
+      tags
       cover {
         childImageSharp {
           sizes(maxWidth: 1240) {

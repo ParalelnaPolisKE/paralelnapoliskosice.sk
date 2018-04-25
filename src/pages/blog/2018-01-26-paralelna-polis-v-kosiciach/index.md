@@ -1,10 +1,9 @@
 ---
 title: Paralelná Polis už aj v Košiciach!
 cover: jenner-vandenhoek-474326-unsplash.jpg
-layout: post
 tags:
-  - "Handwriting"
-  - "Learning to write"
+  - crypto
+  - financial freedom
 ---
 
 ## Aký je stav?
