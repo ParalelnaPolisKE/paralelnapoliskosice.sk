@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { getPosts } from 'utils';
+
 import { Posts } from 'components/Posts';
 import { Centered } from 'components/Centered';
 import { Container } from 'components/Container';
@@ -20,7 +22,7 @@ export default ({ data: { allMarkdownRemark: { edges: posts } } }) => {
       </section>
       <section>
         <h1>Blog</h1>
-        <Posts posts={posts} />
+        <Posts posts={getPosts(posts)} />
         <Centered>
           <Button to="/blog">Všetky príspevky</Button>
         </Centered>

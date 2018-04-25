@@ -8,15 +8,15 @@ import { PostExcerpt } from 'components/PostExcerpt';
 export const Posts = ({ posts }) => (
   <div className={`${css.posts} container-fluid`}>
     <div className="row">
-      {posts.map(article => (
+      {posts.map(post => (
         <PostExcerpt
-          key={article.node.frontmatter.title}
-          date={article.node.fields.date}
-          imageSizes={article.node.frontmatter.cover.childImageSharp.sizes}
-          title={article.node.frontmatter.title}
-          url={article.node.fields.url}
+          key={post.title}
+          date={post.date}
+          imageSizes={post.imageSizes}
+          title={post.title}
+          url={post.url}
         >
-          {article.node.excerpt}
+          {post.excerpt}
         </PostExcerpt>
       ))}
     </div>

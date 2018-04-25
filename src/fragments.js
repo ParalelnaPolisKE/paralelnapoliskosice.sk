@@ -24,6 +24,7 @@ export const siteFragment = graphql`
 export const markdownMetadataFragment = graphql`
   fragment MarkdownMetadataFragment on MarkdownRemark {
     excerpt
+    html
     timeToRead
     fields {
       date
