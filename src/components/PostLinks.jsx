@@ -29,6 +29,6 @@ export const PostLinks = ({ next, prev }) => (
 );
 
 PostLinks.propTypes = {
-  next: PropTypes.object,
-  prev: PropTypes.object,
+  next: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
+  prev: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
 };
