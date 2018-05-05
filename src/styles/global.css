@@ -25,8 +25,15 @@ a:hover {
 }
 
 h1 {
-  font-size: var(--fontSizeXXL);
+  font-size: var(--fontSizeXL);
   font-weight: normal;
+}
+
+@media only screen and (min-width: 700px) {
+  h1 {
+    font-size: var(--fontSizeXXL);
+    line-height: var(--fontSizeXXL);
+  }
 }
 
 h2,

@@ -1,6 +1,14 @@
 @import '../styles/variables.css';
 
 .navigation {
-  align-items: center;
+  align-items: flex-end;
   display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 750px) {
+  .navigation {
+    align-items: center;
+    flex-direction: row;
+  }
 }

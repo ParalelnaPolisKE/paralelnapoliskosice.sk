@@ -1,10 +1,17 @@
 @import '../styles/variables.css';
 
 .button {
+  font-size: var(--fontSizeS);
   text-transform: uppercase;
-  padding: var(--defaultPadding);
 }
 
 .activeButton {
   font-weight: bold;
+}
+
+@media only screen and (min-width: 750px) {
+  .button {
+    font-size: var(--fontSizeM);
+    padding: var(--defaultPadding);
+  }
 }
