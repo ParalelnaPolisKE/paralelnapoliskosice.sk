@@ -7,6 +7,7 @@ import Img from 'gatsby-image';
 import Link from 'gatsby-link';
 
 import { FormattedDate } from 'components/FormattedDate';
+import { PostMeta } from 'components/PostMeta';
 
 export const PostExcerpt = ({
   date,
@@ -17,12 +18,7 @@ export const PostExcerpt = ({
   tags = [],
 }) => (
   <article className="col-12 col-md-4">
-    <ul className={css.meta}>
-      <li>
-        <FormattedDate>{date}</FormattedDate>
-      </li>
-      {tags.length > 0 && <li>{tags.join(', ')}</li>}
-    </ul>
+    <PostMeta date={date} tags={tags} />
     {imageSizes && (
       <a href={url}>
         <Img sizes={imageSizes} className={css.image} />

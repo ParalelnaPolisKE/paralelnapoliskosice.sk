@@ -1,22 +1,5 @@
 @import '../styles/variables.css';
 
-.meta {
-  color: var(--greyDark);
-  list-style: none;
-  margin: 0 0 var(--defaultMargin);
-  padding: 0;
-}
-
-.meta li {
-  display: inline-block;
-}
-
-.meta li:not(:first-child):before {
-  content: '-';
-  display: inline-block;
-  padding: 0.25em;
-}
-
 .image {
   margin-bottom: var(--defaultMargin);
 }
