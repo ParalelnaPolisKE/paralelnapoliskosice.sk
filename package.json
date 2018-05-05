@@ -47,7 +47,8 @@
     "gatsby-source-filesystem": "^1.5.26",
     "gatsby-transformer-remark": "^1.7.34",
     "gatsby-transformer-sharp": "^1.6.22",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "slugify": "^1.2.9"
   },
   "devDependencies": {
     "prettier": "^1.11.0"

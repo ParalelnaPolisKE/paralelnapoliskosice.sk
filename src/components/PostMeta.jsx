@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import slugify from 'slugify';
 
 import css from './PostMeta.module.css';
 
@@ -16,7 +17,7 @@ export const PostMeta = ({ date, tags = [] }) => (
       <li>
         {tags.map((tag, i) => [
           i ? ', ' : '',
-          <Link to={`tag/${tag}`}>{tag}</Link>,
+          <Link to={`/tag/${slugify(tag)}`}>{tag}</Link>,
         ])}
       </li>
     )}

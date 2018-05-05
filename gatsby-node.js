@@ -6,6 +6,8 @@
 
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
+const slugify = require('slugify');
+
 const postsPrefix = 'blog';
 
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
@@ -50,7 +52,8 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
-  const postTemplate = path.resolve('./src/templates/blog-post.jsx');
+  const postTemplate = path.resolve('./src/templates/post.jsx');
+  const tagTemplate = path.resolve('./src/templates/tag.jsx');
 
   return new Promise((resolve, reject) => {
     graphql(`
@@ -66,6 +69,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               }
               frontmatter {
                 title
+                tags
               }
             }
           }
@@ -77,6 +81,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         reject(result.errors);
       }
 
+      // Create post pages
       const posts = result.data.allMarkdownRemark.edges;
 
       posts.forEach(({ node }, index) => {
@@ -90,6 +95,31 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             ...node.fields,
             prev,
             next,
+          },
+        });
+      });
+
+      // Create tag pages
+      const tags = posts.reduce((allTags, post) => {
+        const { tags } = post.node.frontmatter;
+
+        if (tags) {
+          tags.forEach(tag => {
+            if (!allTags.includes(tag)) {
+              allTags.push(tag);
+            }
+          });
+        }
+
+        return allTags;
+      }, []);
+
+      tags.forEach(tag => {
+        createPage({
+          path: `/tag/${slugify(tag)}`,
+          component: tagTemplate,
+          context: {
+            tag,
           },
         });
       });
