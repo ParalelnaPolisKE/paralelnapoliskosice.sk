@@ -7,7 +7,12 @@
 
 ## Writing a post
 
-TBD
+Blog posts are located in [`./src/pages/blog`](https://github.com/ParalelnaPolisKE/web/tree/master/src/pages/blog) directory and written in [Markdown syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+### To add/edit a post:
+
+* create a new pull request containg your updates
+* if you have write access to the repository you can log in to [admin](https://paralelnapoliske.netlify.com/admin/) and edit posts comfortably trough [Netlify CMS](https://www.netlifycms.org/)
 
 ## Development
 
