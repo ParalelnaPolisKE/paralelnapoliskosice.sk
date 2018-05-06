@@ -1,6 +1,9 @@
-# [Paralelná Polis Košice]()
+<p align="center">
+  <img src="src/images/logo.png">
+</p>
+<h1 align="center">Paralelná Polis Košice</h1>
 
-Website of Paralelná Polis Košice.
+> Website of Paralelná Polis Košice.
 
 ## Writing a post
 
