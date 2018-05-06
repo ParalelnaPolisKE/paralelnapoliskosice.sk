@@ -5,5 +5,5 @@ export const getPosts = posts =>
     url: post.node.fields.url,
     excerpt: post.node.excerpt,
     tags: post.node.frontmatter.tags || [],
-    imageSizes: post.node.frontmatter.cover.childImageSharp.sizes,
+    imageSizes: post.node.cover ? post.node.cover.sizes : null,
   }));

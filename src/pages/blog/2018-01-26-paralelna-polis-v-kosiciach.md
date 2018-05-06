@@ -1,6 +1,6 @@
 ---
 title: Paralelná Polis už aj v Košiciach!
-cover: jenner-vandenhoek-474326-unsplash.jpg
+cover: /assets/jenner-vandenhoek-474326-unsplash.jpg
 tags:
   - crypto
   - financial freedom

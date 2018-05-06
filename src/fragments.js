@@ -23,12 +23,16 @@ export const siteFragment = graphql`
 
 export const markdownMetadataFragment = graphql`
   fragment MarkdownMetadataFragment on MarkdownRemark {
+    cover: childImageSharp {
+      sizes(maxWidth: 1240) {
+        ...GatsbyImageSharpSizes
+      }
+    }
     excerpt
     html
     timeToRead
     fields {
       date
-      name
       slug
       url
     }
@@ -38,15 +42,9 @@ export const markdownMetadataFragment = graphql`
 export const markdownFrontmatterFragment = graphql`
   fragment MarkdownFrontmatterFragment on MarkdownRemark {
     frontmatter {
-      title
+      cover
       tags
-      cover {
-        childImageSharp {
-          sizes(maxWidth: 1240) {
-            ...GatsbyImageSharpSizes
-          }
-        }
-      }
+      title
     }
   }
 `;

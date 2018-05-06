@@ -29,8 +29,16 @@ module.exports = {
         head: true,
       },
     },
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-remove-trailing-slashes',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'static/assets',
+        path: `${__dirname}/static/assets`,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -39,13 +47,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-resolve-src',
-    'gatsby-plugin-sharp',
     // 'gatsby-plugin-sitemap',
-    // 'gatsby-transformer-remark',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          'gatsby-plugin-sharp',
           {
             resolve: 'gatsby-remark-images',
             options: {

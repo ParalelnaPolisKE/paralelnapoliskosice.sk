@@ -5,13 +5,14 @@
  */
 
 const path = require(`path`);
-const { createFilePath } = require(`gatsby-source-filesystem`);
 const slugify = require('slugify');
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
 const postsPrefix = 'blog';
 
-exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
-  const { createNodeField } = boundActionCreators;
+exports.onCreateNode = ({ node, getNode, getNodes, boundActionCreators }) => {
+  const { createNodeField, createParentChildLink } = boundActionCreators;
+  const nodes = getNodes();
 
   if (node.internal.type === 'MarkdownRemark') {
     const slug = createFilePath({
@@ -21,19 +22,12 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
       trailingSlash: false,
     });
     const date = slug.slice(1, 11);
-    const name = slug.slice(12);
-    const url = `/${postsPrefix}/${name}`;
+    const url = `/${postsPrefix}${slug}`;
 
     createNodeField({
       node,
       name: 'date',
       value: date,
-    });
-
-    createNodeField({
-      node,
-      name: 'name',
-      value: name,
     });
 
     createNodeField({
@@ -47,6 +41,26 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
       name: 'url',
       value: url,
     });
+
+    // Attach thumbnail's ImageSharp node by public path if necessary
+    // @see https://github.com/simonyiszk/mvk-web
+    if (typeof node.frontmatter.cover === 'string') {
+      const pathToFile = path
+        .join(__dirname, 'static', node.frontmatter.cover)
+        .split(path.sep)
+        .join('/');
+
+      const fileNode = nodes.find(node => node.absolutePath === pathToFile);
+
+      if (fileNode) {
+        const imageSharpNodeId = fileNode.children.find(node =>
+          node.endsWith('>> ImageSharp')
+        );
+        const imageSharpNode = nodes.find(node => node.id === imageSharpNodeId);
+
+        createParentChildLink({ parent: node, child: imageSharpNode });
+      }
+    }
   }
 };
 
@@ -63,7 +77,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             node {
               fields {
                 date
-                name
                 slug
                 url
               }
