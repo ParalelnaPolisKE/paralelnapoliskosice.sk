@@ -9,9 +9,13 @@ export const Navigation = () => (
     <NavigationButton to="/" exact>
       Domov
     </NavigationButton>
+    <NavigationButton to="/akcie">
+      Akcie
+    </NavigationButton>
     <NavigationButton to="/o-paralelnej-polis">
       O Paralelnej Polis
     </NavigationButton>
+    <NavigationButton to="/filozofia">Filozofia</NavigationButton>
     <NavigationButton to="/blog">Blog</NavigationButton>
     <NavigationButton to="/kontakt">Kontakt</NavigationButton>
   </nav>
