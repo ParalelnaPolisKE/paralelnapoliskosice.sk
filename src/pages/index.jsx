@@ -13,10 +13,8 @@ export default ({ data: { allMarkdownRemark: { edges: posts } } }) => {
       <section>
         <h1>O Paralelnej Polis</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
-          dolor et ad accusamus quibusdam nostrum ipsam harum consequuntur
-          architecto, dolorum ipsa tempora aliquid labore consectetur asperiores
-          vel libero maiores distinctio.
+          Tato cas sa nevie na nejaku cast priamo odvolat? Napriklad v sekcii
+          o polis bude cast Kosice, toto by tu mohlo z neho automaticky tahat ...
         </p>
         <Button to="/o-paralelnej-polis">Viac info</Button>
       </section>
