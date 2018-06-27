@@ -7,7 +7,7 @@ export const Social = ({ data }) => (
   <div className={css.social}>
     {Object.keys(data).map(title => (
       <a href={data[title]} className={css.site} key={title}>
-        {title}
+        <img className={css.socialIcon} src={`/assets/social/${title}.png`} />
       </a>
     ))}
   </div>

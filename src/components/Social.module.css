@@ -1,7 +1,7 @@
 @import '../styles/variables.css';
 
 .social {
-  padding: 2em 0;
+  padding: 1em 0;
 }
 
 .site {
@@ -10,7 +10,6 @@
   margin-right: 0.25em;
 }
 
-.site:not(:last-child):after {
-  content: ',';
-  display: inline-block;
+.socialIcon {
+  width: 30px;
 }
