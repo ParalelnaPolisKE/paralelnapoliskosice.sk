@@ -5,9 +5,9 @@ export const siteFragment = graphql`
         title
         social {
           facebook
-          github
-          instagram
           twitter
+          instagram
+          github
         }
         crypto {
           BTC
@@ -15,6 +15,21 @@ export const siteFragment = graphql`
           XMR
           ETH
           ETC
+        }
+      }
+    }
+  }
+`;
+
+export const socialFragment = graphql`
+  fragment SocialFragment on RootQueryType {
+    site {
+      siteMetadata {
+        social {
+          facebook
+          twitter
+          instagram
+          github
         }
       }
     }

@@ -1,9 +1,9 @@
 {
-  "name": "web",
+  "name": "ppke-web",
   "description": "Paralelna Polis Kosice Web",
   "version": "1.0.0",
   "author": "Paralelna Polis Kosice",
-  "homepage": "TBD",
+  "homepage": "https://ke.paralelnapolis.sk",
   "private": true,
   "repository": {
     "type": "git",
