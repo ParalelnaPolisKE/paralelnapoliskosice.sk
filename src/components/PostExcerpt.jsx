@@ -6,7 +6,6 @@ import css from './Post.module.css';
 import Img from 'gatsby-image';
 import { Link } from 'gatsby';
 
-import { FormattedDate } from 'components/FormattedDate';
 import { PostMeta } from 'components/PostMeta';
 
 export const PostExcerpt = ({
