@@ -1,9 +1,8 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
 import { getPosts } from 'utils';
 
-import { Button } from 'components/Button';
-import { Centered } from 'components/Centered';
 import { Page } from 'components/Page';
 import { Posts } from 'components/Posts';
 

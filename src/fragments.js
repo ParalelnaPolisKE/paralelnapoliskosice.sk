@@ -1,3 +1,5 @@
+import { graphql } from 'gatsby';
+
 export const siteFragment = graphql`
   fragment SiteFragment on RootQueryType {
     site {
