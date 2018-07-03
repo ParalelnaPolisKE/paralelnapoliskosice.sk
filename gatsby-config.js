@@ -21,24 +21,25 @@ module.exports = {
     },
   },
   plugins: [
+    // 'gatsby-transformer-remark',
     // 'gatsby-plugin-feed',
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-        head: true,
-      },
-    },
-    'gatsby-plugin-netlify-cms',
-    'gatsby-plugin-react-helmet',
+    //   {
+    //     resolve: 'gatsby-plugin-google-analytics',
+    //     options: {
+    //       trackingId: process.env.GOOGLE_ANALYTICS_ID,
+    //       head: true,
+    //     },
+    //   },
+    //   'gatsby-plugin-netlify-cms',
+    //   'gatsby-plugin-react-helmet',
     'gatsby-plugin-remove-trailing-slashes',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'static/assets',
-        path: `${__dirname}/static/assets`,
-      },
-    },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'static/assets',
+    //     path: `${__dirname}/static/assets`,
+    //   },
+    // },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -46,22 +47,22 @@ module.exports = {
         path: `${__dirname}/src/pages/blog/`,
       },
     },
-    'gatsby-plugin-resolve-src',
-    // 'gatsby-plugin-sitemap',
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          'gatsby-plugin-sharp',
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 1200,
-            },
-          },
-        ],
-      },
-    },
-    'gatsby-transformer-sharp',
+    //   'gatsby-plugin-resolve-src',
+    //   // 'gatsby-plugin-sitemap',
+    //   {
+    //     resolve: 'gatsby-transformer-remark',
+    //     options: {
+    //       plugins: [
+    //         'gatsby-plugin-sharp',
+    //         {
+    //           resolve: 'gatsby-remark-images',
+    //           options: {
+    //             maxWidth: 1200,
+    //           },
+    //         },
+    //       ],
+    //     },
+    //   },
+    //   'gatsby-transformer-sharp',
   ],
 };

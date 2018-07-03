@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
 import { Button } from 'components/Button';
 import { Centered } from 'components/Centered';
@@ -8,7 +9,7 @@ import { getPosts } from 'utils';
 
 export default ({
   data: { allMarkdownRemark: { edges: posts } },
-  pathContext: { tag },
+  pageContext: { tag },
 }) => (
   <Page title={`Príspevky označené tagom - ${tag}`}>
     <Posts posts={getPosts(posts)} />

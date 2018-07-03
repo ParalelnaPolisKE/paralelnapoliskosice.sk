@@ -36,7 +36,6 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "gatsby": "next",
     "gatsby-image": "next",
-    "gatsby-link": "next",
     "gatsby-plugin-feed": "next",
     "gatsby-plugin-google-analytics": "next",
     "gatsby-plugin-netlify-cms": "next",

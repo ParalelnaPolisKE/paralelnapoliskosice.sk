@@ -10,8 +10,8 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 
 const postsPrefix = 'blog';
 
-exports.onCreateNode = ({ node, getNode, getNodes, boundActionCreators }) => {
-  const { createNodeField, createParentChildLink } = boundActionCreators;
+exports.onCreateNode = ({ node, getNode, getNodes, actions }) => {
+  const { createNodeField, createParentChildLink } = actions;
   const nodes = getNodes();
 
   if (node.internal.type === 'MarkdownRemark') {
@@ -64,8 +64,8 @@ exports.onCreateNode = ({ node, getNode, getNodes, boundActionCreators }) => {
   }
 };
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions;
   const postTemplate = path.resolve('./src/templates/post.jsx');
   const tagTemplate = path.resolve('./src/templates/tag.jsx');
 

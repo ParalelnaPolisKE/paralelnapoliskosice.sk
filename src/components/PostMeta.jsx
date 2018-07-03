@@ -4,7 +4,7 @@ import slugify from 'slugify';
 
 import css from './PostMeta.module.css';
 
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 
 import { FormattedDate } from 'components/FormattedDate';
 
