@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-const path = require(`path`);
+const path = require('path');
 const slugify = require('slugify');
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
@@ -44,23 +44,23 @@ exports.onCreateNode = ({ node, getNode, getNodes, actions }) => {
 
     // Attach thumbnail's ImageSharp node by public path if necessary
     // @see https://github.com/simonyiszk/mvk-web
-    if (typeof node.frontmatter.cover === 'string') {
-      const pathToFile = path
-        .join(__dirname, 'static', node.frontmatter.cover)
-        .split(path.sep)
-        .join('/');
+    // if (typeof node.frontmatter.cover === 'string') {
+    //   const pathToFile = path
+    //     .join(__dirname, 'static', node.frontmatter.cover)
+    //     .split(path.sep)
+    //     .join('/');
 
-      const fileNode = nodes.find(node => node.absolutePath === pathToFile);
+    //   const fileNode = nodes.find(node => node.absolutePath === pathToFile);
 
-      if (fileNode) {
-        const imageSharpNodeId = fileNode.children.find(node =>
-          node.endsWith('>> ImageSharp')
-        );
-        const imageSharpNode = nodes.find(node => node.id === imageSharpNodeId);
+    //   if (fileNode) {
+    //     const imageSharpNodeId = fileNode.children.find(node =>
+    //       node.endsWith('>> ImageSharp')
+    //     );
+    //     const imageSharpNode = nodes.find(node => node.id === imageSharpNodeId);
 
-        createParentChildLink({ parent: node, child: imageSharpNode });
-      }
-    }
+    //     createParentChildLink({ parent: node, child: imageSharpNode });
+    //   }
+    // }
   }
 };
 
@@ -139,5 +139,14 @@ exports.createPages = ({ graphql, actions }) => {
 
       resolve();
     });
+  });
+};
+
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  // Absolute imports https://next.gatsbyjs.org/docs/add-custom-webpack-config#absolute-imports
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    },
   });
 };

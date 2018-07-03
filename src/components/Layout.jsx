@@ -26,45 +26,46 @@ import { Footer } from 'components/Footer';
 //     </div>
 //   );
 // };
-
-<StaticQuery
-  query={graphql`
-    query LayoutQuery {
-      site {
-        siteMetadata {
-          title
-          social {
-            facebook
-            github
-            instagram
-            twitter
-          }
-          crypto {
-            BTC
-            LTC
-            XMR
-            ETH
-            ETC
+export default ({ children }) => (
+  <StaticQuery
+    query={graphql`
+      query LayoutQuery {
+        site {
+          siteMetadata {
+            title
+            social {
+              facebook
+              github
+              instagram
+              twitter
+            }
+            crypto {
+              BTC
+              LTC
+              XMR
+              ETH
+              ETC
+            }
           }
         }
       }
-    }
-  `}
-  render={data => {
-    const { crypto, social, title } = data.site.siteMetadata;
+    `}
+    render={data => {
+      const { crypto, social, title } = data.site.siteMetadata;
 
-    return (
-      <div className={css.site}>
-        <Helmet defaultTitle={title} titleTemplate={`%s | ${title}`} />
-        <Header />
-        <main role="main" className={css.content}>
-          {children}
-        </main>
-        <Footer crypto={crypto} social={social} />
-      </div>
-    );
-  }}
-/>;
+      return (
+        <div className={css.site}>
+          <Helmet defaultTitle={title} titleTemplate={`%s | ${title}`} />
+          <Header />
+          <main role="main" className={css.content}>
+            {children}
+          </main>
+          <Footer crypto={crypto} social={social} />
+        </div>
+      );
+    }}
+  />
+);
 
 // export const query = graphql`
 //   query MainQuery {
