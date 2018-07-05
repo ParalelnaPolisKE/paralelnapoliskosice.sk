@@ -17,7 +17,9 @@ export const PostMeta = ({ date, tags = [] }) => (
       <li>
         {tags.map((tag, i) => [
           i ? ', ' : '',
-          <Link to={`/tag/${slugify(tag)}`}>{tag}</Link>,
+          <Link to={`/tag/${slugify(tag)}`} key={tag}>
+            {tag}
+          </Link>,
         ])}
       </li>
     )}
