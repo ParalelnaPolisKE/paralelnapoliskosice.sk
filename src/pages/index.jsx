@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 
 import { getPosts } from 'utils';
 
-import { Layout } from 'components/Layout';
+import Layout from 'components/Layout';
 import { Posts } from 'components/Posts';
 import { Centered } from 'components/Centered';
 import { Container } from 'components/Container';

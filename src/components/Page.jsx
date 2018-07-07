@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 
-import { Layout } from 'components/Layout';
+import Layout from 'components/Layout';
 import { Container } from 'components/Container';
 
 export const Page = ({ children, title }) => (

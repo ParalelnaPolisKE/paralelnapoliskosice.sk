@@ -11,7 +11,7 @@ import css from './Layout.module.css';
 import { Header } from 'components/Header';
 import { Footer } from 'components/Footer';
 
-export const Layout = ({ children }) => (
+const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query FooQuery {
@@ -35,3 +35,5 @@ export const Layout = ({ children }) => (
     }}
   </StaticQuery>
 );
+
+export default Layout;
