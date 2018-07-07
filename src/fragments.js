@@ -38,26 +38,13 @@ export const socialFragment = graphql`
   }
 `;
 
-// export const markdownMetadataFragment = graphql`
-//   fragment MarkdownMetadataFragment on MarkdownRemark {
-//     cover: childImageSharp {
-//       sizes(maxWidth: 1240) {
-//         ...GatsbyImageSharpSizes
-//       }
-//     }
-//     excerpt
-//     html
-//     timeToRead
-//     fields {
-//       date
-//       slug
-//       url
-//     }
-//   }
-// `;
-
 export const markdownMetadataFragment = graphql`
   fragment MarkdownMetadataFragment on MarkdownRemark {
+    cover: childImageSharp {
+      fluid(maxWidth: 1240) {
+        ...GatsbyImageSharpFluid
+      }
+    }
     excerpt
     html
     timeToRead
