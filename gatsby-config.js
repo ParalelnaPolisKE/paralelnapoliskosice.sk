@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 module.exports = {
   siteMetadata: {
     title: 'Paralelná Polis Košice',
@@ -22,15 +20,15 @@ module.exports = {
   },
   plugins: [
     // 'gatsby-plugin-feed',
-    //   {
-    //     resolve: 'gatsby-plugin-google-analytics',
-    //     options: {
-    //       trackingId: process.env.GOOGLE_ANALYTICS_ID,
-    //       head: true,
-    //     },
-    //   },
-    //   'gatsby-plugin-netlify-cms',
-    //   'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'XXX',
+        head: true,
+      },
+    },
+    // 'gatsby-plugin-netlify-cms',
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-remove-trailing-slashes',
     {
       resolve: 'gatsby-source-filesystem',
