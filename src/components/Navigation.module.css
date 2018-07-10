@@ -4,7 +4,7 @@
   flex-direction: column;
 }
 
-@media only screen and (min-width: 750px) {
+@media (min-width: 750px) {
   .navigation {
     align-items: center;
     flex-direction: row;
