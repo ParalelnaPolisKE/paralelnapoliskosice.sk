@@ -1,10 +1,8 @@
-/* @import '../styles/variables.css'; */
-
 .wrapper {
   border-top: 1px solid var(--tertiaryColor);
   display: flex;
   margin-top: 5rem;
-  padding: var(--defaultPadding) 0;
+  padding: 1rem 0;
 }
 
 .link {
@@ -22,5 +20,5 @@
 
 .date {
   color: var(--greyDark);
-  font-size: var(--fontSizeS);
+  font-size: 0.875rem;
 }

@@ -1,7 +1,5 @@
-/* @import '../styles/variables.css'; */
-
 .addresses {
-  font-size: var(--fontSizeS);
+  font-size: 0.875rem;
   list-style: none;
   margin: 0;
   padding: 0;

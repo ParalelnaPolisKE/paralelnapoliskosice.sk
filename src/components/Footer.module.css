@@ -1,8 +1,6 @@
-/* @import '../styles/variables.css'; */
-
 .footer {
   background-color: var(--tertiaryColor);
-  font-size: var(--fontSizeS);
+  font-size: 0.875rem;
 }
 
 .container {

@@ -1,11 +1,8 @@
-/* @import '../styles/variables.css'; */
-
 .image {
-  margin-bottom: var(--defaultMargin);
+  margin-bottom: 1rem;
 }
 
 .title {
-  font-size: var(--fontSizeM);
   font-weight: 500;
-  margin-bottom: var(--defaultMargin);
+  margin-bottom: 1rem;
 }

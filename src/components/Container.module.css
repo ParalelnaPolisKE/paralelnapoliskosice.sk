@@ -1,5 +1,3 @@
-/* @import '../styles/variables.css'; */
-
 .container {
   margin: 0 auto;
   max-width: var(--defaultWidth);
