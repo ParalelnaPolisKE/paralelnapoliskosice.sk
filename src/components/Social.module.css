@@ -1,11 +1,9 @@
-/* @import '../styles/variables.css'; */
-
 .social {
   padding: 1em 0;
 }
 
 .site {
-  font-size: var(--fontSizeL);
+  font-size: 2rem;
   font-weight: 300;
   margin-right: 0.25em;
 }

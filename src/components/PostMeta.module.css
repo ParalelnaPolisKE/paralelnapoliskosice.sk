@@ -1,9 +1,7 @@
-/* @import '../styles/variables.css'; */
-
 .meta {
   color: var(--greyDark);
   list-style: none;
-  margin: 0 0 var(--defaultMargin);
+  margin: 0 0 1rem;
   padding: 0;
 }
 

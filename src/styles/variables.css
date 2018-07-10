@@ -1,17 +1,6 @@
 :root {
   --defaultWidth: 1240px;
-  --defaultMargin: 15px;
-  --defaultPadding: 15px;
 
-  --fontSizeS: 1.5rem;
-  --fontSizeM: 1.8rem;
-  --fontSizeL: 2.4rem;
-  --fontSizeXL: 4rem;
-  --fontSizeXXL: 6rem;
-
-  /**
-   * Colors
-   */
   --primaryColor: #fff;
   --secondaryColor: #0d0d0d;
   --tertiaryColor: #f2f2f2;
