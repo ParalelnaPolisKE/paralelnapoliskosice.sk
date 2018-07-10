@@ -18,8 +18,8 @@ const Layout = ({ children }) => (
         ...SiteFragment
       }
     `}
-  >
-    {data => {
+    // Need to use render property instead of render props https://github.com/gatsbyjs/gatsby/issues/6139
+    render={data => {
       const { crypto, social, title } = data.site.siteMetadata;
 
       return (
@@ -33,7 +33,7 @@ const Layout = ({ children }) => (
         </div>
       );
     }}
-  </StaticQuery>
+  />
 );
 
 export default Layout;
