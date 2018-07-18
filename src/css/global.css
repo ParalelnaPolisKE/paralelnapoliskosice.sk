@@ -1,8 +1,9 @@
-html {
+/* html {
+  @apply font-bold;
   background: var(--primaryColor);
   font-size: 16px;
   overflow-y: scroll;
-}
+} */
 
 body {
   font-size: 1rem;

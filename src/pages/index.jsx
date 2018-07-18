@@ -1,8 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import 'bootstrap/dist/css/bootstrap-reboot.css';
-import 'bootstrap/dist/css/bootstrap-grid.css';
+// import 'bootstrap/dist/css/bootstrap-reboot.css';
+// import 'bootstrap/dist/css/bootstrap-grid.css';
+import 'styles/tailwind.custom.css';
 
 import 'css/variables.css';
 import 'css/global.css';
