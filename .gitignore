@@ -7,4 +7,4 @@ node_modules
 public/
 .DS_Store
 .env
-yarn-error.log
+*.log
