@@ -2,10 +2,14 @@
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 .cache/
-
-# Build directory
 public/
+<<<<<<< HEAD
 static/assets/instagram
+=======
+
+>>>>>>> Switch to tailwind css
 .DS_Store
 .env
 *.log
+
+src/styles/tailwind.custom.css
