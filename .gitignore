@@ -5,6 +5,7 @@ node_modules
 
 # Build directory
 public/
+static/assets/instagram
 .DS_Store
 .env
 *.log

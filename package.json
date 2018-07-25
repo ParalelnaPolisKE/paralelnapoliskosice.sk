@@ -47,10 +47,13 @@
     "gatsby-source-filesystem": "^2.0.1-beta.6",
     "gatsby-transformer-remark": "^2.1.1-beta.3",
     "gatsby-transformer-sharp": "^2.1.1-beta.5",
+    "mkdirp": "^0.5.1",
     "netlify-cms": "^1.7.0",
+    "progress": "^2.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
+    "request": "^2.87.0",
     "slugify": "^1.2.9"
   },
   "devDependencies": {
