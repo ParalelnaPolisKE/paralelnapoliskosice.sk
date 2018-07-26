@@ -10,7 +10,11 @@ export const Instagram = () => (
     <Container className={css.instaContainer}>
       <InstagramImages>
         {images =>
-          images.map(image => <div className={css.instaImage}>{image}</div>)
+          images.map((image, i) => (
+            <div key={i} className={css.instaImage}>
+              {image}
+            </div>
+          ))
         }
       </InstagramImages>
     </Container>
