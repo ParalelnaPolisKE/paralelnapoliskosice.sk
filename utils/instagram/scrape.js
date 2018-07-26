@@ -31,7 +31,7 @@ let posts = [];
 // Write json
 const saveJSON = _ =>
   fs.writeFileSync(
-    `./static/assets/instagram/posts.json`,
+    `./static/assets/instagram/instagram.json`,
     JSON.stringify(posts, ``, 2)
   );
 
@@ -55,7 +55,7 @@ const getPosts = () => {
         time: toISO8601(image.created_time),
         link: image.link,
         media: image.images.thumbnail.url,
-        image: `images/${image.id}.jpg`,
+        image: `./${image.id}.jpg`, // relative path to images from .json
       }))
       .forEach(image => {
         // Download image locally and update progress bar
