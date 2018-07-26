@@ -9,6 +9,7 @@ import 'styles/global.css';
 import css from './Layout.module.css';
 
 import { Header } from 'components/Header';
+import { Instagram } from 'components/Instagram';
 import { Footer } from 'components/Footer';
 
 const Layout = ({ children }) => (
@@ -26,9 +27,11 @@ const Layout = ({ children }) => (
         <div className={css.site}>
           <Helmet defaultTitle={title} titleTemplate={`%s | ${title}`} />
           <Header />
+
           <main role="main" className={css.content}>
             {children}
           </main>
+          <Instagram />
           <Footer crypto={crypto} social={social} />
         </div>
       );
