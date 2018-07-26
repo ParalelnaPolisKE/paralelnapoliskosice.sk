@@ -24,12 +24,14 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
+    "prestart": "npm run instascrap",
     "start": "gatsby develop",
-    "prebuild": "node ./utils/instagram/scrape.js",
+    "prebuild": "npm run instascrap",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "instascrap": "node ./utils/instagram/scrape.js"
   },
   "dependencies": {
     "bootstrap": "^4.1.2",
