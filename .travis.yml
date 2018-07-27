@@ -1,0 +1,11 @@
+language: node_js
+
+branches:
+  only:
+    - master
+
+install: true
+
+before_script: if [ "$TRAVIS_EVENT_TYPE" != "cron" ]; then echo "not a cron job, skipping" && exit; fi
+
+script: curl -X POST -d '' https://api.netlify.com/build_hooks/${NETLIFY_WEBHOOK_ID}
