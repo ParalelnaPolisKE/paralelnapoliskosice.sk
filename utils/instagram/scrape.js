@@ -54,7 +54,7 @@ const getPosts = () => {
         id: image.id,
         time: toISO8601(image.created_time),
         link: image.link,
-        media: image.images.thumbnail.url,
+        media: image.images.standard_resolution.url,
         image: `./${image.id}.jpg`, // relative path to images from .json
       }))
       .forEach(image => {

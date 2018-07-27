@@ -14,7 +14,7 @@ const InstagramImages = ({ children }) => (
               time
               image {
                 childImageSharp {
-                  resolutions(width: 150, height: 150) {
+                  resolutions(width: 150, height: 150, quality: 80) {
                     ...GatsbyImageSharpResolutions
                   }
                 }
