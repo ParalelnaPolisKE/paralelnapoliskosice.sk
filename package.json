@@ -53,6 +53,7 @@
     "gatsby-transformer-sharp": "^2.1.1-beta.5",
     "mkdirp": "^0.5.1",
     "netlify-cms": "^1.7.0",
+    "node-fetch": "^2.2.0",
     "progress": "^2.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
