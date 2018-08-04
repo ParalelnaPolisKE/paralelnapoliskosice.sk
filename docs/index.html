@@ -2,125 +2,130 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Paralelná Polis Košice 🚧</title>
-	<style>
-		body {
-			font-family: monospace;
-			height: 100vh;
-			margin: 0;
-			overflow: hidden;
-			padding: 0;
-			position: relative;
-		}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Paralelná Polis Košice 🚧</title>
+  <style>
+    body {
+      font-family: monospace;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      padding: 0;
+      position: relative;
+    }
 
-		a {
-			color: #000;
-		}
+    a {
+      color: #000;
+    }
 
-		img {
-			height: auto;
-			max-width: 100%;
-		}
+    img {
+      height: auto;
+      max-width: 100%;
+    }
 
-		footer {
-			bottom: 0;
-			padding: 2rem;
-			position: absolute;
-			right: 0;
-			text-align: center;
-		}
+    footer {
+      padding: 2rem;
+      text-align: center;
+    }
 
-		.center {
-			left: 50%;
-			position: absolute;
-			top: 50%;
-			transform: translate(-100px, -100px);
-		}
+    .center {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-100px, -100px);
+    }
 
-		.img {
-			height: 200px;
-			position: absolute;
-			width: 200px;
-		}
+    .img {
+      height: 200px;
+      position: absolute;
+      width: 200px;
+    }
 
-		.logo {
-			z-index: 30;
-		}
+    .logo {
+      z-index: 30;
+    }
 
-		.worker {
-			left: 10px;
-			top: 10px;
-			z-index: 20;
-		}
+    .worker {
+      left: 10px;
+      top: 10px;
+      z-index: 20;
+    }
 
-		.sign {
-			left: 20px;
-			top: 20px;
-			z-index: 10;
-		}
-	</style>
+    .sign {
+      left: 20px;
+      top: 20px;
+      z-index: 10;
+    }
+
+    @media (min-width: 800px) {
+      footer {
+        bottom: 0;
+        position: absolute;
+        right: 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
-	<div class="center">
-		<div class="img logo">
-			<img src="logo.svg">
-		</div>
-		<div class="img worker">
-			<img src="worker.svg">
-		</div>
-		<div class="img sign">
-			<img src="sign.svg">
-		</div>
-	</div>
+  <div class="center">
+    <div class="img logo">
+      <img src="logo.svg">
+    </div>
+    <div class="img worker">
+      <img src="worker.svg">
+    </div>
+    <div class="img sign">
+      <img src="sign.svg">
+    </div>
+  </div>
 
-	<footer>Paralelná Polis Košice
-		<br>
-		<small>
-			<a href="https://www.facebook.com/paralelnapoliske">facebook</a> ·
-			<a href="https://twitter.com/parallelpoliske">twitter</a> ·
-			<a href="https://www.instagram.com/paralelnapoliske">instagram</a>
-		</small>
-	</footer>
+  <footer>Paralelná Polis Košice
+    <br>
+    <small>
+      <a href="https://www.facebook.com/paralelnapoliske">facebook</a> ·
+      <a href="https://twitter.com/parallelpoliske">twitter</a> ·
+      <a href="https://www.instagram.com/paralelnapoliske">instagram</a>
+    </small>
+  </footer>
 
-	<script>
-		(() => {
-			const logo = document.querySelector('.logo');
-			const worker = document.querySelector('.worker');
-			const sign = document.querySelector('.sign');
+  <script>
+    (() => {
+      const logo = document.querySelector('.logo');
+      const worker = document.querySelector('.worker');
+      const sign = document.querySelector('.sign');
 
-			const setCenter = () => ({
-				x: window.innerWidth / 2,
-				y: window.innerHeight / 2
-			});
+      const setCenter = () => ({
+        x: window.innerWidth / 2,
+        y: window.innerHeight / 2
+      });
 
-			let center = setCenter();
+      let center = setCenter();
 
-			window.addEventListener('mousemove', e => {
-				const x = (e.clientX - center.x) / center.x;
-				const y = (e.clientY - center.y) / center.y;
+      window.addEventListener('mousemove', e => {
+        const x = (e.clientX - center.x) / center.x;
+        const y = (e.clientY - center.y) / center.y;
 
-				const cx = e.clientX - center.x;
-				const cy = center.y - e.clientY;
+        const cx = e.clientX - center.x;
+        const cy = center.y - e.clientY;
 
-				const rx = cy * -0.05;
-				const ry = cx * -0.025;
+        const rx = cy * -0.05;
+        const ry = cx * -0.025;
 
-				const transformStyles = l => `transform: perspective(500px) rotateX(${rx}deg) rotateY(${ry}deg) translateX(${-(l * x)}px) translateY(${-(l * y)}px)`;
+        const transformStyles = l => `transform: perspective(500px) rotateX(${rx}deg) rotateY(${ry}deg) translateX(${-(l * x)}px) translateY(${-(l * y)}px)`;
 
-				logo.style.cssText = transformStyles(250);
-				worker.style.cssText = transformStyles(150);
-				sign.style.cssText = transformStyles(100);
-			});
+        logo.style.cssText = transformStyles(250);
+        worker.style.cssText = transformStyles(150);
+        sign.style.cssText = transformStyles(100);
+      });
 
-			window.addEventListener('resize', e => {
-				center = setCenter();
-			})
-		})();
-	</script>
+      window.addEventListener('resize', e => {
+        center = setCenter();
+      })
+    })();
+  </script>
 </body>
 
-</html>  
+</html>
