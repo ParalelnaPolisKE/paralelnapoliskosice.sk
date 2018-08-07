@@ -10,16 +10,22 @@ import { Container } from 'components/Container';
 import { Button } from 'components/Button';
 
 export default ({ data: { allMarkdownRemark: { edges: posts } } }) => {
-  return (
-    <Layout>
+  return <Layout>
       <Container>
         <section>
           <h1>O Paralelnej Polis</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
-            dolor et ad accusamus quibusdam nostrum ipsam harum consequuntur
-            architecto, dolorum ipsa tempora aliquid labore consectetur
-            asperiores vel libero maiores distinctio.
+            Sme kolektív ľudí, ktorí chcú žiť v slobodnejšom a otvorenejšom
+            svete. Hľadáme spôsoby a technológie (Bitcoin, blockchain,
+            reputačné systémy a decentralizované technológie), ktoré nám
+            otvárajú možnosti, zjednodušujú bežné procesy a odstraňujú bariéry.
+          </p>
+          <p>V Paralelnej Polis Košice chceme vytvoriť prostredie zamerané na
+            <b> vzdelávanie, objavovanie a tvorenie lepších systémov pre naše
+            okolie</b> - teba, nás, biznisy, jednotlivcov - všetkých, ktorí majú
+            záujem fungovať slobodnejšie a nezávislejšie. Zameriavame sa na
+            experimentovanie a aplikáciu kryptomien a spojených technológií do
+            bežného života.
           </p>
           <Button to="/o-paralelnej-polis">Viac info</Button>
         </section>
@@ -31,8 +37,7 @@ export default ({ data: { allMarkdownRemark: { edges: posts } } }) => {
           </Centered>
         </section>
       </Container>
-    </Layout>
-  );
+    </Layout>;
 };
 
 export const query = graphql`
