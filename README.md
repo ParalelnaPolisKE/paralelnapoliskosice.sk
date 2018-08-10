@@ -11,8 +11,8 @@ Blog posts are located in [`./src/pages/blog`](https://github.com/ParalelnaPolis
 
 ### To add/edit a post:
 
-* create a new pull request containing your updates
-* if you have write access to the repository you can log in to [admin](https://paralelnapoliske.netlify.com/admin/) and edit posts comfortably trough [Netlify CMS](https://www.netlifycms.org/)
+- create a new pull request containing your updates
+- if you have write access to the repository you can log in to [admin](https://paralelnapoliske.netlify.com/admin/) and edit posts comfortably trough [Netlify CMS](https://www.netlifycms.org/)
 
 ## Development
 
@@ -34,7 +34,7 @@ cd web
 npm install
 ```
 
-Copy `.env.example` file into `.env` (with the dot at the beginning in the name) and set correct constants inside (this may _not be needed_ in the future).
+Copy `.env.example` file into `.env` (with the dot at the beginning in the name) and set correct constants inside (or leave them blank).
 
 ### Start Website Locally
 
@@ -46,11 +46,11 @@ npm start
 
 ### Available Commands
 
-* `npm start` - runs local development server at [localhost:8000](http://localhost:8000)
-* `npm run build` - builds production-ready site
-* `npm run format` - corrects coding standards
-* `npm run serve` - starts local HTML server for testing
-* `npm run instascrap` - fetches latest photos from instagram (you need correct `INSTAGRAM_ACCESS_TOKEN` set in `.env` file)
+- `npm start` - runs local development server at [localhost:8000](http://localhost:8000)
+- `npm run build` - builds production-ready site
+- `npm run format` - corrects coding standards
+- `npm run serve` - starts local HTML server for testing
+- `npm run instascrap` - fetches latest photos from instagram (you need correct `INSTAGRAM_ACCESS_TOKEN` set in `.env` file)
 
 ### Coding Standards
 
