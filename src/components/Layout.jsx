@@ -48,7 +48,6 @@ const Layout = ({ children }) => (
             <link rel="manifest" href="/site.webmanifest" />
             <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fff" />
             <meta name="msapplication-TileColor" content="#ffffff" />
-            <meta name="theme-color" content="#ffffff" />
           </Helmet>
 
           <Header />
