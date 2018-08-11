@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import 'bootstrap/dist/css/bootstrap-reboot.css';
 import 'bootstrap/dist/css/bootstrap-grid.css';
+
 import 'css/variables.css';
 import 'css/global.css';
 import 'css/fontello.css';
@@ -45,7 +46,6 @@ const Layout = ({ children }) => (
               sizes="16x16"
               href="/favicon-16x16.png"
             />
-            <link rel="manifest" href="/site.webmanifest" />
             <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fff" />
             <meta name="msapplication-TileColor" content="#ffffff" />
           </Helmet>
