@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/images/logo.png">
+  <img src="src/images/logo.svg">
 </p>
 <h1 align="center">Paralelná Polis Košice</h1>
 

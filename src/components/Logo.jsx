@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import css from './Logo.module.css';
-import logo from '../images/logo.png';
+import logo from '../images/logo.svg';
 
 export const Logo = () => (
   <Link className={css.logo} to="/">

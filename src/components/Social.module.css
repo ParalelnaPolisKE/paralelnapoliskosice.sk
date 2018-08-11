@@ -2,12 +2,10 @@
   padding: 1em 0;
 }
 
-.site {
-  font-size: 2rem;
-  font-weight: 300;
-  margin-right: 0.25em;
+.link {
+  font-size: 1.5rem;
 }
 
-.socialIcon {
-  width: 30px;
+.link:hover {
+  text-decoration: none;
 }
