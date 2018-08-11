@@ -6,12 +6,8 @@ import css from './Social.module.css';
 export const Social = ({ data }) => (
   <div className={css.social}>
     {Object.keys(data).map(title => (
-      <a href={data[title]} className={css.site} key={title}>
-        <img
-          className={css.socialIcon}
-          src={`/assets/social/${title}.png`}
-          alt={title}
-        />
+      <a href={data[title]} className={`${css.link} icon-${title}`} key={title}>
+        <span className="sr-only">{title}</span>
       </a>
     ))}
   </div>
