@@ -8,15 +8,15 @@ import { Header } from 'components/Header';
 import { Instagram } from 'components/Instagram';
 import { Footer } from 'components/Footer';
 
-const Layout = ({ children }) => (
+export const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query FooQuery {
         ...SiteFragment
       }
     `}
-    // Need to use render property instead of render props https://github.com/gatsbyjs/gatsby/issues/6139
-    render={data => {
+  >
+    {data => {
       const { crypto, social, title } = data.site.siteMetadata;
 
       return (
@@ -53,7 +53,5 @@ const Layout = ({ children }) => (
         </div>
       );
     }}
-  />
+  </StaticQuery>
 );
-
-export default Layout;
