@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 
 export const siteFragment = graphql`
-  fragment SiteFragment on RootQueryType {
+  fragment SiteFragment on Query {
     site {
       siteMetadata {
         title
@@ -24,7 +24,7 @@ export const siteFragment = graphql`
 `;
 
 export const socialFragment = graphql`
-  fragment SocialFragment on RootQueryType {
+  fragment SocialFragment on Query {
     site {
       siteMetadata {
         social {
