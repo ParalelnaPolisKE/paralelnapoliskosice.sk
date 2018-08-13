@@ -3,7 +3,7 @@ import React from 'react';
 import { Page } from 'components/Page';
 
 export default () => (
-  <Page title="O Paralelnej Polis">
+  <Page title="O Paralelnej Polis Košice">
     <blockquote>
       Paralelná Polis Košice: ostrov slobody a nezávislosti.
     </blockquote>
