@@ -2,28 +2,29 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import slugify from 'slugify';
 
-import css from './PostMeta.module.css';
-
 import { Link } from 'gatsby';
 
 import { FormattedDate } from 'components/FormattedDate';
 
 export const PostMeta = ({ date, tags = [] }) => (
-  <ul className={css.meta}>
-    <li>
+  <div className="mb-4">
+    <span className="text-grey-darker">
       <FormattedDate>{date}</FormattedDate>
-    </li>
-    {tags.length > 0 && (
-      <li>
-        {tags.map((tag, i) => [
-          i ? ', ' : '',
-          <Link to={`/tag/${slugify(tag)}`} key={tag}>
-            {tag}
-          </Link>,
-        ])}
-      </li>
-    )}
-  </ul>
+    </span>
+    {' - '}
+    <ul className="inline-block p-0">
+      {tags.length > 0 && (
+        <li className="inline">
+          {tags.map((tag, i) => [
+            i ? ', ' : '',
+            <Link to={`/tag/${slugify(tag)}`} key={tag}>
+              {tag}
+            </Link>,
+          ])}
+        </li>
+      )}
+    </ul>
+  </div>
 );
 
 PostMeta.propTypes = {

@@ -8,7 +8,7 @@ export const FormattedDate = ({ children, lang = 'sk' }) => {
     year: 'numeric',
   });
 
-  return <span>{formattedDate}</span>;
+  return <time datetime={children}>{formattedDate}</time>;
 };
 
 FormattedDate.propTypes = {
