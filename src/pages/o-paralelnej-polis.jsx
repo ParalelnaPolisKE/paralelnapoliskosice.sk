@@ -29,11 +29,11 @@ export default () => (
     </p>
     <p>
       Inšpirovali sme sa tímom{' '}
-      <a href="https://paralelnapolis.sk/" target="_blank">
+      <a href="https://paralelnapolis.sk/">
         Paralelnej Polis v Bratislave
       </a>{' '}
       a{' '}
-      <a href="https://www.paralelnipolis.cz/" target="_blank">
+      <a href="https://www.paralelnipolis.cz/">
         Paralelní Polis v Prahe
       </a>{' '}
       a týmto chceme túto myšlienku naším spôsobom priblížiť aj Košiciam a
