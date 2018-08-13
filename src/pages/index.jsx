@@ -40,7 +40,7 @@ export default ({
               vzdelávanie, objavovanie a tvorenie lepších systémov pre naše
               okolie
             </b>{' '}
-            - teba, nás, biznisy, jednotlivcov - všetkých, ktorí majú záujem
+            - teba, nás, firmy, jednotlivcov - všetkých, ktorí majú záujem
             fungovať slobodnejšie a nezávislejšie. Zameriavame sa na
             experimentovanie a aplikáciu kryptomien a spojených technológií do
             bežného života.
