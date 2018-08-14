@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: ParalelnaPolisKE/web
+  repo: ParalelnaPolisKE/paralelnapoliskosice.sk
 
-display_url: https://paralelnapoliske.netlify.com
+display_url: https://www.paralelnapoliskosice.sk
 
 media_folder: static/assets
 public_folder: /assets
@@ -16,7 +16,7 @@ collections:
     label: Blog
     folder: src/pages/blog
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
       - name: title
         label: Title
