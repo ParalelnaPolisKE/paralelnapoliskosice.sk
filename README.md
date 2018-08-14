@@ -36,6 +36,12 @@ npm install
 
 Copy `.env.example` file into `.env` (with the dot at the beginning in the name) and set correct constants inside (or leave them blank).
 
+#### Environment Variables
+
+| Variable Name            | Required | Default Value | Description                           |
+| ------------------------ | :------: | :-----------: | ------------------------------------- |
+| `INSTAGRAM_ACCESS_TOKEN` |    No    |    `null`     | Access token for an instagram account |
+
 ### Start Website Locally
 
 In the project directory, just run:
