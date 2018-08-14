@@ -29,7 +29,7 @@ Blog posts are located in [`./src/pages/blog`](https://github.com/ParalelnaPolis
 In the command line (Terminal on Linux/Mac, Command Prompt on Windows) run:
 
 ```
-git clone git@github.com:ParalelnaPolisKE/web.git
+git clone git@github.com:ParalelnaPolisKE/paralelnapoliskosice.sk.git
 cd web
 npm install
 ```
