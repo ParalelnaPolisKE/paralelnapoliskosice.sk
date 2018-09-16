@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import css from './Footer.module.css';
-
 import { Centered } from './Centered';
 import { Container } from './Container';
 import { CryptoAddresses } from './CryptoAddresses';
@@ -10,9 +8,9 @@ import { Logo } from './Logo';
 import { Social } from './Social';
 
 export const Footer = ({ crypto, social }) => (
-  <footer role="contentinfo" className={css.footer}>
-    <Container className={css.container}>
-      <div className={css.content}>
+  <footer role="contentinfo" className="bg-grey-primary text-sm">
+    <Container className="py-10 md:flex md:items-center">
+      <div className="flex-1">
         <p>
           <strong>Podporte nás!</strong>
           <br />
@@ -23,7 +21,7 @@ export const Footer = ({ crypto, social }) => (
 
         <Social data={social} />
 
-        <p className={css.author}>
+        <p>
           designed by <a href="https://www.matusdesign.com">matusdesign.com</a>
         </p>
       </div>

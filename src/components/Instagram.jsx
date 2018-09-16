@@ -6,8 +6,8 @@ import { Container } from 'components/Container';
 import InstagramImages from 'components/InstagramImages';
 
 export const Instagram = () => (
-  <div className={css.instagram}>
-    <Container className={css.instaContainer}>
+  <div className="bg-grey-darker py-4">
+    <Container className="flex justify-center overflow-hidden">
       <InstagramImages>
         {images =>
           images.map((image, i) => (

@@ -32,7 +32,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "instascrap": "node ./utils/instagram/scrape.js",
-    "tailwind": "postcss ./src/styles/tailwind.css -o ./src/styles/tailwind.custom.css"
+    "tailwind": "postcss ./src/css/styles.css -o ./src/css/output.css"
   },
   "dependencies": {
     "babel-plugin-tailwind": "^0.1.10",

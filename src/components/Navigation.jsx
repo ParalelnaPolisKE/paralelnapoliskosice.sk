@@ -1,11 +1,12 @@
 import React from 'react';
 
-import css from './Navigation.module.css';
-
 import { NavigationButton } from './NavigationButton';
 
 export const Navigation = () => (
-  <nav role="navigation" className={css.navigation}>
+  <nav
+    role="navigation"
+    className="flex flex-col items-end md:items-center md:flex-row"
+  >
     <NavigationButton to="/">Domov</NavigationButton>
     <NavigationButton to="/o-paralelnej-polis">
       O Paralelnej Polis

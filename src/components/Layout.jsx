@@ -2,7 +2,10 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
-import css from './Layout.module.css';
+import 'css/output.css';
+import 'css/global.css';
+import 'css/fontello.css';
+import 'css/utilities.css';
 
 import { Header } from 'components/Header';
 import { Instagram } from 'components/Instagram';
@@ -20,7 +23,7 @@ export const Layout = ({ children }) => (
       const { crypto, social, title } = data.site.siteMetadata;
 
       return (
-        <div className={css.site}>
+        <div className="flex flex-col min-h-screen">
           <Helmet defaultTitle={title} titleTemplate={`%s | ${title}`}>
             <link
               rel="apple-touch-icon"
@@ -45,7 +48,7 @@ export const Layout = ({ children }) => (
 
           <Header />
 
-          <main role="main" className={css.content}>
+          <main role="main" className="flex-1 py-8 my-10">
             {children}
           </main>
           <Instagram />

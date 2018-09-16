@@ -1,12 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import css from './CryptoAddresses.module.css';
-
 export const CryptoAddresses = ({ data }) => (
-  <ul className={css.addresses}>
+  <ul className="list-reset">
     {Object.keys(data).map(title => (
-      <li key={title} className={css.address}>
+      <li key={title} style={{ wordBreak: 'break-all' }}>
         <strong>{title}</strong>: {data[title]}
       </li>
     ))}

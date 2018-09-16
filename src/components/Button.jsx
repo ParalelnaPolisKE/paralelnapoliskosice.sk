@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 
 export const Button = ({ children, to }) => (
   <Link
-    className="inline-block no-underline text-white hover:text-white bg-black hover:bg-teal-darker rounded-full py-3 px-6"
+    className="inline-block no-underline hover:no-underline text-white hover:text-white bg-black hover:bg-grey-darker rounded-full py-3 px-6"
     to={to}
   >
     {children}

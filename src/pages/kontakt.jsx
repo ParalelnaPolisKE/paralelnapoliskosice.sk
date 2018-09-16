@@ -3,7 +3,6 @@ import { graphql } from 'gatsby';
 
 import { Page } from 'components/Page';
 import { Social } from 'components/Social';
-import css from 'pages/kontakt.module.css';
 
 export default ({
   data: {
@@ -13,14 +12,12 @@ export default ({
   },
 }) => (
   <Page title="Kontakt">
-    <div className={css.email}>
+    <p>
       <a href="mailto:kosice@paralelnapolis.sk">kosice@paralelnapolis.sk</a>
-    </div>
-    <div>
-      <h2>Sociálne siete</h2>
+    </p>
 
-      <Social data={social} />
-    </div>
+    <h2>Sociálne siete</h2>
+    <Social data={social} />
   </Page>
 );
 

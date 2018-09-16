@@ -2,24 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
-import css from './PostLinks.module.css';
-
 const getDate = (date, dateLocal) => (
-  <div className={css.date}>
+  <div className="text-grey text-sm">
     <time dateTime={date}>{dateLocal}</time>
   </div>
 );
 
 export const PostLinks = ({ next, prev }) => (
-  <div className={css.wrapper}>
+  <div className="border-t border-grey-primary flex py-4 mt-20">
     {prev && (
-      <Link to={prev.fields.url} className={css.prev}>
+      <Link to={prev.fields.url} className="flex-1">
         {prev.frontmatter.title}
         {getDate(prev.fields.date, next.fields.dateLocal)}
       </Link>
     )}
     {next && (
-      <Link to={next.fields.url} className={css.next}>
+      <Link to={next.fields.url} className="flex-1 text-right">
         {next.frontmatter.title}
         {getDate(next.fields.date, next.fields.dateLocal)}
       </Link>

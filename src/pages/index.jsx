@@ -1,13 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import 'styles/tailwind.custom.css';
-
-import 'css/variables.css';
-import 'css/global.css';
-import 'css/fontello.css';
-import 'css/utilities.css';
-
 import { getPosts } from 'utils';
 
 import { Layout } from 'components/Layout';
