@@ -2,14 +2,6 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
-import 'bootstrap/dist/css/bootstrap-reboot.css';
-import 'bootstrap/dist/css/bootstrap-grid.css';
-
-import 'css/variables.css';
-import 'css/global.css';
-import 'css/fontello.css';
-import 'css/utilities.css';
-
 import css from './Layout.module.css';
 
 import { Header } from 'components/Header';
