@@ -1,10 +1,3 @@
-/* html {
-  @apply font-bold;
-  background: var(--primaryColor);
-  font-size: 16px;
-  overflow-y: scroll;
-} */
-
 html {
   font-size: 16px;
   font-family: 'system-ui', 'BlinkMacSystemFont', '-apple-system', 'Segoe UI',
@@ -36,7 +29,7 @@ a:hover {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2rem !important;
   font-weight: normal;
 }
 
@@ -55,10 +48,10 @@ section {
 
 @media (min-width: 700px) {
   html {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 
   h1 {
-    font-size: 3.75rem;
+    font-size: 3.75rem !important;
   }
 }
