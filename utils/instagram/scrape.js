@@ -71,7 +71,9 @@ fetch(url)
     }
 
     const images = body.data
-      .filter(image => image['type'] === 'image')
+      .filter(
+        image => image['type'] === 'image' || image['type'] === 'carousel'
+      )
       .map(image => ({
         id: image.id,
         time: toISO8601(image.created_time),
