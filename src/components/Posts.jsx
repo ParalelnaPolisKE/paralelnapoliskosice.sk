@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { PostExcerpt } from 'components/PostExcerpt';
 
 export const Posts = ({ posts }) => (
-  <div className="flex flex-wrap">
+  <div className="flex -mx-2 flex-wrap">
     {posts.map(post => (
       <PostExcerpt
         key={post.title}

@@ -15,7 +15,7 @@ export const PostExcerpt = ({
   url,
   tags = [],
 }) => (
-  <article className="w-full sm:w-1/2 lg:w-1/3">
+  <article className="w-full sm:w-1/2 lg:w-1/3 px-2 mb-8">
     <PostMeta date={date} dateLocal={dateLocal} tags={tags} />
     {imageSizes && (
       <Link to={url}>
