@@ -50,6 +50,7 @@ export const markdownMetadataFragment = graphql`
     timeToRead
     fields {
       date
+      dateLocal: date(formatString: "DD. MMMM YYYY", locale: "sk")
       slug
       url
     }

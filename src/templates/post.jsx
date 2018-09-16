@@ -10,7 +10,11 @@ export default ({
   pageContext: { prev, next },
 }) => (
   <Page title={post.frontmatter.title}>
-    <PostMeta date={post.fields.date} tags={post.frontmatter.tags} />
+    <PostMeta
+      date={post.fields.date}
+      dateLocal={post.fields.dateLocal}
+      tags={post.frontmatter.tags}
+    />
     <article>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </article>

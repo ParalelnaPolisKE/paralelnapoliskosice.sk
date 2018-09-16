@@ -10,6 +10,7 @@ import { PostMeta } from 'components/PostMeta';
 
 export const PostExcerpt = ({
   date,
+  dateLocal,
   children,
   imageSizes,
   title,
@@ -17,7 +18,7 @@ export const PostExcerpt = ({
   tags = [],
 }) => (
   <article className="col-12 col-md-6 col-lg-4">
-    <PostMeta date={date} tags={tags} />
+    <PostMeta date={date} dateLocal={dateLocal} tags={tags} />
     {imageSizes && (
       <Link to={url}>
         <Img sizes={imageSizes} className={css.image} />
@@ -32,6 +33,7 @@ export const PostExcerpt = ({
 
 PostExcerpt.propTypes = {
   date: PropTypes.string.isRequired,
+  dateLocal: PropTypes.string.isRequired,
   children: PropTypes.string.isRequired,
   imageSizes: PropTypes.object,
   title: PropTypes.string.isRequired,

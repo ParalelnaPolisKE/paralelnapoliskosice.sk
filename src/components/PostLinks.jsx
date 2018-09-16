@@ -4,11 +4,9 @@ import { Link } from 'gatsby';
 
 import css from './PostLinks.module.css';
 
-import { FormattedDate } from 'components/FormattedDate';
-
-const getDate = date => (
+const getDate = (date, dateLocal) => (
   <div className={css.date}>
-    <FormattedDate>{date}</FormattedDate>
+    <time dateTime={date}>{dateLocal}</time>
   </div>
 );
 
@@ -17,13 +15,13 @@ export const PostLinks = ({ next, prev }) => (
     {prev && (
       <Link to={prev.fields.url} className={css.prev}>
         {prev.frontmatter.title}
-        {getDate(prev.fields.date)}
+        {getDate(prev.fields.date, next.fields.dateLocal)}
       </Link>
     )}
     {next && (
       <Link to={next.fields.url} className={css.next}>
         {next.frontmatter.title}
-        {getDate(next.fields.date)}
+        {getDate(next.fields.date, next.fields.dateLocal)}
       </Link>
     )}
   </div>

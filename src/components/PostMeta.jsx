@@ -6,12 +6,10 @@ import css from './PostMeta.module.css';
 
 import { Link } from 'gatsby';
 
-import { FormattedDate } from 'components/FormattedDate';
-
-export const PostMeta = ({ date, tags = [] }) => (
+export const PostMeta = ({ date, dateLocal, tags = [] }) => (
   <ul className={css.meta}>
     <li>
-      <FormattedDate>{date}</FormattedDate>
+      <time dateTime={date}>{dateLocal}</time>
     </li>
     {tags.length > 0 && (
       <li>
@@ -28,5 +26,6 @@ export const PostMeta = ({ date, tags = [] }) => (
 
 PostMeta.propTypes = {
   date: PropTypes.string.isRequired,
+  dateLocal: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string),
 };

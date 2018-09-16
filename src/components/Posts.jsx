@@ -12,6 +12,7 @@ export const Posts = ({ posts }) => (
         <PostExcerpt
           key={post.title}
           date={post.date}
+          dateLocal={post.dateLocal}
           imageSizes={post.imageSizes}
           title={post.title}
           url={post.url}
