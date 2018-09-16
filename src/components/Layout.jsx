@@ -48,7 +48,7 @@ export const Layout = ({ children }) => (
 
           <Header />
 
-          <main role="main" className="flex-1 py-8 my-10">
+          <main role="main" className="flex-1 px-4 py-8 my-10">
             {children}
           </main>
           <Instagram />

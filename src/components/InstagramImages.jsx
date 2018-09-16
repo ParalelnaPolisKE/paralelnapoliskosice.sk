@@ -14,8 +14,8 @@ const InstagramImages = ({ children }) => (
               time
               image {
                 childImageSharp {
-                  resolutions(width: 150, height: 150, quality: 80) {
-                    ...GatsbyImageSharpResolutions
+                  fluid(maxWidth: 150, maxHeight: 150, quality: 80) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
               }
@@ -27,7 +27,7 @@ const InstagramImages = ({ children }) => (
     render={data => {
       const images = data.allInstagramJson.edges.map(({ node: post }) => (
         <a key={post.id} href={post.link} title={post.time}>
-          <Img resolutions={post.image.childImageSharp.resolutions} />
+          <Img fluid={post.image.childImageSharp.fluid} />
         </a>
       ));
 
