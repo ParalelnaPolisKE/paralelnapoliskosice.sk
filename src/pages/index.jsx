@@ -52,7 +52,7 @@ export default ({
 };
 
 export const query = graphql`
-  query IndexQuery {
+  query {
     allMarkdownRemark(
       sort: { fields: [fields___date], order: DESC }
       limit: 3

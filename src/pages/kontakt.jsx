@@ -22,7 +22,7 @@ export default ({
 );
 
 export const query = graphql`
-  query ContactsQuery {
+  query {
     ...SocialFragment
   }
 `;

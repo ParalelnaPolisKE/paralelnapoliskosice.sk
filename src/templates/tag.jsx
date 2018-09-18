@@ -8,7 +8,9 @@ import { Posts } from 'components/Posts';
 import { getPosts } from 'utils';
 
 export default ({
-  data: { allMarkdownRemark: { edges: posts } },
+  data: {
+    allMarkdownRemark: { edges: posts },
+  },
   pageContext: { tag },
 }) => (
   <Page title={`Príspevky označené tagom - ${tag}`}>
@@ -20,7 +22,7 @@ export default ({
 );
 
 export const query = graphql`
-  query TagsQuery($tag: String!) {
+  query($tag: String!) {
     allMarkdownRemark(
       filter: { frontmatter: { tags: { in: [$tag] } } }
       sort: { fields: [fields___date], order: DESC }
