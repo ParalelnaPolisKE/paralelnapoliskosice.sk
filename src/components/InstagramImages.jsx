@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 const InstagramImages = ({ children }) => (
   <StaticQuery
     query={graphql`
-      query InstagramPostsQuery {
+      {
         allInstagramJson {
           edges {
             node {

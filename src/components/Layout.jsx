@@ -14,7 +14,7 @@ import { Footer } from 'components/Footer';
 export const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
-      query {
+      {
         ...SiteFragment
       }
     `}

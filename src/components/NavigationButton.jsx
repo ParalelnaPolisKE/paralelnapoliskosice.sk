@@ -1,10 +1,19 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-export const NavigationButton = ({ children, to }) => (
+const classes = 'uppercase md:text-lg md:p-4';
+const activeClasses = `${classes} font-bold`;
+
+const isActive = ({ isCurrent }) =>
+  isCurrent ? { className: activeClasses } : {};
+
+const isPartiallyActive = ({ isPartiallyCurrent }) =>
+  isPartiallyCurrent ? { className: activeClasses } : {};
+
+export const NavigationButton = ({ children, to, exact = false }) => (
   <Link
-    activeClassName="font-bold"
-    className="uppercase md:text-lg md:p-4"
+    getProps={exact ? isActive : isPartiallyActive}
+    className={classes}
     to={to}
   >
     {children}

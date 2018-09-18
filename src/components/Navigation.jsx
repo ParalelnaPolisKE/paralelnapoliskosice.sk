@@ -7,7 +7,9 @@ export const Navigation = () => (
     role="navigation"
     className="flex flex-col items-end md:items-center md:flex-row"
   >
-    <NavigationButton to="/">Domov</NavigationButton>
+    <NavigationButton to="/" exact>
+      Domov
+    </NavigationButton>
     <NavigationButton to="/o-paralelnej-polis">
       O Paralelnej Polis
     </NavigationButton>

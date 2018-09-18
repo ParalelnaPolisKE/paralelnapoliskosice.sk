@@ -10,7 +10,7 @@ export const Posts = ({ posts }) => (
         key={post.title}
         date={post.date}
         dateLocal={post.dateLocal}
-        imageSizes={post.imageSizes}
+        images={post.images}
         title={post.title}
         url={post.url}
         tags={post.tags}

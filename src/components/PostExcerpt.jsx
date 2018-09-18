@@ -10,16 +10,16 @@ export const PostExcerpt = ({
   date,
   dateLocal,
   children,
-  imageSizes,
+  images,
   title,
   url,
   tags = [],
 }) => (
   <article className="w-full sm:w-1/2 lg:w-1/3 px-2 mb-8">
     <PostMeta date={date} dateLocal={dateLocal} tags={tags} />
-    {imageSizes && (
+    {images && (
       <Link to={url}>
-        <Img sizes={imageSizes} className="mb-4" />
+        <Img fluid={images} className="mb-4" />
       </Link>
     )}
     <h2 className="font-medium mb-4">
@@ -33,7 +33,7 @@ PostExcerpt.propTypes = {
   date: PropTypes.string.isRequired,
   dateLocal: PropTypes.string.isRequired,
   children: PropTypes.string.isRequired,
-  imageSizes: PropTypes.object,
+  images: PropTypes.object,
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string),
