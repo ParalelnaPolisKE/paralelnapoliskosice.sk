@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import css from './Post.module.css';
-
 import Img from 'gatsby-image';
 import { Link } from 'gatsby';
 
@@ -17,14 +15,14 @@ export const PostExcerpt = ({
   url,
   tags = [],
 }) => (
-  <article className="col-12 col-md-6 col-lg-4">
+  <article className="w-full sm:w-1/2 lg:w-1/3 px-2 mb-8">
     <PostMeta date={date} dateLocal={dateLocal} tags={tags} />
     {imageSizes && (
       <Link to={url}>
-        <Img sizes={imageSizes} className={css.image} />
+        <Img sizes={imageSizes} className="mb-4" />
       </Link>
     )}
-    <h2 className={css.title}>
+    <h2 className="font-medium mb-4">
       <Link to={url}>{title}</Link>
     </h2>
     {children}

@@ -1,16 +1,14 @@
 import React from 'react';
 
-import css from './Header.module.css';
-
 import { Container } from './Container';
 import { Logo } from './Logo';
 import { Navigation } from './Navigation';
 
 export const Header = () => (
-  <header className={css.header}>
+  <header className="bg-grey-primary p-4">
     <Container>
-      <div className={css.container}>
-        <div className={css.logo}>
+      <div className="flex">
+        <div className="flex-1">
           <Logo />
         </div>
         <Navigation />

@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import css from './Social.module.css';
-
 export const Social = ({ data }) => (
-  <div className={css.social}>
+  <div className="py-4">
     {Object.keys(data).map(title => (
-      <a href={data[title]} className={`${css.link} icon-${title}`} key={title}>
+      <a
+        href={data[title]}
+        className={`icon-${title} text-2xl no-underline hover:no-underline`}
+        key={title}
+      >
         <span className="sr-only">{title}</span>
       </a>
     ))}

@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
-import css from './Button.module.css';
-
 export const Button = ({ children, to }) => (
-  <Link className={css.button} to={to}>
+  <Link
+    className="inline-block no-underline hover:no-underline text-white hover:text-white bg-black hover:bg-grey-darker rounded-full py-3 px-6"
+    to={to}
+  >
     {children}
   </Link>
 );

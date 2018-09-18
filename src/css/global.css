@@ -1,11 +1,15 @@
 html {
-  background: var(--primaryColor);
   font-size: 16px;
+  font-family: 'system-ui', 'BlinkMacSystemFont', '-apple-system', 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', 'sans-serif';
   overflow-y: scroll;
 }
 
 body {
+  color: #212529;
   font-size: 1rem;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -15,15 +19,17 @@ body,
 }
 
 a {
-  color: var(--secondaryColor);
+  color: #212529;
+  transition: background-color ease 0.25s;
+  text-decoration: none;
 }
 
 a:hover {
-  color: var(--secondaryColor);
+  text-decoration: underline;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2rem !important;
   font-weight: normal;
 }
 
@@ -32,16 +38,20 @@ h3 {
   font-weight: normal;
 }
 
+p {
+  margin: 1rem 0 !important;
+}
+
 section {
   margin-bottom: 2.5rem;
 }
 
 @media (min-width: 700px) {
   html {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 
   h1 {
-    font-size: 3.75rem;
+    font-size: 3.75rem !important;
   }
 }

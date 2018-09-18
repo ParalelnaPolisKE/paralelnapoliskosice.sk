@@ -24,17 +24,18 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "prestart": "npm run instascrap",
+    "prestart": "npm run instascrap && npm run tailwind",
     "start": "gatsby develop",
-    "prebuild": "npm run instascrap",
+    "prebuild": "npm run instascrap && npm run tailwind",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "instascrap": "node ./utils/instagram/scrape.js"
+    "instascrap": "node ./utils/instagram/scrape.js",
+    "tailwind": "postcss ./src/css/styles.css -o ./src/css/output.css"
   },
   "dependencies": {
-    "bootstrap": "^4.1.2",
+    "babel-plugin-tailwind": "^0.1.10",
     "dotenv": "^5.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "gatsby": "^2.0.0-beta.98",
@@ -56,12 +57,15 @@
     "mkdirp": "^0.5.1",
     "netlify-cms": "^1.7.0",
     "node-fetch": "^2.2.0",
+    "postcss": "^7.0.0",
+    "postcss-cli": "^5.0.1",
     "progress": "^2.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
     "request": "^2.87.0",
-    "slugify": "^1.2.9"
+    "slugify": "^1.2.9",
+    "tailwindcss": "^0.6.4"
   },
   "devDependencies": {
     "prettier": "^1.11.0"
