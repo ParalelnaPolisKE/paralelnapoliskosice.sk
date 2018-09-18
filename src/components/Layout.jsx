@@ -15,12 +15,16 @@ export const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       {
-        ...SiteFragment
+        site {
+          siteMetadata {
+            title
+          }
+        }
       }
     `}
   >
     {data => {
-      const { crypto, social, title } = data.site.siteMetadata;
+      const { title } = data.site.siteMetadata;
 
       return (
         <div className="flex flex-col min-h-screen">
@@ -51,8 +55,9 @@ export const Layout = ({ children }) => (
           <main role="main" className="flex-1 px-4 py-8 my-10">
             {children}
           </main>
+
           <Instagram />
-          <Footer crypto={crypto} social={social} />
+          <Footer />
         </div>
       );
     }}

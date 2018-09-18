@@ -1,20 +1,39 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { StaticQuery, graphql } from 'gatsby';
 
-export const Social = ({ data }) => (
+export const Social = () => (
   <div className="py-4">
-    {Object.keys(data).map(title => (
-      <a
-        href={data[title]}
-        className={`icon-${title} text-2xl no-underline hover:no-underline`}
-        key={title}
-      >
-        <span className="sr-only">{title}</span>
-      </a>
-    ))}
+    <StaticQuery
+      query={graphql`
+        {
+          site {
+            siteMetadata {
+              social {
+                facebook
+                twitter
+                instagram
+                github
+              }
+            }
+          }
+        }
+      `}
+    >
+      {({
+        site: {
+          siteMetadata: { social },
+        },
+      }) =>
+        Object.keys(social).map(title => (
+          <a
+            href={social[title]}
+            className={`icon-${title} text-2xl no-underline hover:no-underline`}
+            key={title}
+          >
+            <span className="sr-only">{title}</span>
+          </a>
+        ))
+      }
+    </StaticQuery>
   </div>
 );
-
-Social.propTypes = {
-  data: PropTypes.object.isRequired,
-};

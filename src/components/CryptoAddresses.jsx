@@ -1,16 +1,36 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { StaticQuery, graphql } from 'gatsby';
 
-export const CryptoAddresses = ({ data }) => (
+export const CryptoAddresses = () => (
   <ul className="list-reset">
-    {Object.keys(data).map(title => (
-      <li key={title} style={{ wordBreak: 'break-all' }}>
-        <strong>{title}</strong>: {data[title]}
-      </li>
-    ))}
+    <StaticQuery
+      query={graphql`
+        {
+          site {
+            siteMetadata {
+              crypto {
+                BTC
+                LTC
+                XMR
+                ETH
+                ETC
+              }
+            }
+          }
+        }
+      `}
+    >
+      {({
+        site: {
+          siteMetadata: { crypto },
+        },
+      }) =>
+        Object.keys(crypto).map(title => (
+          <li key={title} style={{ wordBreak: 'break-all' }}>
+            <strong>{title}</strong>: {crypto[title]}
+          </li>
+        ))
+      }
+    </StaticQuery>
   </ul>
 );
-
-CryptoAddresses.propTypes = {
-  data: PropTypes.object.isRequired,
-};

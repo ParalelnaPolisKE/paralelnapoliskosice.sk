@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { Centered } from './Centered';
 import { Container } from './Container';
@@ -7,7 +6,7 @@ import { CryptoAddresses } from './CryptoAddresses';
 import { Logo } from './Logo';
 import { Social } from './Social';
 
-export const Footer = ({ crypto, social }) => (
+export const Footer = () => (
   <footer role="contentinfo" className="bg-grey-primary text-sm px-4">
     <Container className="py-10 md:flex md:items-center">
       <div className="flex-1">
@@ -17,9 +16,8 @@ export const Footer = ({ crypto, social }) => (
           Budeme vďační za akúkoľvek podporu. Prijímame:
         </p>
 
-        <CryptoAddresses data={crypto} />
-
-        <Social data={social} />
+        <CryptoAddresses />
+        <Social />
 
         <p>
           designed by <a href="https://www.matusdesign.com">matusdesign.com</a>
@@ -32,8 +30,3 @@ export const Footer = ({ crypto, social }) => (
     </Container>
   </footer>
 );
-
-Footer.propTypes = {
-  crypto: PropTypes.object.isRequired,
-  social: PropTypes.object.isRequired,
-};
