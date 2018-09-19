@@ -54,6 +54,7 @@
     "gatsby-transformer-json": "^1.0.20",
     "gatsby-transformer-remark": "^2.1.1",
     "gatsby-transformer-sharp": "^2.1.1",
+    "google-maps-react": "^2.0.2",
     "mkdirp": "^0.5.1",
     "netlify-cms": "^2.1.2",
     "node-fetch": "^2.2.0",

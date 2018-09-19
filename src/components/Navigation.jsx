@@ -15,5 +15,6 @@ export const Navigation = () => (
     </NavigationButton>
     <NavigationButton to="/blog">Blog</NavigationButton>
     <NavigationButton to="/kontakt">Kontakt</NavigationButton>
+    <NavigationButton to="/mapa">Mapa</NavigationButton>
   </nav>
 );

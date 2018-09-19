@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Robodog",
+    "description": "bla bla",
+    "crypto": ["BTC", "LTC", "DOG"],
+    "coordinates": {
+      "lat": 48.720384,
+      "lng": 21.2538303
+    }
+  },
+  {
+    "name": "Brgr",
+    "description": "fkaaaa",
+    "crypto": ["BTC"],
+    "coordinates": {
+      "lat": 48.720384,
+      "lng": 21.258336
+    }
+  }
+]
