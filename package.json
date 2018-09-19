@@ -36,6 +36,7 @@
     "tailwind": "postcss ./src/css/styles.css -o ./src/css/output.css"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^1.0.1",
     "babel-plugin-tailwind": "^0.1.10",
     "dotenv": "^5.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
@@ -46,6 +47,7 @@
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-netlify-cms": "^3.0.2",
     "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-purgecss": "^2.4.0",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-remove-trailing-slashes": "^2.0.0",
     "gatsby-plugin-sharp": "^2.0.5",
