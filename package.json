@@ -29,6 +29,7 @@
     "prebuild": "npm run instascrap && npm run tailwind",
     "build": "gatsby build",
     "serve": "gatsby serve",
+    "clean": "rimraf .cache public",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "instascrap": "node ./utils/instagram/scrape.js",
@@ -68,6 +69,7 @@
     "tailwindcss": "^0.6.4"
   },
   "devDependencies": {
-    "prettier": "^1.14.2"
+    "prettier": "^1.14.2",
+    "rimraf": "^2.6.2"
   }
 }
