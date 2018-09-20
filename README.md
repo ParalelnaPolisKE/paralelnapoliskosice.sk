@@ -3,6 +3,8 @@
 </p>
 <h1 align="center">Paralelná Polis Košice</h1>
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 > Website of Paralelná Polis Košice.
 
 ## Writing a post
