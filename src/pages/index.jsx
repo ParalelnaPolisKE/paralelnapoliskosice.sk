@@ -5,7 +5,6 @@ import { getPosts } from 'utils';
 
 import { Layout } from 'components/Layout';
 import { Posts } from 'components/Posts';
-import { Centered } from 'components/Centered';
 import { Container } from 'components/Container';
 import { Button } from 'components/Button';
 
@@ -42,9 +41,9 @@ export default ({
         <section>
           <h1>Blog</h1>
           <Posts posts={getPosts(posts)} />
-          <Centered>
+          <div className="text-center">
             <Button to="/blog">Všetky príspevky</Button>
-          </Centered>
+          </div>
         </section>
       </Container>
     </Layout>

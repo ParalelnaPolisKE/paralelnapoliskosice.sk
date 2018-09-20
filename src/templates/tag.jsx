@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import { Button } from 'components/Button';
-import { Centered } from 'components/Centered';
 import { Page } from 'components/Page';
 import { Posts } from 'components/Posts';
 import { getPosts } from 'utils';
@@ -15,9 +14,9 @@ export default ({
 }) => (
   <Page title={`Príspevky označené tagom - ${tag}`}>
     <Posts posts={getPosts(posts)} />
-    <Centered>
+    <div className="text-center">
       <Button to="/blog">Všetky príspevky</Button>
-    </Centered>
+    </div>
   </Page>
 );
 

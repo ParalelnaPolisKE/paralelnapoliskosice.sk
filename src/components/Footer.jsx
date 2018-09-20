@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { Centered } from './Centered';
 import { Container } from './Container';
 import { CryptoAddresses } from './CryptoAddresses';
 import { Logo } from './Logo';
@@ -24,9 +23,9 @@ export const Footer = () => (
         </p>
       </div>
 
-      <Centered>
+      <div className="text-center">
         <Logo />
-      </Centered>
+      </div>
     </Container>
   </footer>
 );
