@@ -1,8 +1,6 @@
 .instaImage {
-  line-height: 0;
   filter: grayscale(1);
   transition: all 0.25s ease-in;
-  margin: 0 0.5rem;
   flex-basis: 150px;
 }
 

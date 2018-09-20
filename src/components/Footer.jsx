@@ -19,7 +19,7 @@ export const Footer = () => (
         <CryptoAddresses />
         <Social />
 
-        <p>
+        <p className="font-light">
           designed by <a href="https://www.matusdesign.com">matusdesign.com</a>
         </p>
       </div>

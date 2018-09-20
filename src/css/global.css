@@ -29,7 +29,7 @@ a:hover {
 }
 
 h1 {
-  font-size: 2rem !important;
+  font-size: 2rem;
   font-weight: normal;
 }
 
@@ -39,7 +39,7 @@ h3 {
 }
 
 p {
-  margin: 1rem 0 !important;
+  margin: 1rem 0;
 }
 
 section {
@@ -48,10 +48,10 @@ section {
 
 @media (min-width: 700px) {
   html {
-    font-size: 18px !important;
+    font-size: 18px;
   }
 
   h1 {
-    font-size: 3.75rem !important;
+    font-size: 3.75rem;
   }
 }
