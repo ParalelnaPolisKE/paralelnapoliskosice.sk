@@ -2,6 +2,9 @@
   <img src="src/images/logo.svg">
 </p>
 <h1 align="center">Paralelná Polis Košice</h1>
+<div align="center">
+  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+</div>
 
 > Website of Paralelná Polis Košice.
 
