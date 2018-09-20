@@ -85,7 +85,7 @@ class MapContainer extends React.Component {
   }
 }
 
-export const CryptoMap = GoogleApiWrapper({
-  apiKey: 'AIzaSyAFocftpfYFwNwsWhEqM8cYClYQAAT_uD8',
+export const CryptoMap = GoogleApiWrapper(({ apiKey }) => ({
+  apiKey,
   v: '3.30',
-})(MapContainer);
+}))(MapContainer);
