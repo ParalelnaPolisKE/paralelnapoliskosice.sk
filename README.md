@@ -41,7 +41,6 @@ Copy `.env.example` file into `.env` (with the dot at the beginning in the name)
 | Variable Name            | Required | Default Value | Description                           |
 | ------------------------ | :------: | :-----------: | ------------------------------------- |
 | `INSTAGRAM_ACCESS_TOKEN` |    No    |    `null`     | Access token for an instagram account |
-| `GOOGLE_MAPS_API_KEY`    |    No    |    `null`     | API key needed for v3 of Google Maps  |
 
 ### Start Website Locally
 

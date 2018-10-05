@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 module.exports = {
   siteMetadata: {
     title: 'Paralelná Polis Košice',
@@ -19,7 +17,6 @@ module.exports = {
       ETH: '0x610825C5DFcbc72E284E5a5F381f4fd728263706',
       ETC: '0x1934945354BDe5b34F0c68E6AA78492050856D38',
     },
-    googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
   },
   plugins: [
     // 'gatsby-plugin-feed',
