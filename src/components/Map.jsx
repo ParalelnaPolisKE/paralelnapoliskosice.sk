@@ -1,5 +1,5 @@
 import React from 'react';
-import { Map as LeafletMap, TileLayer, Marker } from 'react-leaflet';
+import { Map as LeafletMap, TileLayer, Marker, Tooltip } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -31,6 +31,7 @@ export class Map extends React.Component {
 
   render() {
     const { active, position, zoom } = this.state;
+
     return (
       <div className="mb-8 md:flex">
         <LeafletMap
@@ -56,7 +57,9 @@ export class Map extends React.Component {
               key={business.name}
               position={business.coordinates}
               onclick={() => this.setActivePoint(business)}
-            />
+            >
+              <Tooltip direction="top">{business.name}</Tooltip>
+            </Marker>
           ))}
         </LeafletMap>
         <div className="md:w-1/3 md:ml-4">
