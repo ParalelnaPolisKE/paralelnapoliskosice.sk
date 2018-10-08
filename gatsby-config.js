@@ -29,7 +29,7 @@ module.exports = {
         head: true,
       },
     },
-    // 'gatsby-plugin-netlify-cms',
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-remove-trailing-slashes',
     'gatsby-transformer-json',
