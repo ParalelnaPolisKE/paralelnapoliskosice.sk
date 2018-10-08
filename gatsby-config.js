@@ -1,3 +1,5 @@
+const TailwindExtractor = require('./utils/purgecss-tailwind-extractor');
+
 module.exports = {
   siteMetadata: {
     title: 'Paralelná Polis Košice',
@@ -61,6 +63,19 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        extractors: [
+          {
+            extractor: TailwindExtractor,
+            extensions: ['js', 'jsx'],
+          },
+        ],
+        ignore: ['fontello.css'],
+        whitelist: ['___gatsby'],
+      },
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
