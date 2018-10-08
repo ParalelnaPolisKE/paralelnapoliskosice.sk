@@ -3,14 +3,14 @@
   "description": "Paralelna Polis Kosice Web",
   "version": "1.0.0",
   "author": "Paralelna Polis Kosice",
-  "homepage": "https://ke.paralelnapolis.sk",
+  "homepage": "https://www.paralelnapoliskosice.sk",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git@github.com:ParalelnaPolisKE/web.git"
+    "url": "git@github.com:ParalelnaPolisKE/paralelnapoliskosice.sk.git"
   },
   "bugs": {
-    "url": "https://github.com/ParalelnaPolisKE/web/issues"
+    "url": "https://github.com/ParalelnaPolisKE/paralelnapoliskosice.sk/issues"
   },
   "keywords": [
     "parallel",
@@ -24,19 +24,18 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "prestart": "npm run instascrap && npm run tailwind",
+    "prestart": "npm run instascrap && npm run postcss",
     "start": "gatsby develop",
-    "prebuild": "npm run instascrap && npm run tailwind",
+    "prebuild": "npm run instascrap && npm run postcss",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "instascrap": "node ./utils/instagram/scrape.js",
-    "tailwind": "postcss ./src/css/styles.css -o ./src/css/output.css"
+    "postcss": "postcss ./src/css/styles.css -o ./src/css/output.css"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^1.0.1",
     "babel-plugin-tailwind": "^0.1.10",
     "dotenv": "^5.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
@@ -61,7 +60,7 @@
     "netlify-cms": "^2.1.2",
     "node-fetch": "^2.2.0",
     "postcss": "^7.0.0",
-    "postcss-cli": "^5.0.1",
+    "postcss-cli": "^6.0.0",
     "progress": "^2.0.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
