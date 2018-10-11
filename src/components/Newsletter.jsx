@@ -30,7 +30,7 @@ export const Newsletter = () => (
           name="MERGE1"
           id="MERGE1"
           size="25"
-          placeholder="meno"
+          placeholder="prvé meno"
           className="p-4 m-1"
         />
         <input
