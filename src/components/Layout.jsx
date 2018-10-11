@@ -63,8 +63,8 @@ export const Layout = ({ children }) => (
               <p>Prihlás sa na odber newslettera:</p>
               <Newsletter />
               <p className="text-xs text-grey-dark">
-                Budeme ťa informovať o aktuálnom dianí z prostredia Paralelnej
-                Polis.
+                Z času na čas ťa budeme informovať o aktuálnom dianí z
+                prostredia Paralelnej Polis.
               </p>
             </div>
           </div>
