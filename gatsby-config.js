@@ -19,6 +19,8 @@ module.exports = {
       ETH: '0x610825C5DFcbc72E284E5a5F381f4fd728263706',
       ETC: '0x1934945354BDe5b34F0c68E6AA78492050856D38',
     },
+    mailchimpUrl:
+      'https://paralelnapoliskosice.us19.list-manage.com/subscribe/post?u=8affbd08463d07e25a8bbcca4&id=b02c302d92',
   },
   plugins: [
     // 'gatsby-plugin-feed',
