@@ -10,6 +10,7 @@ import 'css/utilities.css';
 import { Header } from 'components/Header';
 import { Instagram } from 'components/Instagram';
 import { Footer } from 'components/Footer';
+import { Newsletter } from 'components/Newsletter';
 
 export const Layout = ({ children }) => (
   <StaticQuery
@@ -55,6 +56,18 @@ export const Layout = ({ children }) => (
           <main role="main" className="flex-1 px-4 py-8 my-10">
             {children}
           </main>
+
+          <div className="bg-grey-primary p-4 sm:py-8 text-center">
+            <div className="container">
+              <h2 className="text-grey-darker">Zostaňme v kontakte</h2>
+              <p>Prihlás sa na odber newslettera:</p>
+              <Newsletter />
+              <p className="text-xs text-grey-dark">
+                Z času na čas ťa budeme informovať o aktuálnom dianí z
+                prostredia Paralelnej Polis.
+              </p>
+            </div>
+          </div>
 
           <Instagram />
           <Footer />
