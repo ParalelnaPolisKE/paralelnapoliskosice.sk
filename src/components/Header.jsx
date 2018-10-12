@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Container } from './Container';
-import { Logo } from './Logo';
+import { LogoFull } from './LogoFull';
 import { Navigation } from './Navigation';
 
 export const Header = () => (
@@ -9,7 +9,7 @@ export const Header = () => (
     <Container>
       <div className="flex">
         <div className="flex-1">
-          <Logo />
+          <LogoFull />
         </div>
         <Navigation />
       </div>

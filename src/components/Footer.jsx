@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './Container';
 import { CryptoAddresses } from './CryptoAddresses';
-import { Logo } from './Logo';
+import { LogoTriangle } from './LogoTriangle';
 import { Social } from './Social';
 
 export const Footer = () => (
@@ -24,7 +24,7 @@ export const Footer = () => (
       </div>
 
       <div className="text-center">
-        <Logo />
+        <LogoTriangle />
       </div>
     </Container>
   </footer>
