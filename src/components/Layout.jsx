@@ -57,7 +57,7 @@ export const Layout = ({ children }) => (
             {children}
           </main>
 
-          <div className="bg-grey-primary py-8 text-center">
+          <div className="bg-grey-primary p-4 sm:py-8 text-center">
             <div className="container">
               <h2 className="text-grey-darker">Zostaňme v kontakte</h2>
               <p>Prihlás sa na odber newslettera:</p>

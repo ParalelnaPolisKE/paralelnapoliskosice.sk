@@ -14,22 +14,25 @@ export const Newsletter = () => (
     `}
   >
     {data => (
-      <form action={data.site.siteMetadata.mailchimpUrl} method="POST">
+      <form
+        action={data.site.siteMetadata.mailchimpUrl}
+        method="POST"
+        className="flex flex-col sm:flex-row sm:justify-center"
+      >
         <input
           autoCapitalize="off"
           autoCorrect="off"
           id="MERGE0"
           name="MERGE0"
           placeholder="email"
-          size="25"
           type="email"
           className="p-4 m-1"
+          required
         />
         <input
           type="text"
           name="MERGE1"
           id="MERGE1"
-          size="25"
           placeholder="prvé meno"
           className="p-4 m-1"
         />
