@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import { Page } from 'components/Page';
-import { MapWrapper } from 'components/MapWrapper';
+import { Map } from 'components/Map';
 
 export default ({
   data: {
@@ -16,7 +16,7 @@ export default ({
       dignissimos molestiae soluta exercitationem dicta quasi assumenda corporis
       enim doloremque, impedit nisi repellat?
     </p>
-    <MapWrapper data={data} />
+    <Map data={data} />
   </Page>
 );
 

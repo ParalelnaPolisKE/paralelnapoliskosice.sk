@@ -1,15 +1,5 @@
 import React from 'react';
 import { Map as LeafletMap, TileLayer, Marker, Tooltip } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
-
-delete L.Icon.Default.prototype._getIconUrl;
-
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-  iconUrl: require('leaflet/dist/images/marker-icon.png'),
-  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
-});
 
 export class Map extends React.Component {
   state = {
@@ -21,8 +11,6 @@ export class Map extends React.Component {
     zoom: 13,
   };
 
-  map;
-
   setActivePoint = node =>
     this.setState({
       active: node.name,
@@ -31,6 +19,10 @@ export class Map extends React.Component {
 
   render() {
     const { active, position, zoom } = this.state;
+
+    if (typeof window === 'undefined') {
+      return null;
+    }
 
     return (
       <div className="mb-8 md:flex">

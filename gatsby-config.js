@@ -53,6 +53,7 @@ module.exports = {
       },
     },
     // 'gatsby-plugin-sitemap',
+    'gatsby-plugin-react-leaflet',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
