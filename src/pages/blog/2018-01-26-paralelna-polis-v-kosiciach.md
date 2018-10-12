@@ -12,4 +12,4 @@ Chcel by si mať Paralelnú Polis aj na východe? Hľadáme ľudí, ktorí nám 
 
 ## Kde nás kontaktovať?
 
-Ak máte nápad, chcete len prejaviť záujem, pozdraviť nás, porozprávať sa, poprípade pridať ruku k dielu, napíšte nám email na [kosice@paralelnapolis.sk](kosice@paralelnapolis.sk), alebo kontaktujte cez [facebook](https://www.facebook.com/paralelnapoliske).
+Ak máte nápad, chcete len prejaviť záujem, pozdraviť nás, porozprávať sa, poprípade pridať ruku k dielu, napíšte nám email na [info@ppke.sk](info@ppke.sk), alebo kontaktujte cez [facebook](https://www.facebook.com/paralelnapoliske).

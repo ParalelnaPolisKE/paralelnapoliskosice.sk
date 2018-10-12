@@ -5,6 +5,7 @@ module.exports = {
     title: 'Paralelná Polis Košice',
     description: '',
     siteUrl: '',
+    email: 'info@ppke.sk',
     social: {
       facebook: 'https://www.facebook.com/paralelnapoliske',
       github: 'https://github.com/ParalelnaPolisKE',

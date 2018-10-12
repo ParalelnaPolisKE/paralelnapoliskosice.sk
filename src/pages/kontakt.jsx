@@ -9,7 +9,7 @@ export default () => (
     <div className="md:flex">
       <div className="md:w-1/2">
         <p>
-          <a href="mailto:kosice@paralelnapolis.sk">kosice@paralelnapolis.sk</a>
+          <a href="mailto:info@ppke.sk">info@ppke.sk</a>
         </p>
 
         <h2>Sociálne siete</h2>
