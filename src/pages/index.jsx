@@ -14,7 +14,7 @@ export default ({
   },
 }) => {
   return (
-    <Layout>
+    <Layout showNewsletter>
       <Container>
         <section>
           <h1>O Paralelnej Polis</h1>
