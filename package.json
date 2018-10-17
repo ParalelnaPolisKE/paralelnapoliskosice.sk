@@ -39,7 +39,7 @@
     "babel-plugin-tailwind": "^0.1.10",
     "dotenv": "^5.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
-    "gatsby": "^2.0.0",
+    "gatsby": "^2.0.25",
     "gatsby-image": "^2.0.5",
     "gatsby-plugin-feed": "^2.0.5",
     "gatsby-plugin-google-analytics": "^2.0.5",
