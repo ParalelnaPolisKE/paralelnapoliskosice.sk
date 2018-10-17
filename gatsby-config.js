@@ -109,7 +109,7 @@ module.exports = {
         ],
       },
     },
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
   ],
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorJson',
