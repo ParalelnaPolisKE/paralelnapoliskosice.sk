@@ -14,6 +14,7 @@ export default ({
       date={post.fields.date}
       dateLocal={post.fields.dateLocal}
       tags={post.frontmatter.tags}
+      author={post.frontmatter.author}
     />
     <article>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />

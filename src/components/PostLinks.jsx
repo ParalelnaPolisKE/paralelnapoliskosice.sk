@@ -13,7 +13,7 @@ export const PostLinks = ({ next, prev }) => (
     {prev && (
       <Link to={prev.fields.url} className="flex-1">
         {prev.frontmatter.title}
-        {getDate(prev.fields.date, next.fields.dateLocal)}
+        {getDate(prev.fields.date, prev.fields.dateLocal)}
       </Link>
     )}
     {next && (

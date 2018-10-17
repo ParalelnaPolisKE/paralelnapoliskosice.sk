@@ -21,6 +21,9 @@ collections:
       - name: title
         label: Title
         widget: string
+      - name: author
+        label: Author
+        widget: string
       - name: cover
         label: Cover Image
         widget: image

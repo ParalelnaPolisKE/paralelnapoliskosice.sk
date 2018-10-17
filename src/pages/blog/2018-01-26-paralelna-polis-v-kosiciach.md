@@ -4,6 +4,7 @@ cover: /assets/jenner-vandenhoek-474326-unsplash.jpg
 tags:
   - crypto
   - financial freedom
+author: Tomas Kanocz
 ---
 
 ## Aký je stav?

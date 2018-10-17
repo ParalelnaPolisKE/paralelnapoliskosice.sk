@@ -4,24 +4,25 @@ import slugify from 'slugify';
 
 import { Link } from 'gatsby';
 
-export const PostMeta = ({ date, dateLocal, tags = [] }) => (
+export const PostMeta = ({ date, dateLocal, tags = [], author }) => (
   <div className="mb-4">
     <span className="text-grey-darker">
       <time dateTime={date}>{dateLocal}</time>
     </span>
-    {' - '}
-    <ul className="inline-block p-0">
-      {tags.length > 0 && (
-        <li className="inline">
-          {tags.map((tag, i) => [
-            i ? ', ' : '',
-            <Link to={`/tag/${slugify(tag)}`} key={tag}>
-              {tag}
-            </Link>,
-          ])}
-        </li>
+    {author && <>, {author.id}</>}
+    {tags &&
+      tags.length > 0 && (
+        <ul className="list-reset text-sm">
+          {tags.map((tag, i) => (
+            <li className="inline">
+              {i ? ', ' : ''}
+              <Link to={`/tag/${slugify(tag)}`} key={tag}>
+                {tag}
+              </Link>
+            </li>
+          ))}
+        </ul>
       )}
-    </ul>
   </div>
 );
 

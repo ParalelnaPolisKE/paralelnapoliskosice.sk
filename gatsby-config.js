@@ -39,6 +39,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'data',
+        path: `${__dirname}/src/data`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         name: 'static/assets',
         path: `${__dirname}/static/assets`,
       },
@@ -104,4 +111,7 @@ module.exports = {
     },
     // 'gatsby-plugin-offline',
   ],
+  mapping: {
+    'MarkdownRemark.frontmatter.author': 'AuthorJson',
+  },
 };

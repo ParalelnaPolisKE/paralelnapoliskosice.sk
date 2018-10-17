@@ -14,9 +14,10 @@ export const PostExcerpt = ({
   title,
   url,
   tags = [],
+  author,
 }) => (
   <article className="w-full sm:w-1/2 lg:w-1/3 px-2 mb-8">
-    <PostMeta date={date} dateLocal={dateLocal} tags={tags} />
+    <PostMeta date={date} dateLocal={dateLocal} tags={tags} author={author} />
     {images && (
       <Link to={url}>
         <Img fluid={images} className="mb-4" />

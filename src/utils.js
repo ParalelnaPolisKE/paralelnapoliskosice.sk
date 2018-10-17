@@ -5,6 +5,7 @@ export const getPosts = posts =>
     dateLocal: post.node.fields.dateLocal,
     url: post.node.fields.url,
     excerpt: post.node.excerpt,
+    author: post.node.frontmatter.author,
     tags: post.node.frontmatter.tags || [],
     images: post.node.cover ? post.node.cover.fluid : null,
   }));

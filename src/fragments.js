@@ -25,6 +25,9 @@ export const markdownFrontmatterFragment = graphql`
       cover
       tags
       title
+      author {
+        id
+      }
     }
   }
 `;
