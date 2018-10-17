@@ -1,9 +1,8 @@
-[
-  {
-    "id": "Tomas Kanocz",
-    "info": "",
-    "email": "",
-    "web": "",
-    "twitter": ""
-  }
-]
+{
+  "author": [
+    {
+      "id": "asdf",
+      "twitter": "asdf"
+    }
+  ]
+}
