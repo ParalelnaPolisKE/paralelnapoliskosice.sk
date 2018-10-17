@@ -30,6 +30,11 @@ export const Layout = ({ children, showNewsletter }) => (
       return (
         <div className="flex flex-col min-h-screen">
           <Helmet defaultTitle={title} titleTemplate={`%s | ${title}`}>
+            <html lang="sk" />
+            <meta
+              name="description"
+              content="Paralelná Polis Košice je zameraná na vzdelávanie, objavovanie, tvorenie lepších systémov, experimentovanie a aplikáciu kryptomien a spojených technológií do bežného života. Je tu pre všetkých, ktorí majú záujem fungovať slobodnejšie a nezávislejšie."
+            />
             <link
               rel="apple-touch-icon"
               sizes="180x180"

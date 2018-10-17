@@ -90,7 +90,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Paralelná Polis Košice',
-        short_name: 'Paralelná Polis KE',
+        short_name: 'PPKE',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#ffffff',
