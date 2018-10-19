@@ -71,6 +71,8 @@ export const Layout = ({ children, showNewsletter }) => (
                 <p className="text-xs text-grey-dark">
                   Z času na čas ťa budeme informovať o aktuálnom dianí z
                   prostredia Paralelnej Polis.
+                  <br />
+                  Žiaden spam - len relevatné informácie.
                 </p>
               </div>
             </div>
