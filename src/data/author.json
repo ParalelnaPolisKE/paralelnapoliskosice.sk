@@ -1,9 +1,15 @@
-[
-  {
+[{
     "id": "Tomas Kanocz",
     "info": "",
     "email": "",
     "web": "",
     "twitter": ""
+  },
+  {
+    "id": "Michal Takac",
+    "info": "",
+    "email": "hello@michaltakac.com",
+    "web": "https://michaltakac.com",
+    "twitter": "@michaltakac"
   }
 ]
