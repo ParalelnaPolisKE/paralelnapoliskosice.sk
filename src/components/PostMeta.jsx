@@ -12,7 +12,7 @@ export const PostMeta = ({ date, dateLocal, tags = [], author }) => (
     {author && <>, {author.id}</>}
     {tags &&
       tags.length > 0 && (
-        <ul className="list-reset text-sm">
+        <ul className="list-reset text-xs uppercase m-0">
           {tags.map((tag, i) => (
             <li className="inline">
               {i ? ', ' : ''}

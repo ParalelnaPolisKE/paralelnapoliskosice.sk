@@ -8,7 +8,7 @@
   }
 
   .button::after {
-    background: #8795a1;
+    background: #22292f;
     content: '';
     display: block;
     height: 2px;

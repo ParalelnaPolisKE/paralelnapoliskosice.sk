@@ -27,7 +27,7 @@ export const Social = () => (
         Object.keys(social).map(title => (
           <a
             href={social[title]}
-            className={`icon-${title} text-2xl no-underline hover:no-underline`}
+            className={`icon-${title} text-black text-2xl no-underline hover:no-underline`}
             key={title}
           >
             <span className="sr-only">{title}</span>

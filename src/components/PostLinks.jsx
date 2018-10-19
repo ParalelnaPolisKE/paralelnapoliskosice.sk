@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
+import css from './PostLinks.module.css';
 
 const getDate = (date, dateLocal) => (
   <div className="text-grey text-sm">
@@ -9,15 +10,15 @@ const getDate = (date, dateLocal) => (
 );
 
 export const PostLinks = ({ next, prev }) => (
-  <div className="border-t border-grey-primary flex py-4 mt-20">
+  <div className="border-t border-grey-primary flex py-4 mt-20 relative">
     {prev && (
-      <Link to={prev.fields.url} className="flex-1">
+      <Link to={prev.fields.url} className={css.prev}>
         {prev.frontmatter.title}
         {getDate(prev.fields.date, prev.fields.dateLocal)}
       </Link>
     )}
     {next && (
-      <Link to={next.fields.url} className="flex-1 text-right">
+      <Link to={next.fields.url} className={css.next}>
         {next.frontmatter.title}
         {getDate(next.fields.date, next.fields.dateLocal)}
       </Link>
