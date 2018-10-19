@@ -11,7 +11,7 @@ export default () => (
 
     <p>Potrebujeme potvrdiť tvoju emailovú adresu.</p>
     <p>
-      Na dokončenie prihlásenia, prosím, klikni na odkaz v emaile, ktorý sme ti
+      Na dokončenie prihlásenia, prosím, klikni na link v emaily, ktorý sme ti
       práve poslali.
     </p>
   </Page>
