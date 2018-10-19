@@ -1,6 +1,6 @@
 ---
 title: 'Nová rubrika - Changelog #1'
-author: Michal Takáč
+author: Michal Takac
 cover: /assets/changelog.jpg
 tags:
   - changelog
