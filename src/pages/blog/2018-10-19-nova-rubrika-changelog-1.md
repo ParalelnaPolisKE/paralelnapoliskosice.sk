@@ -5,7 +5,7 @@ cover: /assets/changelog.jpg
 tags:
   - changelog
 ---
-Minulý týždeň sme sa na stretnutí členov košickej Paralelnej Polis, pri konzumácii chutného [Robin streetfoodu](https://www.facebook.com/RobinStreetFoodKE/) zakúpeného za krypto, riešili, na čom sme za posledné 2 týždne pracovali, ako vyzerá náš todo list a čomu sa budeme venovať v najbližších dňoch. Robíme to tak na každom podobnom stretnutí. Sme v období intenzívnych príprav a pracujeme na vybudovaní pevných základov pre Paralelnú Polis v našom krásnom meste.
+Minulý týždeň sme na stretnutí členov košickej Paralelnej Polis, pri konzumácii chutného [Robin streetfoodu](https://www.facebook.com/RobinStreetFoodKE/) zakúpeného za krypto, riešili, na čom sme za posledné 2 týždne pracovali, ako vyzerá náš todo list a čomu sa budeme venovať v najbližších dňoch. Robíme to tak na každom podobnom stretnutí. Sme v období intenzívnych príprav a pracujeme na vybudovaní pevných základov pre Paralelnú Polis v našom krásnom meste.
 
 [Roman](https://romanvesely.com/), jeden z našich členov, sa spýtal, či všetci členovia, supporteri a ľudia okolo Polisu vedia o všetkom, čo sa na týchto stretnutiach rieši a v podstate všeobecne čo sa spravilo alebo plánuje sa spraviť. Na manažovanie všetkých úloh používame známy softvér medzi projektovými manažérmi a softvérovými vývojármi s názvom Trello. Na Romanovu otázku som teda odpovedal “Veď jasné! Máme Trello pre členov!”.
 
