@@ -68,9 +68,11 @@ export const Layout = ({ children, showNewsletter }) => (
                 <h2 className="text-grey-darker">Zostaňme v kontakte</h2>
                 <p>Prihlás sa na odber newslettera:</p>
                 <Newsletter />
-                <p className="text-xs text-grey-dark">
+                <p className="text-xs text-grey-dark m-auto">
                   Z času na čas ťa budeme informovať o aktuálnom dianí z
                   prostredia Paralelnej Polis.
+                  <br />
+                  Žiaden spam - len relevatné informácie.
                 </p>
               </div>
             </div>
