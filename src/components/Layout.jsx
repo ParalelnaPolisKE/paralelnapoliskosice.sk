@@ -72,7 +72,7 @@ export const Layout = ({ children, showNewsletter }) => (
                   Z času na čas ťa budeme informovať o aktuálnom dianí z
                   prostredia Paralelnej Polis.
                   <br />
-                  Žiaden spam - len relevatné informácie.
+                  Žiaden spam - len relevantné informácie.
                 </p>
               </div>
             </div>
