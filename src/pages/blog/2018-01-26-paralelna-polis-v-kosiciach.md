@@ -2,8 +2,7 @@
 title: Paralelná Polis už aj v Košiciach!
 cover: /assets/jenner-vandenhoek-474326-unsplash.jpg
 tags:
-  - crypto
-  - financial freedom
+  - oznamy
 author: Tomas Kanocz
 ---
 

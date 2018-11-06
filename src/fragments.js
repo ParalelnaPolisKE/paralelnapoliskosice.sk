@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 export const markdownMetadataFragment = graphql`
   fragment MarkdownMetadataFragment on MarkdownRemark {
     cover: childImageSharp {
-      fluid(maxWidth: 1240) {
+      fluid(maxWidth: 1240, maxHeight: 800) {
         ...GatsbyImageSharpFluid
       }
     }
