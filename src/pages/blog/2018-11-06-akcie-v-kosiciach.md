@@ -26,7 +26,7 @@ Odporúčame zároveň aj odber jeho newslettera [Zlé peniaze, dobrý život](h
 
 ## Diskusia Blockchain: decentralizácia, kryptománia a budúcnosť webu
 
-**20:40 - 21:40**, [Technická univerzia](http://www.tuke.sk)
+**20:40 - 21:40**, [Univerzitná knižnica Technickej univerzity v Košiciach](http://www.lib.tuke.sk/)
 
 S predošlými spíkrami sa v diskusii stretne aj **Tomáš Kanócz**, spoluzakladateľ košickej Paralnej Polis. Témou na diskusiu budú okrem iného aj otázky: Čo sa stane po jeho vyťažení bitcoinu a kedy k tomu skutočne príde? Za akých podmienok sa dnes ešte bežnému človeku oplatí kryptomeny tažiť a akú zmenu prináša prechod z Proof-of-Work protokolu na Proof-of-Stake? A čo iné kryptomeny, aká je ich hodnota? Prečítajte si aj [krátky rozhovor](https://www.facebook.com/notes/night-of-chances/decentralizácia-kryptománia-a-budúcnosť-webu-košice-711-tuke/2537084719635311/) so všetkými účastníkmi.
 
