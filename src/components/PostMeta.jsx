@@ -16,7 +16,11 @@ export const PostMeta = ({ date, dateLocal, tags = [], author }) => (
           {tags.map((tag, i) => (
             <li className="inline">
               {i ? ', ' : ''}
-              <Link to={`/tag/${slugify(tag)}`} key={tag}>
+              <Link
+                to={`/tag/${slugify(tag)}`}
+                key={tag}
+                className="text-grey-darker no-underline hover:underline"
+              >
                 {tag}
               </Link>
             </li>

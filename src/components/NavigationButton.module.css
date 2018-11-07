@@ -1,12 +1,13 @@
+.button {
+  position: relative;
+  text-decoration: none;
+}
+
+.buttonActive {
+  color: #000 !important;
+}
+
 @media (min-width: 768px) {
-  .button {
-    position: relative;
-  }
-
-  .button:hover {
-    text-decoration: none;
-  }
-
   .button::after {
     background: #22292f;
     content: '';
@@ -20,8 +21,9 @@
     width: calc(100% - 2rem);
   }
 
+  .buttonActive::after,
   .button:hover::after {
     opacity: 1;
-    transform: translateY(5px);
+    transform: translateY(0px);
   }
 }

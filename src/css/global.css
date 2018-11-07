@@ -19,13 +19,15 @@ body,
 }
 
 a {
-  color: #5f6f7c;
+  color: #000;
   transition: background-color ease 0.25s;
-  text-decoration: none;
+  text-decoration: underline;
+  transition: all 0.2s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #606f7b;
+  text-decoration: none;
 }
 
 button,

@@ -24,7 +24,9 @@ export const PostExcerpt = ({
       </Link>
     )}
     <h2 className="font-medium mb-4">
-      <Link to={url}>{title}</Link>
+      <Link to={url} className="no-underline hover:underline">
+        {title}
+      </Link>
     </h2>
     {children}
   </article>
