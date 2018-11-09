@@ -23,7 +23,7 @@ export const PostExcerpt = ({
         <Img fluid={images} className="mb-4" />
       </Link>
     )}
-    <h2 className="font-medium mb-4">
+    <h2>
       <Link to={url} className="no-underline hover:underline">
         {title}
       </Link>

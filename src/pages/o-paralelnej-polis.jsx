@@ -5,7 +5,7 @@ import { Page } from 'components/Page';
 export default () => (
   <Page title="O Paralelnej Polis Košice">
     <blockquote>
-      Paralelná Polis Košice: ostrov slobody a nezávislosti.
+      <p>Paralelná Polis Košice: ostrov slobody a nezávislosti.</p>
     </blockquote>
     <h2>Kto sme?</h2>
     <p>
@@ -29,15 +29,9 @@ export default () => (
     </p>
     <p>
       Inšpirovali sme sa tímom{' '}
-      <a href="https://paralelnapolis.sk/">
-        Paralelnej Polis v Bratislave
-      </a>{' '}
-      a{' '}
-      <a href="https://www.paralelnipolis.cz/">
-        Paralelní Polis v Prahe
-      </a>{' '}
-      a týmto chceme túto myšlienku naším spôsobom priblížiť aj Košiciam a
-      okoliu.
+      <a href="https://paralelnapolis.sk/">Paralelnej Polis v Bratislave</a> a{' '}
+      <a href="https://www.paralelnipolis.cz/">Paralelní Polis v Prahe</a> a
+      týmto chceme túto myšlienku naším spôsobom priblížiť aj Košiciam a okoliu.
     </p>
     <h2>Filozofia / Vízia</h2>
     <p>
@@ -54,36 +48,38 @@ export default () => (
       Našou hlavnou činnosťou je vzdelávanie a pomoc pri adopcii kryptomien a
       spojených technológií, ktoré umožnia slobodnejšie fungovanie jednotlivca
       aj spoločnosti ako takej. Našu víziu realizujeme prostredníctvom:
-      <ul>
-        <li>
-          <b>Prednášok</b> - u nás, u vás
-        </li>
-        <li>
-          <b>Technickej podpory</b> - zájdi k nám a radi vysvetlíme ako môžu
-          kryptomeny / blockchain pomôcť tvojmu projektu či biznisu
-        </li>
-        <li>
-          <b>Spolupráce</b> - umožňujeme tvorivcom a podnikavcom realizovať či
-          vyskúšať svoje nápady, pomáhame s ich aplikáciou alebo s adopciou
-          existujúcich technológií
-        </li>
-      </ul>
     </p>
+    <ul>
+      <li>
+        <b>Prednášok</b> - u nás, u vás
+      </li>
+      <li>
+        <b>Technickej podpory</b> - zájdi k nám a radi vysvetlíme ako môžu
+        kryptomeny / blockchain pomôcť tvojmu projektu či biznisu
+      </li>
+      <li>
+        <b>Spolupráce</b> - umožňujeme tvorivcom a podnikavcom realizovať či
+        vyskúšať svoje nápady, pomáhame s ich aplikáciou alebo s adopciou
+        existujúcich technológií
+      </li>
+    </ul>
+
     <h2>Hodnoty</h2>
 
     <p>
-      Sloboda je základná hodnota Paralelnej Polis, voluntarizmus,
-    vzdelávanie (sa), aktívnosť/produkcia, kreativita/rast, otvorenosť, výsledky
-    - naše akcie nemusia byť dokonalé. Podstatné je, aby boli. Lepšie spraviť
-    niečo s chybami, ako to nespraviť vôbec. Sme si vedomí toho, že kde sa robí,
-    tam lietajú triesky. Chyby sú súčasťou života a základom učenia sa.
-    Prijímame ich s pokorou, nebojíme sa ich robiť. Preto ak niekto z nás spraví
-    chybu pri tvorbe, nekritizujeme, ale pomáhame chybu napraviť a tak spolu
-    rásť. Uznávame len prirodzené autority, ktoré prirodzene vzniknú na základe
-    odvedenej roboty, dodržaného slova a bežných interakcií. Očakávame pozitívnu
-    aj negatívnu spätnú väzbu medzi členmi, rešpektujeme sa navzájom, počúvame
-    sa. Sme ludia, takže konflikty prirodzene vznikajú, avšak našim cieľom je sa
-    ich naučiť konštruktívne riešiť a nenechať ego vyhrať nad rozumom a srdcom!
+      Sloboda je základná hodnota Paralelnej Polis, voluntarizmus, vzdelávanie
+      (sa), aktívnosť/produkcia, kreativita/rast, otvorenosť, výsledky - naše
+      akcie nemusia byť dokonalé. Podstatné je, aby boli. Lepšie spraviť niečo s
+      chybami, ako to nespraviť vôbec. Sme si vedomí toho, že kde sa robí, tam
+      lietajú triesky. Chyby sú súčasťou života a základom učenia sa. Prijímame
+      ich s pokorou, nebojíme sa ich robiť. Preto ak niekto z nás spraví chybu
+      pri tvorbe, nekritizujeme, ale pomáhame chybu napraviť a tak spolu rásť.
+      Uznávame len prirodzené autority, ktoré prirodzene vzniknú na základe
+      odvedenej roboty, dodržaného slova a bežných interakcií. Očakávame
+      pozitívnu aj negatívnu spätnú väzbu medzi členmi, rešpektujeme sa
+      navzájom, počúvame sa. Sme ludia, takže konflikty prirodzene vznikajú,
+      avšak našim cieľom je sa ich naučiť konštruktívne riešiť a nenechať ego
+      vyhrať nad rozumom a srdcom!
     </p>
   </Page>
 );

@@ -43,19 +43,24 @@ h1 {
 h2,
 h3 {
   font-weight: normal;
-  margin: 1em 0;
+  margin-bottom: 1em;
 }
 
 h2 a {
   color: #22292f;
+  text-decoration: none;
+}
+
+h2 a:hover {
+  text-decoration: underline;
 }
 
 p {
-  margin: 1rem 0;
+  margin-bottom: 2em;
 }
 
 ul {
-  margin: 1rem 0;
+  margin-bottom: 2em;
 }
 
 section {
