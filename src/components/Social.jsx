@@ -13,6 +13,7 @@ export const Social = () => (
                 twitter
                 instagram
                 github
+                rss
               }
             }
           }
