@@ -3,8 +3,8 @@ const TailwindExtractor = require('./utils/purgecss-tailwind-extractor');
 module.exports = {
   siteMetadata: {
     title: 'Paralelná Polis Košice',
-    description: '',
-    siteUrl: '',
+    description: 'Ostrov slobody a nezávislosti',
+    siteUrl: 'https://www.paralelnapoliskosice.sk',
     email: 'info@ppke.sk',
     social: {
       facebook: 'https://www.facebook.com/paralelnapoliske',
@@ -24,7 +24,55 @@ module.exports = {
       'https://paralelnapoliskosice.us19.list-manage.com/subscribe/post?u=8affbd08463d07e25a8bbcca4&id=b02c302d92',
   },
   plugins: [
-    // 'gatsby-plugin-feed',
+    {
+      resolve: 'gatsby-plugin-feed',
+      options: {
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(({ node }) => {
+                return {
+                  title: node.frontmatter.title,
+                  description: node.excerpt,
+                  url: site.siteMetadata.siteUrl + node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  author: node.frontmatter.author.id,
+                  custom_elements: [
+                    {
+                      pubDate: new Date(node.fields.date).toUTCString(),
+                    },
+                  ],
+                };
+              });
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [fields___date] }
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      fields {
+                        date
+                        slug
+                      }
+                      frontmatter {
+                        title
+                        author {
+                          id
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+          },
+        ],
+      },
+    },
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
