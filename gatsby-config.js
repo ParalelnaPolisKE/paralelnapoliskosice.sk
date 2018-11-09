@@ -35,8 +35,8 @@ module.exports = {
                 return {
                   title: node.frontmatter.title,
                   description: node.excerpt,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  url: `${site.siteMetadata.siteUrl}/blog${node.fields.slug}`,
+                  guid: `${site.siteMetadata.siteUrl}/blog${node.fields.slug}`,
                   author: node.frontmatter.author.id,
                   custom_elements: [
                     {
