@@ -141,7 +141,7 @@ module.exports = {
         short_name: 'PPKE',
         start_url: '/',
         background_color: '#ffffff',
-        theme_color: '#ffffff',
+        theme_color: '#000000',
         display: 'standalone',
         icons: [
           {
