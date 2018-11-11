@@ -59,6 +59,20 @@ p {
   margin-bottom: 2em;
 }
 
+blockquote {
+  color: #606f7b;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+blockquote p:first-of-type::before {
+  content: open-quote;
+}
+
+blockquote p:last-of-type::after {
+  content: close-quote;
+}
+
 ul {
   margin-bottom: 2em;
 }
