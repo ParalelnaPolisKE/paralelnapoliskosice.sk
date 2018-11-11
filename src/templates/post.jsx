@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import { Page } from 'components/Page';
 import { PostLinks } from 'components/PostLinks';
 import { PostMeta } from 'components/PostMeta';
+import { Author } from 'components/Author';
 
 export default ({
   data: { markdownRemark: post },
@@ -19,6 +20,7 @@ export default ({
     <article>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </article>
+    <Author {...post.frontmatter.author} />
     <PostLinks prev={prev} next={next} />
   </Page>
 );

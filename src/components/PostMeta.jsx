@@ -10,23 +10,21 @@ export const PostMeta = ({ date, dateLocal, tags = [], author }) => (
       <time dateTime={date}>{dateLocal}</time>
     </span>
     {author && <>, {author.id}</>}
-    {tags &&
-      tags.length > 0 && (
-        <ul className="list-reset text-xs uppercase m-0">
-          {tags.map((tag, i) => (
-            <li className="inline">
-              {i ? ', ' : ''}
-              <Link
-                to={`/tag/${slugify(tag)}`}
-                key={tag}
-                className="text-grey-darker no-underline hover:underline"
-              >
-                {tag}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
+    {tags && tags.length > 0 && (
+      <ul className="list-reset text-xs uppercase m-0">
+        {tags.map((tag, i) => (
+          <li className="inline" key={tag}>
+            {i ? ', ' : ''}
+            <Link
+              to={`/tag/${slugify(tag)}`}
+              className="text-grey-darker no-underline hover:underline"
+            >
+              {tag}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    )}
   </div>
 );
 

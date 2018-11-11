@@ -10,7 +10,7 @@ const getDate = (date, dateLocal) => (
 );
 
 export const PostLinks = ({ next, prev }) => (
-  <div className="border-t border-grey-primary flex py-4 mt-20 relative">
+  <div className="flex py-4 mt-10 relative">
     {prev && (
       <Link to={prev.fields.url} className={css.prev}>
         {prev.frontmatter.title}

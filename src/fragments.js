@@ -27,6 +27,10 @@ export const markdownFrontmatterFragment = graphql`
       title
       author {
         id
+        email
+        info
+        web
+        twitter
       }
     }
   }

@@ -1,44 +1,44 @@
 [
   {
     "id": "PPKE",
-    "info": "",
+    "info": null,
     "email": "info@ppke.sk",
     "web": "https://www.paralelnapoliskosice.sk/",
-    "twitter": "@parallelpoliske"
+    "twitter": "parallelpoliske"
   },
   {
     "id": "Tomas Kanocz",
-    "info": "",
-    "email": "",
-    "web": "",
-    "twitter": ""
+    "info": null,
+    "email": null,
+    "web": null,
+    "twitter": null
   },
   {
     "id": "Michal Takac",
-    "info": "",
+    "info": null,
     "email": "hello@michaltakac.com",
     "web": "https://michaltakac.com",
-    "twitter": "@michaltakac"
+    "twitter": "michaltakac"
   },
   {
     "id": "Tomas Kohanyi",
-    "info": "",
-    "email": "",
-    "web": "",
-    "twitter": ""
+    "info": null,
+    "email": null,
+    "web": null,
+    "twitter": null
   },
   {
     "id": "Pavol Breza",
-    "info": "",
-    "email": "",
-    "web": "",
-    "twitter": ""
+    "info": null,
+    "email": null,
+    "web": null,
+    "twitter": null
   },
   {
     "id": "Roman Vesely",
-    "info": "",
-    "email": "",
+    "info": null,
+    "email": "crazko@gmail.com",
     "web": "https://romanvesely.com",
-    "twitter": "@rmnvsl"
+    "twitter": "rmnvsl"
   }
 ]
