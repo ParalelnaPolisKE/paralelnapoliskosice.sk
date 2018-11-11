@@ -19,20 +19,19 @@ body,
 }
 
 a {
-  color: #000;
-  transition: background-color ease 0.25s;
-  text-decoration: underline;
-  transition: all 0.2s ease;
-}
-
-a:hover {
-  color: #606f7b;
+  color: #212529;
   text-decoration: none;
 }
 
-button,
-input[type='submit'] {
-  transition: background-color ease 0.25s;
+a:hover {
+  background-image: linear-gradient(180deg, transparent 70%, #606f7b 0);
+  text-decoration: none;
+}
+
+p a,
+ul a,
+ol a {
+  background-image: linear-gradient(180deg, transparent 70%, #b8c2cc 0);
 }
 
 h1 {
@@ -44,15 +43,6 @@ h2,
 h3 {
   font-weight: normal;
   margin-bottom: 1em;
-}
-
-h2 a {
-  color: #22292f;
-  text-decoration: none;
-}
-
-h2 a:hover {
-  text-decoration: underline;
 }
 
 p {

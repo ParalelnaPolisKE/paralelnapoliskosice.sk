@@ -38,7 +38,7 @@ export default ({
               experimentovanie a aplikáciu kryptomien a spojených technológií do
               bežného života.
             </p>
-            <Button to="/o-paralelnej-polis">Viac info</Button>
+            <Button to="/o-paralelnej-polis">Viac informácií</Button>
           </section>
           <section className="lg:w-1/2 px-4">
             <h1>Udalosti</h1>
@@ -65,9 +65,9 @@ export default ({
               </li>
               <li>Vyskúšaj si kryptomat - automat na nákup kryptomien</li>
             </ul>
-            <a href="https://www.facebook.com/events/959009994284372/">
+            <Button to="https://www.facebook.com/events/959009994284372/">
               Viac informácií v udalosti
-            </a>
+            </Button>
           </section>
         </div>
         <section>

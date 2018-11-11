@@ -3,6 +3,10 @@
   text-decoration: none;
 }
 
+.button:hover {
+  background-image: none;
+}
+
 .buttonActive {
   color: #000 !important;
 }

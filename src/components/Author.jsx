@@ -8,7 +8,7 @@ export const Author = ({ id: name, email, info, web, twitter }) => {
         <Gravatar email={email ? email : ''} />
       </div>
       <div className="ml-4 flex-1 flex flex-col justify-center">
-        <span>
+        <p className="m-0">
           <strong className="text-grey-secondary">
             {web ? <a href={web}>{name}</a> : name}
           </strong>
@@ -17,7 +17,7 @@ export const Author = ({ id: name, email, info, web, twitter }) => {
               @{twitter}
             </a>
           )}
-        </span>
+        </p>
         {!!info && <p className="m-0 text-xs">{info}</p>}
       </div>
     </div>

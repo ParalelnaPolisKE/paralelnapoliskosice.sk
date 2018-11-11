@@ -11,13 +11,13 @@ export const PostMeta = ({ date, dateLocal, tags = [], author }) => (
     </span>
     {author && <>, {author.id}</>}
     {tags && tags.length > 0 && (
-      <ul className="list-reset text-xs uppercase m-0">
+      <ul className="list-reset text-xxs uppercase mt-1 tracking-tight">
         {tags.map((tag, i) => (
           <li className="inline" key={tag}>
-            {i ? ', ' : ''}
+            {i ? ' ' : ''}
             <Link
               to={`/tag/${slugify(tag)}`}
-              className="text-grey-darker no-underline hover:underline"
+              className="text-white bg-grey hover:bg-grey-darker p-1 rounded shadow"
             >
               {tag}
             </Link>
