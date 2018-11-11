@@ -81,7 +81,7 @@ module.exports = {
                 }
               }
             `,
-            output: '/rss.xml',
+            output: '/blog/rss.xml',
           },
         ],
       },
