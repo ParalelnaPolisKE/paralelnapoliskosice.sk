@@ -18,7 +18,7 @@ export const Author = ({ id: name, email, info, web, twitter }) => {
             </a>
           )}
         </span>
-        {info && <p className="m-0 text-xs">{info}</p>}
+        {!!info && <p className="m-0 text-xs">{info}</p>}
       </div>
     </div>
   );
