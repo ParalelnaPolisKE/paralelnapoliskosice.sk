@@ -11,7 +11,7 @@ module.exports = {
       github: 'https://github.com/ParalelnaPolisKE',
       instagram: 'https://www.instagram.com/paralelnapoliske',
       twitter: 'https://twitter.com/parallelpoliske',
-      rss: '/rss.xml',
+      rss: '/blog/rss.xml',
     },
     crypto: {
       BTC: '1KGB5uxAZrFYrHKsydLvfhwT4VULE1tunA',
@@ -54,7 +54,7 @@ module.exports = {
               return {
                 title: siteMetadata.title,
                 description: siteMetadata.description,
-                feed_url: siteMetadata.siteUrl + `/rss.xml`,
+                feed_url: siteMetadata.siteUrl + `/blog/rss.xml`,
                 site_url: siteMetadata.siteUrl,
               };
             },
