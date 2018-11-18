@@ -1,6 +1,6 @@
 ---
 title: 'Spustili sme eshop na Openbazaare'
-cover: https://user-images.githubusercontent.com/6513576/48671516-df756780-eb29-11e8-90ae-67674f1e4946.jpg
+cover: /assets/open-bazaar.jpg
 author: Michal Takac
 tags:
   - oznamy, tutorialy
