@@ -56,12 +56,12 @@ V tomto bode si môžeš všimnúť informáciu o poplatku za transakciu - “Bi
 
 6. V Openbazaar kliente by mala svietit nová notifikácia s vašou objednávkou. Po kliknutí na ňu budeš presmerovaný na jej detail:
 
-![](/assets/ob-blogpost-10.jpg)
+![null](/assets/ob-blogpost-10.jpg)
 
 7. V tomto momente ostáva už len čakať na vybavenie objednávky (budeme sa tak snažiť spraviť do 24 hodín od jej vytvorenia). Ak si vyberieš prevzatie do vlastných rúk, bude ťa kontaktovať jeden z našich členov na tvoj email ohľadom dohodnutia fyzického stretnutia. Úspešné odoslanie, prípadne vybavenie objednávky bude signalizovať tretí čierny checkpoint - **“Fulfilled”**:
 
-![](/assets/ob-blogpost-11.jpg)
+![null](/assets/ob-blogpost-11.jpg)
 
 8. Po úspešnom doručení a prevzatí produktu do tvojich rúk budeme veľmi radi ak nám pred kliknutím na tlačítko “Complete order” zanecháš aj hodnotenie a feedback!
 
-![](/assets/ob-blogpost-12.jpg)
+![null](/assets/ob-blogpost-12.jpg)
