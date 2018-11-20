@@ -63,7 +63,8 @@ blockquote p:last-of-type::after {
   content: close-quote;
 }
 
-ul {
+ul,
+ol {
   margin-bottom: 2em;
 }
 

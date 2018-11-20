@@ -145,7 +145,7 @@ module.exports = {
           },
         ],
         ignore: ['fontello.css'],
-        whitelist: ['___gatsby'],
+        whitelist: ['___gatsby', 'ol'],
       },
     },
     {
