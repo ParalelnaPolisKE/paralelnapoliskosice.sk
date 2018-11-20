@@ -42,7 +42,7 @@ V tomto bode si môžeš všimnúť informáciu o poplatku za transakciu - “Bi
 
 ![null](/assets/ob-blogpost-07.jpg)
 
-4. Po zobrazení QR kódu ho budeš môcť načítať vo svojej Bitcoinovej peňaženke alebo adresu a požadovanú sumu skopírovať ručne. Máš taktiež možnosť zaplatiť priamo z peňaženky v Openbazaare ak je na nej dostatočné množstvo BTC ([návod ako nabiť Openbazaar peňaženku](https://www.paralelnapoliskosice.sk/foo)):
+4. Po zobrazení QR kódu ho budeš môcť načítať vo svojej Bitcoinovej peňaženke alebo adresu a požadovanú sumu skopírovať ručne. Máš taktiež možnosť zaplatiť priamo z peňaženky v Openbazaare ak je na nej dostatočné množstvo BTC ([návod ako nabiť Openbazaar peňaženku](https://www.paralelnapoliskosice.sk/blog/2018-11-20-nabitie-openbazaar-penazenky)):
 
 ![null](/assets/ob-blogpost-08.jpg)
 
