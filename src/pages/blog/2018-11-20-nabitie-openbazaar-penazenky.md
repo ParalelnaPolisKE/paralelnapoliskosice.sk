@@ -5,7 +5,8 @@ cover: /assets/ob-fund-wallet-header.jpg
 tags:
   - navody
 ---
-V [predchádzajúcom článku](https://www.paralelnapoliskosice.sk/blog/2018-11-20-spustili-sme-eshop-na-openbazaare) sme informovali o spustení nášho eshopu na platforme Openbazaar. Obsahuje návod ako postupovať pri nákupe s využitím vlastnej bitcoinovej peňaženky, no nie je to jediná možnosť ako platiť. Užívateľ si vie nabiť integrovanú peňaženku priamo v Openbazaare - altcoinami pomocou platformy Shapeshift no taktiež priamo Bitcoinami. V tomto krátkom návode si ukážeme ako na to!
+
+V [predchádzajúcom článku](/blog/2018-11-20-spustili-sme-eshop-na-openbazaare) sme informovali o spustení nášho eshopu na platforme Openbazaar. Obsahuje návod ako postupovať pri nákupe s využitím vlastnej bitcoinovej peňaženky, no nie je to jediná možnosť ako platiť. Užívateľ si vie nabiť integrovanú peňaženku priamo v Openbazaare - altcoinami pomocou platformy Shapeshift no taktiež priamo Bitcoinami. V tomto krátkom návode si ukážeme ako na to!
 
 1. V hornom menu napravo klikni na ikonku peňaženky:
 

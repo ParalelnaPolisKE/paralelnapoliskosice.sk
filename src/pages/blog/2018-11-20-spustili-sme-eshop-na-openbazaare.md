@@ -6,11 +6,12 @@ tags:
   - oznamy
   - navody
 ---
+
 Pre našich fanúšikov a sympatizantov sme pripravili zopár produktov, ktorých kúpou priamo podporíte košickú Paralelnú Polis. Na začiatok sú to tričko s logom a kartička na mnemonic seed so štýlovým, 3D-tlačeným obalom. Tento seed funguje ako záloha peňaženky, vďaka ktorej ju vieš kedykoľvek obnoviť. Je veľmi dôležité ho preto bezpečne uložiť - aby k nemu nikto nemal prístup, no zároveň, aby sa nestratil či text nezmazal. Naša kartička pomôže s tým druhým krokom.
 
 Pri otázke “kde na internet to zavesíme?” sme nemuseli dlho váhať - jasnou voľbou bola decentralizovaná platforma [Openbazaar 2](https://openbazaar.org/), ktorá ponúka revolúciu v obchodovaní bez tretích strán. Vďaka nej môžeme ponúkať produkty bez zbytočných poplatkov a slobodne si stanoviť vlastné podmienky - tou hlavnou je predaj produktov za kryptomeny, presnejšie Bitcoin.
 
-Nakupovanie cez Openbazaar nie je zložité, ba dokonca je to veľmi jednoduché! Na prezeranie online obchodov je potrebné si nainštalovať klienta do tvojho počítača a po jeho spustení následne do kolónky pre adresu (rovnako ako v internetovom prehliadači) vložiť odkaz na náš Openbazaar obchod: 
+Nakupovanie cez Openbazaar nie je zložité, ba dokonca je to veľmi jednoduché! Na prezeranie online obchodov je potrebné si nainštalovať klienta do tvojho počítača a po jeho spustení následne do kolónky pre adresu (rovnako ako v internetovom prehliadači) vložiť odkaz na náš Openbazaar obchod:
 
 > <ob://QmXPTqsoreix47kvwG8SYRQyNr7kTJ74LU59YbdEEUG1MS/store>
 
@@ -30,7 +31,7 @@ Pod zväčšeným náhľadom sa nachádza pár ďalších, dôležitých inform�
 
 ![null](/assets/ob-blogpost-04.jpg)
 
-2. Po kliknutí na tlačítko **“BUY NOW”** sa zobrazí sumarizácia objednávky (tu je možné ešte pridať dodatočné informácie k objednávke do formuláru v dolnej časti pod _“Additional Information”_): 
+2. Po kliknutí na tlačítko **“BUY NOW”** sa zobrazí sumarizácia objednávky (tu je možné ešte pridať dodatočné informácie k objednávke do formuláru v dolnej časti pod _“Additional Information”_):
 
 ![null](/assets/ob-blogpost-05.jpg)
 
@@ -42,11 +43,11 @@ V tomto bode si môžeš všimnúť informáciu o poplatku za transakciu - “Bi
 
 ![null](/assets/ob-blogpost-07.jpg)
 
-4. Po zobrazení QR kódu ho budeš môcť načítať vo svojej Bitcoinovej peňaženke alebo adresu a požadovanú sumu skopírovať ručne. Máš taktiež možnosť zaplatiť priamo z peňaženky v Openbazaare ak je na nej dostatočné množstvo BTC ([návod ako nabiť Openbazaar peňaženku](https://www.paralelnapoliskosice.sk/blog/2018-11-20-nabitie-openbazaar-penazenky)):
+4. Po zobrazení QR kódu ho budeš môcť načítať vo svojej Bitcoinovej peňaženke alebo adresu a požadovanú sumu skopírovať ručne. Máš taktiež možnosť zaplatiť priamo z peňaženky v Openbazaare ak je na nej dostatočné množstvo BTC ([návod ako nabiť Openbazaar peňaženku](/blog/2018-11-20-nabitie-openbazaar-penazenky)):
 
 ![null](/assets/ob-blogpost-08.jpg)
 
-> Videonávod ako zaplatiť z mobilnej peňaženky: 
+> Videonávod ako zaplatiť z mobilnej peňaženky:
 >
 > <https://streamable.com/p4nc7>
 
