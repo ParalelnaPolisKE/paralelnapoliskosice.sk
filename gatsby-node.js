@@ -10,9 +10,8 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 
 const postsPrefix = 'blog';
 
-exports.onCreateNode = ({ node, getNode, getNodes, actions }) => {
-  const { createNodeField, createParentChildLink } = actions;
-  const nodes = getNodes();
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions;
 
   if (node.internal.type === 'MarkdownRemark') {
     const slug = createFilePath({
@@ -41,24 +40,6 @@ exports.onCreateNode = ({ node, getNode, getNodes, actions }) => {
       name: 'url',
       value: url,
     });
-
-    // Attach thumbnail's ImageSharp node by public path if necessary
-    // @see https://github.com/simonyiszk/mvk-web
-    if (typeof node.frontmatter.cover === 'string') {
-      const pathToFile = path
-        .join(__dirname, 'static', node.frontmatter.cover)
-        .split(path.sep)
-        .join('/');
-
-      const fileNode = nodes.find(node => node.absolutePath === pathToFile);
-
-      if (fileNode) {
-        const imageSharpNodeId = fileNode.children[0];
-        const imageSharpNode = nodes.find(node => node.id === imageSharpNodeId);
-
-        createParentChildLink({ parent: node, child: imageSharpNode });
-      }
-    }
   }
 };
 

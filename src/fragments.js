@@ -2,11 +2,6 @@ import { graphql } from 'gatsby';
 
 export const markdownMetadataFragment = graphql`
   fragment MarkdownMetadataFragment on MarkdownRemark {
-    cover: childImageSharp {
-      fluid(maxWidth: 1240, maxHeight: 800) {
-        ...GatsbyImageSharpFluid
-      }
-    }
     excerpt
     html
     timeToRead
@@ -22,7 +17,13 @@ export const markdownMetadataFragment = graphql`
 export const markdownFrontmatterFragment = graphql`
   fragment MarkdownFrontmatterFragment on MarkdownRemark {
     frontmatter {
-      cover
+      cover {
+        childImageSharp {
+          fluid(maxWidth: 1240, maxHeight: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       tags
       title
       author {
