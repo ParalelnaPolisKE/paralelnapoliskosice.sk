@@ -107,7 +107,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'static/assets',
+        name: 'assets',
         path: `${__dirname}/static/assets`,
       },
     },
@@ -119,15 +119,19 @@ module.exports = {
       },
     },
     // 'gatsby-plugin-sitemap',
+    `gatsby-plugin-netlify-cms-paths`,
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          'gatsby-plugin-sharp',
+          `gatsby-plugin-netlify-cms-paths`,
           {
             resolve: 'gatsby-remark-images',
             options: {
+              linkImagesToOriginal: false,
               maxWidth: 1200,
+              quality: 75,
             },
           },
         ],

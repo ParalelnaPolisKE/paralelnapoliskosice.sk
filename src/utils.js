@@ -7,5 +7,7 @@ export const getPosts = posts =>
     excerpt: post.node.excerpt,
     author: post.node.frontmatter.author,
     tags: post.node.frontmatter.tags || [],
-    images: post.node.cover ? post.node.cover.fluid : null,
+    images: post.node.frontmatter.cover
+      ? post.node.frontmatter.cover.childImageSharp.fluid
+      : null,
   }));
