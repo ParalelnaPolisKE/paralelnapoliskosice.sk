@@ -175,7 +175,7 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-offline',
+    // 'gatsby-plugin-offline', // Disabled as new content need hard refresh
   ],
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorJson',
