@@ -9,7 +9,7 @@ export const Author = ({ id: name, email, info, web, twitter }) => {
       </div>
       <div className="ml-4 flex-1 flex flex-col justify-center">
         <p className="m-0">
-          <strong className="text-grey-secondary">
+          <strong className="text-black">
             {web ? <a href={web}>{name}</a> : name}
           </strong>
           {twitter && (

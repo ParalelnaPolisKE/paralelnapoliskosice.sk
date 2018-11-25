@@ -5,7 +5,7 @@ import css from './Instagram.module.css';
 import InstagramImages from 'components/InstagramImages';
 
 export const Instagram = () => (
-  <div className="bg-grey-darker md:py-4 md:px-2 flex justify-center">
+  <div className="bg-grey-dark md:py-4 md:px-2 flex justify-center">
     <InstagramImages>
       {images =>
         images.map((image, i) => (

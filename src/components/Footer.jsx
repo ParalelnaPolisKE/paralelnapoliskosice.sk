@@ -6,7 +6,7 @@ import { Logo } from './Logo';
 import { Social } from './Social';
 
 export const Footer = () => (
-  <footer role="contentinfo" className="bg-grey-primary text-sm px-4">
+  <footer role="contentinfo" className="bg-grey-lightest text-sm px-4">
     <Container className="py-10 md:flex md:items-center">
       <div className="flex-1">
         <p>
