@@ -26,7 +26,7 @@ export const Newsletter = () => (
           name="MERGE0"
           placeholder="email"
           type="email"
-          className="text-sm p-4 m-1"
+          className="text-sm border p-4 m-1"
           required
         />
         <input
@@ -34,7 +34,7 @@ export const Newsletter = () => (
           name="MERGE1"
           id="MERGE1"
           placeholder="prvé meno"
-          className="text-sm p-4 m-1"
+          className="text-sm border p-4 m-1"
         />
         <input
           type="submit"
