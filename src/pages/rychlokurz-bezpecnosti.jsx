@@ -10,7 +10,7 @@ export default ({
     allMarkdownRemark: { edges: posts },
   },
 }) => (
-  <Page title="Rýchlokurz digitálnej bezpečnosti" showNewsletter={false}>
+  <Page title="Rýchlokurz digitálnej bezpečnosti" showNewsletter={true}>
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quibusdam
       temporibus quas nemo repellendus ab doloribus, quisquam est dolore maiores
