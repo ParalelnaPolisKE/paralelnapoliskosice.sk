@@ -30,7 +30,7 @@ export default ({
 
     <div className="flex flex-wrap -mx-2 mb-8">
       {getPosts(posts).map((post, i) => (
-        <div className="sm:w-1/2 p-2">
+        <div className="sm:w-1/2 p-2" key={post.url}>
           <div
             className="bg-grey-lighter hover:bg-grey-light focus:bg-grey-light cursor-pointer p-4"
             onClick={() => navigate(post.url)}
