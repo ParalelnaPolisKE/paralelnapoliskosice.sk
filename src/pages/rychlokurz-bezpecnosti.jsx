@@ -11,13 +11,24 @@ export default ({
 }) => (
   <Page title="Rýchlokurz digitálnej bezpečnosti" showNewsletter={true}>
     <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quibusdam
-      temporibus quas nemo repellendus ab doloribus, quisquam est dolore maiores
-      harum molestiae esse necessitatibus, at eaque? Hic pariatur rem
-      cupiditate.
+      Je dôležité mať svoje informácie pod dohľadom, či už sú uložené online
+      alebo offline. Potrebné vedomosti o ochrane súkromia nás v škole naučiť
+      nestihli, no stále je čas to zlepšiť. Nasledujúce návody pomôžu na ceste k
+      lepšiemu zabezpečeniu digitálnych informácií a celkovo k väčšiemu súkromiu
+      v prepojenom svete.
     </p>
 
-    <div className="flex flex-wrap -mx-2">
+    <blockquote>
+      <p>Digitálna bezpečnosť nie je konkrétny stav, ale cesta.</p>
+    </blockquote>
+
+    <p>
+      Každá časť obsahuje potrebné minimum teórie a úlohu, ktorej splnenie
+      prinesie o niečo väčšiu istotu, že tvoje zariadenia a dáta sú v bezpečí.
+      Odporúčame splniť jednu úlohu za deň a postupne tak prejsť celým kurzom.
+    </p>
+
+    <div className="flex flex-wrap -mx-2 mb-8">
       {getPosts(posts).map((post, i) => (
         <div className="sm:w-1/2 p-2">
           <div
@@ -40,6 +51,15 @@ export default ({
         </div>
       ))}
     </div>
+
+    <p>
+      Ďakujeme projektu <a href="https://crypto.christmas">crypto.christmas</a>{' '}
+      za skvelý nápad. Pre detailnejšie informácie ďalej odporúčame{' '}
+      <a href="https://github.com/freedomofpress/encryption-works">
+        Encryption Works
+      </a>{' '}
+      a <a href="https://ssd.eff.org">Surveillance Self-Defense</a>.
+    </p>
   </Page>
 );
 
