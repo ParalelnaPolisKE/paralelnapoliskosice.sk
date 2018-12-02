@@ -1,8 +1,7 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql, Link, navigate } from 'gatsby';
 import { getPosts } from 'utils';
 
-import { Posts } from 'components/Posts';
 import { Page } from 'components/Page';
 
 export default ({
@@ -21,7 +20,13 @@ export default ({
     <div className="flex flex-wrap -mx-2">
       {getPosts(posts).map((post, i) => (
         <div className="sm:w-1/2 p-2">
-          <div className="bg-grey-lighter p-4">
+          <div
+            className="bg-grey-lighter hover:bg-grey-light focus:bg-grey-light cursor-pointer p-4"
+            onClick={() => navigate(post.url)}
+            role="link"
+            tabIndex="0"
+            onKeyUp={e => (e.key === 'Enter' ? navigate(post.url) : undefined)}
+          >
             <h2>
               <Link to={post.url}>
                 <span className="text-grey sm:text-4xl font-bold -mt-3 sm:float-right">
