@@ -1,21 +1,18 @@
 import React from 'react';
+import css from './Footer.module.css';
 
 import { Container } from './Container';
 import { CryptoAddresses } from './CryptoAddresses';
 import { Logo } from './Logo';
 import { Social } from './Social';
 import { Newsletter } from 'components/Newsletter';
-import { Instagram } from 'components/Instagram';
+import InstagramImages from 'components/InstagramImages';
 
 export const Footer = () => (
   <footer role="contentinfo">
-    <div
-      style={{
-        background: 'linear-gradient(to right, #f8fafc 66%, #8795a1 66%)',
-      }}
-    >
-      <Container className="flex">
-        <div className="w-2/3 py-4 sm:py-8">
+    <div className={`${css.top} px-4 pb-8 md:pb-0`}>
+      <Container className="md:flex">
+        <div className="md:w-2/3 mb-4 md:mb-0 py-4 sm:py-8">
           <h2 className="text-grey-darker m-0">Zostaňme v kontakte</h2>
           <p className="mb-2">Prihlás sa na odber newslettera:</p>
           <Newsletter className="flex flex-col sm:flex-row mb-2" />
@@ -26,8 +23,18 @@ export const Footer = () => (
             Žiaden spam - len relevantné informácie.
           </p>
         </div>
-        <div className="bg-grey-dark w-1/3 px-2 py-1">
-          <Instagram />
+        <div className="bg-grey-dark md:w-1/3 px-2 py-1">
+          <div className="-ml-1 -mr-1 md:-mr-3 flex flex-wrap">
+            <InstagramImages>
+              {images =>
+                images.map((image, i) => (
+                  <div key={i} className={`${css.instaImage} p-1 w-1/3`}>
+                    {image}
+                  </div>
+                ))
+              }
+            </InstagramImages>
+          </div>
         </div>
       </Container>
     </div>

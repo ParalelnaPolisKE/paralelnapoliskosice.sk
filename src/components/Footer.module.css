@@ -1,0 +1,18 @@
+.top {
+  background: #f8fafc;
+}
+
+.instaImage {
+  filter: grayscale(1);
+  transition: all 0.25s ease-in;
+}
+
+.instaImage:hover {
+  filter: grayscale(0);
+}
+
+@media (min-width: 765px) {
+  .top {
+    background: linear-gradient(to right, #f8fafc 66%, #8795a1 66%);
+  }
+}
