@@ -5,11 +5,11 @@ import css from './Instagram.module.css';
 import InstagramImages from 'components/InstagramImages';
 
 export const Instagram = () => (
-  <div className="bg-grey-dark md:py-4 md:px-2 flex justify-center">
+  <div className="bg-grey-dark -mx-1 flex flex-wrap">
     <InstagramImages>
       {images =>
         images.map((image, i) => (
-          <div key={i} className={`${css.instaImage} md:mx-2`}>
+          <div key={i} className={`${css.instaImage} p-1 w-1/3`}>
             {image}
           </div>
         ))
