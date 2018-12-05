@@ -65,7 +65,7 @@ export default ({
 
 export const query = graphql`
   {
-    allMarkdownRemark(filter: { frontmatter: { tags: { eq: "oznamy" } } }) {
+    allMarkdownRemark(filter: { frontmatter: { tags: { eq: "rýchlokurz" } } }) {
       edges {
         node {
           ...MarkdownMetadataFragment
