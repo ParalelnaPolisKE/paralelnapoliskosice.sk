@@ -3,7 +3,7 @@ title: 'Akcie, ktoré sa oplatí navštíviť'
 cover: /assets/joel-filipe-171928-unsplash.jpg
 author: Roman Vesely
 tags:
-  - oznamy
+  - oznam
 ---
 
 V **stredu 7. 11.** sa v Košiciach koná hneď niekoľko udalostí, ktoré svojim obsahom zaoberajúcim sa financiami a technológiami pútajú našu pozornosť. Veríme, že si z nasledujúceho zoznamu vyberiete tiež.

@@ -2,7 +2,7 @@
 title: Paralelná Polis už aj v Košiciach!
 cover: /assets/jenner-vandenhoek-474326-unsplash.jpg
 tags:
-  - oznamy
+  - oznam
 author: Tomas Kanocz
 ---
 
