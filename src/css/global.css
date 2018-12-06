@@ -72,12 +72,13 @@ section {
   margin-bottom: 2.5rem;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   html {
     font-size: 18px;
   }
 
   h1 {
     font-size: 3.75rem;
+    line-height: 1;
   }
 }
