@@ -1,6 +1,6 @@
 ---
 title: 'Zašifruj si svoj pevný disk'
-author: Jakub Hric
+author: Jakub Hricov
 cover: /assets/bekir-donmez-708863-unsplash-04.jpg
 tags:
   - návod
