@@ -1,5 +1,5 @@
 ---
-title: 'Vymysli heslo (passphrase)'
+title: 'Vytvor si heslo (passphrase)'
 author: Tomas Kohanyi
 cover: /assets/bekir-donmez-708863-unsplash-01.jpg
 tags:
@@ -25,13 +25,13 @@ Z príručky [Sloboda tlače "Šifrovanie Funguje" (Freedom of Press "Encryption
 
 ## Úloha
 
-Vygeneruj bezpečné, "Diceware" kockou vymyslené (asistované) heslo nasledovaním týchto krokov:
+Vygeneruj si bezpečné, hracou kockou vymyslené (asistované) heslo nasledovaním týchto krokov:
 
 1. Hoď kockou (fyzická kocka je iste lepšia ako digitálna).
 1. Poznač si číslo.
 1. Opakuj pokiaľ nemáš päťciferné číslo.
 1. Vyhľadaj ho v [tomto zozname](https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt).
-1. Vyber aspon ešte päť dalších slov podľa krokov 1 až 4.
+1. Vyber aspoň ešte päť dalších slov podľa krokov 1 až 4.
 
 A je to tu, úplne nové heslo! Dobre si ho zapamätaj, v ďalšom kroku ho budeme používať.
 
