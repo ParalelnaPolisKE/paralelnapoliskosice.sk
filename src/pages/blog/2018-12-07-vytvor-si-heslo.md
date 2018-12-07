@@ -25,7 +25,7 @@ Z príručky [Sloboda tlače "Šifrovanie Funguje" (Freedom of Press "Encryption
 
 ## Úloha
 
-Vygeneruj si bezpečné, hracou kockou vymyslené (asistované) heslo nasledovaním týchto krokov:
+Vygeneruj si bezpečné, hracou kockou vytvorené (asistované) heslo nasledovaním týchto krokov:
 
 1. Hoď kockou (fyzická kocka je iste lepšia ako digitálna).
 1. Poznač si číslo.
