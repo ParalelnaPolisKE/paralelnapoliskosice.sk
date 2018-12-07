@@ -8,7 +8,7 @@ export const Header = () => (
   <header className="bg-grey-lightest p-4">
     <Container>
       <div className="flex">
-        <div className="flex-1">
+        <div className="flex-1 flex items-center">
           <Logo />
         </div>
         <Navigation />

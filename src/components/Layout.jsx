@@ -58,7 +58,7 @@ export const Layout = ({ children, showNewsletter }) => (
 
           <Header />
 
-          <main role="main" className="flex-1 px-4 py-8 my-10">
+          <main role="main" className="flex-1 px-4 py-8 md:my-10">
             {children}
           </main>
 

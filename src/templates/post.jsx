@@ -17,7 +17,7 @@ export default ({
       tags={post.frontmatter.tags}
       author={post.frontmatter.author}
     />
-    <article>
+    <article className="max-w-md m-auto md:my-20">
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </article>
     <Author {...post.frontmatter.author} />

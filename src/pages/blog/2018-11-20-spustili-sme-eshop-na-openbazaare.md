@@ -3,8 +3,8 @@ title: Spustili sme eshop na Openbazaare
 author: Michal Takac
 cover: /assets/open-bazaar.jpg
 tags:
-  - oznamy
-  - navody
+  - oznam
+  - návod
 ---
 
 Pre našich fanúšikov a sympatizantov sme pripravili zopár produktov, ktorých kúpou priamo podporíte košickú Paralelnú Polis. Na začiatok sú to tričko s logom a kartička na mnemonic seed so štýlovým, 3D-tlačeným obalom. Tento seed funguje ako záloha peňaženky, vďaka ktorej ju vieš kedykoľvek obnoviť. Je veľmi dôležité ho preto bezpečne uložiť - aby k nemu nikto nemal prístup, no zároveň, aby sa nestratil či text nezmazal. Naša kartička pomôže s tým druhým krokom.
