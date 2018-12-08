@@ -65,7 +65,10 @@ export default ({
 
 export const query = graphql`
   {
-    allMarkdownRemark(filter: { frontmatter: { tags: { eq: "rýchlokurz" } } }) {
+    allMarkdownRemark(
+      filter: { frontmatter: { tags: { eq: "rýchlokurz" } } }
+      sort: { fields: [fields___date], order: ASC }
+    ) {
       edges {
         node {
           ...MarkdownMetadataFragment
