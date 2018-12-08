@@ -28,7 +28,11 @@ export const SEO = ({ title, description, image, isBlogPost = false }) => (
       };
 
       return (
-        <Helmet defaultTitle={seo.title} titleTemplate={`%s | ${seo.title}`}>
+        <Helmet
+          title={title}
+          defaultTitle={siteMetadata.title}
+          titleTemplate={`%s | ${siteMetadata.title}`}
+        >
           <html lang="sk" />
 
           {/* Primary Meta Tags */}
