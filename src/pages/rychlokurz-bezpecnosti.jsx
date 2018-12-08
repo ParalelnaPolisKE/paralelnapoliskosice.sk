@@ -9,7 +9,11 @@ export default ({
     allMarkdownRemark: { edges: posts },
   },
 }) => (
-  <Page title="Rýchlokurz digitálnej bezpečnosti" showNewsletter={true}>
+  <Page
+    title="Rýchlokurz digitálnej bezpečnosti"
+    showNewsletter={true}
+    url="/rychlokurz-bezpecnosti"
+  >
     <p>
       Je dôležité mať svoje informácie pod dohľadom, či už sú uložené online
       alebo offline. Potrebné vedomosti o ochrane súkromia nás v škole naučiť

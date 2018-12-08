@@ -4,7 +4,7 @@ import { Page } from 'components/Page';
 import { Newsletter } from 'components/Newsletter';
 
 export default () => (
-  <Page title="Newsletter" showNewsletter={false}>
+  <Page title="Newsletter" showNewsletter={false} url="/newsletter">
     <p>
       Zostaňme v kontakte - prihlás sa na odber newslettera. Z času na čas ťa
       budeme informovať o aktuálnom dianí z prostredia Paralelnej Polis.

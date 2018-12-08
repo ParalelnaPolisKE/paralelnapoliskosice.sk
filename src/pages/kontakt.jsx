@@ -5,7 +5,7 @@ import { Page } from 'components/Page';
 import { Social } from 'components/Social';
 
 export default () => (
-  <Page title="Kontakt">
+  <Page title="Kontakt" url="/kontakt">
     <div className="md:flex">
       <div className="md:w-1/2">
         <p>

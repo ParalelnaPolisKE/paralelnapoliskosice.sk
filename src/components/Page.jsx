@@ -10,8 +10,9 @@ export const Page = ({
   title,
   description,
   image,
+  url,
   showNewsletter = true,
-  isBlogPost = false,
+  isArticle = false,
 }) => (
   <Layout showNewsletter={showNewsletter}>
     <Container>
@@ -19,7 +20,8 @@ export const Page = ({
         title={title}
         description={description}
         image={image}
-        isBlogPost={isBlogPost}
+        url={url}
+        isArticle={isArticle}
       />
       <h1>{title}</h1>
       {children}

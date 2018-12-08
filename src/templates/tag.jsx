@@ -5,6 +5,7 @@ import { Button } from 'components/Button';
 import { Page } from 'components/Page';
 import { Posts } from 'components/Posts';
 import { getPosts } from 'utils';
+import slugify from 'slugify';
 
 export default ({
   data: {
@@ -12,7 +13,10 @@ export default ({
   },
   pageContext: { tag },
 }) => (
-  <Page title={`Príspevky označené tagom - ${tag}`}>
+  <Page
+    title={`Príspevky označené tagom - ${tag}`}
+    url={`/tag/${slugify(tag)}`}
+  >
     <Posts posts={getPosts(posts)} />
     <div className="text-center">
       <Button to="/blog">Všetky príspevky</Button>

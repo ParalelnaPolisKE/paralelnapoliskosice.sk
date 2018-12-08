@@ -11,7 +11,7 @@ export default ({
     allMarkdownRemark: { edges: posts },
   },
 }) => (
-  <Page title="Blog">
+  <Page title="Blog" url="/blog">
     <Posts posts={getPosts(posts)} />
   </Page>
 );

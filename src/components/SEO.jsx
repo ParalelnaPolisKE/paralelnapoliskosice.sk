@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
-export const SEO = ({ title, description, image, isBlogPost = false }) => (
+export const SEO = ({ title, description, image, url, isArticle = false }) => (
   <StaticQuery
     query={graphql`
       {
@@ -24,7 +24,8 @@ export const SEO = ({ title, description, image, isBlogPost = false }) => (
         description: description || siteMetadata.description,
         image: `${siteMetadata.siteUrl}${image || siteMetadata.image}`,
         facebookAppID: siteMetadata.facebookAppID,
-        type: isBlogPost ? 'article' : 'website',
+        type: isArticle ? 'article' : 'website',
+        url: url ? `${siteMetadata.siteUrl}${url}` : siteMetadata.siteUrl,
       };
 
       return (
@@ -43,6 +44,7 @@ export const SEO = ({ title, description, image, isBlogPost = false }) => (
           <meta property="og:title" content={seo.title} />
           <meta property="og:description" content={seo.description} />
           <meta property="og:image" content={seo.image} />
+          <meta property="og:url" content={seo.url} />
           <meta property="fb:app_id" content={seo.facebookAppID} />
 
           {/* Twitter */}

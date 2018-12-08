@@ -14,7 +14,8 @@ export default ({
     title={post.frontmatter.title}
     description={post.excerpt}
     image={post.frontmatter.cover.childImageSharp.fluid.src}
-    isBlogPost={true}
+    url={post.fields.url}
+    isArticle={true}
   >
     <PostMeta
       date={post.fields.date}
