@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 
 export const markdownMetadataFragment = graphql`
   fragment MarkdownMetadataFragment on MarkdownRemark {
+    fileAbsolutePath
     excerpt
     html
     timeToRead
