@@ -3,8 +3,10 @@ const TailwindExtractor = require('./utils/purgecss-tailwind-extractor');
 module.exports = {
   siteMetadata: {
     title: 'Paralelná Polis Košice',
-    description: 'Ostrov slobody a nezávislosti',
+    description:
+      'Paralelná Polis Košice je zameraná na vzdelávanie, objavovanie, tvorenie lepších systémov, experimentovanie a aplikáciu kryptomien a spojených technológií do bežného života. Je tu pre všetkých, ktorí majú záujem fungovať slobodnejšie a nezávislejšie.',
     siteUrl: 'https://www.paralelnapoliskosice.sk',
+    image: '/ppke-temp.jpg',
     email: 'info@ppke.sk',
     social: {
       facebook: 'https://www.facebook.com/paralelnapoliske',
@@ -21,6 +23,7 @@ module.exports = {
       ETH: '0x610825C5DFcbc72E284E5a5F381f4fd728263706',
       ETC: '0x1934945354BDe5b34F0c68E6AA78492050856D38',
     },
+    facebookAppID: '2127644397453206',
     mailchimpUrl:
       'https://paralelnapoliskosice.us19.list-manage.com/subscribe/post?u=8affbd08463d07e25a8bbcca4&id=b02c302d92',
   },

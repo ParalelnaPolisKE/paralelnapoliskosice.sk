@@ -10,7 +10,12 @@ export default ({
   data: { markdownRemark: post },
   pageContext: { prev, next },
 }) => (
-  <Page title={post.frontmatter.title}>
+  <Page
+    title={post.frontmatter.title}
+    description={post.excerpt}
+    image={post.frontmatter.cover.childImageSharp.fluid.src}
+    isBlogPost={true}
+  >
     <PostMeta
       date={post.fields.date}
       dateLocal={post.fields.dateLocal}
