@@ -24,6 +24,7 @@ export const SEO = ({ title, description, image, isBlogPost = false }) => (
         description: description || siteMetadata.description,
         image: `${siteMetadata.siteUrl}${image || siteMetadata.image}`,
         facebookAppID: siteMetadata.facebookAppID,
+        type: isBlogPost ? 'article' : 'website',
       };
 
       return (
@@ -34,7 +35,7 @@ export const SEO = ({ title, description, image, isBlogPost = false }) => (
           <meta name="description" content={seo.description} />
 
           {/* Open Graph / Facebook */}
-          {isBlogPost && <meta property="og:type" content="article" />}
+          <meta property="og:type" content={seo.type} />
           <meta property="og:title" content={seo.title} />
           <meta property="og:description" content={seo.description} />
           <meta property="og:image" content={seo.image} />
