@@ -33,11 +33,11 @@ V žiadnom prípade by si si nemal uložiť kópiu tvojho aktivačného kľúča
 
 #### Windows 10
 
-Postupuj podľa pokynov návodu k Microsoftu a potom si prečítaj “Windows <10” sekciu pre prípadný background a odporúčania.
+Postupuj podľa pokynov [návodu k Microsoftu](https://support.microsoft.com/sk-sk/help/4028713/windows-10-turn-on-device-encryption) a potom si prečítaj “Windows <10” sekciu pre prípadný background a odporúčania.
 
 #### Windows <10
 
-Postupuj podľa pokynov návodu od The Intercept. Je dôkladný, ale pritom stručný.
+Postupuj podľa pokynov [návodu od The Intercept](https://theintercept.com/2015/04/27/encrypting-laptop-like-mean/#windows). Je dôkladný, ale pritom stručný.
 
 ### OS X
 
