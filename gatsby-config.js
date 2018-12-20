@@ -12,6 +12,7 @@ module.exports = {
       facebook: 'https://www.facebook.com/paralelnapoliske',
       github: 'https://github.com/ParalelnaPolisKE',
       instagram: 'https://www.instagram.com/paralelnapoliske',
+      youtube: 'https://www.youtube.com/channel/UCC90ybnmSHgleXJaWPces9g',
       twitter: 'https://twitter.com/parallelpoliske',
       rss: '/blog/rss.xml',
     },
