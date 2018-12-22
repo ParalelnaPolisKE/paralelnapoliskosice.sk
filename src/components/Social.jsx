@@ -4,17 +4,16 @@ import { StaticQuery, graphql } from 'gatsby';
 export const Social = () => (
   <StaticQuery
     query={graphql`
-        {
-          site {
-            siteMetadata {
-              social {
-                facebook
-                twitter
-                instagram
-                youtube
-                github
-                rss
-              }
+      {
+        site {
+          siteMetadata {
+            social {
+              facebook
+              twitter
+              instagram
+              youtube
+              github
+              rss
             }
           }
         }
