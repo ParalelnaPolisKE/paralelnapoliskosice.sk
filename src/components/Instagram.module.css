@@ -1,9 +1,0 @@
-.instaImage {
-  filter: grayscale(1);
-  transition: all 0.25s ease-in;
-  flex-basis: 150px;
-}
-
-.instaImage:hover {
-  filter: grayscale(0);
-}

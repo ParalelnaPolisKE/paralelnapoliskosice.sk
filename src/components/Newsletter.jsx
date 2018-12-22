@@ -1,7 +1,9 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
-export const Newsletter = () => (
+export const Newsletter = ({
+  className = 'flex flex-col sm:flex-row sm:justify-center',
+}) => (
   <StaticQuery
     query={graphql`
       {
@@ -17,7 +19,7 @@ export const Newsletter = () => (
       <form
         action={data.site.siteMetadata.mailchimpUrl}
         method="POST"
-        className="flex flex-col sm:flex-row sm:justify-center"
+        className={className}
       >
         <input
           autoCapitalize="off"

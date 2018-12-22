@@ -13,7 +13,7 @@ const download = require(`./download-file`);
 
 const asstetsPath = './static/assets/instagram';
 const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN;
-const url = `https://api.instagram.com/v1/users/self/media/recent/?count=5&access_token=${accessToken}`;
+const url = `https://api.instagram.com/v1/users/self/media/recent/?count=6&access_token=${accessToken}`;
 
 // Used only when INSTAGRAM_ACCESS_TOKEN has no value
 const dummyImageData = [
