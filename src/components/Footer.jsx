@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import classnames from 'classnames';
 import css from './Footer.module.css';
 
@@ -71,7 +70,7 @@ export const Footer = ({ showNewsletter }) => (
 
     <div className="px-4">
       <Container className="py-4 sm:py-8 flex items-center justify-center sm:justify-start">
-        <strong className="hidden sm:block sm:text-lg mr-4">Nájdete nás</strong>{' '}
+        <strong className="hidden sm:block sm:text-lg mr-4">Sme na</strong>{' '}
         <Social />
       </Container>
     </div>
@@ -90,7 +89,6 @@ export const Footer = ({ showNewsletter }) => (
           <p className="font-light">
             designed by{' '}
             <a href="https://www.matusdesign.com">matusdesign.com</a>
-            <Link to="/newsletter">odkaz</Link>
           </p>
         </div>
 
