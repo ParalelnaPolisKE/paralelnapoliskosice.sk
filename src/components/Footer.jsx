@@ -4,7 +4,6 @@ import css from './Footer.module.css';
 
 import { Container } from './Container';
 import { CryptoAddresses } from './CryptoAddresses';
-import { Logo } from './Logo';
 import { Social } from './Social';
 import { Newsletter } from 'components/Newsletter';
 import InstagramImages from 'components/InstagramImages';
@@ -92,8 +91,8 @@ export const Footer = ({ showNewsletter }) => (
           </p>
         </div>
 
-        <div className="text-center">
-          <Logo />
+        <div className="text-center uppercase text-xs font-bold md:ml-8">
+          vojdi von...
         </div>
       </Container>
     </div>
