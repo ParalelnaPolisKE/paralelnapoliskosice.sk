@@ -91,7 +91,7 @@ export const Footer = ({ showNewsletter }) => (
           </p>
         </div>
 
-        <div className="text-center uppercase text-xs font-bold md:ml-8">
+        <div className="text-grey-dark text-center text-xs md:ml-8">
           vojdi von...
         </div>
       </Container>
