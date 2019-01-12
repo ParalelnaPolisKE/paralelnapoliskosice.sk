@@ -41,15 +41,16 @@ export class Navigation extends React.Component {
     }));
 
   render() {
-    const foo =
-      this.state.isSmallScreen && this.state.isToggled
+    const smallStyle = this.state.isSmallScreen
+      ? this.state.isToggled
         ? 'bg-grey-light shadow'
-        : 'pointer-events-none';
+        : 'pointer-events-none'
+      : '';
 
     return (
       <nav
         role="navigation"
-        className={`fixed sm:static z-50 pin-b pin-r sm:pin-none p-3 pl-12 pt-12 sm:p-0  sm:bg-transparent flex flex-col items-end md:items-center md:flex-row ${foo}`}
+        className={`fixed sm:static z-50 pin-b pin-r sm:pin-none p-3 pl-12 pt-12 sm:p-0  sm:bg-transparent flex flex-col items-end md:items-center md:flex-row ${smallStyle}`}
       >
         {this.state.isToggled && [
           <NavigationButton to="/" exact>
