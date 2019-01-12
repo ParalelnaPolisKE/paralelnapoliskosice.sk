@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 
 import { NavigationButton } from './NavigationButton';
 
@@ -41,16 +42,20 @@ export class Navigation extends React.Component {
     }));
 
   render() {
-    const smallStyle = this.state.isSmallScreen
-      ? this.state.isToggled
-        ? 'bg-grey-light shadow'
-        : 'pointer-events-none'
-      : '';
-
     return (
       <nav
         role="navigation"
-        className={`fixed sm:static z-50 pin-b pin-r sm:pin-none p-3 pl-12 pt-12 sm:p-0  sm:bg-transparent flex flex-col items-end md:items-center md:flex-row ${smallStyle}`}
+        className={classnames(
+          'fixed sm:static z-50 pin-b pin-r sm:pin-none p-3 pl-12 pt-12 sm:p-0  sm:bg-transparent flex flex-col items-end md:items-center md:flex-row',
+          {
+            'bg-grey-light shadow':
+              this.state.isSmallScreen && this.state.isToggled,
+          },
+          {
+            'pointer-events-none':
+              this.state.isSmallScreen && !this.state.isToggled,
+          }
+        )}
       >
         {this.state.isToggled && [
           <NavigationButton to="/" exact>
