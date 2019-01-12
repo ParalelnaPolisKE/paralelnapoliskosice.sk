@@ -73,7 +73,7 @@ export class Navigation extends React.Component {
         {this.state.isSmallScreen && (
           <div
             onClick={this.handleToggle}
-            className="bg-grey-dark hover:bg-grey-darker text-xl p-3 mt-8 rounded-full shadow-md cursor-pointer pointer-events-auto"
+            className="bg-grey hover:bg-grey-dark text-xl p-3 mt-8 rounded-full shadow-md cursor-pointer pointer-events-auto"
           >
             {this.state.isToggled ? (
               <span className="icon-cancel" />
