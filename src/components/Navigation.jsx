@@ -5,34 +5,32 @@ import { NavigationButton } from './NavigationButton';
 export class Navigation extends React.Component {
   state = {
     isToggled: true,
-    showToggler: false,
+    isSmallScreen: false,
   };
-
-  mediaQueryList = {};
 
   componentDidMount() {
     this.mediaQueryList = window.matchMedia('(min-width: 576px)');
-    this.mediaQueryList.addListener(this.checkWidth);
+    this.mediaQueryList.addListener(this.handleScreenWidth);
 
-    this.checkWidth(this.mediaQueryList);
+    this.handleScreenWidth(this.mediaQueryList);
   }
 
   componentWillUnmount() {
-    this.mediaQueryList.removeListener(this.checkWidth);
+    this.mediaQueryList.removeListener(this.handleScreenWidth);
   }
 
-  checkWidth = e => {
+  handleScreenWidth = e => {
     if (e.matches) {
       // Big screen
       this.setState(() => ({
         isToggled: true,
-        showToggler: false,
+        isSmallScreen: false,
       }));
     } else {
       // Small screen
       this.setState(() => ({
         isToggled: false,
-        showToggler: true,
+        isSmallScreen: true,
       }));
     }
   };
@@ -43,26 +41,39 @@ export class Navigation extends React.Component {
     }));
 
   render() {
+    const foo =
+      this.state.isSmallScreen && this.state.isToggled
+        ? 'bg-grey-lighter shadow'
+        : 'pointer-events-none';
+
     return (
-      <nav role="navigation">
-        {this.state.isToggled && (
-          <div className="flex flex-col items-end md:items-center md:flex-row">
-            <NavigationButton to="/" exact>
-              Domov
-            </NavigationButton>
-            <NavigationButton to="/o-paralelnej-polis">
-              O Paralelnej Polis
-            </NavigationButton>
-            <NavigationButton to="/rychlokurz-bezpecnosti">
-              Rýchlokurz
-            </NavigationButton>
-            <NavigationButton to="/blog">Blog</NavigationButton>
-            <NavigationButton to="/kontakt">Kontakt</NavigationButton>
-          </div>
-        )}
-        {this.state.showToggler && (
-          <div onClick={this.handleToggle}>
-            {this.state.isToggled ? 'x' : '+'}
+      <nav
+        role="navigation"
+        className={`fixed sm:static z-50 pin-b pin-r sm:pin-none m-2 p-6 sm:m-0 sm:p-0  sm:bg-transparent flex flex-col items-end md:items-center md:flex-row ${foo}`}
+      >
+        {this.state.isToggled && [
+          <NavigationButton to="/" exact>
+            Domov
+          </NavigationButton>,
+          <NavigationButton to="/o-paralelnej-polis">
+            O Paralelnej Polis
+          </NavigationButton>,
+          <NavigationButton to="/rychlokurz-bezpecnosti">
+            Rýchlokurz
+          </NavigationButton>,
+          <NavigationButton to="/blog">Blog</NavigationButton>,
+          <NavigationButton to="/kontakt">Kontakt</NavigationButton>,
+        ]}
+        {this.state.isSmallScreen && (
+          <div
+            onClick={this.handleToggle}
+            className="bg-grey hover:bg-grey-dark text-xl p-2 mt-8 rounded-full shadow-md cursor-pointer pointer-events-auto"
+          >
+            {this.state.isToggled ? (
+              <span className="icon-cancel" />
+            ) : (
+              <span className="icon-menu" />
+            )}
           </div>
         )}
       </nav>
