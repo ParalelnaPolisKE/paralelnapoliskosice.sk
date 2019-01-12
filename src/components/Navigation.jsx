@@ -43,13 +43,13 @@ export class Navigation extends React.Component {
   render() {
     const foo =
       this.state.isSmallScreen && this.state.isToggled
-        ? 'bg-grey-lighter shadow'
+        ? 'bg-grey-light shadow'
         : 'pointer-events-none';
 
     return (
       <nav
         role="navigation"
-        className={`fixed sm:static z-50 pin-b pin-r sm:pin-none m-2 p-6 sm:m-0 sm:p-0  sm:bg-transparent flex flex-col items-end md:items-center md:flex-row ${foo}`}
+        className={`fixed sm:static z-50 pin-b pin-r sm:pin-none p-3 pl-12 pt-12 sm:p-0  sm:bg-transparent flex flex-col items-end md:items-center md:flex-row ${foo}`}
       >
         {this.state.isToggled && [
           <NavigationButton to="/" exact>
@@ -67,7 +67,7 @@ export class Navigation extends React.Component {
         {this.state.isSmallScreen && (
           <div
             onClick={this.handleToggle}
-            className="bg-grey hover:bg-grey-dark text-xl p-2 mt-8 rounded-full shadow-md cursor-pointer pointer-events-auto"
+            className="bg-grey-dark hover:bg-grey-darker text-xl p-3 mt-8 rounded-full shadow-md cursor-pointer pointer-events-auto"
           >
             {this.state.isToggled ? (
               <span className="icon-cancel" />
