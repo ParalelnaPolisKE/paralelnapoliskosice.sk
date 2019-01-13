@@ -1,3 +1,7 @@
 {
-    "recommendations": ["EditorConfig.editorconfig", "esbenp.prettier-vscode"]
+  "recommendations": [
+    "EditorConfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss"
+  ]
 }
