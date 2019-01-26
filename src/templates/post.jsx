@@ -25,10 +25,11 @@ export default ({ data: { markdownRemark }, pageContext: { prev, next } }) => {
         tags={post.tags}
         author={post.author}
       />
+
       <article className="max-w-md m-auto md:my-20">
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Author {...post.author} />
       </article>
-      <Author {...post.author} />
 
       <p className="text-xs mt-4 text-grey-darker text-center">
         Máme v článku chybu alebo chceš niečo doplniť?{' '}
