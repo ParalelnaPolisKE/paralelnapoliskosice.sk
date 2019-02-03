@@ -9,9 +9,12 @@
   status = 301
   force = true
 
+# Check results https://securityheaders.com
 [[headers]]
   for = "/*"
   [headers.values]
+    Feature-Policy = "camera: 'none'; microphone 'none'"
+    Referrer-Policy = "strict-origin-when-cross-origin"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
