@@ -13,6 +13,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    Content-Security-Policy-Report-Only = "default-src 'self'; script-src 'self'"
     Feature-Policy = "camera: 'none'; microphone 'none'"
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Frame-Options = "DENY"
