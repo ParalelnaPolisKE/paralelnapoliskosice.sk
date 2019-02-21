@@ -1,7 +1,6 @@
-<p align="center">
-  <img src="static/img/logo.svg">
-</p>
-<h1 align="center">Paralelná Polis Košice</h1>
+[![logo](static/img/logo.svg)](https://www.paralelnapoliskosice.sk)
+
+# Paralelná Polis Košice
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f5d98adf-b9e4-40f2-a308-1170fa7bf4c5/deploy-status)](https://app.netlify.com/sites/paralelnapoliskosice/deploys) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
