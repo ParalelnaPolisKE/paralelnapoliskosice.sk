@@ -1,8 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, withPrefix } from 'gatsby';
 
-import logo from '../images/logo.svg';
-import logoLong from '../images/logo-long.svg';
 import css from './Logo.module.css';
 
 export const Logo = () => (
@@ -10,11 +8,11 @@ export const Logo = () => (
     <picture>
       <source
         media="(max-width: 575px)"
-        srcSet={logoLong}
+        srcSet={withPrefix('/img/logo-long.svg')}
         type="image/svg+xml"
       />
 
-      <img src={logo} alt="logo" className="w-64" />
+      <img src={withPrefix('/img/logo.svg')} alt="logo" className="w-64" />
     </picture>
   </Link>
 );
