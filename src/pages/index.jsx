@@ -18,7 +18,7 @@ export default ({
       <Container>
         <div className="lg:flex -mx-4">
           <section className="px-4">
-            <h1>O Paralelnej Polis</h1>
+            <h1>O Paralelnej Polis Košice</h1>
             <p>
               Sme kolektív ľudí, ktorí chcú žiť v slobodnejšom a otvorenejšom
               svete. Hľadáme spôsoby a technológie (Bitcoin, blockchain,
