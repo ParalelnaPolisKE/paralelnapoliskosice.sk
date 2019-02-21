@@ -58,17 +58,21 @@ export class Navigation extends React.Component {
         )}
       >
         {this.state.isToggled && [
-          <NavigationButton to="/" exact>
+          <NavigationButton key="home" to="/" exact>
             Domov
           </NavigationButton>,
-          <NavigationButton to="/o-paralelnej-polis">
+          <NavigationButton key="about" to="/o-paralelnej-polis">
             O Paralelnej Polis
           </NavigationButton>,
-          <NavigationButton to="/rychlokurz-bezpecnosti">
+          <NavigationButton key="course" to="/rychlokurz-bezpecnosti">
             Rýchlokurz
           </NavigationButton>,
-          <NavigationButton to="/blog">Blog</NavigationButton>,
-          <NavigationButton to="/kontakt">Kontakt</NavigationButton>,
+          <NavigationButton key="blog" to="/blog">
+            Blog
+          </NavigationButton>,
+          <NavigationButton key="contact" to="/kontakt">
+            Kontakt
+          </NavigationButton>,
         ]}
         {this.state.isSmallScreen && (
           <div
