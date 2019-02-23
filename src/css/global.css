@@ -23,7 +23,7 @@ a {
 }
 
 a:hover,
-.group:hover a {
+.group:hover h2 a {
   background-image: linear-gradient(
     180deg,
     transparent 70%,
