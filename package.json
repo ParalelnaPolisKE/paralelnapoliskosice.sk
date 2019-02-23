@@ -24,16 +24,16 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "prestart": "npm run instascrap && npm run postcss",
-    "start": "gatsby develop",
-    "prebuild": "npm run instascrap && npm run postcss",
-    "build": "gatsby build",
+    "prestart": "npm run instascrap",
+    "start": "npm run postcss -- --watch & gatsby develop",
+    "prebuild": "npm run instascrap",
+    "build": "npm run postcss && gatsby build",
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "instascrap": "node ./utils/instagram/scrape.js",
-    "postcss": "postcss ./src/css/styles.css -o ./src/css/output.css"
+    "postcss": "postcss ./src/css/styles.css --output ./src/css/output.css"
   },
   "dependencies": {
     "babel-plugin-tailwind": "^0.1.10",
@@ -65,6 +65,7 @@
     "node-fetch": "^2.2.0",
     "postcss": "^7.0.0",
     "postcss-cli": "^6.0.0",
+    "postcss-import": "^12.0.1",
     "progress": "^2.0.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",

@@ -1,9 +1,6 @@
 import React from 'react';
 
 import 'css/output.css';
-import 'css/global.css';
-import 'css/fontello.css';
-import 'css/utilities.css';
 
 import { SEO } from 'components/SEO';
 import { Header } from 'components/Header';

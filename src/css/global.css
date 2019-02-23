@@ -1,13 +1,11 @@
 html {
+  @apply font-sans;
   font-size: 16px;
-  font-family: 'system-ui', 'BlinkMacSystemFont', '-apple-system', 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', 'sans-serif';
   overflow-y: scroll;
 }
 
 body {
-  color: #212529;
+  @apply text-black;
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
@@ -20,19 +18,28 @@ body,
 }
 
 a {
-  color: #212529;
+  @apply text-black;
   text-decoration: none;
 }
 
-a:hover {
-  background-image: linear-gradient(180deg, transparent 70%, #606f7b 0);
+a:hover,
+.group:hover a {
+  background-image: linear-gradient(
+    180deg,
+    transparent 70%,
+    config('colors.grey-darker') 0
+  );
   text-decoration: none;
 }
 
 p a,
 ul a,
 ol a {
-  background-image: linear-gradient(180deg, transparent 70%, #b8c2cc 0);
+  background-image: linear-gradient(
+    180deg,
+    transparent 70%,
+    config('colors.grey') 0
+  );
 }
 
 h1 {
@@ -52,7 +59,7 @@ p {
 }
 
 blockquote {
-  color: #606f7b;
+  color: config('colors.grey-darker');
   font-size: 1.25rem;
   font-style: italic;
 }

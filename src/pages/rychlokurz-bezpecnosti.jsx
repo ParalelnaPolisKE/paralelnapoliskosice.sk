@@ -36,7 +36,7 @@ export default ({
       {getPosts(posts).map((post, i) => (
         <div className="sm:w-1/2 p-2" key={post.url}>
           <div
-            className="bg-grey-lighter hover:bg-grey-light focus:bg-grey-light cursor-pointer p-4"
+            className="group bg-grey-lighter hover:bg-grey-light focus:bg-grey-light cursor-pointer p-4"
             onClick={() => navigate(post.url)}
             role="link"
             tabIndex="0"
