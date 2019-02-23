@@ -152,8 +152,8 @@ module.exports = {
             extensions: ['js', 'jsx'],
           },
         ],
-        ignore: ['fontello.css'],
         whitelist: ['___gatsby', 'ol'],
+        whitelistPatterns: [/^icon\-/],
       },
     },
     {
