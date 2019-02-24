@@ -12,7 +12,7 @@ export const Logo = () => (
         type="image/svg+xml"
       />
 
-      <img src={withPrefix('/img/logo.svg')} alt="logo" className="w-64" />
+      <img src={withPrefix('/img/logo.svg')} alt="logo" className="w-48 py-2" />
     </picture>
   </Link>
 );
