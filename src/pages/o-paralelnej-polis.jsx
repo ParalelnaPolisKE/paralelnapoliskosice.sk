@@ -13,7 +13,7 @@ export default () => (
       Hľadáme spôsoby a technológie (Bitcoin, blockchain, reputačné systémy a
       decentralizované technológie), ktoré nám otvárajú možnosti, zjednodušujú
       bežné procesy a odstraňujú bariéry. V Paralelnej Polis Košice chceme
-      vytvoriť prostredie zamerané na vzdelávanie, objavovanie a tvorenie
+      vytvoriť prostredie zamerané na vzdelávanie, diskusiu, objavovanie a tvorenie
       lepších systémov pre naše okolie - teba, nás, firmy, jednotlivcov -
       všetkých, ktorí majú záujem fungovať slobodnejšie a nezávislejšie.
       Zameriavame sa na experimentovanie a aplikáciu kryptomien a spojených
