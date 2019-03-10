@@ -144,6 +144,14 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-transformer-sharp',
     {
+      resolve: 'gatsby-mdx',
+      options: {
+        defaultLayouts: {
+          default: require.resolve('./src/templates/page.jsx'),
+        },
+      },
+    },
+    {
       resolve: 'gatsby-plugin-purgecss',
       options: {
         extractors: [
