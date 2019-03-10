@@ -85,9 +85,10 @@ export const Footer = ({ showNewsletter }) => (
 
           <CryptoAddresses />
 
-          <p className="font-light">
-            <span className="text-xs">{'</>'}</span>{' '}
-            <a href="https://romanvesely.com">romanvesely.com</a>
+          <p>
+            <a href="https://romanvesely.com" className="font-light">
+              {'<rmnvsl/>'}
+            </a>
           </p>
         </div>
 
