@@ -160,7 +160,7 @@ module.exports = {
             extensions: ['js', 'jsx'],
           },
         ],
-        whitelist: ['___gatsby', 'ol'],
+        whitelist: ['___gatsby', 'ol', 'h2', 'h3'],
         whitelistPatterns: [/^icon\-/],
       },
     },
