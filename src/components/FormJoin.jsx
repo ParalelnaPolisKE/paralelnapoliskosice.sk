@@ -4,6 +4,7 @@ export const FormJoin = ({ children, category }) => (
   <form
     name="join"
     method="POST"
+    action="/zapoj-sa/ok"
     data-netlify="true"
     className="p-4 mb-8 bg-grey-lightest leading-none md:flex"
   >
