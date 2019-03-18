@@ -11,7 +11,7 @@ Blog posts are located in [`./src/pages/blog`](https://github.com/ParalelnaPolis
 ### To add/edit a post:
 
 - create a new pull request containing your updates
-- if you have write access to the repository you can log in to [admin](https://paralelnapoliske.netlify.com/admin/) and edit posts comfortably trough [Netlify CMS](https://www.netlifycms.org/)
+- if you have write access to the repository you can log in to [admin](https://www.paralelnapoliskosice.sk/admin/) and edit posts comfortably trough [Netlify CMS](https://www.netlifycms.org/)
 
 ## Development
 
