@@ -18,11 +18,11 @@ To na čo klikáš, súbory cookies, tvoja história prehliadača, história ná
 
 ## V nasledujúcich krokoch ti poradíme, ako sa tomu čo najlepšie vyhnúť: ako sa anonymizovať online
 
-Na úvod pomôže sledovať niekoľko základných krokov, ktoré do veľkej miery obmedzia únik informácií o tvojom súkromí. Tieto platia ako na počítačoch, tak aj na mobiloch a nepotrebujú komplexné nastavenie, zväčša ich stačí len nainštalovať.
+Ochrana súkromia úž nie je novou témou a preto existuje veľa možností, ako sa chrániť. Niektoré sú jednoduché a dostupné každému, iné vyžadujú technické znalosti. Na úvod pomôže sledovať niekoľko základných a jednoduchých krokov, ktoré do veľkej miery obmedzia únik informácií o tvojom súkromí. Tieto platia ako na počítačoch, tak aj na mobiloch a nepotrebujú komplexné nastavenie, zväčša ich stačí len nainštalovať.
 
 Ak si fanúšik pareto pravidla, tak toto je tvoja [<abbr>TL;DR</abbr>](https://www.urbandictionary.com/define.php?term=tl%3Bdr) verzia - **týmito krokmi dosiahneš 80% výsledkov za 20% práce**.
 
-1. **Pozor na firmy so sídlom v US či UK**: Podľa [Privacytools.io](https://www.privacytools.io/#ukusa) je pri týchto firmách a ich produktoch najvyššia šanca, že ich sledujú aj iné organizácie, častokrát štátne. Takisto majú zákony nastavené tak, aby vyhovovali viac štátu ako súkromiu jednotlivcov.
+1. **Pozor na firmy so sídlom v US či UK**: Podľa [Privacytools.io](https://www.privacytools.io/#ukusa) je pri týchto firmách a ich produktoch najvyššia šanca, že ich sledujú aj iné organizácie, častokrát štátne. Takisto majú zákony nastavené tak, aby vyhovovali viac štátu ako súkromiu jednotlivcov. Ak na ochranu súkromia hľadíš seriózne, tak využívaj služby registrované mimo US či UK.
 2. **Používaj prehliadač, ktorý dáva súkromie na prvé miesto** a je takto nastavený od výroby - odporúčame nový [Brave prehliadač](https://brave.com/). Je postavený na Google Chrome technológii, čiže na ňom fungujú aj Chrome rozšírenia, no blokuje reklamu a sledovanie tvojich aktivít ako štandard. Ak nepoužívaš Brave prehliadač, súkromie ti pomôžu ochrániť [rôzne rozšírenia](https://www.paralelnapoliskosice.sk/blog/2018-12-13-nainstaluj-si-doplnky-do-prehliadaca). 
    * Chceš vedieť ako tvoj dnešný prehliadač (ne)chráni tvoje súkromie? Otestuj ho tu: <https://panopticlick.eff.org/>
    * Taktiež nie je na škodu používať inkognito okno ak nechceš aby sa tvoje kroky niekam ukladali
