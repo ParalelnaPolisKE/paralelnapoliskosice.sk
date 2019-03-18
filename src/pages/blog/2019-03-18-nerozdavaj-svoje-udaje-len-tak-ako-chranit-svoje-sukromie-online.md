@@ -1,6 +1,7 @@
 ---
 title: Nerozdávaj svoje údaje len tak - Ako  chrániť svoje súkromie online
 author: Lukas
+cover: /assets/mikhail-vasilyev-253977-unsplash-large-.jpg
 tags:
   - online privacy
   - online súkromie
