@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: paralelnapoliskosice.sk
-Token: 3ea541a20bc36e04c0a6aac6955f77f6d5233b3e0713df023c9e6263798fd818
