@@ -32,6 +32,7 @@ export const FormJoin = ({ children, category }) => (
         required
       />
       <input name="subject" type="hidden" value={category} />
+      <input name="form-name" type="hidden" value="join" />
       <input
         name="submit"
         type="submit"
