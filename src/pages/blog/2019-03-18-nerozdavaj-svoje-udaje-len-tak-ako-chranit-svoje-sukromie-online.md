@@ -3,13 +3,9 @@ title: Nerozdávaj svoje údaje len tak - Ako  chrániť svoje súkromie online
 author: Lukas Cech
 cover: /assets/mikhail-vasilyev-253977-unsplash-large-.jpg
 tags:
-  - online privacy
   - online súkromie
   - ochrana súkromia online
-  - bezpečné vyhľadávače
-  - súkromné vyhľadávače
-  - súkromné prehľadávače
-  - ako sa anonymizovať online
+  - anonymita online
 ---
 
 Žijeme vo svete, kde sa hlavnou komoditou stávajú naše osobné údaje. Veľké spoločnosti ich o nás zbierajú z každej strany a buď ich predávajú ďalej - za účelom napríklad marketingu, alebo ich spracúvajú pre svoje účely. Prípadne na tieto dáta nazerajú iné organizácie, štátne či súkromné, ktoré z nich môžu vyvodiť rôzne závery.
