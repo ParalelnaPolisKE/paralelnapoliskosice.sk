@@ -32,7 +32,7 @@ Ak si fanúšik pareto pravidla, tak toto je tvoja [<abbr>TL;DR</abbr>](https://
    * Každý prehliadač má svoje Nastavenia, kde nájdeš sekciu pre predvolený vyhľadávač, kam tieto vieš pridať.
 5. **Možno ťa sleduje aj firma, cez ktorú máš internet**
    * Aj tvoj internet provider vie sledovať čo robíš, na aké stránky chodíš, kde nakupuješ, zdravotný stav (podľa toho, čo vyhľadávaš a čítaš) a ďalšie informácie. Tieto informácie môžu potom ďalej predávať za účelom zisku. Čo sa s tvojimi údajmi deje po predaji? Dobrá otázka, na ktorú je jedna odpoveď - čokoľvek, ťažko povedať.
-   * Ak tomu chceš naozaj zamedziť, nainštaluj si VPN: <https://www.privacytools.io/#vpn> - VPN v skratke zabezpečí / zašifruje všetky tvoje dáta - vyhľadávania, webstránky atď. Tak, že ich tvoj poskytovateľ internetu nevie prečítať.
+   * Ak tomu chceš naozaj zamedziť, nainštaluj si VPN: <https://www.privacytools.io/#vpn> - VPN v skratke zabezpečí / zašifruje všetky tvoje dáta - vyhľadávania, webstránky atď. Tak, že ich tvoj poskytovateľ internetu nevie prečítať. Samozrejme, dáta sú len také bezpečné, ako firma, ktorá poskytuje VPN, keďže oni k nim majú plný prístup - takže je dôležité si vybrať VPN poskytovateľa, ktorému dôveruješ.
 6. **Kontroluj k akým údajom dávaš prístup a komu**
    * Každá appka či online registrácia si vyžaduje nejaké povinné údaje a potom viac nepovinných. Zamysli sa, či nestačí vyplniť len tie povinné. Alebo ako pravidlo stále vyplň len tie povinné. Nepovinné údaje tieto firmy nepotrebujú na sprostredkovanie danej služby, tak nie je dôvod ich rozdávať. Pýtajú si ich, lebo môžu, nie lebo to potrebujú pre danú službu.
    * Prever si už nainštalované appky a ich nastavenia - napríklad má Facebook prístup k tvojmu telefónnemu zoznamu? Potrebuješ to naozaj?
