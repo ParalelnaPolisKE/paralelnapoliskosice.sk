@@ -3,9 +3,10 @@ import React from 'react';
 export const FormJoin = ({ children, category }) => (
   <form
     name="join"
-    method="POST"
+    method="post"
     action="/zapoj-sa/ok"
     data-netlify="true"
+    data-netlify-honeypot="bot-field"
     className="p-4 mb-8 bg-grey-lightest leading-none md:flex"
   >
     <textarea
@@ -32,7 +33,10 @@ export const FormJoin = ({ children, category }) => (
         required
       />
       <input name="subject" type="hidden" value={category} />
-      <input type="hidden" name="form-name" value="join" />
+      <input name="form-name" type="hidden" value="join" />
+      <span className="hidden">
+        <input name="bot-field" />
+      </span>
       <input
         name="submit"
         type="submit"
