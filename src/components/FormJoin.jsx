@@ -7,6 +7,7 @@ export const FormJoin = ({ children, category }) => (
     action="/zapoj-sa/ok"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
+    netlify
     className="p-4 mb-8 bg-grey-lightest leading-none md:flex"
   >
     <textarea
