@@ -1,12 +1,19 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import Helmet from 'react-helmet';
 
-export const Pagination = ({ prefix, pagesCount, currentPage }) => {
+export const Pagination = ({
+  prefix,
+  pagesCount,
+  currentPage,
+  showSelect = true,
+}) => {
   const isFirst = currentPage === 1;
   const isLast = currentPage === pagesCount;
   const prevPage = currentPage - 1 === 1 ? '' : (currentPage - 1).toString();
   const nextPage = (currentPage + 1).toString();
+  const selectPage = e =>
+    navigate(e.target.value ? `${prefix}/${e.target.value}` : prefix);
 
   return (
     <>
@@ -25,22 +32,39 @@ export const Pagination = ({ prefix, pagesCount, currentPage }) => {
           listStyle: 'none',
           padding: 0,
         }}
-      >
-        {Array.from({ length: pagesCount }, (_, i) => (
-          <li key={`pagination-number${i + 1}`}>
-            <Link to={`${prefix}/${i === 0 ? '' : i + 1}`}>{i + 1}</Link>
-          </li>
-        ))}
-      </ul>
-      {!isFirst && (
-        <Link to={`${prefix}/${prevPage}`} rel="prev">
-          ← Previous Page
-        </Link>
-      )}
-      {!isLast && (
-        <Link to={`${prefix}/${nextPage}`} rel="next">
-          Next Page →
-        </Link>
+      />
+      <div className="flex py-4 mt-10 relative">
+        {!isFirst && (
+          <Link to={`${prefix}/${prevPage}`} rel="prev" className="flex-1">
+            ← Novšie príspevky
+          </Link>
+        )}
+        {!isLast && (
+          <Link
+            to={`${prefix}/${nextPage}`}
+            rel="next"
+            className="flex-1 text-right"
+          >
+            Staršie príspevky →
+          </Link>
+        )}
+      </div>
+      {showSelect && (
+        <div className="flex justify-center">
+          Strana
+          <select className="font-bold mx-2" onChange={selectPage}>
+            {Array.from({ length: pagesCount }, (_, i) => (
+              <option
+                key={`pagination-number${i + 1}`}
+                value={i === 0 ? '' : i + 1}
+                selected={i + 1 === currentPage}
+              >
+                {i + 1}
+              </option>
+            ))}
+          </select>
+          z {pagesCount}
+        </div>
       )}
     </>
   );
