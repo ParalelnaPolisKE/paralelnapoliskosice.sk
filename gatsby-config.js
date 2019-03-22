@@ -27,6 +27,8 @@ module.exports = {
     facebookAppID: '2127644397453206',
     mailchimpUrl:
       'https://paralelnapoliskosice.us19.list-manage.com/subscribe/post?u=8affbd08463d07e25a8bbcca4&id=b02c302d92',
+    joinUsFormAction:
+      'https://briskforms.com/go/410d7fbf05f2283f04c8a02e86b531be',
   },
   plugins: [
     {
