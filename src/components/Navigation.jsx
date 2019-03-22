@@ -73,9 +73,9 @@ export class Navigation extends React.Component {
           <NavigationButton key="contact" to="/kontakt">
             Kontakt
           </NavigationButton>,
-          // <NavigationButton key="zapoj-sa" to="/zapoj-sa">
-          //   <b>Zapoj sa</b>
-          // </NavigationButton>,
+          <NavigationButton key="zapoj-sa" to="/zapoj-sa">
+            <b>Zapoj sa</b>
+          </NavigationButton>,
         ]}
         {this.state.isSmallScreen && (
           <div
