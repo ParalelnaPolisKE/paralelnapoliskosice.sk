@@ -41,7 +41,7 @@ export const FormJoin = ({ children, category }) => {
               rows={5}
               required
             />
-            <p className="text-sm mt-2 mb-0">{children}</p>
+            <p className="text-sm mt-2 md:mb-0">{children}</p>
           </div>
           <div className="flex flex-col flex-1 md:ml-2">
             <label
