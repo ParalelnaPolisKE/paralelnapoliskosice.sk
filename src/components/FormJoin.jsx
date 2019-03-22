@@ -7,9 +7,7 @@ export const FormJoin = ({ children, category }) => {
     <form
       name={formName}
       method="post"
-      action="/zapoj-sa/ok"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
+      action="https://briskforms.com/go/410d7fbf05f2283f04c8a02e86b531be"
       className="p-4 mb-8 bg-grey-lightest leading-none md:flex"
     >
       <textarea
