@@ -47,6 +47,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
   const postTemplate = path.resolve('./src/templates/post.jsx');
   const tagTemplate = path.resolve('./src/templates/tag.jsx');
+  const blogTemplate = path.resolve('./src/templates/blog.jsx');
 
   return new Promise((resolve, reject) => {
     graphql(`
@@ -112,6 +113,26 @@ exports.createPages = ({ graphql, actions }) => {
           component: tagTemplate,
           context: {
             tag,
+          },
+        });
+      });
+
+      // Create blog subpages
+      const postsCount = posts.length;
+      const postsPerPage = 6;
+      const pagesCount = Math.ceil(postsCount / postsPerPage);
+
+      Array.from({ length: pagesCount }).forEach((page, i) => {
+        const currentPage = i + 1;
+
+        createPage({
+          path: i === 0 ? `/${postsPrefix}` : `/${postsPrefix}/${currentPage}`,
+          component: blogTemplate,
+          context: {
+            limit: postsPerPage,
+            skip: postsPerPage * i,
+            pagesCount,
+            currentPage,
           },
         });
       });
