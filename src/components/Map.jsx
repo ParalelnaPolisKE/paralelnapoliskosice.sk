@@ -13,11 +13,15 @@ export class Map extends React.Component {
   state = initialState;
 
   setActivePoint = node =>
-    this.setState(({ active }) => ({
-      active: active === node.name ? null : node.name,
-      lat: node.lat,
-      lng: node.lng,
-    }));
+    this.setState(({ active }) =>
+      active === node.name
+        ? initialState
+        : {
+            active: active === node.name ? null : node.name,
+            lat: node.lat,
+            lng: node.lng,
+          }
+    );
 
   render() {
     const { active, lat, lng, zoom } = this.state;
