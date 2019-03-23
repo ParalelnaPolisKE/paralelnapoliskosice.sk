@@ -203,6 +203,7 @@ const plugins = [
       key: process.env.FACEBOOK_ACCESS_TOKEN,
     },
   },
+  'gatsby-plugin-react-leaflet',
 ];
 
 const mapping = {

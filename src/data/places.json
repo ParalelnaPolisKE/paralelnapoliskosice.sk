@@ -1,0 +1,23 @@
+[
+  {
+    "name": "ATM Kino Úsmev",
+    "description": "TBD",
+    "crypto": ["BTC", "LTC", "DOGE", "XMR"],
+    "lat": 48.726202,
+    "lng": 21.257388
+  },
+  {
+    "name": "ATM Dobré časy",
+    "description": "TBD",
+    "crypto": ["BTC", "BCH", "LTC"],
+    "lat": 48.719672,
+    "lng": 21.261398
+  },
+  {
+    "name": "ATM Železničná stanica",
+    "description": "TBD",
+    "crypto": ["BTC", "BCH", "LTC"],
+    "lat": 48.7227418,
+    "lng": 21.2677073
+  }
+]
