@@ -1,3 +1,4 @@
+/* global FB */
 const getLastArrayItem = array => array.slice(-1)[0];
 
 export const getPosts = posts => posts.map(post => getPost(post.node));
@@ -18,3 +19,29 @@ export const getPost = post => ({
     ? post.frontmatter.cover.childImageSharp.fluid
     : null,
 });
+
+const callFBApi = async (url, options) => {
+  return new Promise((resolve, reject) => {
+    FB.api(
+      url,
+      response => {
+        if (response && !response.error) {
+          resolve(response);
+        } else {
+          reject(response.error);
+        }
+      },
+      { access_token: options.accessToken }
+    );
+  });
+};
+
+export const getEvents = async accessToken => {
+  const response = await callFBApi('/paralelnapoliske/events', { accessToken });
+
+  if (response && response.data) {
+    return response.data;
+  }
+
+  return null;
+};

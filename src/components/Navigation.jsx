@@ -70,6 +70,9 @@ export class Navigation extends React.Component {
           <NavigationButton key="blog" to="/blog">
             Blog
           </NavigationButton>,
+          <NavigationButton key="akcie" to="/akcie">
+            Akcie
+          </NavigationButton>,
           <NavigationButton key="contact" to="/kontakt">
             Kontakt
           </NavigationButton>,
