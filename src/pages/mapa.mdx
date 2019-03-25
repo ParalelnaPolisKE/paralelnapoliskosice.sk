@@ -3,8 +3,7 @@ title: Mapa krypto-pozitívnych miest
 url: /mapa
 ---
 
-import { graphql } from 'gatsby';
 import { Map } from '../components/Map';
 import { PlacesProvider } from '../components/PlacesProvider';
 
-<PlacesProvider>{places => <Map data={places} />}</PlacesProvider>
+<PlacesProvider>{places => <Map places={places} />}</PlacesProvider>
