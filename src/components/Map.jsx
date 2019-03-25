@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import classnames from 'classnames';
 import { Map as LeafletMap, TileLayer, Marker, Tooltip } from 'react-leaflet';
 
-const mapCenter = [48.720384, 21.2538303];
-const mapBounds = [[48.7765455, 21.188796], [48.6888545, 21.323346]];
-const initialZoom = 13;
-
 const getCoordinates = place => [place.lat, place.lng];
 
-export const Map = ({ places }) => {
+export const Map = ({
+  places,
+  center,
+  zoom: initialZoom = 13,
+  bounds = null,
+}) => {
   const [activePlace, setActivePlace] = useState(null);
   const [zoom, setZoom] = useState(initialZoom);
 
@@ -28,11 +29,11 @@ export const Map = ({ places }) => {
   return (
     <div className="mb-8 md:flex">
       <LeafletMap
-        maxBounds={mapBounds}
+        maxBounds={bounds}
         center={
           activePlace
             ? getCoordinates(places.find(({ name }) => name === activePlace))
-            : mapCenter
+            : center
         }
         zoom={zoom}
         className="mb-4 md:w-2/3"
