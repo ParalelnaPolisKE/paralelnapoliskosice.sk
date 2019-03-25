@@ -49,7 +49,7 @@ export const Map = ({ places }) => {
           <Marker
             key={place.name}
             position={getCoordinates(place)}
-            onclick={() => changePlace(place.name)}
+            onclick={() => setActivePlace(place.name)}
           >
             <Tooltip direction="top">{place.name}</Tooltip>
           </Marker>
