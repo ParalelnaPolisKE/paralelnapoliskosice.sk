@@ -1,10 +1,12 @@
 html {
+  @apply bg-black;
   @apply font-sans;
   font-size: 16px;
   overflow-y: scroll;
 }
 
 body {
+  @apply bg-white;
   @apply text-black;
   font-size: 1rem;
   line-height: 1.5;
