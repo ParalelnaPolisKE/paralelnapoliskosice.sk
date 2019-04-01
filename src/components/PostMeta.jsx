@@ -6,7 +6,7 @@ import { Link } from 'gatsby';
 
 export const PostMeta = ({ date, dateLocal, tags = [], author }) => (
   <div className="mb-4">
-    <time dateTime={date} className="text-grey-darker">
+    <time dateTime={date} itemprop="datePublished" className="text-grey-darker">
       {dateLocal}
     </time>
     {author && <>, {author.id}</>}
