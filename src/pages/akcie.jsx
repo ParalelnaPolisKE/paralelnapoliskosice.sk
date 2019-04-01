@@ -55,7 +55,12 @@ export default () => {
       {state.events.map(event => (
         <div key={event.id}>
           <p>{event.id}</p>
+          <p>{event.name}</p>
+          <p>{event.start_time}</p>
+          <p>{event.end_time}</p>
+          {event.place && <pre><code>{JSON.stringify(event.place, null, '\t')}</code></pre>}
           <p>{event.description}</p>
+          <hr />
         </div>
       ))}
     </Page>
