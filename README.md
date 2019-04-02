@@ -2,7 +2,7 @@
 
 # Paralelná Polis Košice
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bc3e351a-833d-4fc1-aab3-cae6ac2f8c20/deploy-status)](https://app.netlify.com/sites/paralelnapoliskosice/deploys) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bc3e351a-833d-4fc1-aab3-cae6ac2f8c20/deploy-status)](https://app.netlify.com/sites/paralelnapoliskosice/deploys) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com) [![tippin](https://img.shields.io/badge/%E2%9A%A1%EF%B8%8Ftippin.me-@parallelpoliske-F0918E.svg)](https://tippin.me/@parallelpoliske)
 
 ## Writing a post
 
