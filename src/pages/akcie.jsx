@@ -55,7 +55,7 @@ export default () => {
       {state.events && state.events.map(event => {
         const startTime = new Date(event.start_time)
         const endTime = event.end_time ? new Date(event.end_time) : null
-        const eventDate = format(new Date(event.start_time), 'dddd DD.MM.', {
+        const eventDate = format(new Date(event.start_time), 'dddd DD.MM.YYYY', {
           locale: sk,
         });
 
