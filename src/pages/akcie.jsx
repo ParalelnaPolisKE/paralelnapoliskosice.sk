@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Helmet from 'react-helmet';
+import Dotdotdot from 'react-dotdotdot'
+import {
+  format
+} from 'date-fns';
+import sk from 'date-fns/locale/sk';
 
-import { getEvents } from 'utils';
+import { getEvents, capitalizeFirst } from 'utils';
 
 import { Page } from 'components/Page';
 import { EventsListError } from 'components/EventsListError';
@@ -9,8 +13,8 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 const initialState = {
   error: null,
-  events: []
-}
+  events: [],
+};
 
 export default () => {
   const [state, setState] = useState(initialState);
@@ -47,22 +51,30 @@ export default () => {
 
   return (
     <Page title="Akcie" url="/akcie">
-      <Helmet>
-        <meta name="robots" content="noindex" />
-      </Helmet>
-
       {state.error && <EventsListError />}
-      {state.events.map(event => (
-        <div key={event.id}>
-          <p>{event.id}</p>
-          <p>{event.name}</p>
-          <p>{event.start_time}</p>
-          <p>{event.end_time}</p>
-          {event.place && <pre><code>{JSON.stringify(event.place, null, '\t')}</code></pre>}
-          <p>{event.description}</p>
-          <hr />
-        </div>
-      ))}
+      {state.events && state.events.map(event => {
+        const startTime = new Date(event.start_time)
+        const endTime = event.end_time ? new Date(event.end_time) : null
+        const eventDate = format(new Date(event.start_time), 'dddd DD.MM.', {
+          locale: sk,
+        });
+
+        const timeRange = endTime ? `${format(startTime, 'HH:mm')} - ${format(endTime, 'HH:mm')}` : format(startTime, 'HH:mm')
+
+        const place = event.place ? event.place.name : ''
+
+        return (
+          <div key={event.id} className="max-w-md mb-2">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-1"><a href={`https://www.facebook.com/events/${event.id}/`}>{event.name}</a></div>
+              <div class="text-l mb-2">{capitalizeFirst(eventDate)}, {timeRange}, {place}</div>
+              <p class="text-grey-darker text-base">
+                <Dotdotdot clamp={2}>{event.description}</Dotdotdot>
+              </p>
+            </div>
+          </div>
+        );
+      })}
     </Page>
   );
 };
