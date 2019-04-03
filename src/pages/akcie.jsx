@@ -61,13 +61,15 @@ export default () => {
 
         const timeRange = endTime ? `${format(startTime, 'HH:mm')} - ${format(endTime, 'HH:mm')}` : format(startTime, 'HH:mm')
 
-        const place = event.place ? event.place.name : ''
+        const placeName = event.place ? event.place.name : ''
+        const placeId = event.place && event.place.id
+        const placeLink = placeId ? <a href={`https://facebook.com/profile.php?id=${placeId}`} target="_blank">{placeName}</a> : placeName
 
         return (
           <div key={event.id} className="max-w-md mb-2">
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-1"><a href={`https://www.facebook.com/events/${event.id}/`}>{event.name}</a></div>
-              <div class="text-l mb-2">{capitalizeFirst(eventDate)}, {timeRange}, {place}</div>
+              <div class="text-l mb-2">{capitalizeFirst(eventDate)}, {timeRange}, {placeLink}</div>
               <p class="text-grey-darker text-base">
                 <Dotdotdot clamp={2}>{event.description}</Dotdotdot>
               </p>
