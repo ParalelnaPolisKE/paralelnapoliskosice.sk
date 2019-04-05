@@ -1,3 +1,6 @@
+require('dotenv').config();
+
+const config = require('gatsby-plugin-config').default;
 const TailwindExtractor = require('./utils/purgecss-tailwind-extractor');
 
 module.exports = {
@@ -25,7 +28,6 @@ module.exports = {
       ETC: '0x1934945354BDe5b34F0c68E6AA78492050856D38',
     },
     facebookAppID: '2127644397453206',
-    facebookAccessToken: 'EAAID1NAqRPIBALqoVfwnWHFeIO4kpVXz8s95ZBG0u3NcCYNZBQdaDZCVDTp394tgJcTH8X7fWH5LvOJ9moHgtwzzmR78BGCJGZAM7loiDXITVNdezWfcfjAOeWW1vbtWTdEMBEM2xcRg48jI9RQFZCRrWONwEM6t8SYBk1Kc3wQZDZD',
     mailchimpUrl:
       'https://paralelnapoliskosice.us19.list-manage.com/subscribe/post?u=8affbd08463d07e25a8bbcca4&id=b02c302d92',
   },
@@ -190,6 +192,16 @@ module.exports = {
     },
     // 'gatsby-plugin-offline', // Disabled as new content need hard refresh
     'gatsby-plugin-remove-serviceworker',
+    {
+      resolve: `gatsby-source-facebook`,
+      options: {
+        places: ['782479115289415'], // Can be either a numeric ID or the URL ID
+        params: {
+          fields: 'events { id, name, description, start_time, end_time, place { id, name } }',
+        },
+        key: config.FACEBOOK_ACCESS_TOKEN
+      },
+    },
   ],
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorJson',
