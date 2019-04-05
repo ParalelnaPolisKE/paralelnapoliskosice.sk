@@ -2,6 +2,9 @@ require('dotenv').config();
 
 const TailwindExtractor = require('./utils/purgecss-tailwind-extractor');
 
+console.log(`Using environment config: '${process.env.NODE_ENV}'`);
+console.log(process.env);
+
 module.exports = {
   siteMetadata: {
     title: 'Paralelná Polis Košice',
@@ -204,9 +207,10 @@ module.exports = {
       options: {
         places: ['782479115289415'], // Can be either a numeric ID or the URL ID
         params: {
-          fields: 'events { id, name, description, start_time, end_time, place { id, name } }',
+          fields:
+            'events { id, name, description, start_time, end_time, place { id, name } }',
         },
-        key: process.env.FACEBOOK_ACCESS_TOKEN
+        key: process.env.FACEBOOK_ACCESS_TOKEN,
       },
     },
   ],
