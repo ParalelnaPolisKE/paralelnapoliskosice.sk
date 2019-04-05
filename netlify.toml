@@ -2,8 +2,8 @@
   publish = "public/"
   command = "npm run build"
 
-[context.production]
-  environment = { FACEBOOK_ACCESS_TOKEN = "super secret" }
+[build.environment]
+  FACEBOOK_ACCESS_TOKEN = "super secret"
 
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
