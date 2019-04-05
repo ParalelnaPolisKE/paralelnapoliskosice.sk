@@ -3,7 +3,7 @@ require('dotenv').config();
 const TailwindExtractor = require('./utils/purgecss-tailwind-extractor');
 
 console.log(`Using environment config: '${process.env.NODE_ENV}'`);
-console.log(process.env);
+console.log(`Token: ${process.env.FACEBOOK_ACCESS_TOKEN}`);
 
 module.exports = {
   siteMetadata: {
