@@ -1,6 +1,5 @@
 require('dotenv').config();
 
-const config = require('gatsby-plugin-config').default;
 const TailwindExtractor = require('./utils/purgecss-tailwind-extractor');
 
 module.exports = {
@@ -199,7 +198,7 @@ module.exports = {
         params: {
           fields: 'events { id, name, description, start_time, end_time, place { id, name } }',
         },
-        key: config.FACEBOOK_ACCESS_TOKEN
+        key: process.env.FACEBOOK_ACCESS_TOKEN
       },
     },
   ],
