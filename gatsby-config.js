@@ -29,6 +29,8 @@ module.exports = {
     facebookAppID: '2127644397453206',
     mailchimpUrl:
       'https://paralelnapoliskosice.us19.list-manage.com/subscribe/post?u=8affbd08463d07e25a8bbcca4&id=b02c302d92',
+    joinUsFormAction:
+      'https://briskforms.com/go/410d7fbf05f2283f04c8a02e86b531be',
   },
   plugins: [
     {
@@ -125,19 +127,25 @@ module.exports = {
       },
     },
     // 'gatsby-plugin-sitemap',
-    `gatsby-plugin-netlify-cms-paths`,
+    'gatsby-plugin-netlify-cms-paths',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          `gatsby-plugin-netlify-cms-paths`,
+          'gatsby-plugin-netlify-cms-paths',
           {
             resolve: 'gatsby-remark-images',
             options: {
               linkImagesToOriginal: false,
               maxWidth: 1200,
               quality: 75,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-autolink-headers',
+            options: {
+              removeAccents: true,
             },
           },
         ],

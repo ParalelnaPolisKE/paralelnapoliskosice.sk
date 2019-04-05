@@ -44,4 +44,6 @@ Zaujíma ťa viac ohľadom online bezpečnosti? Mrkni na náš [Rýchlokurz onli
 
 Poznáš ešte nejaké riešenia, ktoré si nevyžadujú pokročilé zásahy alebo technickú zdatnosť? [Daj nám vedieť](https://www.paralelnapoliskosice.sk/kontakt).
 
+Chceš sa zapojiť alebo nás nejako podporiť? [Možností je veľa - mrkni sem](/zapoj-sa) :).
+
 _Photo by Mikhail Vasilyev on Unsplash_

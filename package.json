@@ -60,6 +60,7 @@
     "gatsby-plugin-remove-trailing-slashes": "^2.0.10",
     "gatsby-plugin-sharp": "^2.0.29",
     "gatsby-plugin-sitemap": "^2.0.10",
+    "gatsby-remark-autolink-headers": "^2.0.16",
     "gatsby-remark-images": "^2.0.6",
     "gatsby-source-facebook": "^1.0.3",
     "gatsby-source-filesystem": "^2.0.27",

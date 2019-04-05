@@ -87,7 +87,7 @@ export const Footer = ({ showNewsletter }) => (
 
           <p>
             <a href="https://romanvesely.com" className="font-light">
-              {'<rmnvsl/>'}
+              {'</rmnvsl>'}
             </a>
           </p>
         </div>

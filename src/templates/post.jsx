@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 
 import { getPost } from 'utils';
 
+import { Button } from 'components/Button';
 import { Page } from 'components/Page';
 import { PostLinks } from 'components/PostLinks';
 import { PostMeta } from 'components/PostMeta';
@@ -45,6 +46,9 @@ export default ({ data: { markdownRemark }, pageContext: { prev, next } }) => {
       </p>
 
       <PostLinks prev={prev} next={next} />
+      <div className="text-center">
+        <Button to="/blog">Všetky príspevky</Button>
+      </div>
     </Page>
   );
 };
