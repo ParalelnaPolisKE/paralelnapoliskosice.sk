@@ -2,9 +2,6 @@
   publish = "public/"
   command = "npm run build"
 
-[build.environment]
-  FACEBOOK_ACCESS_TOKEN = "super secret"
-
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
   from = "https://paralelnapoliskosice.netlify.com/*"
