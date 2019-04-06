@@ -58,9 +58,6 @@ export class Navigation extends React.Component {
         )}
       >
         {this.state.isToggled && [
-          <NavigationButton key="home" to="/" exact>
-            Domov
-          </NavigationButton>,
           <NavigationButton key="about" to="/o-paralelnej-polis">
             O Paralelnej Polis
           </NavigationButton>,
