@@ -52,12 +52,15 @@ export const Pagination = ({
       {showSelect && (
         <div className="flex justify-center">
           Strana
-          <select className="font-bold mx-2" onChange={selectPage}>
+          <select
+            className="font-bold mx-2"
+            onChange={selectPage}
+            defaultValue={currentPage}
+          >
             {Array.from({ length: pagesCount }, (_, i) => (
               <option
                 key={`pagination-number${i + 1}`}
                 value={i === 0 ? '' : i + 1}
-                selected={i + 1 === currentPage}
               >
                 {i + 1}
               </option>

@@ -1,7 +1,5 @@
 const getLastArrayItem = array => array.slice(-1)[0];
 
-export const capitalizeFirst = str => str.charAt(0).toUpperCase() + str.substr(1);
-
 export const getPosts = posts => posts.map(post => getPost(post.node));
 
 export const getPost = post => ({

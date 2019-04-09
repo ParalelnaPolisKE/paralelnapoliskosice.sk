@@ -64,11 +64,11 @@ export class Navigation extends React.Component {
           <NavigationButton key="course" to="/rychlokurz-bezpecnosti">
             Rýchlokurz
           </NavigationButton>,
-          <NavigationButton key="blog" to="/blog">
-            Blog
-          </NavigationButton>,
           <NavigationButton key="akcie" to="/akcie">
             Akcie
+          </NavigationButton>,
+          <NavigationButton key="blog" to="/blog">
+            Blog
           </NavigationButton>,
           <NavigationButton key="contact" to="/kontakt">
             Kontakt

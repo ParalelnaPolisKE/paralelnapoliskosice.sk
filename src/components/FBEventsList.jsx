@@ -7,7 +7,10 @@ import { EventItem } from 'components/EventItem';
 export const FBEventsList = ({ events }) => {
   return events.map(({ node: event }) => {
     const timeRange = event.end_time
-      ? `${format(event.start_time, 'HH:mm')} - ${format(event.end_time, 'HH:mm')}`
+      ? `${format(event.start_time, 'HH:mm')} - ${format(
+          event.end_time,
+          'HH:mm'
+        )}`
       : format(event.start_time, 'HH:mm');
 
     const placeName = event.place ? event.place.name : '';
@@ -18,13 +21,17 @@ export const FBEventsList = ({ events }) => {
       placeName
     );
 
+    // Ugly hack until we can get correct FB event ID - `gatsby-source-facebook` overwrites it
+    const eventId = JSON.parse(event.internal.content).id;
+
     return (
       <EventItem
-        key={event.id}
-        id={event.id}
+        key={eventId}
+        eventId={eventId}
         name={event.name}
         description={event.description}
-        eventDate={event.startDateLocal}
+        eventDate={event.start_time}
+        eventDateLocal={event.startDateLocal}
         timeRange={timeRange}
         place={placeLink}
       />
