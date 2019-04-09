@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const TailwindExtractor = require('./utils/purgecss-tailwind-extractor');
 
 module.exports = {
@@ -197,6 +199,17 @@ module.exports = {
     },
     // 'gatsby-plugin-offline', // Disabled as new content need hard refresh
     'gatsby-plugin-remove-serviceworker',
+    {
+      resolve: `gatsby-source-facebook`,
+      options: {
+        places: ['782479115289415'], // Can be either a numeric ID or the URL ID
+        params: {
+          fields:
+            'events { id, name, description, start_time, end_time, place { id, name } }',
+        },
+        key: process.env.FACEBOOK_ACCESS_TOKEN,
+      },
+    },
   ],
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorJson',

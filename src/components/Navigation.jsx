@@ -58,14 +58,14 @@ export class Navigation extends React.Component {
         )}
       >
         {this.state.isToggled && [
-          <NavigationButton key="home" to="/" exact>
-            Domov
-          </NavigationButton>,
           <NavigationButton key="about" to="/o-paralelnej-polis">
             O Paralelnej Polis
           </NavigationButton>,
           <NavigationButton key="course" to="/rychlokurz-bezpecnosti">
             Rýchlokurz
+          </NavigationButton>,
+          <NavigationButton key="akcie" to="/akcie">
+            Akcie
           </NavigationButton>,
           <NavigationButton key="blog" to="/blog">
             Blog
