@@ -7,7 +7,7 @@ tags:
   - exchange
   - zmenáreň
 ---
-Ako krypto nadšenec som o Bisq-u ako decentralizovanej zmenárni poučul už dávnejšie, no až posledné týždne ma priviedli k prečítaniu si základných dokumentov. Čím som sa o Bisq-u ako celom projekte viac dozvedal, tým viac ma to zaujímalo, a tak som sa rozhodol, že skúsim niečo preložiť a priniesť, podľa mňa hodnotné, informácie aj ľuďom, ktorým čítanie anglických textov robí ťažkosti.
+Ako krypto nadšenec som o Bisq-u ako decentralizovanej zmenárni počul už dávnejšie, no až posledné týždne ma priviedli k prečítaniu si základných dokumentov. Čím som sa o Bisq-u ako celom projekte viac dozvedal, tým viac ma to zaujímalo, a tak som sa rozhodol, že skúsim niečo preložiť a priniesť, podľa mňa hodnotné, informácie aj ľuďom, ktorým čítanie anglických textov robí ťažkosti.
 
 > Nasledujúci text je preklad používateľkého dokumentu [A Brief Introduction to Bisq](https://docs.bisq.network/intro.html).
 
