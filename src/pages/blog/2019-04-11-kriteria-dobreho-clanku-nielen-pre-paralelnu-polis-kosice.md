@@ -1,6 +1,7 @@
 ---
 title: Kritériá dobrého článku (nielen) pre Paralelnú Polis Košice
-author: Lukas
+author: Lukas Cech
+cover: /assets/standout-small-719-480.jpg
 tags:
   - články
   - seo
