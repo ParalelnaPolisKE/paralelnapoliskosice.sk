@@ -9,20 +9,14 @@ tags:
 ---
 Ako krypto nadšenec som o Bisq-u ako decentralizovanej zmenárni poučul už dávnejšie, no až posledné týždne ma priviedli k prečítaniu si základných dokumentov. Čím som sa o Bisq-u ako celom projekte viac dozvedal, tým viac ma to zaujímalo, a tak som sa rozhodol, že skúsim niečo preložiť a priniesť, podľa mňa hodnotné, informácie aj ľuďom, ktorým čítanie anglických textov robí ťažkosti.
 
-> Nasledujúci text je preklad používateľkého dokumentu 
->
-> [A Brief Introduction to Bisq](https://docs.bisq.network/intro.html)
->
-> .
+> Nasledujúci text je preklad používateľkého dokumentu [A Brief Introduction to Bisq](https://docs.bisq.network/intro.html).
 
 ## Čo je Bisq
 
 Bisq je **decentralizovaná bitcoin-ová burza/zmenáreň**, ktorá sa dá najlepšie pochopiť v zmysle jej hlavných komponentov:
 
 1. Bisq je multiplatformová **desktopová aplikácia**, ktorá umožňuje komukoľvek kúpiť a predať bitcoin za národné meny alebo iné kryptomeny.
-   ​
 2. Bisq je **obchodný protokol**, ktorý umožňuje jednotlivcom priamu výmenu cez internet a to bez využitia služieb dôveryhodnej tretej strany.
-   ​
 3. Bisq je **sieť (typu) peer to peer** tvorená Bisq aplikáciami, ktoré vzájomne komunikujú, spájajú sa a spolupracujú implementovaním Bisq obchodného protokolu. Bisq sieť je _plne_ peer-to-peer, nepotrebuje žiadne centrálne servre a tým pádom nemá zraniteľnosti z toho vyplývajúce.
 
 Bisq **nie je spoločnosť**. Bisq je **slobodný softvér** vydaný pod GPLv3. Bisq je _postavený_ jednotlivcami z celého sveta, ktorí sa rozhodli spolupracovať. A nakoniec Bisq je _používaný_ jednotlivcami z celého sveta, ktorí sa rozhodli cez Bisq slobodne obchodovať.
@@ -31,7 +25,7 @@ Bisq **nie je spoločnosť**. Bisq je **slobodný softvér** vydaný pod GPLv3. 
 
 Misia Bisq-u je poskytnúť **bezpečný**, **privátny** a **cenzúre odolný** spôsob výmeny bitcoin-u za národné meny a iné kryptomeny cez internet.
 
-​Keď hovoríme **bezpečný**, myslíme tým bezpečnosť prostriedkov užívateľov. Väčšina súčasných bitcoinových zmenární je _centralizovaná_, vyžadujúca držanie bitcoin-ov, minimálne na určitý čas, na serveroch zmenární. Pri tisícoch užívateľov to dokáže vytvoriť extrémne silný motív k hacknutiu daných serverov a odcudzeniu bitcoin-ov týchto užívateľov. K takýmto hackom dochádza neustále.​
+Keď hovoríme **bezpečný**, myslíme tým bezpečnosť prostriedkov užívateľov. Väčšina súčasných bitcoinových zmenární je _centralizovaná_, vyžadujúca držanie bitcoin-ov, minimálne na určitý čas, na serveroch zmenární. Pri tisícoch užívateľov to dokáže vytvoriť extrémne silný motív k hacknutiu daných serverov a odcudzeniu bitcoin-ov týchto užívateľov. K takýmto hackom dochádza neustále.​
 
 Keď hovoríme **privátny**, myslíme tým kontrolu užívateľov nad vlastnými informáciami. Dnes väčšina centralizovaných zmenární požaduje osobné informácie k zriadeniu účtu a vytvoreniu tak prepojenia medzi obchodnou aktivitou a príslušnou identitou. Takéto konanie vytvára pre užívateľa extrémne riziko, že jeho osobné údaje a finančné informácie budú odcudzené, vyzradené alebo akokoľvek použité proti jeho záujmom.
 
@@ -41,11 +35,11 @@ Keď hovoríme **odolný voči cenzúre**, myslíme tým možnosť užívateľov
 
 Ako je motto Bitcoin-u "buď si sám sebe bankou," motto Bisq-u je "**buď si vlastnou zmenárňou**."
 
-## Ako Bisq funguje​
+## Ako Bisq funguje
 
 ### V stručnosti
 
-​Predstav si, že si chceš kúpiť bitcoin (BTC) výmenou za euro (EUR). V terminológii Bisq-u vystupuješ ako _kupujúci_ BTC, hľadajúc _predávajúcého_ BTC, ktorý akceptuje rovnakú cenu a platbu v EUR. Na vykonanie takéhoto obchodu na Bisq-u musíš prejsť sériou krokov podobných týmto:
+Predstav si, že si chceš kúpiť bitcoin (BTC) výmenou za euro (EUR). V terminológii Bisq-u vystupuješ ako _kupujúci_ BTC, hľadajúc _predávajúcého_ BTC, ktorý akceptuje rovnakú cenu a platbu v EUR. Na vykonanie takéhoto obchodu na Bisq-u musíš prejsť sériou krokov podobných týmto:
 
 1. Stiahneš a nainštaluješ si aplikáciu Bisq na desktop alebo laptop
 2. Nastavíš v Bisq-u detaily pre spôsob platby
