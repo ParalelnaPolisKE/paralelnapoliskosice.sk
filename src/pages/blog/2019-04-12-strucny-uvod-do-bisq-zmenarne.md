@@ -4,7 +4,6 @@ author: Erik Svagrovsky
 cover: /assets/bisq.png
 tags:
   - bisq
-  - exchange
   - zmenáreň
 ---
 Ako krypto nadšenec som o Bisq ako decentralizovanej zmenárni počul už dávnejšie, no až posledné týždne ma priviedli k prečítaniu si základných dokumentov. Čím som sa o Bisq ako celom projekte viac dozvedal, tým viac ma to zaujímalo, a tak som sa rozhodol, že skúsim niečo preložiť a priniesť, podľa mňa hodnotné, informácie aj ľuďom, ktorým čítanie anglických textov robí ťažkosti.
