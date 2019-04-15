@@ -5,6 +5,7 @@ cover: /assets/bisq.png
 tags:
   - bisq
   - dao
+  - zmenáreň
 ---
 To, čo ma pri čítaní o Bisq projekte najviac zaujalo bolo jeho pripravované DAO. A práve dnes 15. apríla o 17:00 bude po troch rokoch prevádzky Bisq zmenárne a mesiacoch testovania samotného Bisq DAO spustené na "mainnete". DAO je skratka pre decentralizovanú autonómnu organizáciu. Čo to presnejšie znamená a ako to bude vyzerať pri Bisq DAO sa dozviete nižšie. 
 
