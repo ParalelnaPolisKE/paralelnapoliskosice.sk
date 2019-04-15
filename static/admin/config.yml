@@ -29,7 +29,7 @@ collections:
       - name: cover
         label: Cover Image
         widget: image
-        required: false
+        required: true
       - name: tags
         label: Tags
         widget: list
