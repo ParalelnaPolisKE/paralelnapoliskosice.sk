@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const TailwindExtractor = require('./utils/purgecss-tailwind-extractor');
 
-module.exports = {
+const config = {
   siteMetadata: {
     title: 'Paralelná Polis Košice',
     description:
@@ -92,13 +92,6 @@ module.exports = {
             output: '/blog/rss.xml',
           },
         ],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-124036846-1',
-        head: true,
       },
     },
     'gatsby-plugin-netlify-cms',
@@ -215,3 +208,21 @@ module.exports = {
     'MarkdownRemark.frontmatter.author': 'AuthorJson',
   },
 };
+
+/**
+ * Adds Google Analytics only to live production site
+ *
+ * `CONTEXT` comes from Netlify build process
+ * @see https://www.netlify.com/docs/continuous-deployment/#build-environment-variables
+ */
+if (process.env.CONTEXT === 'production') {
+  config.plugins.push({
+    resolve: 'gatsby-plugin-google-analytics',
+    options: {
+      trackingId: 'UA-124036846-1',
+      head: true,
+    },
+  });
+}
+
+module.exports = config;
