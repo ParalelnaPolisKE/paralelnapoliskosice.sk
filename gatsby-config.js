@@ -221,6 +221,7 @@ if (process.env.CONTEXT === 'production') {
     options: {
       trackingId: 'UA-124036846-1',
       head: true,
+      respectDNT: true,
     },
   });
 }
