@@ -2,6 +2,7 @@
   "recommendations": [
     "EditorConfig.editorconfig",
     "esbenp.prettier-vscode",
-    "bradlc.vscode-tailwindcss"
+    "bradlc.vscode-tailwindcss",
+    "silvenon.mdx"
   ]
 }
