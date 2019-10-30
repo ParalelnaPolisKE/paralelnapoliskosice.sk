@@ -92,9 +92,9 @@ export const Footer = ({ showNewsletter }) => (
           </p>
         </div>
 
-        <div className="text-grey-dark text-center text-xs md:ml-8">
-          vojdi von...
-        </div>
+        <p className="text-grey-dark text-center font-bold text-lg md:ml-8 m-0">
+          <a href="https://vojdivon.sk">vojdi von</a>...
+        </p>
       </Container>
     </div>
   </footer>
