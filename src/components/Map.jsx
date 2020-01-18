@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import React, { useState, useEffect } from 'react';
+// import { useStaticQuery, graphql } from 'gatsby';
 import classnames from 'classnames';
 import { Map as LeafletMap, TileLayer, Marker, Tooltip } from 'react-leaflet';
+import { openStreetMapDataRequest } from '../../config/map';
 
 const Amenity = ({ children }) => (
   <div className="bg-grey px-1 rounded shadow inline-block text-xxs text-white uppercase tracking-tight ml-2">
@@ -44,36 +45,51 @@ const Place = ({ place }) => {
 };
 
 export const Map = ({ center, zoom: initialZoom = 13, bounds = null }) => {
-  const data = useStaticQuery(graphql`
-    {
-      allMap {
-        nodes {
-          elements {
-            id: alternative_id
-            tags {
-              website
-              operator
-              addr_housenumber
-              addr_streetnumber
-              addr_street
-              amenity
-              description
-              name
-            }
-            lat
-            lng: lon
-          }
-        }
-      }
-    }
-  `);
+  // const data = useStaticQuery(graphql`
+  //   {
+  //     allMap {
+  //       nodes {
+  //         id: alternative_id
+  //         tags {
+  //           website
+  //           operator
+  //           addr_housenumber
+  //           addr_streetnumber
+  //           addr_street
+  //           amenity
+  //           description
+  //           name
+  //         }
+  //         lat
+  //         lng: lon
+  //       }
+  //     }
+  //   }
+  // `);
 
+  const [places, setPlaces] = useState([]);
   const [activePlaceId, setActivePlaceId] = useState();
   const [zoom, setZoom] = useState(initialZoom);
 
-  console.log(data);
+  // const places = data.allMap.nodes.filter(place => !!place.id);
 
-  const places = data.allMap.nodes.find(node => !!node.elements).elements;
+  // TODO: temporary until transformer-json bug is resolved
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch(
+        `https://overpass-api.de/api/interpreter?data=${openStreetMapDataRequest}`
+      );
+      const places = await response.json();
+
+      setPlaces(places.elements);
+    }
+
+    fetchData();
+  }, []);
+
+  if (typeof window === 'undefined') {
+    return null;
+  }
 
   const changePlace = id => {
     if (id === activePlaceId) {
@@ -84,16 +100,13 @@ export const Map = ({ center, zoom: initialZoom = 13, bounds = null }) => {
     }
   };
 
-  const getCoordinates = place => [place.lat, place.lng];
+  // const getCoordinates = place => [place.lat, place.lng];
+  const getCoordinates = place => [place.lat, place.lon];
 
   const getName = place => place.tags.name || place.tags.operator;
 
   const getPlaceById = activePlaceId =>
     places.find(({ id }) => id === activePlaceId);
-
-  if (typeof window === 'undefined') {
-    return null;
-  }
 
   return (
     <div className="mb-8">

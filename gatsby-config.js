@@ -120,14 +120,16 @@ const plugins = [
       path: `${__dirname}/src/pages/blog/`,
     },
   },
-  {
-    resolve: 'gatsby-source-apiserver',
-    options: {
-      url: `https://overpass-api.de/api/interpreter?data=${openStreetMapDataRequest}`,
-      method: 'GET',
-      name: 'map',
-    },
-  },
+  // TODO: error with gatsby-transformer-json
+  // {
+  //   resolve: 'gatsby-source-apiserver',
+  //   options: {
+  //     url: `https://overpass-api.de/api/interpreter?data=${openStreetMapDataRequest}`,
+  //     method: 'GET',
+  //     name: 'map',
+  //     entityLevel: 'elements',
+  //   },
+  // },
   // 'gatsby-plugin-sitemap',
   'gatsby-plugin-netlify-cms-paths',
   'gatsby-plugin-sharp',
