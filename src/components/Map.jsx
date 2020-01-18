@@ -17,13 +17,13 @@ const Place = ({ place }) => {
     description,
     amenity,
     website,
-    addr_street,
-    addr_housenumber,
-    addr_streetnumber,
+    'addr:street': addr_street,
+    'addr:housenumber': addr_housenumber,
+    'addr:streetnumber': addr_streetnumber,
   } = place.tags;
 
   return (
-    <>
+    <div className="bg-grey-lightest p-4">
       <h2 className="flex items-center">
         {name || operator} {amenity && <Amenity>{amenity}</Amenity>}
       </h2>
@@ -40,7 +40,7 @@ const Place = ({ place }) => {
           </a>
         </p>
       )}
-    </>
+    </div>
   );
 };
 
