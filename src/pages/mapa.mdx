@@ -3,15 +3,12 @@ title: Mapa krypto-pozitívnych miest
 url: /mapa
 ---
 
+import { map } from '../../config/map';
 import { Map } from '../components/Map';
-import { PlacesProvider } from '../components/PlacesProvider';
 
-<PlacesProvider>
-  {places => (
-    <Map
-      places={places}
-      center={[48.720384, 21.2538303]}
-      bounds={[[48.7765455, 21.188796], [48.6888545, 21.323346]]}
-    />
-  )}
-</PlacesProvider>
+<Map
+  center={[48.720384, 21.2538303]}
+  bounds={[[map.lat2, map.lng1], [map.lat1, map.lng2]]}
+/>
+
+// <small>Naposledy aktualizované ...</small>
