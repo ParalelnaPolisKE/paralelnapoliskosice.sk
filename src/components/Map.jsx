@@ -1,8 +1,19 @@
 import React, { useState, useEffect } from 'react';
 // import { useStaticQuery, graphql } from 'gatsby';
 import classnames from 'classnames';
+import L from 'leaflet';
 import { Map as LeafletMap, TileLayer, Marker, Tooltip } from 'react-leaflet';
 import { openStreetMapDataRequest } from '../../config/map';
+
+import css from './Map.module.css';
+
+const icon = type =>
+  new L.divIcon({
+    className: classnames(css.marker, { [css[`marker${type}`]]: type }),
+    iconSize: [24, 24],
+    iconAnchor: [12, 36],
+    tooltipAnchor: [0, -30],
+  });
 
 const Amenity = ({ children }) => (
   <div className="bg-grey px-1 rounded shadow inline-block text-xxs text-white uppercase tracking-tight ml-2">
@@ -132,6 +143,7 @@ export const Map = ({ center, zoom: initialZoom = 13, bounds = null }) => {
               key={place.id}
               position={getCoordinates(place)}
               onclick={() => changePlace(place.id)}
+              icon={icon(place.tags.amenity)}
             >
               <Tooltip
                 key={`${activePlaceId}${place.id}`}
