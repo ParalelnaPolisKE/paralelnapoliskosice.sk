@@ -34,7 +34,7 @@ const Place = ({ place }) => {
   } = place.tags;
 
   return (
-    <div className="bg-grey-lightest p-4">
+    <>
       <h2 className="flex items-center">
         {name || operator} {amenity && <Amenity>{amenity}</Amenity>}
       </h2>
@@ -51,7 +51,7 @@ const Place = ({ place }) => {
           </a>
         </p>
       )}
-    </div>
+    </>
   );
 };
 
@@ -155,12 +155,14 @@ export const Map = ({ center, zoom: initialZoom = 13, bounds = null }) => {
             </Marker>
           ))}
         </LeafletMap>
-        <div className="md:w-1/3 md:ml-4">
-          {activePlaceId ? (
-            <Place place={getPlaceById(activePlaceId)} />
-          ) : (
-            <p>Vyber miesto na mape alebo zo zoznamu nižšie.</p>
-          )}
+        <div className="mb-4 md:w-1/3 md:ml-4">
+          <div className="bg-grey-lightest p-4">
+            {activePlaceId ? (
+              <Place place={getPlaceById(activePlaceId)} />
+            ) : (
+              <p>Vyber miesto na mape alebo zo zoznamu nižšie.</p>
+            )}
+          </div>
         </div>
       </div>
       <div>
