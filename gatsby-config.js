@@ -1,7 +1,6 @@
 require('dotenv').config();
 
 const TailwindExtractor = require('./utils/purgecss-tailwind-extractor');
-const { openStreetMapDataRequest } = require('./config/map');
 
 const siteMetadata = {
   title: 'Paralelná Polis Košice',
@@ -120,16 +119,6 @@ const plugins = [
       path: `${__dirname}/src/pages/blog/`,
     },
   },
-  // TODO: error with gatsby-transformer-json
-  // {
-  //   resolve: 'gatsby-source-apiserver',
-  //   options: {
-  //     url: `https://overpass-api.de/api/interpreter?data=${openStreetMapDataRequest}`,
-  //     method: 'GET',
-  //     name: 'map',
-  //     entityLevel: 'elements',
-  //   },
-  // },
   // 'gatsby-plugin-sitemap',
   'gatsby-plugin-netlify-cms-paths',
   'gatsby-plugin-sharp',

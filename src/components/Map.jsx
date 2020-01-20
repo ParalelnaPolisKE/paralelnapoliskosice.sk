@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import { useStaticQuery, graphql } from 'gatsby';
 import classnames from 'classnames';
 import L from 'leaflet';
 import { Map as LeafletMap, TileLayer, Marker, Tooltip } from 'react-leaflet';
@@ -56,35 +55,12 @@ const Place = ({ place }) => {
 };
 
 export const Map = ({ center, zoom: initialZoom = 13, bounds = null }) => {
-  // const data = useStaticQuery(graphql`
-  //   {
-  //     allMap {
-  //       nodes {
-  //         id: alternative_id
-  //         tags {
-  //           website
-  //           operator
-  //           addr_housenumber
-  //           addr_streetnumber
-  //           addr_street
-  //           amenity
-  //           description
-  //           name
-  //         }
-  //         lat
-  //         lng: lon
-  //       }
-  //     }
-  //   }
-  // `);
-
   const [places, setPlaces] = useState([]);
   const [activePlaceId, setActivePlaceId] = useState();
   const [zoom, setZoom] = useState(initialZoom);
 
-  // const places = data.allMap.nodes.filter(place => !!place.id);
-
   // TODO: temporary until transformer-json bug is resolved
+  // https://github.com/thinhle-agilityio/gatsby-source-apiserver/issues/38
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
