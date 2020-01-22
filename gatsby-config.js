@@ -164,7 +164,7 @@ const plugins = [
         },
       ],
       whitelist: ['___gatsby', 'ol', 'h2', 'h3'],
-      whitelistPatterns: [/^icon\-/],
+      whitelistPatterns: [/^icon\-/, /^marker/],
     },
   },
   {
@@ -203,6 +203,7 @@ const plugins = [
       key: process.env.FACEBOOK_ACCESS_TOKEN,
     },
   },
+  'gatsby-plugin-react-leaflet',
 ];
 
 const mapping = {
