@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 import css from './NavigationButton.module.css';
 
-const classes = `lowercase md:text-lg md:mx-4`;
+const classes = `lowercase md:mr-4 md:text-lg lg:mr-0 lg:ml-4 lg:text-right ${
+  css.button
+}`;
 const activeClasses = `${classes} ${css.buttonActive}`;
 
 const isActive = ({ isCurrent }) =>

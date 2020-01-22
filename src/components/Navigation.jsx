@@ -46,7 +46,7 @@ export class Navigation extends React.Component {
       <nav
         role="navigation"
         className={classnames(
-          'fixed sm:static z-50 pin-b pin-r sm:pin-none p-3 pl-12 pt-12 sm:p-0  sm:bg-transparent flex flex-col items-end md:items-center md:flex-row',
+          'fixed sm:static z-50 pin-b pin-r sm:pin-none p-3 pl-12 pt-12 sm:p-0  sm:bg-transparent flex flex-col items-end md:items-center md:flex-row md:flex-wrap',
           {
             'bg-grey-light shadow':
               this.state.isSmallScreen && this.state.isToggled,
@@ -64,20 +64,20 @@ export class Navigation extends React.Component {
           <NavigationButton key="course" to="/rychlokurz-bezpecnosti">
             Rýchlokurz
           </NavigationButton>,
+          <NavigationButton key="contact" to="/kontakt">
+            Kontakt
+          </NavigationButton>,
           <NavigationButton key="akcie" to="/akcie">
             Akcie
           </NavigationButton>,
-          <NavigationButton key="blog" to="/blog">
-            Blog
-          </NavigationButton>,
-          <NavigationButton key="contact" to="/kontakt">
-            Kontakt
+          <NavigationButton key="mapa" to="/mapa">
+            Mapa
           </NavigationButton>,
           <NavigationButton key="zapoj-sa" to="/zapoj-sa">
             <b>Zapoj sa</b>
           </NavigationButton>,
-          <NavigationButton key="mapa" to="/mapa">
-            mapa
+          <NavigationButton key="blog" to="/blog">
+            Blog
           </NavigationButton>,
         ]}
         {this.state.isSmallScreen && (
