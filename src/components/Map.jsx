@@ -27,6 +27,7 @@ const Place = ({ place }) => {
     description,
     amenity,
     website,
+    opening_hours,
     'addr:street': addr_street,
     'addr:housenumber': addr_housenumber,
     'addr:streetnumber': addr_streetnumber,
@@ -43,11 +44,25 @@ const Place = ({ place }) => {
         </p>
       )}
       {description && <p>{description}</p>}
-      {website && (
-        <p>
-          <a href={website} className="text-sm">
-            {website}
-          </a>
+      {opening_hours && (
+        <p className="uppercase text-xxs">
+          {opening_hours.split(';').map(hours => (
+            <>
+              {hours}
+              <br />
+            </>
+          ))}
+        </p>
+      )}
+      {(website || operator) && (
+        <p className="text-sm">
+          {operator && (
+            <>
+              {operator}
+              <br />
+            </>
+          )}
+          <a href={website}>{website}</a>
         </p>
       )}
     </>
@@ -83,6 +98,7 @@ export const Map = ({ center, zoom: initialZoom = 13, bounds = null }) => {
       setZoom(initialZoom);
       setActivePlaceId(null);
     } else {
+      setZoom(z => (z === initialZoom ? z + 2 : z));
       setActivePlaceId(id);
     }
   };
