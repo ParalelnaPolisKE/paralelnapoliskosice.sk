@@ -125,9 +125,9 @@ export const Map = ({ center, zoom: initialZoom = 13, bounds = null }) => {
           onZoom={e => setZoom(e.target.getZoom())}
         >
           <TileLayer
-            attribution={`Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>`}
+            attribution='<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia maps</a> | Map data &copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
             id="mapbox.streets"
-            url="https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY3JheiIsImEiOiJjam13OXNhbWwwODl2M3dwam52bTg2cHY5In0.YoR8F0Sp-CelPM2VulKkcQ"
+            url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png"
           />
 
           {places.map(place => (
