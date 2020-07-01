@@ -13,7 +13,7 @@ const download = require(`./download-file`);
 
 const assetsPath = './static/assets/instagram';
 const instagramUsername = 'paralelnapoliske';
-const url = `https://www.instagram.com/${instagramUsername}/?__a=1`;
+const url = encodeURI(`https://www.instagram.com/${instagramUsername}/?__a=1`);
 
 const log = message => {
   console.error(`Error: ${message}`);
