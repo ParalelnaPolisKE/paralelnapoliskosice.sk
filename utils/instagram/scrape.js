@@ -11,26 +11,9 @@ const mkdirp = require(`mkdirp`);
 const ProgressBar = require(`progress`);
 const download = require(`./download-file`);
 
-const asstetsPath = './static/assets/instagram';
-const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN;
-const url = `https://api.instagram.com/v1/users/self/media/recent/?count=6&access_token=${accessToken}`;
-
-// Used only when INSTAGRAM_ACCESS_TOKEN has no value
-const dummyImageData = [
-  {
-    id: '12345',
-    created_time: Math.floor(Date.now() / 1000),
-    type: 'image',
-    link:
-      'https://www.templaza.com/blog/how-to-get-access-token-on-instagram-api/435.html',
-    images: {
-      standard_resolution: {
-        url:
-          'https://imgplaceholder.com/640x640?text=Missing_br_INSTAGRAM_ACCESS_TOKEN_br_value+in+env+file&font-size=50',
-      },
-    },
-  },
-];
+const assetsPath = './static/assets/instagram';
+const instagramUsername = 'paralelnapoliske';
+const url = `https://www.instagram.com/${instagramUsername}/?__a=1`;
 
 const log = message => {
   console.error(`Error: ${message}`);
@@ -49,49 +32,37 @@ const bar = new ProgressBar(
   }
 );
 
-// Handle missing INSTAGRAM_ACCESS_TOKEN
-if (typeof accessToken === 'undefined') {
-  log('INSTAGRAM_ACCESS_TOKEN is missing in environment variables (.env).');
-}
-
 // Create the images directory
-mkdirp.sync(asstetsPath);
+mkdirp.sync(assetsPath);
 
 fetch(url)
   .then(response => response.json())
   .then(body => {
-    // Process errors with API call
-    if (body.meta.code === 400) {
-      // Handle blank INSTAGRAM_ACCESS_TOKEN
-      if (body.meta.error_type === 'OAuthParameterException') {
-        body.data = dummyImageData;
-      } else {
-        log(body.meta.error_message);
-      }
-    }
+    const data = body.graphql;
 
-    const images = body.data
-      .filter(
-        image => image['type'] === 'image' || image['type'] === 'carousel'
-      )
-      .map(image => ({
-        id: image.id,
-        time: toISO8601(image.created_time),
-        link: image.link,
-        media: image.images.standard_resolution.url,
-        image: `./${image.id}.jpg`, // relative path to images from .json
-      }));
+    const images = data.user.edge_owner_to_timeline_media.edges
+      .filter(({ node: item }) => item[`__typename`] === `GraphImage`)
+      .map(({ node: item }) => ({
+        id: item.id,
+        time: toISO8601(item.taken_at_timestamp),
+        type: item[`__typename`],
+        link: `https://www.instagram.com/p/${item.shortcode}/`,
+        media: item.display_url,
+        image: `./${item.id}.jpg`, // relative path to images from .json
+        code: item.shortcode,
+      }))
+      .slice(0, 6);
 
     // Download image locally and update progress bar
     images.forEach(image => {
       bar.total++;
-      download(image.media, `${asstetsPath}/${image.id}.jpg`, response =>
+      download(image.media, `${assetsPath}/${image.id}.jpg`, response =>
         bar.tick()
       );
     });
 
     fs.writeFileSync(
-      `${asstetsPath}/instagram.json`,
+      `${assetsPath}/instagram.json`,
       JSON.stringify(images, '', 2)
     );
   })
