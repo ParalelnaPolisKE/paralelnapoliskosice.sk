@@ -201,6 +201,7 @@ const plugins = [
           'events { id, name, description, start_time, end_time, place { id, name } }',
       },
       key: process.env.FACEBOOK_ACCESS_TOKEN,
+      version: '7.0',
     },
   },
   'gatsby-plugin-react-leaflet',
