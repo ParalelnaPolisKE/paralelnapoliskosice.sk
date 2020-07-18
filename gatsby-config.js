@@ -192,6 +192,7 @@ const plugins = [
   },
   // 'gatsby-plugin-offline', // Disabled as new content need hard refresh
   'gatsby-plugin-remove-serviceworker',
+  // Disabled until FB API token resolved
   // {
   //   resolve: `gatsby-source-facebook`,
   //   options: {
