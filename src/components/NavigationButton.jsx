@@ -22,3 +22,9 @@ export const NavigationButton = ({ children, to, exact = false }) => (
     {children}
   </Link>
 );
+
+export const LinkButton = ({ children, href }) => (
+  <a href={href} className={classes}>
+    {children}
+  </a>
+);
