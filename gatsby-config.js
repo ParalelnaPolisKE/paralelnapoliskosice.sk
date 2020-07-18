@@ -204,6 +204,12 @@ const plugins = [
   //     version: '7.0',
   //   },
   // },
+  {
+    resolve: 'gatsby-source-instagram',
+    options: {
+      username: '7188082683',
+    },
+  },
   'gatsby-plugin-react-leaflet',
 ];
 
