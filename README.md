@@ -41,10 +41,9 @@ Copy `.env.example` file into `.env` (with the dot at the beginning in the name)
 
 #### Environment Variables in `.env`
 
-| Variable Name            | Required | Default Value | Description                                                                                                              |
-| ------------------------ | :------: | :-----------: | ------------------------------------------------------------------------------------------------------------------------ |
-| `INSTAGRAM_ACCESS_TOKEN` |    No    |    `null`     | Access token for an instagram account - ([link](https://www.templaza.com/blog/how-to-get-access-token-on-instagram-api)) |
-| `FACEBOOK_ACCESS_TOKEN`  |   Yes    |    `null`     | Access token for an facebook account                                                                                     |
+| Variable Name           | Required | Default Value | Description                          |
+| ----------------------- | :------: | :-----------: | ------------------------------------ |
+| `FACEBOOK_ACCESS_TOKEN` |   Yes    |    `null`     | Access token for an facebook account |
 
 ### Start Website Locally
 

@@ -3,7 +3,6 @@
 node_modules
 .cache/
 public/
-static/assets/instagram
 .DS_Store
 .env
 *.log

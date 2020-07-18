@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import { NavigationButton } from './NavigationButton';
+import { NavigationButton, LinkButton } from './NavigationButton';
 
 export class Navigation extends React.Component {
   state = {
@@ -67,9 +67,15 @@ export class Navigation extends React.Component {
           <NavigationButton key="contact" to="/kontakt">
             Kontakt
           </NavigationButton>,
-          <NavigationButton key="akcie" to="/akcie">
+          // <NavigationButton key="akcie" to="/akcie">
+          //   Akcie
+          // </NavigationButton>,
+          <LinkButton
+            key="akcie"
+            href="https://www.facebook.com/paralelnapoliske/events/"
+          >
             Akcie
-          </NavigationButton>,
+          </LinkButton>,
           <NavigationButton key="mapa" to="/mapa">
             Mapa
           </NavigationButton>,

@@ -192,15 +192,23 @@ const plugins = [
   },
   // 'gatsby-plugin-offline', // Disabled as new content need hard refresh
   'gatsby-plugin-remove-serviceworker',
+  // Disabled until FB API token resolved
+  // {
+  //   resolve: `gatsby-source-facebook`,
+  //   options: {
+  //     places: ['782479115289415'], // Can be either a numeric ID or the URL ID
+  //     params: {
+  //       fields:
+  //         'events { id, name, description, start_time, end_time, place { id, name } }',
+  //     },
+  //     key: process.env.FACEBOOK_ACCESS_TOKEN,
+  //     version: '7.0',
+  //   },
+  // },
   {
-    resolve: `gatsby-source-facebook`,
+    resolve: 'gatsby-source-instagram',
     options: {
-      places: ['782479115289415'], // Can be either a numeric ID or the URL ID
-      params: {
-        fields:
-          'events { id, name, description, start_time, end_time, place { id, name } }',
-      },
-      key: process.env.FACEBOOK_ACCESS_TOKEN,
+      username: '7188082683',
     },
   },
   'gatsby-plugin-react-leaflet',

@@ -41,10 +41,9 @@ Skopíruj súbor `.env.example` do `.env` (aj s bodkou v názve na začiatku) a 
 
 #### Premenné prostredia v `.env`
 
-| Názov premennej          | Povinná | Default hodnota | Popis                                                                                                              |
-| ------------------------ | :-----: | :-------------: | ------------------------------------------------------------------------------------------------------------------ |
-| `INSTAGRAM_ACCESS_TOKEN` |   Nie   |     `null`      | Prístupový token pre Instagram - ([odkaz](https://www.templaza.com/blog/how-to-get-access-token-on-instagram-api)) |
-| `FACEBOOK_ACCESS_TOKEN`  |   Áno   |     `null`      | Prístupový token pre Facebook                                                                                      |
+| Názov premennej         | Povinná | Default hodnota | Popis                         |
+| ----------------------- | :-----: | :-------------: | ----------------------------- |
+| `FACEBOOK_ACCESS_TOKEN` |   Áno   |     `null`      | Prístupový token pre Facebook |
 
 ### Lokálne spustenie stránky
 
