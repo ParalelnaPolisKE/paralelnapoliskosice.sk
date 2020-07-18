@@ -60,7 +60,7 @@ const plugins = [
             },
           }) => {
             return {
-              title: siteMetadata.title,
+              title: `${siteMetadata.title} - Blog`,
               description: siteMetadata.description,
               feed_url: siteMetadata.siteUrl + `/blog/rss.xml`,
               site_url: siteMetadata.siteUrl,
@@ -90,6 +90,7 @@ const plugins = [
             }
           `,
           output: '/blog/rss.xml',
+          title: `${siteMetadata.title} - Blog`,
         },
       ],
     },
