@@ -24,15 +24,12 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "prestart": "npm run instascrap",
     "start": "npm run postcss -- --watch & gatsby develop",
-    "prebuild": "npm run instascrap",
     "build": "npm run postcss && gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "instascrap": "node ./utils/instagram/scrape.js",
     "postcss": "postcss ./src/css/styles.css --output ./src/css/output.css"
   },
   "dependencies": {
@@ -65,6 +62,7 @@
     "gatsby-remark-images": "^2.0.6",
     "gatsby-source-facebook": "^2.0.1",
     "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-source-instagram": "^0.8.0",
     "gatsby-transformer-json": "^2.2.25",
     "gatsby-transformer-remark": "^2.6.48",
     "gatsby-transformer-sharp": "^2.3.13",

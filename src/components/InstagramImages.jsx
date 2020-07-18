@@ -6,28 +6,29 @@ const InstagramImages = ({ children }) => (
   <StaticQuery
     query={graphql`
       {
-        allInstagramJson {
-          edges {
-            node {
-              id
-              link
-              time
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 150, maxHeight: 150, quality: 80) {
-                    ...GatsbyImageSharpFluid
-                  }
+        allInstaNode(sort: { order: DESC, fields: timestamp }, limit: 6) {
+          nodes {
+            id
+            localFile {
+              childImageSharp {
+                fluid(maxWidth: 150, maxHeight: 150, quality: 80) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
+            caption
           }
         }
       }
     `}
     render={data => {
-      const images = data.allInstagramJson.edges.map(({ node: post }) => (
-        <a key={post.id} href={post.link} title={post.time}>
-          <Img fluid={post.image.childImageSharp.fluid} />
+      const images = data.allInstaNode.nodes.map(post => (
+        <a
+          key={post.id}
+          href={`https://www.instagram.com/p/${post.id}/`}
+          title={post.caption}
+        >
+          <Img fluid={post.localFile.childImageSharp.fluid} />
         </a>
       ));
 
