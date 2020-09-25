@@ -37,8 +37,6 @@ Po open-air prednáške nasledovala nočná guerillová akcia. Nabití pozitívn
 
 ![](/assets/signal-2020-09-19-214840_001.jpeg)
 
-
-
 ![](/assets/signal-2020-09-20-142051.jpeg)
 
 Sobotňajší program sa pretiahol až do ďalšieho dňa, nesúc sa v znamení nekonečnej energie spontánnou účasťou na tajnej techno párty pod holým nebom. Opäť nechýbali ani miestny ochrancovia zákona, v ktorých sme si takto počas víkendu niekoľkokrát zosobnili interface so štátom.
@@ -50,3 +48,5 @@ Za jediný nedostatok považujem dočasnú nutnosť platby štátnym shitcoinom 
 A nezabudnite! 2.-4. októbra sa uskutoční v poradí siedmy Hackers Congress Paralelní Polis, kombinovane online ale takisto fyzicky, v priestoroch Paralelní Polis v pražských Holešovicích. Tohtoročná téma je Digitálna totalita.
 
 <https://digital-totality.hcpp.cz/>
+
+Za fotky ďakujeme Peťovi Čintalanovi.
