@@ -57,7 +57,7 @@ export default ({
     </div>
 
     <p>
-      Ďakujeme projektu <a href="https://crypto.christmas">crypto.christmas</a>{' '}
+      Ďakujeme projektu <a href="https://github.com/rileyjshaw/crypto.christmas">crypto.christmas</a>{' '}
       za skvelý nápad. Pre detailnejšie informácie ďalej odporúčame{' '}
       <a href="https://github.com/freedomofpress/encryption-works">
         Encryption Works
