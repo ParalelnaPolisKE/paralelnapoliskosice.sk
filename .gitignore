@@ -8,3 +8,6 @@ public/
 *.log
 
 src/css/output.css
+
+# Local Netlify folder
+.netlify
