@@ -76,32 +76,33 @@ export const Footer = ({ showNewsletter }) => (
     </div>
 
     <div className="bg-grey-lightest text-sm px-4">
-      <Container className="py-10 md:flex md:items-center">
-        <div className="flex-1">
+      <Container className="pt-10 pb-2 md:flex">
+        <div className="md:w-1/2 w-full">
+          <strong>Naše uzly</strong> (nodes):
+          <CryptoNodes />
+          <strong>Eshop</strong> (OpenBazaar): <br />
+          <a href="ob://QmXPTqsoreix47kvwG8SYRQyNr7kTJ74LU59YbdEEUG1MS/store">
+            ob://QmXPTqsoreix47kvwG8SYRQyNr7kTJ74LU59YbdEEUG1MS/store
+          </a>
+        </div>
+        <div className="md:w-1/2 w-full">
           <p>
             <strong>Podporte nás!</strong>
             <br />
             Budeme vďační za akúkoľvek podporu. Prijímame:
           </p>
-
           <CryptoAddresses />
-
-          Naše uzly (nodes):
-          <br />
-
-          <CryptoNodes />
-
-          <p>
+        </div>
+      </Container>
+      <p className="w-full m-0 text-center">
             <a href="https://romanvesely.com" className="font-light">
               {'</rmnvsl>'}
             </a>
           </p>
-        </div>
 
-        <p className="text-grey-dark text-center font-bold text-lg md:ml-8 m-0">
-          <a href="https://vojdivon.sk">vojdi von</a>...
-        </p>
-      </Container>
+      <p className="w-full text-grey-dark text-center font-bold text-lg m-0 py-8">
+            <a href="https://vojdivon.sk">vojdi von</a>!
+          </p>
     </div>
   </footer>
 );
