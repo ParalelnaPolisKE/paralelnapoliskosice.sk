@@ -27,25 +27,25 @@ const siteMetadata = {
   },
   nodes: {
     BTC: {
-      ispolUrl: "http://ispol.247.sk/sub/bitcoin.html",
+      ispolUrl: 'http://ispol.247.sk/sub/bitcoin.html',
       mainnet: {
-        url: "btc.ispol.sk",
-        port: ""
-      }
+        url: 'btc.ispol.sk',
+        port: '',
+      },
     },
     LTC: {
-      ispolUrl: "http://ispol.247.sk/sub/litecoin.html",
+      ispolUrl: 'http://ispol.247.sk/sub/litecoin.html',
       mainnet: {
-        url: "ltc.ispol.sk",
-        port: ""
-      }
+        url: 'ltc.ispol.sk',
+        port: '',
+      },
     },
     XMR: {
-      ispolUrl: "http://ispol.247.sk/sub/monero.html",
+      ispolUrl: 'http://ispol.247.sk/sub/monero.html',
       mainnet: {
-        url: "xmr.ispol.sk",
-        port: "18081"
-      }
+        url: 'xmr.ispol.sk',
+        port: '18081',
+      },
     },
   },
   facebookAppID: '2127644397453206',
@@ -232,7 +232,7 @@ const plugins = [
   {
     resolve: 'gatsby-source-instagram',
     options: {
-      username: '7188082683',
+      username: 7188082683,
     },
   },
   'gatsby-plugin-react-leaflet',
