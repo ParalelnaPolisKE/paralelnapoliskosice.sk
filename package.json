@@ -60,7 +60,7 @@
     "gatsby-remark-images": "^2.0.6",
     "gatsby-source-facebook": "^2.0.1",
     "gatsby-source-filesystem": "^2.3.20",
-    "gatsby-source-instagram": "^0.9.0",
+    "gatsby-source-instagram": "^0.8.0-beta.0",
     "gatsby-transformer-json": "^2.4.11",
     "gatsby-transformer-remark": "^2.8.25",
     "gatsby-transformer-sharp": "^2.5.11",
