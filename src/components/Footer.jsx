@@ -4,6 +4,7 @@ import css from './Footer.module.css';
 
 import { Container } from './Container';
 import { CryptoAddresses } from './CryptoAddresses';
+import { CryptoNodes } from './CryptoNodes';
 import { Social } from './Social';
 import { Newsletter } from 'components/Newsletter';
 import InstagramImages from 'components/InstagramImages';
@@ -84,6 +85,11 @@ export const Footer = ({ showNewsletter }) => (
           </p>
 
           <CryptoAddresses />
+
+          Naše uzly (nodes):
+          <br />
+
+          <CryptoNodes />
 
           <p>
             <a href="https://romanvesely.com" className="font-light">

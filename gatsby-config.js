@@ -25,6 +25,29 @@ const siteMetadata = {
     ETH: '0x610825C5DFcbc72E284E5a5F381f4fd728263706',
     ETC: '0x1934945354BDe5b34F0c68E6AA78492050856D38',
   },
+  nodes: {
+    BTC: {
+      ispolUrl: "http://ispol.247.sk/sub/bitcoin.html",
+      mainnet: {
+        url: "btc.ispol.sk",
+        port: ""
+      }
+    },
+    LTC: {
+      ispolUrl: "http://ispol.247.sk/sub/litecoin.html",
+      mainnet: {
+        url: "ltc.ispol.sk",
+        port: ""
+      }
+    },
+    XMR: {
+      ispolUrl: "http://ispol.247.sk/sub/monero.html",
+      mainnet: {
+        url: "xmr.ispol.sk",
+        port: "18081"
+      }
+    },
+  },
   facebookAppID: '2127644397453206',
   mailchimpUrl:
     'https://paralelnapoliskosice.us19.list-manage.com/subscribe/post?u=8affbd08463d07e25a8bbcca4&id=b02c302d92',
