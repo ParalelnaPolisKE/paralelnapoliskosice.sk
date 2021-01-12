@@ -55,13 +55,12 @@ npm start
 
 ### Dostupné príkazy
 
-| `npm run ...`        | Popis                                                                                                        |
-| -------------------- | ------------------------------------------------------------------------------------------------------------ |
-| `npm start`          | spúšťa lokálny vývojový server na adrese [localhost:8000](http://localhost:8000)                             |
-| `npm run build`      | vytvára verziu vhodnú pre ostrú prevádzku                                                                    |
-| `npm run format`     | opravuje programovacie štandardy                                                                             |
-| `npm run serve`      | spúšťa lokálny server vhodný pre testovanie                                                                  |
-| `npm run instascrap` | sťahuje posledne pridané fotky z Instagramu (je nutné mať nastavený `INSTAGRAM_ACCESS_TOKEN` v súbore `.env` |
+| `npm run ...`    | Popis                                                                            |
+| ---------------- | -------------------------------------------------------------------------------- |
+| `npm start`      | spúšťa lokálny vývojový server na adrese [localhost:8000](http://localhost:8000) |
+| `npm run build`  | vytvára verziu vhodnú pre ostrú prevádzku                                        |
+| `npm run format` | opravuje programovacie štandardy                                                 |
+| `npm run serve`  | spúšťa lokálny server vhodný pre testovanie                                      |
 
 ### Programovacie štandardy
 

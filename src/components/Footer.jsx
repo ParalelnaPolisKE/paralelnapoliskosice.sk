@@ -7,7 +7,6 @@ import { CryptoAddresses } from './CryptoAddresses';
 import { CryptoNodes } from './CryptoNodes';
 import { Social } from './Social';
 import { Newsletter } from 'components/Newsletter';
-import InstagramImages from 'components/InstagramImages';
 
 export const Footer = ({ showNewsletter }) => (
   <footer role="contentinfo">
@@ -22,7 +21,7 @@ export const Footer = ({ showNewsletter }) => (
       <Container className={classnames({ 'lg:flex': showNewsletter })}>
         {/* Newsletter */}
         {showNewsletter && (
-          <div className="lg:w-2/3 mb-8 lg:my-8">
+          <div className="w-full mb-8 lg:my-8">
             <h2 className="text-grey-darker m-0">Zostaňme v kontakte</h2>
             <p className="mb-2">Prihlás sa na odber newslettera:</p>
             <Newsletter className="flex flex-col sm:flex-row mb-2" />
@@ -34,37 +33,6 @@ export const Footer = ({ showNewsletter }) => (
             </p>
           </div>
         )}
-        {/* Instagram */}
-        <div
-          className={classnames(
-            'bg-grey-dark p-1',
-            showNewsletter && 'lg:w-1/3 lg:flex'
-          )}
-        >
-          <div
-            className={classnames(
-              'flex flex-wrap',
-              showNewsletter && 'lg:content-center lg:w-full'
-            )}
-          >
-            <InstagramImages>
-              {images =>
-                images.map((image, i) => (
-                  <div
-                    key={i}
-                    className={classnames(
-                      css.instaImage,
-                      'p-1 w-1/3 sm:w-1/6',
-                      { 'lg:w-1/3': showNewsletter }
-                    )}
-                  >
-                    {image}
-                  </div>
-                ))
-              }
-            </InstagramImages>
-          </div>
-        </div>
       </Container>
     </div>
 
@@ -80,10 +48,13 @@ export const Footer = ({ showNewsletter }) => (
         <div className="md:w-1/2 w-full">
           <strong>Naše uzly</strong> (nodes):
           <CryptoNodes />
-          <strong>Eshop</strong> (OpenBazaar): <br />
+          <strong>Eshop</strong> (OpenBazaar<span className="text-grey-dark">*</span>): <br />
           <a href="ob://QmXPTqsoreix47kvwG8SYRQyNr7kTJ74LU59YbdEEUG1MS/store">
             ob://QmXPTqsoreix47kvwG8SYRQyNr7kTJ74LU59YbdEEUG1MS/store
           </a>
+          <p className="text-xs text-grey-dark m-0 mt-2">
+            * V blízkej budúcnosti budeme prechádzať na BTCPayServer.
+          </p>
         </div>
         <div className="md:w-1/2 w-full">
           <p>
@@ -95,14 +66,14 @@ export const Footer = ({ showNewsletter }) => (
         </div>
       </Container>
       <p className="w-full m-0 text-center">
-            <a href="https://romanvesely.com" className="font-light">
-              {'</rmnvsl>'}
-            </a>
-          </p>
+        <a href="https://romanvesely.com" className="font-light">
+          {'</rmnvsl>'}
+        </a>
+      </p>
 
       <p className="w-full text-grey-dark text-center font-bold text-lg m-0 py-8">
-            <a href="https://vojdivon.sk">vojdi von</a>!
-          </p>
+        <a href="https://vojdivon.sk">vojdi von</a>!
+      </p>
     </div>
   </footer>
 );
