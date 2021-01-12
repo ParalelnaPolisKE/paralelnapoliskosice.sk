@@ -55,13 +55,12 @@ npm start
 
 ### Available Commands
 
-| `npm run ...`        | Description                                                                                         |
-| -------------------- | --------------------------------------------------------------------------------------------------- |
-| `npm start`          | runs local development server at [localhost:8000](http://localhost:8000)                            |
-| `npm run build`      | builds production-ready site                                                                        |
-| `npm run format`     | corrects coding standards                                                                           |
-| `npm run serve`      | starts local server suitable for testing                                                            |
-| `npm run instascrap` | fetches latest photos from instagram (you need correct `INSTAGRAM_ACCESS_TOKEN` set in `.env` file) |
+| `npm run ...`    | Description                                                              |
+| ---------------- | ------------------------------------------------------------------------ |
+| `npm start`      | runs local development server at [localhost:8000](http://localhost:8000) |
+| `npm run build`  | builds production-ready site                                             |
+| `npm run format` | corrects coding standards                                                |
+| `npm run serve`  | starts local server suitable for testing                                 |
 
 ### Coding Standards
 
