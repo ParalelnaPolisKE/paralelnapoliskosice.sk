@@ -13,7 +13,6 @@ export const Footer = ({ showNewsletter }) => (
     <div
       className={classnames(
         css.top,
-        { [css.topStripe]: showNewsletter },
         'p-4 sm:py-8',
         { 'lg:py-0': showNewsletter }
       )}
