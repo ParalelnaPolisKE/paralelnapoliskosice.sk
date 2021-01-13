@@ -27,23 +27,20 @@ const siteMetadata = {
   },
   nodes: {
     BTC: {
-      ispolUrl: "http://ispol.247.sk/sub/bitcoin.html",
       mainnet: {
-        url: "btc.ispol.sk",
+        url: "btc.ppke.sk",
         port: ""
       }
     },
     LTC: {
-      ispolUrl: "http://ispol.247.sk/sub/litecoin.html",
       mainnet: {
-        url: "ltc.ispol.sk",
+        url: "ltc.ppke.sk",
         port: ""
       }
     },
     XMR: {
-      ispolUrl: "http://ispol.247.sk/sub/monero.html",
       mainnet: {
-        url: "xmr.ispol.sk",
+        url: "xmr.ppke.sk",
         port: "18081"
       }
     },
@@ -261,6 +258,7 @@ if (process.env.CONTEXT === 'production') {
 }
 
 module.exports = {
+  pathPrefix: `/blog`,
   siteMetadata,
   plugins,
   mapping,
