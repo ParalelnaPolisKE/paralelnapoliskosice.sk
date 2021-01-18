@@ -9,8 +9,6 @@ Zombie má pôvod na Haiti, je to mytologická bytosť pochádzajúca z woo-doo 
 
 Tématiku zombie do svetovej kinematografie priniesol William Seabrook na konci druhej dekády dvadsiateho storočia. Postupujúcim časom, sa stali zombie hitom hororov, v ktorých dostali v skutku strašidelný vzhľad a správanie. (viď. obr. 1)
 
-
-
 ![](/assets/zombie-obr1.jpeg)
 
 *Obr. 1 : Zombíci dostali vo filmovom spracovaní strašidelný vzhľad a správanie.*
@@ -93,13 +91,9 @@ Zombík zbožňuje ponosy a ohováranie. Najmä ak vie, že nimi môže niekomu 
 
 *Obr. 8 : Zombík di tutti zombík. Z času na čas sa aj medzi zombíkmi zjaví ozaj unikátny exemplár.*
 
-
-
 Zombík veľmi rád zombíkuje. Veci okolo seba robí rád nefunkčnými ako je on sám. Často po ňom nájdete nedopalky na chodníku či ochytané pečivo v potravinách.
 
 Dobre vie, že ak pri stolovaní použije jednorazové špáradlo, tak ho aj s vyšpáraným kusom jedla pekne vráti odkiaľ ho zobral.
-
-
 
 Oproti tomu je možné povedať, že ma vycibrený vkus a umeleckého ducha. Rád zdobí steny výťahovej kabíny svojimi rozžutými žuvačkami. Či len tak, čisto a bez donútenia, okrášli itinerár ubytovne či motela svojimi poetickými rytinami typu : “tu som sral ja”.
 
@@ -111,21 +105,19 @@ Ale ono je to človek a človek nie hoc aký. Je to častokrát presne ten typ b
 
 Je to tak, zombík je už dlho tu, aby nám pil krv a strpčoval ten krásny život, ktorý tak úprimne milujeme. Lebo práve on je ten, kto tvorí podstatnú časť elektorátu, ktorý nám určuje systém a pravidlá v ktorom žijeme aj my.
 
-Nejdem sa rozširovať o tom a čo s tým, lebo sám neviem a nerád by som tu haluzil ako zombík v telke na mítingu.
+Nejdem sa rozširovať o tom a čo s tým, lebo sám neviem a nerád by som tu haluzil ako zombík v telke na brífingu.
 
 Omnoho radšej by som predostrel moju interpretáciu práce a diela človeka, ktorý nám už dlhšiu dobu pomáha nestať sa zombíkom.
 
 Je to v prvom rade tvorca, autor, učiteľ, vynálezca, dobrodej, umelec a vedec či vývojár, ktorý sa snaží spraviť náš život, lepším krajším a jednoduchším. Je to predovšetkým človek tvoriteľ a stretáme ho na ulici denne rovnako tak ako zombíka.
 
-Súčasná Covidová situácia je ale silným katalyzátorom zmien v spoločnosti a vo svete, akým ešte pred pár rokmi bývali vojny a kolonizačné pohromy. No teraz sa nedeje plánovane a systematicky, ale organicky a decentralizovane. S ľuďmi prichádzame do kontaktu pomenej, no zombík akoby teraz ešte väčšmi ožil.
+Súčasná covidová situácia je ale silným katalyzátorom zmien v spoločnosti a vo svete, akým ešte pred pár rokmi bývali vojny a kolonizačné pohromy. No teraz sa nedeje plánovane a systematicky, ale organicky a decentralizovane. S ľuďmi prichádzame do kontaktu pomenej, no zombík akoby teraz ešte väčšmi ožil.
 
 Akoby presne toto bola voda na jeho mlyn.
 
 ![](/assets/zombie-obr9.jpeg)
 
 *Obr. 9 : Lokálny zombíci v plnej paráde. Aj keď v tomto prípade sa jedná o vojnu medzi gangmi.*
-
-
 
 Mnohí z Vás sa pýtajú čo bude, ako asi bude vyzrať pocovidový svet, ako bude fungovať spoločnosť po premorení či očkovaní? Budeme mať všetci krvavé oči a bezcieľne sa potulovať prázdnymi ulicami hľadajúc tých, ktorých sa nám ešte nepodarilo nakaziť?
 
@@ -135,29 +127,15 @@ Moja zombie veštkyňa s kryštáľovou guľou, ku ktorej som si chodil pravidel
 
 Ostal som v tom sám. Aj so zombíkmi na krku.
 
-Ale nie iba žartujem.
-
-
+Ale nie, to iba žartujem.
 
 Pred pár dňami sa mi ale podarilo dočítať knihu jedného ctihodného človeka, muža, ktorý na štyristodvanástich stranách prezentuje svoj názor na to, ako asi by mohol - či mal, vyzerať veľký reštart. Jeho. Môj. Tvoj či náš spoločný.
 
-
-
 Mám však takú vlastnosť, že písmenká v knižke mi nestačia na to aby uspokojili moju túžbu po vedomosti, a tak som sa intezívne snažil začítať aj medzi riadkami. Bolo to však dosť náročné, pretože medzi riadkami toho veľa nebolo. Autor poctivo a prepedantne, často až lopatisticky vysvetľuje čo a ako, aby predišiel disinterpetáciam a nepochopkom. Napokon som sa však možno predsa len, prehrýzol zložitým rébusom komplikovaného IT šifrovania a podarilo sa mi nájsť ten skrytý odkaz spomedzi riadkov : Byť v strehu, no vyrelaxovaný, plne flexibilný a pripravený na zmenu, o ktorej buď neviem vôbec nič, alebo len veľmi málo.” Hard.
-
-
-
-
 
 A teda rozumiem tomu tak, že iba zdravý rozum, je návod Veľký reštart. A ten mne svieti na poličke s knihami ako maják v časoch krízy, keď sa mi začína kaliť zrak, zhoršovať držanie tela, ďengľavejú mi hnáty a začínam namiesto slov vydávať zo seba iba škreky a prdy.
 
-
-
-
-
 Nie, podstatné nie je úfať a zúfať si, či veriť, že všetko sa nejako utrasie. Veľmi dobre viem, že nič sa neutrasie a nikto nepríde aby zachránil môj zadok. Buď si poradím sám, alebo ma zožerú zombíci. Prinajmenšom ma možno časom iba nakazia a stane sa taký istý zombík aj zo mňa. No jedno je mi jasné, že bez veľkého reštartu sa nikam nepohnem. Svojho veľkého reštartu.
-
-
 
 Kniha Juraja Bednára [VEĽKÝ REŠTART](https://juraj.bednar.io/product/kniha-velky-restart/) mi síce nedáva stopercentnú záruku že budem zombie-proof, ale dáva mi nádej, že ak budem dosť japonský, tak mám možnosť odolať a prežiť.
 
@@ -165,11 +143,7 @@ Moon je super.
 
 BTC na 40k je [sen](https://coinmarketcap.com/currencies/bitcoin/). Ale [toto zombíkov skôr iba naserie](https://paralelnapolis.sk/zaistenie-kryptomien-statom/) a nechcem si ani len predstaviť, čo by mi bol zombík ochotný spraviť za pár kvantitatívne uvoľnených šupov od vlády bez akejkoľvek hodnoty, len aby ma pripravil o moju radosť zo života, ktorá je preňho ako jed.
 
-
-
 Kto si knihu prečítal, isto mi dá za pravdu, kto ju ešte nečítal – odporúčam prečítať, no nie je to nevyhnutné. Možno Vy osobne, ju ani čítať nepotrebujete. Určite však poznáte adeptov vo svojom okolí, ktorí by si ju čítať isto zaslúžili. A možno aj preto, že Vám na nich záleží a tlie v nich maličká iskierka nádeje, že by sa mohli chcieť ubrániť zombie nákaze. Preto je podstatné aby ste si tú knihu kúpili a darovali ju presne takémuto horúcemu adeptovi.
-
-
 
 Moja výzva na záver preto znie nasledovne: vrele odporúčam zakúpiť si min. 1 ks, [V](https://juraj.bednar.io/product/kniha-velky-restart/)[EĽKÝ REŠTART](https://juraj.bednar.io/product/kniha-velky-restart/) [od Juraja Bednára](https://juraj.bednar.io/product/kniha-velky-restart/) a darovať ju z lásky nádejnému ostreľovačovi zombíkov, ktorý bude stáť po Vašom boku, keď budete za vysokými hradbami šútiť do živých mŕtvol štverajúcich sa po rebríkoch, aby nás jedného po druhom nemilosrdne zožrali aj s našimi špinavými a zatrateniahodnými ideami o slobodnom a zdravom živote bez zombíkov.
 
