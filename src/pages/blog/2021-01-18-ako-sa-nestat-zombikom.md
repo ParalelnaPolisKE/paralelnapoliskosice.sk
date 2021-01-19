@@ -147,7 +147,7 @@ Kto si knihu prečítal, isto mi dá za pravdu, kto ju ešte nečítal – odpor
 
 Moja výzva na záver preto znie nasledovne: vrele odporúčam zakúpiť si min. 1 ks, [V](https://juraj.bednar.io/product/kniha-velky-restart/)[EĽKÝ REŠTART](https://juraj.bednar.io/product/kniha-velky-restart/) [od Juraja Bednára](https://juraj.bednar.io/product/kniha-velky-restart/) a darovať ju z lásky nádejnému ostreľovačovi zombíkov, ktorý bude stáť po Vašom boku, keď budete za vysokými hradbami šútiť do živých mŕtvol štverajúcich sa po rebríkoch, aby nás jedného po druhom nemilosrdne zožrali aj s našimi špinavými a zatrateniahodnými ideami o slobodnom a zdravom živote bez zombíkov.
 
-Nesrandujem, myslím to Vážne. Nie je čas na pukance, nebude to totiž určite [žiadna zábava](https://paralelnapolis.sk/zaklady-operacnej-bezpecnosti-na-demonstraciach/).
+Nesrandujem, myslím to vážne. Nie je čas na pukance, nebude to totiž určite [žiadna zábava](https://paralelnapolis.sk/zaklady-operacnej-bezpecnosti-na-demonstraciach/).
 
 Zombíci nám už totiž [klopú na dvere](https://paralelnapolis.sk/ako-sa-slovensko-eu-pripravuje-na-digitalnu-diktaturu-cinskeho-typu-iii/). A kiežby to boli iba neškodní Jehovisti……
 
