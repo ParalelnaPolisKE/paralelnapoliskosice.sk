@@ -13,7 +13,7 @@ Tématiku zombie do svetovej kinematografie priniesol William Seabrook na konci 
 
 *Obr. 1 : Zombíci dostali vo filmovom spracovaní strašidelný vzhľad a správanie.*
 
-V main streamových žánroch je za zombie považovaná nemŕtva kreatúra v podobe zohaveného ľudského tela s nedbalým účesom, [zastretým pohľadom](https://cs.wikiquote.org/wiki/Milo%C5%A1_Zeman#/media/Soubor:Milo%C5%A1_Zeman_2013.JPG), večne otvorenými ústami, zanedbaným chrupom, hompáľajúcimi sa končatinami a najmä nesprávnym držaním tela a tackajúcou sa chôdzou.
+V main streamových žánroch je za zombie považovaná nemŕtva kreatúra v podobe zohaveného ľudského tela s nedbalým účesom, zastretým pohľadom, večne otvorenými ústami, zanedbaným chrupom, hompáľajúcimi sa končatinami a najmä nesprávnym držaním tela a tackajúcou sa chôdzou.
 
 Popis nápadne hodiaci sa na alkoholom podguráženého futbalového fanúšika, vracajúceho sa o pol noci domov z miestneho pohostinstva (viď. obr.2), ktorého tím hanebne deklasoval súper výsledkom 0:10 , pričom minimálne tri góly z toho boli vlastné.
 
@@ -43,7 +43,7 @@ Naozajstní zombíci sa dnes už dôkladne maskujú, no po pár vetách či tro�
 
 Zombík poväčšinou nemá nič nové. Na otázku ako sa máš, iba rutinérsky odvrkne len, že “nič”. Zhovorčivejší zo seba unavene vysúka vždy aktuálne “všetko po starom”
 
-Stereotyp je vyhľadávaný životný štýl zombíkov. Akákoľvek inakosť je hodnotená ako čudáctvo, a preto si zombík dáva *veľmi* veľký pozor na čudákov. Čudáci sú zlí. Robia samé čudné veci, ktorým ON, zombík, nerozumie.
+Stereotyp je vyhľadávaný životný štýl zombíkov. Akákoľvek inakosť je hodnotená ako čudáctvo, a preto si zombík dáva *veľmi* veľký pozor na čudákov. Čudáci sú zlí. Robia samé čudné veci, ktorým [ON](https://cs.wikiquote.org/wiki/Milo%C5%A1_Zeman#/media/Soubor:Milo%C5%A1_Zeman_2013.JPG), zombík, nerozumie.
 
 Zombík má rád, keď sa dozvie, že iný zombík sa nemá až tak dobre ako on. Niektorých zombíkov dokonca vyslovene teší ak sa má niekto zle. Nedajbože sa má niekto horšie ako on sám, je z toho celý vo vytržení. No navonok nedá na sebe nič poznať a prejaví s Vami maximálny súcit.
 
@@ -73,7 +73,7 @@ Nezodpovedanou otázkou však stále ostáva, ako sa vlastne taký bežný člov
 
 ![](/assets/zombie-obr7.jpeg)
 
-*Obr. 7 : Obstojný zombíci pre naše geografické pásmo.*
+*Obr. 7 : Obstojní zombíci pre naše geografické pásmo.*
 
 Nuž spôsobov je naozaj viacero. Buď sa tam poctivo prepijete, alebo to vo vás “**len tak**” jednoducho dozrie.
 
@@ -129,7 +129,7 @@ Ostal som v tom sám. Aj so zombíkmi na krku.
 
 Ale nie, to iba žartujem.
 
-Pred pár dňami sa mi ale podarilo dočítať knihu jedného ctihodného človeka, muža, ktorý na štyristodvanástich stranách prezentuje svoj názor na to, ako asi by mohol - či mal, vyzerať veľký reštart. Jeho. Môj. Tvoj či náš spoločný.
+Pred pár dňami, sa mi ale podarilo dočítať knihu jedného ctihodného človeka, muža, ktorý na štyristodvanástich stranách prezentuje svoj názor na to, ako asi by mohol - či mal, vyzerať veľký reštart. Jeho. Môj. Tvoj či náš spoločný.
 
 Mám však takú vlastnosť, že písmenká v knižke mi nestačia na to aby uspokojili moju túžbu po vedomosti, a tak som sa intezívne snažil začítať aj medzi riadkami. Bolo to však dosť náročné, pretože medzi riadkami toho veľa nebolo. Autor poctivo a prepedantne, často až lopatisticky vysvetľuje čo a ako, aby predišiel disinterpetáciam a nepochopkom. Napokon som sa však možno predsa len, prehrýzol zložitým rébusom komplikovaného IT šifrovania a podarilo sa mi nájsť ten skrytý odkaz spomedzi riadkov : Byť v strehu, no vyrelaxovaný, plne flexibilný a pripravený na zmenu, o ktorej buď neviem vôbec nič, alebo len veľmi málo.” Hard.
 
@@ -147,10 +147,10 @@ Kto si knihu prečítal, isto mi dá za pravdu, kto ju ešte nečítal – odpor
 
 Moja výzva na záver preto znie nasledovne: vrele odporúčam zakúpiť si min. 1 ks, [V](https://juraj.bednar.io/product/kniha-velky-restart/)[EĽKÝ REŠTART](https://juraj.bednar.io/product/kniha-velky-restart/) [od Juraja Bednára](https://juraj.bednar.io/product/kniha-velky-restart/) a darovať ju z lásky nádejnému ostreľovačovi zombíkov, ktorý bude stáť po Vašom boku, keď budete za vysokými hradbami šútiť do živých mŕtvol štverajúcich sa po rebríkoch, aby nás jedného po druhom nemilosrdne zožrali aj s našimi špinavými a zatrateniahodnými ideami o slobodnom a zdravom živote bez zombíkov.
 
-Nesrandujem, myslím to vážne. Nie je čas na pukance, nebude to totiž určite [žiadna zábava](https://paralelnapolis.sk/zaklady-operacnej-bezpecnosti-na-demonstraciach/).
+Nesrandujem, myslím to Vážne. Nie je čas na pukance, nebude to totiž určite [žiadna zábava](https://paralelnapolis.sk/zaklady-operacnej-bezpecnosti-na-demonstraciach/).
 
 Zombíci nám už totiž [klopú na dvere](https://paralelnapolis.sk/ako-sa-slovensko-eu-pripravuje-na-digitalnu-diktaturu-cinskeho-typu-iii/). A kiežby to boli iba neškodní Jehovisti……
 
-![](/assets/zombie-obr10.gif)
+![](/assets/zombie10.gif)
 
 PS : Ja osobne som už takto rozdal tri knihy a modlím sa aby nás za tými hradbami bolo sakra dosť, inak bude po nás….
