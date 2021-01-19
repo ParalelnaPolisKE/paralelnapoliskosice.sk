@@ -151,6 +151,8 @@ Nesrandujem, myslím to Vážne. Nie je čas na pukance, nebude to totiž určit
 
 Zombíci nám už totiž [klopú na dvere](https://paralelnapolis.sk/ako-sa-slovensko-eu-pripravuje-na-digitalnu-diktaturu-cinskeho-typu-iii/). A kiežby to boli iba neškodní Jehovisti……
 
-![](/assets/zombie-obr10.gif)
+
+
+![](/assets/zombie-anim.gif)
 
 PS : Ja osobne som už takto rozdal tri knihy a modlím sa aby nás za tými hradbami bolo sakra dosť, inak bude po nás….
