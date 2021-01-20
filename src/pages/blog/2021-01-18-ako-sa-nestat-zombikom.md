@@ -3,7 +3,7 @@ title: Ako sa nestať zombíkom
 author: ZEBRA°n
 cover: /assets/zombieobr0.jpeg
 ---
-Na úvod by som chcel uviesť, že niesom ktovieakým prívržencom kinematografie spracovávajúcej zombie tématiku, takže ak ani Vás tento žáner nijako neoslovuje, celkom tomu rozumiem.
+Na úvod by som chcel uviesť, že nie som ktovieakým prívržencom kinematografie spracovávajúcej zombie tématiku, takže ak ani Vás tento žáner nijako neoslovuje, celkom tomu rozumiem.
 
 Zombie má pôvod na Haiti, je to mytologická bytosť pochádzajúca z woo-doo obradov. Najčastejšie zobrazovaná ako pohybujúca sa telesná schránka mŕtveho človeka.
 
@@ -15,7 +15,7 @@ Tématiku zombie do svetovej kinematografie priniesol William Seabrook na konci 
 
 V main streamových žánroch je za zombie považovaná nemŕtva kreatúra v podobe zohaveného ľudského tela s nedbalým účesom, zastretým pohľadom, večne otvorenými ústami, zanedbaným chrupom, hompáľajúcimi sa končatinami a najmä nesprávnym držaním tela a tackajúcou sa chôdzou.
 
-Popis nápadne hodiaci sa na alkoholom podguráženého futbalového fanúšika, vracajúceho sa o pol noci domov z miestneho pohostinstva (viď. obr.2), ktorého tím hanebne deklasoval súper výsledkom 0:10 , pričom minimálne tri góly z toho boli vlastné.
+Popis nápadne hodiaci sa na alkoholom podguráženého fanúšika krčmových športov, vracajúceho sa o pol noci domov z miestneho pohostinstva (viď. obr.2), ktorého tím hanebne deklasoval súper výsledkom 0:10 , pričom minimálne tri góly z toho boli vlastné.
 
 Proste fakt tesná prehra.
 
@@ -87,7 +87,7 @@ A ste v klube. Potom to už ide odrazu celkom samo. Svojich si poznávate hneď 
 
 Zombík zbožňuje ponosy a ohováranie. Najmä ak vie, že nimi môže niekomu ublížiť či minimálne priťažiť. Ohováranie je silný rozpoznávací znak, ktorým sa bežný radový zombie celkom dobrovoľne demaskuje aj na verejnosti. Nechať sa počuť na ulici, pred ostatnými obyvateľmi bytového domu, že ste v noci počuli susedu ako sa vášnivo miluje zo svojím partnerom, pôsobí blahodárne na jeho pocit šťastia a spokojnosti. Krivé obvinenie, z ktorého pre neho vyplýva nejaký prospech, je pre neho tým najkrajším snom.
 
-![](/assets/zombie-obr8.jpg)
+![](/assets/zombie-obr8a.jpg)
 
 *Obr. 8 : Zombík di tutti zombík. Z času na čas sa aj medzi zombíkmi zjaví ozaj unikátny exemplár.*
 
@@ -117,9 +117,9 @@ Akoby presne toto bola voda na jeho mlyn.
 
 ![](/assets/zombie-obr9.jpeg)
 
-*Obr. 9 : Lokálny zombíci v plnej paráde. Aj keď v tomto prípade sa jedná o vojnu medzi gangmi.*
+*Obr. 9 : Lokálni zombíci v plnej paráde. Aj keď v tomto prípade sa jedná o vojnu medzi gangmi.*
 
-Mnohí z Vás sa pýtajú čo bude, ako asi bude vyzrať pocovidový svet, ako bude fungovať spoločnosť po premorení či očkovaní? Budeme mať všetci krvavé oči a bezcieľne sa potulovať prázdnymi ulicami hľadajúc tých, ktorých sa nám ešte nepodarilo nakaziť?
+Mnohí z Vás sa pýtajú čo bude, ako asi bude vyzerať pocovidový svet, ako bude fungovať spoločnosť po premorení či očkovaní? Budeme mať všetci krvavé oči a bezcieľne sa potulovať prázdnymi ulicami hľadajúc tých, ktorých sa nám ešte nepodarilo nakaziť?
 
 Who knows?
 
@@ -151,8 +151,6 @@ Nesrandujem, myslím to Vážne. Nie je čas na pukance, nebude to totiž určit
 
 Zombíci nám už totiž [klopú na dvere](https://paralelnapolis.sk/ako-sa-slovensko-eu-pripravuje-na-digitalnu-diktaturu-cinskeho-typu-iii/). A kiežby to boli iba neškodní Jehovisti……
 
-
-
-![](/assets/zombie-anim.gif)
+![](/assets/zombie10a.jpg)
 
 PS : Ja osobne som už takto rozdal tri knihy a modlím sa aby nás za tými hradbami bolo sakra dosť, inak bude po nás….
