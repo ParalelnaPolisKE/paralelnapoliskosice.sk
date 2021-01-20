@@ -87,7 +87,7 @@ A ste v klube. Potom to už ide odrazu celkom samo. Svojich si poznávate hneď 
 
 Zombík zbožňuje ponosy a ohováranie. Najmä ak vie, že nimi môže niekomu ublížiť či minimálne priťažiť. Ohováranie je silný rozpoznávací znak, ktorým sa bežný radový zombie celkom dobrovoľne demaskuje aj na verejnosti. Nechať sa počuť na ulici, pred ostatnými obyvateľmi bytového domu, že ste v noci počuli susedu ako sa vášnivo miluje zo svojím partnerom, pôsobí blahodárne na jeho pocit šťastia a spokojnosti. Krivé obvinenie, z ktorého pre neho vyplýva nejaký prospech, je pre neho tým najkrajším snom.
 
-![](/assets/zombie-obr8.jpg)
+![](/assets/zombie-obr8a.jpg)
 
 *Obr. 8 : Zombík di tutti zombík. Z času na čas sa aj medzi zombíkmi zjaví ozaj unikátny exemplár.*
 
@@ -151,6 +151,6 @@ Nesrandujem, myslím to Vážne. Nie je čas na pukance, nebude to totiž určit
 
 Zombíci nám už totiž [klopú na dvere](https://paralelnapolis.sk/ako-sa-slovensko-eu-pripravuje-na-digitalnu-diktaturu-cinskeho-typu-iii/). A kiežby to boli iba neškodní Jehovisti……
 
-![](/assets/zombie10.gif)
+![](/assets/zombie10a.jpg)
 
 PS : Ja osobne som už takto rozdal tri knihy a modlím sa aby nás za tými hradbami bolo sakra dosť, inak bude po nás….
