@@ -3,11 +3,11 @@ title: Ako sa nestať zombíkom
 author: ZEBRA°n
 cover: /assets/zombieobr0.jpeg
 ---
-Na úvod by som chcel uviesť, že nie som ktovieakým prívržencom kinematografie spracovávajúcej zombie tématiku, takže ak ani Vás tento žáner nijako neoslovuje, celkom tomu rozumiem.
+Na úvod by som chcel uviesť, že nie som ktovieakým prívržencom kinematografie spracovávajúcej zombie tematiku, takže ak ani Vás tento žáner nijako neoslovuje, celkom tomu rozumiem.
 
 Zombie má pôvod na Haiti, je to mytologická bytosť pochádzajúca z woo-doo obradov. Najčastejšie zobrazovaná ako pohybujúca sa telesná schránka mŕtveho človeka.
 
-Tématiku zombie do svetovej kinematografie priniesol William Seabrook na konci druhej dekády dvadsiateho storočia. Postupujúcim časom, sa stali zombie hitom hororov, v ktorých dostali v skutku strašidelný vzhľad a správanie. (viď. obr. 1)
+Tematiku zombie do svetovej kinematografie priniesol William Seabrook na konci druhej dekády dvadsiateho storočia. Postupujúcim časom, sa stali zombie hitom hororov, v ktorých dostali v skutku strašidelný vzhľad a správanie. (viď. obr. 1)
 
 ![](/assets/zombie-obr1.jpeg)
 
@@ -23,7 +23,7 @@ Proste fakt tesná prehra.
 
 *Obr. 2 : Zombík obyčajný – zombicus vulgaris. Alkohol a človek v obraze vzájomného prieniku.*
 
-Udalosti vo svete nám však denno denne, zas a znova sugestívne podsúvajú obrazy (viď. obr. 3) z tých podarenejších zombie filmov, ktorých trailery ste si možno aj Vy zo zvedavosti preklikali, aby ste sa uistili, že ich vidieť ani nechcete. A to je chyba. Mali by ste. A ja povinne s Vami.
+Udalosti vo svete nám však dennodenne, zas a znova sugestívne podsúvajú obrazy (viď. obr. 3) z tých podarenejších zombie filmov, ktorých trailery ste si možno aj Vy zo zvedavosti preklikali, aby ste sa uistili, že ich vidieť ani nechcete. A to je chyba. Mali by ste. A ja povinne s Vami.
 
 ![](/assets/zombie-obr3.jpeg)
 
@@ -49,7 +49,7 @@ Zombík má rád, keď sa dozvie, že iný zombík sa nemá až tak dobre ako on
 
 Jednou zo základných čŕt zombíka je aj to, že on sám, sa nemá rád. Nemá rád seba, svoju prácu a svoje povinnosti. No má rád keď nič nerobí. Ba *v tom*, sa priam vyžíva. Ak sa mu nebodaj podarí, ešte aj chodiť do práce a nič nerobením si zarábať, stáva sa z neho vzorový zombík. Ide iným príkladom. Svojou šikovnosťou dokázať oklamať tento **dokonalý** systém tak, že nemusí nič robiť, iba sa tak tváriť, že **akože** robí a za odmenu za to dostáva výplatnú pásku, je **veru** už niečo.
 
-A to ***niečo*** sa nazýva sľubný začiatok karierného zombíka. No, aby som zatiaľ neodbiehal do hierarchických štruktúr zombíkov, budem sa radšej ešte chvíľku venovať ďalším podstatným rysom tejto bytosti.
+A to ***niečo*** sa nazýva sľubný začiatok kariérneho zombíka. No, aby som zatiaľ neodbiehal do hierarchických štruktúr zombíkov, budem sa radšej ešte chvíľku venovať ďalším podstatným rysom tejto bytosti.
 
 ![](/assets/zombie-obr4.jpeg)
 
@@ -67,7 +67,7 @@ Davová psychóza je tantrou pre zombíkov. Sú od nej priam závislí. Bez davo
 
 Zombie guru je obyčajný zombie, ktorému iní zombíci veria, že on im chce len dobre, a vždy im dobre poradí, čo majú robiť, aby dobre urobili. Lebo keď tak aj urobia, zavše sa im to vyplatí.
 
-Obšas zvyknú dúfať, že keď sa budú veľmi dobre snažiť, aj z nich sa možno raz stane taký istý zombie guru ako je zombie guru.
+Občas zvyknú dúfať, že keď sa budú veľmi dobre snažiť, aj z nich sa možno raz stane taký istý zombie guru ako je zombie guru.
 
 Nezodpovedanou otázkou však stále ostáva, ako sa vlastne taký bežný človek môže stať, takpovediac **obstojným** zombíkom.
 
@@ -79,7 +79,7 @@ Nuž spôsobov je naozaj viacero. Buď sa tam poctivo prepijete, alebo to vo vá
 
 Či nebodaj sa môžete pri troche šťastia nakaziť od známeho či kolegu.
 
-Najčastejšie to však býva veľmi spontánny a jednoduchý proces. Nudou na smrť unavený mozog sa v istom momente sám a celkom automaticky, prepne do zombie remote režimu, a zrazu relaxujete pri čítaní Nového Času a ohrýzate si nechty až po lôžka, strápení obavami o osud vašich obľúbených farmárov z Farmy. A to už je len kúsok od toho aby Vám prirástli končeky prstov k mobilu a ďiaľkovému ovládaču a občas mali nutkavú chuť si len tak, zo špásu kopnúť do susedovho kocúra, či vyškrabať kľúčom vo výťahu, **magické** to slovo “debil” či “idiot”
+Najčastejšie to však býva veľmi spontánny a jednoduchý proces. Nudou na smrť unavený mozog sa v istom momente sám a celkom automaticky, prepne do zombie remote režimu, a zrazu relaxujete pri čítaní Nového Času a ohrýzate si nechty až po lôžka, strápení obavami o osud vašich obľúbených farmárov z Farmy. A to už je len kúsok od toho aby Vám prirástli končeky prstov k mobilu a diaľkovému ovládaču a občas mali nutkavú chuť si len tak, zo špásu kopnúť do susedovho kocúra, či vyškrabať kľúčom vo výťahu, **magické** to slovo “debil” či “idiot”
 
 A ste v klube. Potom to už ide odrazu celkom samo. Svojich si poznávate hneď na prvý pohľad.
 
@@ -101,7 +101,7 @@ No proste, jedna báseň.
 
 Zombík by po takomto nazeraní naň, pôsobil ako celkom nevinné zvieratko, kebyže to nebol človek.
 
-Ale ono je to človek a človek nie hoc aký. Je to častokrát presne ten typ bezduchého kolegu, ktorého povýšili práve na náš úkor. Či šťastne vydatá pani úradníčka, ktorá nás rada nechá postojačky čakať na nevetranej chodbe úradu aj štyri hodiny, kým sa ona nedozvie fakt všetky pikošky, čo sa stali na poschodí cez týždeň, kým ona bola na dovolenke v Turecku aj s milencom. Hoci to už počuje tretí krát a od tej istej kolegyne.
+Ale ono je to človek a človek nie hoc aký. Je to často krát presne ten typ bezduchého kolegu, ktorého povýšili práve na náš úkor. Či šťastne vydatá pani úradníčka, ktorá nás rada nechá postojačky čakať na nevetranej chodbe úradu aj štyri hodiny, kým sa ona nedozvie fakt všetky pikošky, čo sa stali na poschodí cez týždeň, kým ona bola na dovolenke v Turecku aj s milencom. Hoci to už počuje tretí krát a od tej istej kolegyne.
 
 Je to tak, zombík je už dlho tu, aby nám pil krv a strpčoval ten krásny život, ktorý tak úprimne milujeme. Lebo práve on je ten, kto tvorí podstatnú časť elektorátu, ktorý nám určuje systém a pravidlá v ktorom žijeme aj my.
 
@@ -129,11 +129,11 @@ Ostal som v tom sám. Aj so zombíkmi na krku.
 
 Ale nie, to iba žartujem.
 
-Pred pár dňami, sa mi ale podarilo dočítať knihu jedného ctihodného človeka, muža, ktorý na štyristodvanástich stranách prezentuje svoj názor na to, ako asi by mohol - či mal, vyzerať veľký reštart. Jeho. Môj. Tvoj či náš spoločný.
+Pred pár dňami, sa mi ale podarilo dočítať knihu jedného ctihodného človeka, muža, ktorý na štyristo dvanástich stranách prezentuje svoj názor na to, ako asi by mohol - či mal, vyzerať veľký reštart. Jeho. Môj. Tvoj či náš spoločný.
 
-Mám však takú vlastnosť, že písmenká v knižke mi nestačia na to aby uspokojili moju túžbu po vedomosti, a tak som sa intezívne snažil začítať aj medzi riadkami. Bolo to však dosť náročné, pretože medzi riadkami toho veľa nebolo. Autor poctivo a prepedantne, často až lopatisticky vysvetľuje čo a ako, aby predišiel disinterpetáciam a nepochopkom. Napokon som sa však možno predsa len, prehrýzol zložitým rébusom komplikovaného IT šifrovania a podarilo sa mi nájsť ten skrytý odkaz spomedzi riadkov : Byť v strehu, no vyrelaxovaný, plne flexibilný a pripravený na zmenu, o ktorej buď neviem vôbec nič, alebo len veľmi málo.” Hard.
+Mám však takú vlastnosť, že písmenká v knižke mi nestačia na to aby uspokojili moju túžbu po vedomosti, a tak som sa intenzívne snažil začítať aj medzi riadkami. Bolo to však dosť náročné, pretože medzi riadkami toho veľa nebolo. Autor poctivo a prepedantne, často až lopatisticky vysvetľuje čo a ako, aby predišiel disinterpetáciam a nepochopkom. Napokon som sa však možno predsa len, prehrýzol zložitým rébusom komplikovaného IT šifrovania a podarilo sa mi nájsť ten skrytý odkaz spomedzi riadkov : Byť v strehu, no vyrelaxovaný, plne flexibilný a pripravený na zmenu, o ktorej buď neviem vôbec nič, alebo len veľmi málo.” Hard.
 
-A teda rozumiem tomu tak, že iba zdravý rozum, je návod Veľký reštart. A ten mne svieti na poličke s knihami ako maják v časoch krízy, keď sa mi začína kaliť zrak, zhoršovať držanie tela, ďengľavejú mi hnáty a začínam namiesto slov vydávať zo seba iba škreky a prdy.
+A teda rozumiem tomu tak, že iba zdravý rozum, je návod Veľký reštart. A ten mne svieti na poličke s knihami ako maják v časoch krízy, keď sa mi začína kaliť zrak, zhoršovať držanie tela, dengľavejú mi hnáty a začínam namiesto slov vydávať zo seba iba škreky a prdy.
 
 Nie, podstatné nie je úfať a zúfať si, či veriť, že všetko sa nejako utrasie. Veľmi dobre viem, že nič sa neutrasie a nikto nepríde aby zachránil môj zadok. Buď si poradím sám, alebo ma zožerú zombíci. Prinajmenšom ma možno časom iba nakazia a stane sa taký istý zombík aj zo mňa. No jedno je mi jasné, že bez veľkého reštartu sa nikam nepohnem. Svojho veľkého reštartu.
 
