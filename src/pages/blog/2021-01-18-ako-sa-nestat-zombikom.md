@@ -3,7 +3,7 @@ title: Ako sa nestať zombíkom
 author: ZEBRA°n
 cover: /assets/zombieobr0.jpeg
 ---
-Na úvod by som chcel uviesť, že niesom ktovieakým prívržencom kinematografie spracovávajúcej zombie tématiku, takže ak ani Vás tento žáner nijako neoslovuje, celkom tomu rozumiem.
+Na úvod by som chcel uviesť, že nie som ktovieakým prívržencom kinematografie spracovávajúcej zombie tématiku, takže ak ani Vás tento žáner nijako neoslovuje, celkom tomu rozumiem.
 
 Zombie má pôvod na Haiti, je to mytologická bytosť pochádzajúca z woo-doo obradov. Najčastejšie zobrazovaná ako pohybujúca sa telesná schránka mŕtveho človeka.
 
@@ -117,9 +117,9 @@ Akoby presne toto bola voda na jeho mlyn.
 
 ![](/assets/zombie-obr9.jpeg)
 
-*Obr. 9 : Lokálny zombíci v plnej paráde. Aj keď v tomto prípade sa jedná o vojnu medzi gangmi.*
+*Obr. 9 : Lokálni zombíci v plnej paráde. Aj keď v tomto prípade sa jedná o vojnu medzi gangmi.*
 
-Mnohí z Vás sa pýtajú čo bude, ako asi bude vyzrať pocovidový svet, ako bude fungovať spoločnosť po premorení či očkovaní? Budeme mať všetci krvavé oči a bezcieľne sa potulovať prázdnymi ulicami hľadajúc tých, ktorých sa nám ešte nepodarilo nakaziť?
+Mnohí z Vás sa pýtajú čo bude, ako asi bude vyzerať pocovidový svet, ako bude fungovať spoločnosť po premorení či očkovaní? Budeme mať všetci krvavé oči a bezcieľne sa potulovať prázdnymi ulicami hľadajúc tých, ktorých sa nám ešte nepodarilo nakaziť?
 
 Who knows?
 
@@ -151,8 +151,6 @@ Nesrandujem, myslím to Vážne. Nie je čas na pukance, nebude to totiž určit
 
 Zombíci nám už totiž [klopú na dvere](https://paralelnapolis.sk/ako-sa-slovensko-eu-pripravuje-na-digitalnu-diktaturu-cinskeho-typu-iii/). A kiežby to boli iba neškodní Jehovisti……
 
-
-
-![](/assets/zombie-anim.gif)
+![](/assets/zombie10.gif)
 
 PS : Ja osobne som už takto rozdal tri knihy a modlím sa aby nás za tými hradbami bolo sakra dosť, inak bude po nás….
