@@ -15,7 +15,7 @@ Tématiku zombie do svetovej kinematografie priniesol William Seabrook na konci 
 
 V main streamových žánroch je za zombie považovaná nemŕtva kreatúra v podobe zohaveného ľudského tela s nedbalým účesom, zastretým pohľadom, večne otvorenými ústami, zanedbaným chrupom, hompáľajúcimi sa končatinami a najmä nesprávnym držaním tela a tackajúcou sa chôdzou.
 
-Popis nápadne hodiaci sa na alkoholom podguráženého futbalového fanúšika, vracajúceho sa o pol noci domov z miestneho pohostinstva (viď. obr.2), ktorého tím hanebne deklasoval súper výsledkom 0:10 , pričom minimálne tri góly z toho boli vlastné.
+Popis nápadne hodiaci sa na alkoholom podguráženého fanúšika krčmových športov, vracajúceho sa o pol noci domov z miestneho pohostinstva (viď. obr.2), ktorého tím hanebne deklasoval súper výsledkom 0:10 , pričom minimálne tri góly z toho boli vlastné.
 
 Proste fakt tesná prehra.
 
