@@ -234,6 +234,8 @@ const plugins = [
   //   },
   // },
   'gatsby-plugin-react-leaflet',
+  // This is needed to support deploying to IPFS
+  'gatsby-plugin-relativeurl',
 ];
 
 const mapping = {
@@ -258,7 +260,7 @@ if (process.env.CONTEXT === 'production') {
 }
 
 module.exports = {
-  pathPrefix: `/blog`,
+  pathPrefix: '__GATSBY_RELATIVEURL_PATH_PREFIX__',
   siteMetadata,
   plugins,
   mapping,

@@ -25,12 +25,13 @@
   "main": "n/a",
   "scripts": {
     "start": "npm run postcss -- --watch & gatsby develop",
-    "build": "npm run postcss && gatsby build",
+    "build": "npm run postcss && gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postcss": "postcss ./src/css/styles.css --output ./src/css/output.css"
+    "postcss": "postcss ./src/css/styles.css --output ./src/css/output.css",
+    "ipfs": "npm run build && npx ipfs-deploy public/ -p pinata -O"
   },
   "dependencies": {
     "@mdx-js/mdx": "^0.20.3",
@@ -52,6 +53,7 @@
     "gatsby-plugin-purgecss": "^2.4.0",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-react-leaflet": "^2.0.13",
+    "gatsby-plugin-relativeurl": "^2.1.0",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-remove-trailing-slashes": "^2.3.11",
     "gatsby-plugin-sharp": "^2.6.19",
