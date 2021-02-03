@@ -59,7 +59,7 @@ A ďalším podstatným rysom tejto bytosti, je stádovitosť.
 
 Zombíci radi chodia spolu v pomerne **veľkých tlupách**. Do krčiem, na zrazy, protesty a zhromaždenia, seansy o multilevel marketingu, či zázračnom tabletkovom chudnutí.
 
-Davová psychóza je tantrou pre zombíkov. Sú od nej priam závislí. Bez davovej psychózy sú letargický a depresívny. Dav im dodáva potrebnú odvahu a silu. Charakteristické je pre nich taktiež aj to, že majú akési centrálne **spoločné** vedomie, ktoré je často krát ovládané tzv. zombie guru.
+Davová psychóza je tantrou pre zombíkov. Sú od nej priam závislí. Bez davovej psychózy sú letargickí a depresívni. Dav im dodáva potrebnú odvahu a silu. Charakteristické je pre nich taktiež aj to, že majú akési centrálne **spoločné** vedomie, ktoré je často krát ovládané tzv. zombie guru.
 
 ![](/assets/zombie-obr5-6.jpeg)
 
@@ -85,7 +85,7 @@ A ste v klube. Potom to už ide odrazu celkom samo. Svojich si poznávate hneď 
 
 Ďalšou zásadnou črtou zombíkov je fakt, že sa zo zásady bránia požívaniu akýchkoľvek omamných a psychoaktívnych látok. Na blahé pobývanie vo svojom zombie remote režime nič také ani nepotrebujú. Nebýva výnimkou, že to považujú za čosi zlé a pohoršujúce ba dokonca niektorí možno aj za trestuhodné.
 
-Zombík zbožňuje ponosy a ohováranie. Najmä ak vie, že nimi môže niekomu ublížiť či minimálne priťažiť. Ohováranie je silný rozpoznávací znak, ktorým sa bežný radový zombie celkom dobrovoľne demaskuje aj na verejnosti. Nechať sa počuť na ulici, pred ostatnými obyvateľmi bytového domu, že ste v noci počuli susedu ako sa vášnivo miluje zo svojím partnerom, pôsobí blahodárne na jeho pocit šťastia a spokojnosti. Krivé obvinenie, z ktorého pre neho vyplýva nejaký prospech, je pre neho tým najkrajším snom.
+Zombík zbožňuje ponosy a ohováranie. Najmä ak vie, že nimi môže niekomu ublížiť či minimálne priťažiť. Ohováranie je silný rozpoznávací znak, ktorým sa bežný radový zombík celkom dobrovoľne demaskuje aj na verejnosti. Nechať sa počuť na ulici, pred ostatnými obyvateľmi bytového domu, že ste v noci počuli susedu ako sa vášnivo miluje zo svojím partnerom, pôsobí blahodárne na jeho pocit šťastia a spokojnosti. Krivé obvinenie, z ktorého plynie osobný prospech, je pre neho tým najkrajším snom.
 
 ![](/assets/zombie-obr8a.jpg)
 
@@ -123,12 +123,6 @@ Mnohí z Vás sa pýtajú čo bude, ako asi bude vyzerať pocovidový svet, ako 
 
 Who knows?
 
-Moja zombie veštkyňa s kryštáľovou guľou, ku ktorej som si chodil pravidelne po rady, ochorela a zomrela práve na ten covid, v ktorý bohorovne neverila. Ups.
-
-Ostal som v tom sám. Aj so zombíkmi na krku.
-
-Ale nie, to iba žartujem.
-
 Pred pár dňami, sa mi ale podarilo dočítať knihu jedného ctihodného človeka, muža, ktorý na štyristo dvanástich stranách prezentuje svoj názor na to, ako asi by mohol - či mal, vyzerať veľký reštart. Jeho. Môj. Tvoj či náš spoločný.
 
 Mám však takú vlastnosť, že písmenká v knižke mi nestačia na to aby uspokojili moju túžbu po vedomosti, a tak som sa intenzívne snažil začítať aj medzi riadkami. Bolo to však dosť náročné, pretože medzi riadkami toho veľa nebolo. Autor poctivo a prepedantne, často až lopatisticky vysvetľuje čo a ako, aby predišiel disinterpetáciam a nepochopkom. Napokon som sa však možno predsa len, prehrýzol zložitým rébusom komplikovaného IT šifrovania a podarilo sa mi nájsť ten skrytý odkaz spomedzi riadkov : Byť v strehu, no vyrelaxovaný, plne flexibilný a pripravený na zmenu, o ktorej buď neviem vôbec nič, alebo len veľmi málo.” Hard.
@@ -141,7 +135,7 @@ Kniha Juraja Bednára [VEĽKÝ REŠTART](https://juraj.bednar.io/product/kniha-v
 
 Moon je super.
 
-BTC na 40k je [sen](https://coinmarketcap.com/currencies/bitcoin/). Ale [toto zombíkov skôr iba naserie](https://paralelnapolis.sk/zaistenie-kryptomien-statom/) a nechcem si ani len predstaviť, čo by mi bol zombík ochotný spraviť za pár kvantitatívne uvoľnených šupov od vlády bez akejkoľvek hodnoty, len aby ma pripravil o moju radosť zo života, ktorá je preňho ako jed.
+BTC na 40k je [sen](https://coinmarketcap.com/currencies/bitcoin/). Ale [toto](https://paralelnapolis.sk/zaistenie-kryptomien-statom/) zombíkov skôr iba naserie a nechcem si ani len predstaviť, čo by mi bol zombík ochotný spraviť za pár kvantitatívne uvoľnených [papierikov](https://brrr.money/) od vlády bez akejkoľvek hodnoty, len aby ma pripravil o moju radosť zo života, ktorá je preňho ako jed.
 
 Kto si knihu prečítal, isto mi dá za pravdu, kto ju ešte nečítal – odporúčam prečítať, no nie je to nevyhnutné. Možno Vy osobne, ju ani čítať nepotrebujete. Určite však poznáte adeptov vo svojom okolí, ktorí by si ju čítať isto zaslúžili. A možno aj preto, že Vám na nich záleží a tlie v nich maličká iskierka nádeje, že by sa mohli chcieť ubrániť zombie nákaze. Preto je podstatné aby ste si tú knihu kúpili a darovali ju presne takémuto horúcemu adeptovi.
 
