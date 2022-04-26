@@ -21,7 +21,7 @@ tags:
 
 ## Čo potrebujeme
 - https://github.com/monero-ecosystem/PiNode-XMR Monero node pre jednodoskové počítače s webovým rozhraním a predkonfigurovanými doplnkovými nástrojmi a s jednoduchou inštaláciou
-- jednodoskový počítač: je lacný a má nízku spotrebu energie. Prehľad podporovaných HW [tu](https://github.com/monero-ecosystem/PiNode-XMR/wiki/Hardware#hardware), najrozšírenejšie a asi najľahšie zohnateľné je Raspberry Pi (ja som použila model 4B s 4GB RAM), autor PiNode odporúča Odroid s podporou AES pre rýchlejšie de/šifrovanie a Rock64 pre najlepší pomer cena/výkon.
+- jednodoskový počítač: je lacný a má nízku spotrebu energie. [Prehľad podporovaných HW](https://github.com/monero-ecosystem/PiNode-XMR/wiki/Hardware#hardware), najrozšírenejšie a asi najľahšie zohnateľné je Raspberry Pi (ja som použila model 4B s 4GB RAM), autor PiNode odporúča Odroid s podporou AES pre rýchlejšie de/šifrovanie a Rock64 pre najlepší pomer cena/výkon.
 - na uloženie blockchainu 256GB MicroSD kartu alebo lepšie externý disk, odkiaľ sa môže bootovať aj OS. Ja som použila SSD Samsung T5 (moje Pi s OS a kompletným Monero blockchainom momentálne zaberá takmer 140 GB).
 
 ## Postup
@@ -36,24 +36,20 @@ Stačí postupovať podľa oficiálneho manuálu, podrobný postup od inštalác
 ## Nastavenie peňaženky Monerujo
 1. nainštaluj si [Orbot](https://guardianproject.info/apps/org.torproject.android), ktorý umožňuje používať mobilné aplikácie so sieťou Tor
 2. v Orbot zapni **VPN Mode** a kolieskom v sekcii **Tor-Enabled Apps** nastav Monerujo (a ďalšie appky, ktoré chceš používať cez Tor), aby to vyzeralo takto:
-![](/assets/monero-node-orbot.png)
-Orbot zavri.
+
+   ![](/assets/monero-node-orbot.png)
+   Orbot zavri.
 3. spusti [Monerujo](https://www.monerujo.io) (Orbot sa na pozadí sám naštartuje), ťukni na ikonku pred názvom remote nodu, zmení sa na cibuľu Toru:
-<p align="center">
-  <img alt="clear" src="/assets/monero-node-01.jpg" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Tor" src="/assets/monero-node-02.jpg" width="45%">
-</p>
+
+![](/assets/monero-node-01-02.jpg)
 
 4. ťukni na node a na nasledujúcej obrazovke tlačidlom **"+"** pridaj svoj node (onion adresu, port a prípadne usera a heslo), potvrď pridanie
-![](/assets/monero-node-03.jpg)
-5. Monerujo by sa malo k tvojmu nodu pripojiť a existujúca/nová peňaženka by sa po otvorení mala zosynchronizovať
-<p align="center">
-  <img alt="clear" src="/assets/monero-node-04.jpg" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Tor" src="/assets/monero-node-05.jpg" width="45%">
-</p>
 
+![](/assets/monero-node-03.jpg)
+
+5. Monerujo by sa malo k tvojmu nodu pripojiť a existujúca/nová peňaženka by sa po otvorení mala zosynchronizovať
+
+![](/assets/monero-node-04-05.jpg)
 
 ## Problémy a riešenia
 - synchronizácia sa mi raz zasekla, v tomto prípade treba stopnúť node, využiť možnosť [Pop Blocks](https://github.com/monero-ecosystem/PiNode-XMR/wiki/Manual#pop-blocks) a naštartovať node. Skús zadať väčšie číslo, ak malé nepomôže (s desiatkami a stovkami mi to nefungovalo).
