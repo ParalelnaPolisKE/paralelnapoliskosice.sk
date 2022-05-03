@@ -3,7 +3,7 @@ title: Ideálny štát
 author: Dávid Jopek
 cover: /assets/government.jpeg
 tags:
-  - Esej
+  - esej
 ---
 Na opísanie ideálneho štátu je najprv potrebné pochopiť, čo je to štát. Veľmi populárnu a konzistentnú definíciu štátu ponúkol nemecký sociológ Max Weber. Štát definoval ako entitu, ktorá má monopol nad legitímnym užitím sily, moci. Je to inštitucionálny mocenský zväz, ktorý si na určitom území monopolizoval legitímne fyzické násilie ako prostriedok panstva a na ten účel sústredil v rukách svojich vedúcich činiteľov vecné prevádzkové prostriedky. Viac ľudskou rečou povedané, je to inštitúcia, ktorá na istom území rozhoduje o fungovaní pod hrozbou násilia, respektíve potrestania, väzením… Na takomto území sa hraje výhradne podľa pravidiel danej inštitúcie. Nie je iná možnosť, nie je možnosť nehrať podľa týchto pravidiel ani hrať podľa iných pravidiel… teda nie je možnosť opt-outu. Toto osobne vnímam ako kľúčový morálny problém fungovania štátu. 
 
