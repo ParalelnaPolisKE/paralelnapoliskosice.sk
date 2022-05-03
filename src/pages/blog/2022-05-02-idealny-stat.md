@@ -5,6 +5,8 @@ cover: /assets/government.jpeg
 tags:
   - Esej
 ---
+*Moja predstava uvažuje o podstate samotného štátu. Moja predstava uvažuje, že raz bude spoločnosť fungovať tak, že každý si bude môcť sám vybrať, čo bude so sebou a svojím majetkom robiť, niesť za tieto rozhodnutia plnú zodpovednosťa prestane byť každému nútená len tá jedna jediná možnosť.*
+
 Na opísanie ideálneho štátu je najprv potrebné pochopiť, čo je to štát. Veľmi populárnu a konzistentnú definíciu štátu ponúkol nemecký sociológ Max Weber. Štát definoval ako entitu, ktorá má monopol nad legitímnym užitím sily, moci. Je to inštitucionálny mocenský zväz, ktorý si na určitom území monopolizoval legitímne fyzické násilie ako prostriedok panstva a na ten účel sústredil v rukách svojich vedúcich činiteľov vecné prevádzkové prostriedky. Viac ľudskou rečou povedané, je to inštitúcia, ktorá na istom území rozhoduje o fungovaní pod hrozbou násilia, respektíve potrestania, väzením… Na takomto území sa hraje výhradne podľa pravidiel danej inštitúcie. Nie je iná možnosť, nie je možnosť nehrať podľa týchto pravidiel ani hrať podľa iných pravidiel… teda nie je možnosť opt-outu. Toto osobne vnímam ako kľúčový morálny problém fungovania štátu. 
 
 S týmto ďalej súvisí aj kľúčová úloha štátu a to alokácia zdrojov. Z definície štátu vyplýva, že štát alokuje zdroje na danom území ako rozhodujúca entita, a teda v štáte sa budú vyskytovať prvky centrálneho plánovania.
