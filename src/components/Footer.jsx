@@ -47,13 +47,10 @@ export const Footer = ({ showNewsletter }) => (
         <div className="md:w-1/2 w-full">
           <strong>Naše uzly</strong> (nodes):
           <CryptoNodes />
-          <strong>Eshop</strong> (OpenBazaar<span className="text-grey-dark">*</span>): <br />
-          <a href="ob://QmXPTqsoreix47kvwG8SYRQyNr7kTJ74LU59YbdEEUG1MS/store">
-            ob://QmXPTqsoreix47kvwG8SYRQyNr7kTJ74LU59YbdEEUG1MS/store
+          <strong>Adresa:</strong> <br />
+          <a href="https://www.openstreetmap.org/node/691083797">
+            Hlavná 36, 040 01 Košice, Slovensko
           </a>
-          <p className="text-xs text-grey-dark m-0 mt-2">
-            * V blízkej budúcnosti budeme prechádzať na BTCPayServer.
-          </p>
         </div>
         <div className="md:w-1/2 w-full">
           <p>
