@@ -87,7 +87,7 @@ export class Navigation extends React.Component {
           </NavigationButton>,
          <LinkButton
             key="aktuality"
-            href="https://davidjopek.notion.site/davidjopek/PARALELN-POLIS-KE-f18451bea3154427b4f156a1073f6004"
+            href="https://ppke.notion.site/ppke/PARALELN-POLIS-KE-f18451bea3154427b4f156a1073f6004"
           >
             Aktuality
           </LinkButton>,
