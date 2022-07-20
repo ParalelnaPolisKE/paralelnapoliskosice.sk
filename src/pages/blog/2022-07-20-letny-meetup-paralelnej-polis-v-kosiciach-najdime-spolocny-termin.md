@@ -1,6 +1,6 @@
 ---
 title: "Letný meetup Paralelnej Polis v Košiciach: nájdime spoločný termín!"
-author: Michal Takáč
+author: Michal Takac
 cover: /assets/ppke-budova-hlavna.jpeg
 tags:
   - meetups
