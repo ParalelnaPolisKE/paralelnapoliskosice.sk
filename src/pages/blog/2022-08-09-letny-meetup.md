@@ -1,5 +1,5 @@
 ---
-title: Letný meetup
+title: Letný meetup 16.8.2022
 author: Michal Takac
 cover: /assets/bitcoin-brasko.jpeg
 tags:
