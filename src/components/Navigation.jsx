@@ -85,12 +85,6 @@ export class Navigation extends React.Component {
           <NavigationButton key="blog" to="/blog">
             Blog
           </NavigationButton>,
-         <LinkButton
-            key="aktuality"
-            href="https://ppke.notion.site/ppke/PARALELN-POLIS-KE-f18451bea3154427b4f156a1073f6004"
-          >
-            Aktuality
-          </LinkButton>,
         ]}
         {this.state.isSmallScreen && (
           <div
