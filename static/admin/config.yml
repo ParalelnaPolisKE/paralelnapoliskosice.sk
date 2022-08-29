@@ -37,3 +37,15 @@ collections:
       - name: body
         label: Body
         widget: markdown
+  - name: news
+    label: News
+    folder: src/pages/news
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: body
+        label: Body
+        widget: markdown
