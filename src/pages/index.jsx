@@ -1,18 +1,22 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import { getPosts } from 'utils';
+import { getPosts, getNews } from 'utils';
 
 import { Layout } from 'components/Layout';
+import { News } from 'components/News';
 import { Posts } from 'components/Posts';
 import { Container } from 'components/Container';
 import { Button } from 'components/Button';
 
 export default ({
   data: {
-    allMarkdownRemark: { edges: posts },
+    blog: { edges: posts },
+    news: { edges: news },
   },
 }) => {
+  const newsPosts = getNews(news);
+
   return (
     <Layout showNewsletter>
       <Container>
@@ -41,6 +45,12 @@ export default ({
             <Button to="/o-paralelnej-polis">Viac informácií</Button>
           </section>
         </div>
+        {newsPosts.length > 0 && (
+          <section>
+            <h1>Aktuality</h1>
+            <News posts={newsPosts} />
+          </section>
+        )}
         <section>
           <h1>Blog</h1>
           <Posts posts={getPosts(posts)} />
@@ -55,8 +65,22 @@ export default ({
 
 export const query = graphql`
   {
-    allMarkdownRemark(
+    blog: allMarkdownRemark(
       sort: { fields: [fields___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/pages/blog/" } }
+      limit: 3
+    ) {
+      edges {
+        node {
+          ...MarkdownMetadataFragment
+          ...MarkdownFrontmatterFragment
+        }
+      }
+    }
+
+    news: allMarkdownRemark(
+      sort: { fields: [fields___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/pages/news/" } }
       limit: 3
     ) {
       edges {

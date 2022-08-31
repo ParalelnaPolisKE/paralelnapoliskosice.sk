@@ -27,6 +27,7 @@ export const query = graphql`
   query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [fields___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/pages/blog/" } }
       limit: $limit
       skip: $skip
     ) {

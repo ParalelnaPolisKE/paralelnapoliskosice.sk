@@ -28,21 +28,21 @@ const siteMetadata = {
   nodes: {
     BTC: {
       mainnet: {
-        url: "btc.ppke.sk",
-        port: ""
-      }
+        url: 'btc.ppke.sk',
+        port: '',
+      },
     },
     LTC: {
       mainnet: {
-        url: "ltc.ppke.sk",
-        port: ""
-      }
+        url: 'ltc.ppke.sk',
+        port: '',
+      },
     },
     XMR: {
       mainnet: {
-        url: "xmr.ppke.sk",
-        port: "18081"
-      }
+        url: 'xmr.ppke.sk',
+        port: '18081',
+      },
     },
   },
   facebookAppID: '2127644397453206',
@@ -90,6 +90,7 @@ const plugins = [
             {
               allMarkdownRemark(
                 sort: { order: DESC, fields: [fields___date] }
+                filter: { fileAbsolutePath: { regex: "/pages/blog/" } }
               ) {
                 edges {
                   node {
@@ -138,6 +139,13 @@ const plugins = [
     options: {
       name: 'posts',
       path: `${__dirname}/src/pages/blog/`,
+    },
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: 'news',
+      path: `${__dirname}/src/pages/news/`,
     },
   },
   // 'gatsby-plugin-sitemap',

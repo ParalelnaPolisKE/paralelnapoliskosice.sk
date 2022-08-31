@@ -52,7 +52,10 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        allMarkdownRemark(sort: { fields: [fields___date], order: DESC }) {
+        allMarkdownRemark(
+          sort: { fields: [fields___date], order: DESC }
+          filter: { fileAbsolutePath: { regex: "/pages/blog/" } }
+        ) {
           edges {
             node {
               fields {

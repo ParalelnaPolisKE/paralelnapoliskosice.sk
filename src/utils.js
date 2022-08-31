@@ -18,3 +18,13 @@ export const getPost = post => ({
     ? post.frontmatter.cover.childImageSharp.fluid
     : null,
 });
+
+export const getNews = posts => posts.map(post => transformNews(post.node));
+
+export const transformNews = news => ({
+  title: news.frontmatter.title,
+  date: news.fields.date,
+  dateLocal: news.fields.dateLocal,
+  excerpt: news.excerpt,
+  html: news.html,
+});
