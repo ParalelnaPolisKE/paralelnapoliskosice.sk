@@ -63,7 +63,7 @@ export const Footer = ({ showNewsletter }) => (
       </Container>
       <p className="w-full m-0 text-center">
         <a href="https://romanvesely.com" className="font-light">
-          {'</rmnvsl>'}
+          {'<rmnvsl />'}
         </a>
       </p>
 
