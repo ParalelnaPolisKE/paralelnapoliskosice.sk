@@ -7,4 +7,4 @@ Vernisáž sa koná **20. 1. 2023 o 17:00**. Tá plynule prejde cez voľný preh
 
 Udalosť bude v spievode elektronickej hudby vytvorenej priamo pre túto výstavu.
 
-Výstava potrvá do konca februára. 2023. [O﻿dkaz na udalosť](https://www.facebook.com/events/697778521929420).
+Výstava potrvá do konca februára 2023. [Odkaz na udalosť](https://www.facebook.com/events/697778521929420).
