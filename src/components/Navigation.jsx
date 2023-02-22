@@ -85,6 +85,9 @@ export class Navigation extends React.Component {
           <NavigationButton key="blog" to="/blog">
             Blog
           </NavigationButton>,
+          <LinkButton key="obchod" href="https://ppke.sk/shop">
+            Obchod
+          </LinkButton>,
         ]}
         {this.state.isSmallScreen && (
           <div
