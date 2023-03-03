@@ -9,4 +9,6 @@ Preto sa v Paralelnej Polis Košice budeme najbližšie prvé dva piatky v mesia
 
 Prvá prednáška zo série Vojdi von - nie len mysľou s rovnomenným názvom sa bude zaoberať všeobecne úvodom do témy. Dávid Jopek vám v tejto prednáške prinesie spôsob, ako kriticky nazerať na svet, prevedie problematikou, ukáže vám rôzne nuansy a prístupy k otázke myslenia a prežívania. Ukáže vám potrebu otvorenosti nie len mysle ale aj v emocionálnej a osobnostnej rovine, podá vám koncepty NVC (non-violent communication), Bayesovskej štatistiky, ale aj memetiky či starosti o mentálne zdravie.
 
-Dátum a čas konania udalosti je **3. 3. 2023 o 17:00**. Vstupné je dobrovoľné. [Odkaz na udalosť](https://www.facebook.com/events/547670437463283/).
+Dátum a čas konania udalosti je **3. 3. 2023 o 17:00**. Vstupné je dobrovoľné.
+
+[Odkaz na stream](https://meet.jit.si/vojdi_von). [Odkaz na udalosť](https://www.facebook.com/events/547670437463283/).
