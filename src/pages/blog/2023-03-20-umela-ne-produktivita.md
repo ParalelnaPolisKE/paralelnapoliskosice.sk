@@ -5,25 +5,22 @@ cover: /assets/umela_ne_produktivita.png
 tags:
   - AI
 ---
-### Klameš len samého seba
+### **Klameš len samého seba**
 
 Hypotetická situácia niekde v paralelnom vesmíre:
-
 Mladý Peťko Horváth dostal v škole za úlohu nájsť všetky prvočísla *p,q* a *r,* pre ktoré platí:
 
 p^2-(q+r)^2=647
 
 Hneď si otvoril Perplexity AI a začal spoznávať vlastnosti prvočísel, ktoré by sa mohli dať využiť. Našiel niekoľko zdrojov, ale boli veľmi dlhé, anglicky a Peťko nevie zase až tak dobre anglicky. Tak si otvoril Scholarcy, aby mu sumarizovalo texty a výsledky hodil do prekladača DeepL. Potreboval si ale urobiť brainstorming a prísť na nápady, ako problém vyriešiť.  Otvoril si teda ChatGPT a začal debatovať. Nakoniec, ako najrýchlejšie sa zdalo použiť “brutálnu” silu a nechať počítač nájsť také čísla. Tak požiadal ChatGPT, nech napíše kód, ktorý bude využívať niektoré vlastnosti, o ktorých sa dozvedel, aby našiel čísla, ktoré budú vyhovovať daným podmienkam.
-
 Keď výsledok a postup ukázal učiteľke, dostal iba nepekný pohľad a slová: 
 
 **,,Klameš len samého seba!”**
 
 Na prvý pohľad sa môže zdať, že presne toto sa stalo a bude s AI nástrojmi diať.
-
 Je to ale naozaj tak?
 
-### Počítač je rýchly, AI chytrá a človek vynaliezavý, alebo prečo používame koleso
+### **Počítač je rýchly, AI chytrá a človek vynaliezavý, alebo prečo používame koleso**
 
 Malý Peťko Horváth je v skutočnosti veľmi vynaliezavý chlapec. Peťko bol postavený pred problém a jeho úlohou bolo, vyriešiť ho (nikde však nebolo napísané ako). Tak Peťko začal hľadať rôzne spôsoby, ako to vyriešiť a začal na to využívať rôzne nástroje. Nakoniec došiel k najrýchlejšiemu a najefektívnejšiemu riešeniu.
 
