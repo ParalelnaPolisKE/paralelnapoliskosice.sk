@@ -1,5 +1,5 @@
 ---
-title: Entrepreneurs’ meetup
+title: Entrepreneurs meetup
 ---
 22.3.2022 17:00
 
