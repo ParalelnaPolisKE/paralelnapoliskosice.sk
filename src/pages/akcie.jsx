@@ -1,6 +1,8 @@
 import { navigate } from 'gatsby';
 
 export default () => {
-  navigate('/#news');
+  if (typeof window !== 'undefined') {
+    navigate('/#news');
+  }
   return null;
 };
