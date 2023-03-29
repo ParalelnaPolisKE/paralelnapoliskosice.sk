@@ -1,5 +1,5 @@
 ---
-title: "Vojdi von - nie len mysľou #2 (Ako nás lovie sociálne siete)"
+title: "Vojdi von - nie len mysľou #2 (Ako nás lovia sociálne siete)"
 ---
 7.4.2023 17:00
 
