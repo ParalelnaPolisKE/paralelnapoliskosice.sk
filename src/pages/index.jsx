@@ -47,7 +47,7 @@ export default ({
         </div>
         {newsPosts.length > 0 && (
           <section>
-            <h1>Aktuality</h1>
+            <h1 id="news">Aktuality</h1>
             <News posts={newsPosts} />
           </section>
         )}
