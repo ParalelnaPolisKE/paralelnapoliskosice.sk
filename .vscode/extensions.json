@@ -3,6 +3,6 @@
     "EditorConfig.editorconfig",
     "esbenp.prettier-vscode",
     "bradlc.vscode-tailwindcss",
-    "silvenon.mdx"
+    "unifiedjs.vscode-mdx"
   ]
 }
