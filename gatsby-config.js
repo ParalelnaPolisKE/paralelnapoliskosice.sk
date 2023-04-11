@@ -29,19 +29,16 @@ const siteMetadata = {
     BTC: {
       mainnet: {
         url: 'btc.ppke.sk',
-        port: '',
       },
     },
     LTC: {
       mainnet: {
         url: 'ltc.ppke.sk',
-        port: '',
       },
     },
     XMR: {
       mainnet: {
-        url: 'xmr.ppke.sk',
-        port: '18081',
+        url: 'xmr.ppke.sk:18081',
       },
     },
   },

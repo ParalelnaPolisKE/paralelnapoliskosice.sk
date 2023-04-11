@@ -11,11 +11,9 @@ import { Newsletter } from 'components/Newsletter';
 export const Footer = ({ showNewsletter }) => (
   <footer role="contentinfo">
     <div
-      className={classnames(
-        css.top,
-        'p-4 sm:py-8',
-        { 'lg:py-0': showNewsletter }
-      )}
+      className={classnames(css.top, 'p-4 sm:py-8', {
+        'lg:py-0': showNewsletter,
+      })}
     >
       <Container className={classnames({ 'lg:flex': showNewsletter })}>
         {/* Newsletter */}
@@ -43,33 +41,39 @@ export const Footer = ({ showNewsletter }) => (
     </div>
 
     <div className="bg-grey-lightest text-sm px-4">
-      <Container className="pt-10 pb-2 md:flex">
-        <div className="md:w-1/2 w-full">
-          <strong>Naše uzly</strong> (nodes):
+      <Container className="md:flex pt-10 pb-4">
+        <div className="md:w-1/2 w-full pb-4 md:pb-0">
+          <strong className="text-lg">Naše uzly</strong> (nodes):
           <CryptoNodes />
-          <strong>Adresa:</strong> <br />
+          <strong className="text-lg">Adresa:</strong> <br />
           <a href="https://www.openstreetmap.org/node/691083797">
             Hlavná 36, 040 01 Košice, Slovensko
           </a>
         </div>
         <div className="md:w-1/2 w-full">
           <p>
-            <strong>Podporte nás!</strong>
+            <strong className="text-lg">Podporte nás!</strong>
             <br />
             Budeme vďační za akúkoľvek podporu. Prijímame:
           </p>
           <CryptoAddresses />
         </div>
       </Container>
-      <p className="w-full m-0 text-center">
-        <a href="https://romanvesely.com" className="font-light">
-          {'<rmnvsl />'}
-        </a>
-      </p>
 
-      <p className="w-full text-grey-dark text-center font-bold text-lg m-0 py-8">
-        <a href="https://vojdivon.sk">vojdi von</a>!
-      </p>
+      <Container className="md:flex">
+        <p className="md:w-1/2 w-full text-center md:text-left">
+          <a href="https://romanvesely.com" className="font-light">
+            {'<rmnvsl />'}
+          </a>
+        </p>
+
+        <p className="md:w-1/2 w-full text-center md:text-right">
+          <a href="https://vojdivon.sk" className="font-bold text-lg">
+            vojdi von
+          </a>
+          !
+        </p>
+      </Container>
     </div>
   </footer>
 );
