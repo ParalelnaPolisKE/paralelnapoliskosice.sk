@@ -92,4 +92,4 @@ AI neukradne prácu, len ju zefektívni. My sa musíme tento nástroj naučiť p
 
 (1) pun intended
 
-Aj tento článok pohodla dať dokopy AI :)
+Aj tento článok pomohla dať dokopy AI :)
