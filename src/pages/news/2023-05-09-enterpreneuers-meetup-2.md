@@ -1,5 +1,5 @@
 ---
-title: "Enterpreneuers meetup #2"
+title: "Entrepreneurs meetup #2"
 ---
 1.6.2023 17:00
 
