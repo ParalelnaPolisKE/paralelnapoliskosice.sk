@@ -1,4 +1,4 @@
 ---
-title: 3D print workshop
+title: "AI meetup #4: Scientific machine learning"
 ---
 TBD
