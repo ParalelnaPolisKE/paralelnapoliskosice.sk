@@ -8,3 +8,5 @@ title: "AI meetup #4"
 Speaker - Tohrxyz
 
 Vstupné - 6.66€
+
+https://shop.ppke.sk/apps/2YQzf1EPeTnHKydgRPqyJJM86Qto/pos
