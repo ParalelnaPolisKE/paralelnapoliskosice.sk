@@ -1,5 +1,5 @@
 ---
-title: Kvantové technológie
+title: Tajomstvá úspešnej 3D tlače
 ---
 Michal z Pandora Moon Design klubu Vás prevedie svetom 3D tlače , zoznámi so základmi, ukáže 3D tlač naživo a zodpovie na Vaše otázky.\
 \
@@ -8,3 +8,5 @@ Michal z Pandora Moon Design klubu Vás prevedie svetom 3D tlače , zoznámi so 
 **Čas: 17:00-18:00**
 
 **Cena vstupeniek: 6€**
+
+**[tickets.ppke.sk](http://tickets.ppke.sk)**
