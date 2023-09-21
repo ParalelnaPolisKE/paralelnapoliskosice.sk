@@ -5,7 +5,7 @@ Michal z Pandora Moon Design klubu Vás prevedie svetom 3D tlače , zoznámi so 
 \
 **Dátum: 10.10.2023**
 
-**Čas: 17:00-18:00**
+**Čas: 17:00-19:00**
 
 **Cena vstupeniek: 6€**
 
