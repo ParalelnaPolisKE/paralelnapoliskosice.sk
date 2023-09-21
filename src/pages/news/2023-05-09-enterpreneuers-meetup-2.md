@@ -1,6 +1,10 @@
 ---
 title: Kvantové technológie
 ---
-Budúci týždeň v utorok (19.09.2023) o 17:00 bude Dávid Jopek prednášať o Kvantových technológiach (...a prečo fyzika nie je taká nudná ako v škole).\
+Michal z Pandora Moon Design klubu Vás prevedie svetom 3D tlače , zoznámi so základmi, ukáže 3D tlač naživo a zodpovie na Vaše otázky.\
 \
-Lístky si môžte zakúpiť online na [https://tinyurl.com/ppke-event-shop](https://t.co/XhuUiCmYTu) , v cene je aj livestream prednášky!
+**Dátum: 10.10.2023**
+
+**Čas: 17:00-18:00**
+
+**Cena vstupeniek: 6€**
