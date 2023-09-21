@@ -16,10 +16,10 @@ Po prednáške bude prebiehať voľná diskusia a networking.
 
 **Dátum: 27.9.2023**
 
-
 **Čas: 17:00-19:00**
 
-
-**Cena vstupeniek: 4,20€**
+**Cena vstupeniek: 4,20€** \
+\
+**[tickets.ppke.sk](http://tickets.ppke.sk)**
 
 ![]()
