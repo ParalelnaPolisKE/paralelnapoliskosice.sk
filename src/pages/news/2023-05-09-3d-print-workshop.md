@@ -2,6 +2,8 @@
 title: No-code tools
 ---
 Speaker: Michal Takáč\
-Dátum: 27.9.2023
+Dátum: TBD
 Čas: TBD\
-Cena vstupeniek: TBD
+Cena vstupeniek: TBD\
+\
+**AKCIA SA Z ORGANIZAČNÝCH DÔVODOV PRESÚVA**
