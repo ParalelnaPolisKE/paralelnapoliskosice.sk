@@ -9,7 +9,7 @@ export const News = ({ posts }) => (
           itemProp="datePublished"
           className="text-grey-darker"
         >
-          {post.dateLocal}
+          Dátum pridania: {post.dateLocal}
         </time>
         <h2>{post.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
