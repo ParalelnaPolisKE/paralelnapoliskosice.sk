@@ -8,3 +8,5 @@ Do polovice januára, si môžeš kúpiť early-bird lístok len za 15€. Je ic
 DJ, Mich Altman, MoneroTea, kvíz...
 
 Zakúp si na http://tickets.ppke.sk 🎟️
+
+![CryptoParty plagát](/assets/cryptoparty2024.jpg)
