@@ -1,5 +1,5 @@
 ---
-title: AI meetup Ako tvoriť AI produkty lacno a rýchlo s využitím serverless GPU
+title: "AI meetup: Ako tvoriť AI produkty lacno a rýchlo s využitím serverless GPU"
 ---
 Michal Takáč ťa v tomto talku prevedie časťou platformy RunPod.io, ktorá ponúka tzv. “Serverless GPU” službu. Vďaka nej je možné rozbehnúť extrémne lacný API backend s využitím GPU, za ktorý sa platí iba ak reaguje na požiadavku (request). Má to mnoho využití: hlavne pre aplikácie, ktoré potrebujú využívať rýchlost a veľkú pamať GPU-čiek pre rôzne usecasy ako batch processingy, 3D renderovanie, AI aplikácie, LLMs, a pod., no nie je potrebné platiť za stále zapnutý drahý GPU server v cloude. V tejto prednáške sa zameriame na zákadné kroky k vytvoreniu vlastného funkčného serverless GPU endpointu v RunPod-e, ktorý bude poskytovať API backend pre jednoduchú AI aplikáciu, ktorá bude využívať niektorý z open-source large language modelov (LLM). Pre ukážku bude prezentovaná aj jednoduchá webová appka, ktorá s touto vytvorenou službou bude komunikovať.
 
