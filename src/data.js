@@ -2,7 +2,6 @@ export const data = {
   title: "Paralelná Polis Košice",
   description:
     "Paralelná Polis Košice je zameraná na vzdelávanie, objavovanie, tvorenie lepších systémov, experimentovanie a aplikáciu kryptomien a spojených technológií do bežného života. Je tu pre všetkých, ktorí majú záujem fungovať slobodnejšie a nezávislejšie.",
-  // siteUrl: 'https://www.paralelnapoliskosice.sk',
   image: "/ppke-temp.jpg",
   email: "info@ppke.sk",
   social: {
@@ -37,9 +36,6 @@ export const data = {
       },
     },
   },
-  // facebookAppID: '2127644397453206',
   mailchimpUrl:
     "https://paralelnapoliskosice.us19.list-manage.com/subscribe/post?u=8affbd08463d07e25a8bbcca4&id=b02c302d92",
-  // joinUsFormAction:
-  //   'https://briskforms.com/go/410d7fbf05f2283f04c8a02e86b531be',
 };

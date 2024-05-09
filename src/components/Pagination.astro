@@ -27,58 +27,52 @@ const pagination =
   };
 ---
 
-<!-- <Helmet>
-  {!isFirst && <link rel="first" href={`${prefix}`} />}
-  {!isFirst && <link rel="prev" href={`${prefix}/${prevPage}`} />}
-  {!isLast && <link rel="next" href={`${prefix}/${nextPage}`} />}
-  {!isLast && <link rel="last" href={`${prefix}/${pagesCount}`} />}
-</Helmet> -->
+<!-- {!isFirst && <link rel="first" href={`${prefix}`} />}
+{!isFirst && <link rel="prev" href={`${prefix}/${prevPage}`} />}
+{!isLast && <link rel="next" href={`${prefix}/${nextPage}`} />}
+{!isLast && <link rel="last" href={`${prefix}/${pagesCount}`} />} -->
 <nav aria-label="Stránkovanie">
-  <ul>
-    <li>
+  {
+    !isFirst && (
       <a href={`${prefix}${prevPage === 1 ? "" : `/${prevPage}`}`} rel="prev">
         ← Novšie príspevky
       </a>
-    </li>
-    <li>
-      <a href={`${prefix}/${nextPage}`} rel="next"> Staršie príspevky → </a>
-    </li>
-    {
-      pagination(5)(currentPage, pagesCount).map((page) => {
-        const isCurrent = page === currentPage;
+    )
+  }
+  {
+    !isLast && (
+      <a href={`${prefix}/${nextPage}`} rel="next">
+        Staršie príspevky →
+      </a>
+    )
+  }
+  {
+    pagination(5)(currentPage, pagesCount).map((page) => {
+      const isCurrent = page === currentPage;
 
-        return Number.isInteger(page) ? (
-          <li>
-            <a
-              href={page === 1 ? prefix : `${prefix}/${page}`}
-              aria-current={isCurrent ? "page" : undefined}
-            >
-              {page}
-            </a>
-          </li>
-        ) : (
-          <li>{page}</li>
-        );
-      })
-    }
-  </ul>
+      return Number.isInteger(page) ? (
+        <a
+          href={page === 1 ? prefix : `${prefix}/${page}`}
+          aria-current={isCurrent ? "page" : undefined}
+        >
+          {page}
+        </a>
+      ) : (
+        <span>{page}</span>
+      );
+    })
+  }
 </nav>
 
 <style>
   nav {
     margin-top: 1em;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
   }
 
-  li:nth-child(2) {
-    margin-inline-end: auto;
+  a[rel] + a:not([rel]) {
+    margin-inline-start: auto;
   }
 
   a {
@@ -87,11 +81,12 @@ const pagination =
     display: inline-block;
     border: 1px solid currentColor;
   }
-  li {
+
+  nav > * {
     margin-block-start: -1px;
   }
 
-  li + li {
+  nav * + * {
     margin-inline-start: -1px;
   }
 </style>

@@ -55,31 +55,16 @@ const content = [
     </blockquote>
   </p>
 
-  <div class="flex flex-wrap -mx-2 mb-8">
-    {
-      content.map((item, i) => (
-        <div class="sm:w-1/2 p-2">
-          <div
-            class="group bg-grey-lighter hover:bg-grey-light focus:bg-grey-light cursor-pointer p-4"
-            onClick={() => navigate(item.url)}
-            role="link"
-            tabIndex="0"
-            onKeyUp={(e) =>
-              e.key === "Enter" ? navigate(item.url) : undefined
-            }
-          >
-            <h2>
-              <a href={item.url}>
-                <span class="text-grey sm:text-4xl font-bold -mt-3 sm:float-right">
-                  {i + 1}.
-                </span>{" "}
-                {item.title}
-              </a>
-            </h2>
-            <p class="text-sm m-0">{item.text}</p>
-          </div>
-        </div>
-      ))
-    }
-  </div>
+  {
+    content.map((item, i) => (
+      <div>
+        <h2>
+          <a href={item.url}>
+            <span class="font-bold">{i + 1}.</span> {item.title}
+          </a>
+        </h2>
+        <p>{item.text}</p>
+      </div>
+    ))
+  }
 </LayoutPage>

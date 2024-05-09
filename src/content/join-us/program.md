@@ -4,9 +4,6 @@ url: /zapoj-sa/program
 image: /ppke-join.png
 ---
 
-import { Button } from '../../components/Button';
-import { FormJoin } from '../../components/FormJoin';
-
 ## Mnohí z nás (sa) radi učia. Máš skúsenosti s prednášaním alebo s ním chceš začať?
 
 Oblasti, o ktoré sa zaujímame, a o ktorých chceme šíriť informácie ďalej:
@@ -27,9 +24,4 @@ Ak máš skúsenosti s prednášaním alebo s ním chceš začať a zaujímaš s
 
 Hľadáme aj ľudí do verejných diskusií alebo ich moderátorov. Našou snahou je, aby sa myšlienky neprezentovali len jednostranne, ale v zmysle “každá minca má dve strany”.
 
-<FormJoin category="Pomoc s programom">
-  Napíš nám svoju predstavu. Aká téma alebo kategória ťa zaujíma? Si z Košíc
-  alebo tu vieš dochádzať?
-</FormJoin>
-
-<Button to="/zapoj-sa">Ďalšie možnosti ako sa zapojiť</Button>
+Napíš nám svoju predstavu. Aká téma alebo kategória ťa zaujíma?

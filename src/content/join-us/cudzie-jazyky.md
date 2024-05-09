@@ -16,5 +16,3 @@ Spoločne sme preložili projekt [crypto.christmas](https://crypto.christmas/), 
 Preberáme len obsah, ktorého licencia to umožňuje alebo so súhlasom autora.
 
 Napíš nám svoju predstavu. Pripoj aj odkaz na dokument, ktorý chceš preložiť.
-Si z Košíc alebo tu vieš dochádzať?
-
