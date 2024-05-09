@@ -23,16 +23,8 @@ export const Pagination = ({
         {!isLast && <link rel="next" href={`${prefix}/${nextPage}`} />}
         {!isLast && <link rel="last" href={`${prefix}/${pagesCount}`} />}
       </Helmet>
-      <ul
-        style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          listStyle: 'none',
-          padding: 0,
-        }}
-      />
+
+
       <div className="flex py-4 mt-10 relative">
         {!isFirst && (
           <Link to={`${prefix}/${prevPage}`} rel="prev" className="flex-1">
@@ -49,26 +41,7 @@ export const Pagination = ({
           </Link>
         )}
       </div>
-      {showSelect && (
-        <div className="flex justify-center">
-          Strana
-          <select
-            className="font-bold mx-2"
-            onChange={selectPage}
-            defaultValue={currentPage}
-          >
-            {Array.from({ length: pagesCount }, (_, i) => (
-              <option
-                key={`pagination-number${i + 1}`}
-                value={i === 0 ? '' : i + 1}
-              >
-                {i + 1}
-              </option>
-            ))}
-          </select>
-          z {pagesCount}
-        </div>
-      )}
+
     </>
   );
 };

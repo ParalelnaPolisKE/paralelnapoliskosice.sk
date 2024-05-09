@@ -1,12 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import classnames from 'classnames';
-import L from 'leaflet';
-import { Map as LeafletMap, TileLayer, Marker, Tooltip } from 'react-leaflet';
-import { openStreetMapDataRequest } from '../../config/map';
+import React, { useState, useEffect } from "react";
+import classnames from "classnames";
+import L from "leaflet";
+import { Map as LeafletMap, TileLayer, Marker, Tooltip } from "react-leaflet";
+import { openStreetMapDataRequest } from "../../config/map";
 
-import css from './Map.module.css';
+import css from "./Map.module.css";
 
-const icon = type =>
+// import { map } from '../../config/map';
+// import { Map } from '../components/Map';
+
+// <Map
+//   center={[48.720384, 21.2538303]}
+//   bounds={[[map.lat2, map.lng1], [map.lat1, map.lng2]]}
+// />
+
+const icon = (type) =>
   new L.divIcon({
     className: classnames(css.marker, { [css[`marker${type}`]]: type }),
     iconSize: [24, 24],
@@ -28,9 +36,9 @@ const Place = ({ place }) => {
     amenity,
     website,
     opening_hours,
-    'addr:street': addr_street,
-    'addr:housenumber': addr_housenumber,
-    'addr:streetnumber': addr_streetnumber,
+    "addr:street": addr_street,
+    "addr:housenumber": addr_housenumber,
+    "addr:streetnumber": addr_streetnumber,
   } = place.tags;
 
   return (
@@ -46,7 +54,7 @@ const Place = ({ place }) => {
       {description && <p>{description}</p>}
       {opening_hours && (
         <p className="uppercase text-xxs">
-          {opening_hours.split(';').map(hours => (
+          {opening_hours.split(";").map((hours) => (
             <>
               {hours}
               <br />
@@ -79,7 +87,7 @@ export const Map = ({ center, zoom: initialZoom = 13, bounds = null }) => {
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
-        `https://overpass-api.de/api/interpreter?data=${openStreetMapDataRequest}`
+        `https://overpass-api.de/api/interpreter?data=${openStreetMapDataRequest}`,
       );
       const places = await response.json();
 
@@ -89,26 +97,26 @@ export const Map = ({ center, zoom: initialZoom = 13, bounds = null }) => {
     fetchData();
   }, []);
 
-  if (typeof window === 'undefined') {
+  if (typeof window === "undefined") {
     return null;
   }
 
-  const changePlace = id => {
+  const changePlace = (id) => {
     if (id === activePlaceId) {
       setZoom(initialZoom);
       setActivePlaceId(null);
     } else {
-      setZoom(z => (z === initialZoom ? z + 2 : z));
+      setZoom((z) => (z === initialZoom ? z + 2 : z));
       setActivePlaceId(id);
     }
   };
 
   // const getCoordinates = place => [place.lat, place.lng];
-  const getCoordinates = place => [place.lat, place.lon];
+  const getCoordinates = (place) => [place.lat, place.lon];
 
-  const getName = place => place.tags.name || place.tags.operator;
+  const getName = (place) => place.tags.name || place.tags.operator;
 
-  const getPlaceById = activePlaceId =>
+  const getPlaceById = (activePlaceId) =>
     places.find(({ id }) => id === activePlaceId);
 
   return (
@@ -121,8 +129,8 @@ export const Map = ({ center, zoom: initialZoom = 13, bounds = null }) => {
           }
           zoom={zoom}
           className="mb-4 md:w-2/3"
-          style={{ height: '400px' }}
-          onZoom={e => setZoom(e.target.getZoom())}
+          style={{ height: "400px" }}
+          onZoom={(e) => setZoom(e.target.getZoom())}
         >
           <TileLayer
             attribution='<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
@@ -130,7 +138,7 @@ export const Map = ({ center, zoom: initialZoom = 13, bounds = null }) => {
             url="https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=7CBnFFoPyJOCwjtgFADJ"
           />
 
-          {places.map(place => (
+          {places.map((place) => (
             <Marker
               key={place.id}
               position={getCoordinates(place)}
@@ -161,9 +169,9 @@ export const Map = ({ center, zoom: initialZoom = 13, bounds = null }) => {
         {places.map(({ id, tags: { amenity, name, operator } }) => (
           <button
             key={id}
-            className={classnames('p-2 mr-1 mb-1', {
-              'bg-grey-lighter hover:bg-grey-light': id !== activePlaceId,
-              'bg-grey-darker hover:bg-grey-dark text-white':
+            className={classnames("p-2 mr-1 mb-1", {
+              "bg-grey-lighter hover:bg-grey-light": id !== activePlaceId,
+              "bg-grey-darker hover:bg-grey-dark text-white":
                 id === activePlaceId,
             })}
             onClick={() => changePlace(id)}

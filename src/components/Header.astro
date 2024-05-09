@@ -1,0 +1,32 @@
+---
+import Logo from "./Logo.astro";
+import Container from "./Container.astro";
+import Navigation from "./Navigation.astro";
+---
+
+<header>
+  <Container>
+    <div class="foo">
+      <div class="logo">
+        <Logo />
+      </div>
+      <Navigation />
+    </div>
+  </Container>
+</header>
+
+<style>
+  header {
+    border-bottom: 1px solid black;
+    padding-block: var(--step-1);
+    /* position: sticky;
+    top: 0;
+    background-color: #eeeeee90;
+    backdrop-filter: blur(16px); */
+  }
+
+  .foo {
+    display: flex;
+    justify-content: space-between;
+  }
+</style>

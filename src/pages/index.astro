@@ -1,0 +1,62 @@
+---
+import { getCollection } from "astro:content";
+
+import Container from "../components/Container.astro";
+import Layout from "../components/Layout.astro";
+import NewsCard from "../components/NewsCard.astro";
+import Posts from "../components/Posts.astro";
+import Card from "../components/Card.astro";
+import { Image } from "astro:assets";
+import src from "../../public/space/ppke006.jpg";
+
+const news = await getCollection("news");
+const postsData = await getCollection("blog");
+
+const posts = postsData.reverse().slice(0, 6);
+---
+
+<Layout>
+  <Container>
+    <div class="lg:flex -mx-4">
+      <Card>
+        <Image src={src} alt="priestr" width={1200} slot="image" />
+        <h1 slot="title">O Paralelnej Polis Košice</h1>
+        <p>
+          Sme kolektív ľudí, ktorí chcú žiť v slobodnejšom a otvorenejšom svete.
+          Hľadáme spôsoby a technológie (Bitcoin, blockchain, reputačné systémy
+          a decentralizované technológie), ktoré nám otvárajú možnosti,
+          zjednodušujú bežné procesy a odstraňujú bariéry.
+        </p>
+        <p>
+          V Paralelnej Polis Košice chceme vytvoriť prostredie zamerané na
+          <b>
+            vzdelávanie, objavovanie a tvorenie lepších systémov pre naše okolie
+          </b>
+          - teba, nás, firmy, jednotlivcov - všetkých, ktorí majú záujem fungovať
+          slobodnejšie a nezávislejšie. Zameriavame sa na experimentovanie a aplikáciu
+          kryptomien a spojených technológií do bežného života.
+        </p>
+        <a class="button" href="/o-paralelnej-polis">Viac informácií</a>
+      </Card>
+    </div>
+    {
+      news.length > 0 && (
+        <section>
+          <h1 id="news">Akcie</h1>
+          <div class="flex -mx-2 flex-wrap">
+            {news.map((post) => (
+              <NewsCard post={post} />
+            ))}
+          </div>
+        </section>
+      )
+    }
+    <section>
+      <h1>Blog</h1>
+
+      <Posts posts={posts}>
+        <a href="/blog" class="font-bold">Všetky príspevky</a>
+      </Posts>
+    </section>
+  </Container>
+</Layout>

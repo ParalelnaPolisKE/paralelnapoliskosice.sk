@@ -1,0 +1,97 @@
+---
+const { currentPage, pagesCount, prefix } = Astro.props;
+
+const isFirst = currentPage === 1;
+const isLast = currentPage === pagesCount;
+const prevPage = currentPage - 1;
+const nextPage = currentPage + 1;
+
+const range = (lo, hi) => Array.from({ length: hi - lo }, (_, i) => i + lo);
+
+const pagination =
+  (count, ellipsis = "…") =>
+  (page, total) => {
+    const start = Math.max(
+      1,
+      Math.min(page - Math.floor((count - 3) / 2), total - count + 2)
+    );
+    const end = Math.min(
+      total,
+      Math.max(page + Math.floor((count - 2) / 2), count - 1)
+    );
+    return [
+      ...(start > 2 ? [1, ellipsis] : start > 1 ? [1] : []),
+      ...range(start, end + 1),
+      ...(end < total - 1 ? [ellipsis, total] : end < total ? [total] : []),
+    ];
+  };
+---
+
+<!-- <Helmet>
+  {!isFirst && <link rel="first" href={`${prefix}`} />}
+  {!isFirst && <link rel="prev" href={`${prefix}/${prevPage}`} />}
+  {!isLast && <link rel="next" href={`${prefix}/${nextPage}`} />}
+  {!isLast && <link rel="last" href={`${prefix}/${pagesCount}`} />}
+</Helmet> -->
+<nav aria-label="Stránkovanie">
+  <ul>
+    <li>
+      <a href={`${prefix}${prevPage === 1 ? "" : `/${prevPage}`}`} rel="prev">
+        ← Novšie príspevky
+      </a>
+    </li>
+    <li>
+      <a href={`${prefix}/${nextPage}`} rel="next"> Staršie príspevky → </a>
+    </li>
+    {
+      pagination(5)(currentPage, pagesCount).map((page) => {
+        const isCurrent = page === currentPage;
+
+        return Number.isInteger(page) ? (
+          <li>
+            <a
+              href={page === 1 ? prefix : `${prefix}/${page}`}
+              aria-current={isCurrent ? "page" : undefined}
+            >
+              {page}
+            </a>
+          </li>
+        ) : (
+          <li>{page}</li>
+        );
+      })
+    }
+  </ul>
+</nav>
+
+<style>
+  nav {
+    margin-top: 1em;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li:nth-child(2) {
+    margin-inline-end: auto;
+  }
+
+  a {
+    padding-inline: 0.75em;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid currentColor;
+  }
+  li {
+    margin-block-start: -1px;
+  }
+
+  li + li {
+    margin-inline-start: -1px;
+  }
+</style>

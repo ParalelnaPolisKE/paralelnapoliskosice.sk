@@ -1,0 +1,104 @@
+---
+import Container from "./Container.astro";
+import CryptoAddresses from "./CryptoAddresses.astro";
+import CryptoNodes from "./CryptoNodes.astro";
+import Social from "./Social.astro";
+import Newsletter from "./Newsletter.astro";
+---
+
+<footer>
+  <div>
+    <Container class="part">
+      <div>
+        <!-- <h2><a href="/kontakt">Kontakt</a></h2> -->
+        <h2>Paralelna Polis</h2>
+        <address>
+          <a href="https://www.openstreetmap.org/node/9740899349">
+            Hlavná 36,<br />040 01 Košice,<br />Slovensko
+          </a>
+        </address>
+        <p>
+          <a href="/kontakt">Kontakt</a>
+        </p>
+
+        <div>
+          <h2>Zostaňme v kontakte</h2>
+          <p>Prihlás sa na odber newslettera:</p>
+          <Newsletter />
+          <p>
+            Z času na čas ťa budeme informovať o aktuálnom dianí z prostredia
+            Paralelnej Polis.
+            <br />
+            Žiaden spam - len relevantné informácie.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h2>Naše uzly (nodes)</h2>
+        <CryptoNodes />
+
+        <h2>Podporte nás!</h2>
+        <p>Budeme vďační za akúkoľvek podporu. Prijímame:</p>
+        <CryptoAddresses />
+      </div>
+    </Container>
+
+    <Container class="part mt-1">
+      <div class="social">
+        <Social />
+        <a href="https://vojdivon.sk" class="font-bold text-s0">vojdi von!</a>
+      </div>
+
+      <div class="author">
+        <a href="https://romanvesely.com">&lt;rmnvsl /&gt;</a>
+      </div>
+    </Container>
+  </div>
+</footer>
+
+<style>
+  footer {
+    border-top: 1px solid black;
+    font-size: var(--step--1);
+    padding-block: var(--step-0);
+  }
+
+  h2 {
+    font-size: var(--step-0);
+  }
+
+  footer :global(.part) {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+
+    @media (min-width: 700px) {
+      flex-direction: row;
+    }
+
+    & > * {
+      flex: 1;
+    }
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+
+    @media (min-width: 700px) {
+      justify-content: end;
+    }
+  }
+
+  .author {
+    text-align: center;
+
+    @media (min-width: 700px) {
+      text-align: start;
+      order: -1;
+    }
+  }
+</style>

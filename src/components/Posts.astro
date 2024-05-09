@@ -1,0 +1,75 @@
+---
+import Time from "./Time.astro";
+
+const { posts } = Astro.props;
+
+const isCurrentPost = (slug) => {
+  return Astro.url.pathname === `/blog/${slug}`;
+};
+---
+
+<div class="posts">
+  {
+    posts.map(({ slug, data: { title, author, tags } }) => {
+      const pubDate = new Date(slug.slice(0, 10));
+
+      return (
+        <article>
+          <a href={`/blog/${slug}`}>
+            {isCurrentPost(slug) && <span aria-hidden="true">&#9654;</span>}
+            {title}
+          </a>
+          <span>{author}</span>
+          <Time
+            class="text-end"
+            date={pubDate}
+            options={{ dateStyle: "short" }}
+          />
+        </article>
+      );
+    })
+  }
+  {
+    Astro.slots.has("default") && (
+      <article class="last">
+        <slot />
+      </article>
+    )
+  }
+</div>
+
+<style>
+  .posts {
+    article {
+      border-bottom: 1px solid black;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 8em 8em;
+
+      &:has(a)::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0%;
+        position: absolute;
+        bottom: 0;
+        background-color: black;
+        transition: width ease 0.2s;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+
+    article a {
+      text-decoration: none;
+
+      &::after {
+        content: "";
+        inset: 0;
+        position: absolute;
+      }
+    }
+  }
+</style>

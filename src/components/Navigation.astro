@@ -1,0 +1,103 @@
+---
+// state = {
+//   isToggled: true,
+//   isSmallScreen: false,
+// };
+
+// componentDidMount() {
+//   this.mediaQueryList = window.matchMedia('(min-width: 576px)');
+//   this.mediaQueryList.addListener(this.handleScreenWidth);
+
+//   this.handleScreenWidth(this.mediaQueryList);
+// }
+
+// componentWillUnmount() {
+//   this.mediaQueryList.removeListener(this.handleScreenWidth);
+// }
+
+// handleScreenWidth =  =>{
+//   if (e.matches) {
+//     // Big screen
+//     this.setState(() => ({
+//       isToggled: true,
+//       isSmallScreen: false,
+//     }));
+//   } else {
+//     // Small screen
+//     this.setState(() => ({
+//       isToggled: false,
+//       isSmallScreen: true,
+//     }));
+//   }
+// };
+
+// handleToggle = () =>
+//   this.setState(({ isToggled }) => ({
+//     isToggled: !isToggled,
+//   }));
+
+const links = {
+  "/o-paralelnej-polis": "O Paralelnej Polis",
+  "/coworking": "Coworking",
+  "https://www.facebook.com/paralelnapoliske/events/": "Akcie",
+  "/blog": "Blog",
+  "https://ppke.sk/shop": "Obchod",
+  "/kontakt": "Kontakt",
+};
+
+const { pathname } = Astro.url;
+const path = pathname.length > 1 ? pathname.replace(/\/$/, "") : pathname;
+---
+
+<nav class="navigation">
+  {
+    Object.entries(links).map(([link, title]) => (
+      <a
+        href={link}
+        class="link"
+        aria-current={link === path ? "page" : undefined}
+      >
+        {title}
+      </a>
+    ))
+  }
+</nav>
+
+<style>
+  .navigation {
+    column-count: 3;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    column-gap: 16px;
+    text-transform: lowercase;
+    /* gap: 0 16px; */
+    /* justify-content: end; */
+  }
+
+  .link {
+    display: block;
+    text-align: end;
+    /* flex-basis: 30%; */
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    position: relative;
+    text-wrap: nowrap;
+  }
+
+  .link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    transition: width ease 0.2s;
+  }
+
+  .link[aria-current]::after,
+  .link:hover::after {
+    width: 100%;
+  }
+</style>

@@ -1,68 +1,127 @@
-html {
-  @apply bg-black;
-  @apply font-sans;
-  font-size: 16px;
-  overflow-y: scroll;
-}
-
-body {
-  @apply bg-white;
-  @apply text-black;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0;
-  overflow-wrap: break-word;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 body,
-#___gatsby {
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  /* margin-block-end: 0; */
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+
+  font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
+    Arial, sans-serif;
+
+  font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
+    source-sans-pro, sans-serif;
+
+  overflow-y: scroll;
+}
+
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,24,1.5,5,2,2560&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,24,1.5,5,2,2560&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --step--2: clamp(0.6667rem, 0.7041rem + -0.0483vi, 0.6944rem);
+  --step--1: clamp(0.8333rem, 0.7754rem + 0.2899vi, 1rem);
+  --step-0: clamp(1rem, 0.8261rem + 0.8696vi, 1.5rem);
+  --step-1: clamp(1.2rem, 0.8348rem + 1.8261vi, 2.25rem);
+  --step-2: clamp(1.44rem, 0.767rem + 3.3652vi, 3.375rem);
+  --step-3: clamp(1.728rem, 0.5682rem + 5.7991vi, 5.0625rem);
+  --step-4: clamp(2.0736rem, 0.1535rem + 9.6003vi, 7.5938rem);
+  --step-5: clamp(2.4883rem, -0.6081rem + 15.4823vi, 11.3906rem);
+}
+
+body {
+  /* Farba ako recyklovany papier */
+  background-color: #e6ebec;
+  background-color: #eee;
+  color: black;
+  color: #151417;
+  font-size: var(--step-0);
+  line-height: 1.5;
+
+  overflow-wrap: break-word;
+  margin: 0;
   min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--step-1);
 }
 
 a {
-  @apply text-black;
-  text-decoration: none;
+  color: currentColor;
+  text-decoration-skip-ink: auto;
+  /* text-decoration: none; */
+  /* transition: all 0.15s ease; */
+  /* border-bottom: 1px solid currentColor; */
+
+  &:hover {
+    /* background-color: #dbdbdb;
+    border-width: 3px; */
+    text-decoration-thickness: 3px;
+  }
 }
 
-a:hover,
-.group:hover h2 a {
-  background-image: linear-gradient(
-    180deg,
-    transparent 70%,
-    config('colors.grey-darker') 0
-  );
-  text-decoration: none;
-}
-
-p a,
+/* p a,
 ul a,
 ol a {
-  background-image: linear-gradient(
-    180deg,
-    transparent 70%,
-    config('colors.grey') 0
-  );
+  background-image: linear-gradient(180deg, transparent 70%, #ccc 0);
+} */
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+main :where(h1, h2, h3) {
+  font-weight: normal;
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: normal;
+  font-size: var(--step-3);
+  line-height: 1;
   margin-bottom: 1.5rem;
 }
 
-h2,
+h2 {
+  font-size: var(--step-2);
+  margin-bottom: 1.5rem;
+}
+
 h3 {
-  font-weight: normal;
-  margin-bottom: 1em;
+  font-size: var(--step-1);
+  /* margin-bottom: 1em; */
 }
 
 p {
-  margin-bottom: 2em;
+  /* margin-bottom: 2em; */
+}
+
+img,
+picture {
+  max-width: 100%;
+  height: auto;
 }
 
 blockquote {
-  color: config('colors.grey-darker');
-  font-size: 1.25rem;
+  color: #585858;
+  /* font-size: 1.25rem; */
   font-style: italic;
 }
 
@@ -85,11 +144,41 @@ section {
 
 @media (min-width: 768px) {
   html {
-    font-size: 18px;
+    /* font-size: 18px; */
   }
+}
 
-  h1 {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
+/* Utilities */
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-s0 {
+  font-size: var(--step-0);
+}
+
+.text-s1 {
+  font-size: var(--step-1);
+}
+
+.text-end {
+  text-align: end;
+}
+
+.mt-1 {
+  margin-top: 24px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
 }
