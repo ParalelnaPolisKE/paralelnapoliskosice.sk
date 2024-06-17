@@ -1,0 +1,23 @@
+---
+import { data } from "../data";
+---
+
+<ul>
+  {
+    Object.entries(data.crypto).map(([name, address]) => (
+      <li>
+        <strong>{name}</strong>: {address}
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  ul {
+    font-family: monospace;
+    word-break: break-all;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+</style>

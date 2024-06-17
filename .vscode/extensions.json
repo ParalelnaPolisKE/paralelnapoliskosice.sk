@@ -2,7 +2,6 @@
   "recommendations": [
     "EditorConfig.editorconfig",
     "esbenp.prettier-vscode",
-    "bradlc.vscode-tailwindcss",
     "unifiedjs.vscode-mdx"
   ]
 }

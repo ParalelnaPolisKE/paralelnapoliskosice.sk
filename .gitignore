@@ -1,13 +1,7 @@
-# Project dependencies
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-node_modules
-.cache/
-public/
-.DS_Store
+.astro/
+.netlify/
+dist/
+node_modules/
+
 .env
-*.log
 
-src/css/output.css
-
-# Local Netlify folder
-.netlify

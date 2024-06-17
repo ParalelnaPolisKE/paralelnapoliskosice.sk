@@ -1,16 +1,26 @@
 ---
+layout: "../components/LayoutPage.astro"
 title: Kontakt
-url: /kontakt
 ---
 
-import { Social } from '../components/Social';
+import { Image } from "astro:assets";
+import CardPrenajom from "../components/CardPrenajom.astro";
+import Social from "../components/Social.astro";
+import Card from "../components/Card.astro";
+import src from "../../public/space/ppke022.jpg";
 
+- Sociálne siete <Social />
 - [info@ppke.sk](mailto:info@ppke.sk)
-- event management - [events.ppke@proton.me](mailto:events.ppke@proton.me)
+- [events.ppke@proton.me](mailto:events.ppke@proton.me) - event management
+- [Zapoj sa](/zapoj-sa) TODO:
 
-## Dokumenty
-[Sprievodca pre prednášky a cenník za prenájom](https://github.com/ParalelnaPolisKE/docs/tree/master/guidelines)
+<Card>
+  <Image src={src} alt="vstup" slot="image" />
+  <address>
+    <a href="https://www.openstreetmap.org/node/9740899349">
+      Hlavná 36,<br />040 01 Košice,<br />Slovensko
+    </a>
+  </address>
+</Card>
 
-## Sociálne siete
-
-<Social />
+<CardPrenajom />

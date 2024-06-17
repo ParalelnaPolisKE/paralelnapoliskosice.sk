@@ -1,0 +1,82 @@
+---
+import { getCollection } from "astro:content";
+import { Icon } from "astro-icon/components";
+
+import Layout from "./Layout.astro";
+import Container from "./Container.astro";
+import Author from "./Author.astro";
+import Posts from "./Posts.astro";
+import PostMeta from "./PostMeta.astro";
+
+const { frontmatter } = Astro.props;
+const { description, title, author = "PPKE", tags, pubDate } = frontmatter;
+
+const postsData = await getCollection("blog");
+let posts = postsData.reverse();
+
+const isCurrentPost = (slug) => {
+  return Astro.url.pathname === `/blog/${slug}`;
+};
+
+const currentPostIndex = posts.findIndex((post) => isCurrentPost(post.slug));
+
+posts = posts.slice(
+  Math.max(0, currentPostIndex - 3),
+  Math.min(currentPostIndex + 4, posts.length)
+);
+---
+
+<Layout description={description} isArticle title={title}>
+  <Container>
+    <article>
+      <header>
+        <h1 class="p-name">{title}</h1>
+
+        <PostMeta author={author} date={pubDate} tags={tags} />
+      </header>
+
+      <div class="e-content">
+        <slot />
+        <Author author={author} />
+      </div>
+    </article>
+
+    <div class="post-info">
+      <p>
+        Máme v článku chybu alebo chceš niečo doplniť? <a href="/github"
+          >Navrhni zmeny</a
+        > cez GitHub.
+      </p>
+      <p>
+        Všetky články môžes odoberať aj pomocou <a href="/blog/rss.xml">
+          <Icon name="simple-icons:rss" /> RSS
+        </a>.
+      </p>
+    </div>
+
+    <section>
+      <h2>Ďalšie príspevky</h2>
+      <Posts posts={posts}>
+        <a href="/blog" class="font-bold">Všetky príspevky</a>
+      </Posts>
+    </section>
+  </Container>
+</Layout>
+
+<style>
+  .e-content {
+    container-type: inline-size;
+    margin-inline: auto;
+    max-width: 65ch;
+  }
+
+  .post-info {
+    font-size: var(--step--1);
+    text-align: center;
+    margin-top: 1em;
+
+    p {
+      margin: 0;
+    }
+  }
+</style>

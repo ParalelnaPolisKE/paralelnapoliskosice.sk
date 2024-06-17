@@ -1,0 +1,81 @@
+---
+
+---
+
+<section class="card">
+  <slot name="image" />
+  <slot name="title" />
+  <div>
+    <slot />
+  </div>
+</section>
+
+<style>
+  .card {
+    /* padding: 24px; */
+    /* border: 1px solid black; */
+    position: relative;
+    box-shadow: 0 0 0 black;
+    transition:
+      box-shadow 0.2s ease,
+      translate 0.2s ease;
+
+    display: grid;
+    grid-template-columns: 1em 1fr 1em;
+    grid-template-rows: 1em auto 1fr auto 1em;
+
+    &:hover {
+      box-shadow: 5px 5px 0 black;
+      translate: -2px -2px;
+    }
+
+    h1 {
+      margin: 0;
+      /* margin-top: -1.75em; */
+      /* position: relative; */
+      /* font-size: var(--step-2); */
+      /* background-color: tomato; */
+      /* max-width: 50%; */
+      /* position: absolute; */
+
+      grid-area: 2 / 2;
+
+      justify-self: start;
+
+      background-image: repeating-linear-gradient(
+        #eee 0 calc(1lh - 10px),
+        transparent calc(1lh - 10px) 1lh
+      );
+
+      /* background-image: repeating-linear-gradient(
+          black 0 calc(1lh -1px),
+          transparent calc(1lh -1px) 1lh
+          ); */
+    }
+
+    img {
+      grid-area: 1 / 1 / -1 / -1;
+      /* margin-inline-start: -47px; */
+    }
+
+    p {
+      /* margin: 0; */
+    }
+
+    div {
+      grid-area: 4 / 2;
+      justify-self: end;
+      padding: 1em;
+      /* right: 0; */
+      /* bottom: 0; */
+      /* position: absolute; */
+      background: #eee;
+    }
+
+    a::after {
+      content: "";
+      inset: 0;
+      position: absolute;
+    }
+  }
+</style>

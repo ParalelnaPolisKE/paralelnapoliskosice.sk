@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import LayoutPost from "../../components/LayoutPost.astro";
+
+export async function getStaticPaths() {
+  const data = await getCollection("blog");
+
+  return data.map((post) => {
+    const pubDate = new Date(post.slug.slice(0, 10));
+
+    return {
+      params: { slug: post.slug },
+      props: { post, pubDate },
+    };
+  });
+}
+
+const { post, pubDate } = Astro.props;
+const { Content, remarkPluginFrontmatter } = await post.render();
+---
+
+<LayoutPost frontmatter={{ ...remarkPluginFrontmatter, ...post.data, pubDate }}>
+  <Content />
+</LayoutPost>
