@@ -4,7 +4,10 @@ import Time from "./Time.astro";
 const { class: className, posts } = Astro.props;
 
 const isCurrentPost = (slug) => {
-  return Astro.url.pathname === `/blog/${slug}`;
+  return (
+    Astro.url.pathname === `/blog/${slug}` ||
+    Astro.url.pathname === `/blog/${slug}.html`
+  );
 };
 ---
 
