@@ -14,7 +14,10 @@ let posts = postsData.reverse();
 
 const isCurrentPost = (slug) => {
   console.log({ slug, pathname: Astro.url.pathname });
-  return Astro.url.pathname === `/blog/${slug}`;
+  return (
+    Astro.url.pathname === `/blog/${slug}` ||
+    Astro.url.pathname === `/blog/${slug}.html`
+  );
 };
 
 const currentPostIndex = posts.findIndex((post) => isCurrentPost(post.slug));
