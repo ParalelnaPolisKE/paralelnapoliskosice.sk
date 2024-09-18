@@ -1,22 +1,24 @@
 ---
 import Time from "./Time.astro";
 
-const { posts } = Astro.props;
+const { class: className, posts } = Astro.props;
 
 const isCurrentPost = (slug) => {
   return Astro.url.pathname === `/blog/${slug}`;
 };
 ---
 
-<div class="posts">
+<div class:list={["posts", className]}>
   {
     posts.map(({ slug, data: { title, author, tags } }) => {
       const pubDate = new Date(slug.slice(0, 10));
 
       return (
-        <article>
-          <a href={`/blog/${slug}`}>
-            {isCurrentPost(slug) && <span aria-hidden="true">&#9654;</span>}
+        <article class="line">
+          <a
+            href={`/blog/${slug}`}
+            aria-current={isCurrentPost(slug) ? "page" : undefined}
+          >
             {title}
           </a>
           <span>{author}</span>
@@ -31,7 +33,7 @@ const isCurrentPost = (slug) => {
   }
   {
     Astro.slots.has("default") && (
-      <article class="last">
+      <article class="line">
         <slot />
       </article>
     )
@@ -40,36 +42,50 @@ const isCurrentPost = (slug) => {
 
 <style>
   .posts {
-    article {
-      border-bottom: 1px solid black;
-      position: relative;
-      display: grid;
-      grid-template-columns: 1fr 8em 8em;
+    container-type: inline-size;
+  }
 
-      &:has(a)::after {
-        content: "";
-        display: block;
-        height: 2px;
-        width: 0%;
-        position: absolute;
-        bottom: 0;
-        background-color: black;
-        transition: width ease 0.2s;
-      }
+  article {
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1em;
+    align-items: center;
 
-      &:hover::after {
-        width: 100%;
-      }
+    @container (min-width: 700px) {
+      grid-template-columns: 7fr 2fr 10ch;
     }
 
-    article a {
-      text-decoration: none;
-
-      &::after {
-        content: "";
-        inset: 0;
-        position: absolute;
-      }
+    time {
+      font-size: 0.8em;
     }
+  }
+
+  article :global(a) {
+    grid-column: 1 / -1;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 400;
+
+    @container (min-width: 700px) {
+      grid-column: auto;
+    }
+
+    &::after {
+      content: "";
+      inset: 0;
+      position: absolute;
+    }
+  }
+
+  article:has([aria-current]) a::before {
+    content: "\25B6" / "";
+    display: inline;
+  }
+
+  article:has(a:first-child):has(a:last-child) :global(a) {
+    font-weight: bold;
   }
 </style>

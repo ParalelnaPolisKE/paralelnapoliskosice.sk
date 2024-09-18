@@ -61,8 +61,10 @@ const meta = {
   <body>
     <Header />
 
-    <main class="flex-1 px-4 py-8 md:my-10">
-      <slot />
+    <main>
+      <div class="grid">
+        <slot />
+      </div>
     </main>
 
     <Footer />
@@ -71,6 +73,7 @@ const meta = {
 
 <style>
   main {
-    flex: 1;
+    /* grid-row: main; */
+    grid-column: fullwidth;
   }
 </style>

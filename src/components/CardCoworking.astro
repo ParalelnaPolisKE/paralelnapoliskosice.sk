@@ -1,13 +1,13 @@
 ---
 import { Image } from "astro:assets";
-import src from "../../public/space/ppke006.jpg";
+import src from "../../public/space/hero-cowork.jpg";
 
 import Card from "./Card.astro";
 ---
 
 <Card>
   <Image src={src} alt="coworking" width={1200} slot="image" />
-  <h1 slot="title">Coworking</h1>
+  <Fragment slot="title">Coworking</Fragment>
   <p>
     Cowork v Paralelnej Polis je priestor, ktorý cez deň hostí coworkerov a na
     niektoré večery sa mení na prednáškovú miestnosť s kapacitou cca 30 ľudí po

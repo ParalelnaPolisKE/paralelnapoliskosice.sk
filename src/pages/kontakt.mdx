@@ -4,23 +4,21 @@ title: Kontakt
 ---
 
 import { Image } from "astro:assets";
-import CardPrenajom from "../components/CardPrenajom.astro";
 import Social from "../components/Social.astro";
 import Card from "../components/Card.astro";
-import src from "../../public/space/ppke022.jpg";
+import src from "../../public/space/hero-contact.jpg";
 
+<div class="maxcontent">
 - Sociálne siete <Social />
 - [info@ppke.sk](mailto:info@ppke.sk)
 - [events.ppke@proton.me](mailto:events.ppke@proton.me) - event management
-- [Zapoj sa](/zapoj-sa) TODO:
+- [Zapoj sa](/zapoj-sa)
 
 <Card>
-  <Image src={src} alt="vstup" slot="image" />
+  <Fragment slot="title">Hlavná 36<br />040 01 Košice<br />Slovensko</Fragment>
+  <Image src={src} alt="vstup" width={1500} slot="image" />
   <address>
-    <a href="https://www.openstreetmap.org/node/9740899349">
-      Hlavná 36,<br />040 01 Košice,<br />Slovensko
-    </a>
+    <a href="https://www.openstreetmap.org/node/9740899349">Zobraziť na mape</a>
   </address>
 </Card>
-
-<CardPrenajom />
+</div>

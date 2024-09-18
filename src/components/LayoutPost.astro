@@ -1,9 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import { Icon } from "astro-icon/components";
 
 import Layout from "./Layout.astro";
-import Container from "./Container.astro";
 import Author from "./Author.astro";
 import Posts from "./Posts.astro";
 import PostMeta from "./PostMeta.astro";
@@ -27,56 +25,39 @@ posts = posts.slice(
 ---
 
 <Layout description={description} isArticle title={title}>
-  <Container>
-    <article>
-      <header>
-        <h1 class="p-name">{title}</h1>
+  <article class="grid">
+    <header class="maxcontent">
+      <h1 class="p-name">{title}</h1>
+      <PostMeta author={author} date={pubDate} tags={tags} />
+    </header>
 
-        <PostMeta author={author} date={pubDate} tags={tags} />
-      </header>
-
-      <div class="e-content">
-        <slot />
-        <Author author={author} />
-      </div>
-    </article>
-
-    <div class="post-info">
-      <p>
-        Máme v článku chybu alebo chceš niečo doplniť? <a href="/github"
-          >Navrhni zmeny</a
-        > cez GitHub.
-      </p>
-      <p>
-        Všetky články môžes odoberať aj pomocou <a href="/blog/rss.xml">
-          <Icon name="simple-icons:rss" /> RSS
-        </a>.
-      </p>
+    <div class="e-content grid">
+      <slot />
+      <Author author={author} />
     </div>
+  </article>
 
-    <section>
-      <h2>Ďalšie príspevky</h2>
-      <Posts posts={posts}>
-        <a href="/blog" class="font-bold">Všetky príspevky</a>
-      </Posts>
-    </section>
-  </Container>
+  <section class="maxcontent">
+    <h2>Ďalšie príspevky</h2>
+    <Posts posts={posts}>
+      <a href="/blog">Všetky príspevky</a>
+    </Posts>
+  </section>
 </Layout>
 
 <style>
-  .e-content {
-    container-type: inline-size;
-    margin-inline: auto;
-    max-width: 65ch;
+  header {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 3em;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
-  .post-info {
-    font-size: var(--step--1);
-    text-align: center;
-    margin-top: 1em;
-
-    p {
-      margin: 0;
-    }
+  h1 {
+    margin-bottom: 0;
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 70%;
   }
 </style>

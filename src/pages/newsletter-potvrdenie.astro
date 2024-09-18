@@ -1,6 +1,5 @@
 ---
 import Layout from "../components/Layout.astro";
-import Container from "../components/Container.astro";
 
 const title = "Už sme skoro tam...";
 ---
@@ -8,12 +7,10 @@ const title = "Už sme skoro tam...";
 <Layout title={title}>
   <meta name="robots" content="noindex" slot="meta" />
 
-  <Container>
-    <h1>{title}</h1>
-    <p>Potrebujeme potvrdiť tvoju emailovú adresu.</p>
-    <p>
-      Na dokončenie prihlásenia, prosím, klikni na odkaz v emaile, ktorý sme ti
-      práve poslali.
-    </p>
-  </Container>
+  <h1 class="maxcontent">{title}</h1>
+  <p>Potrebujeme potvrdiť tvoju emailovú adresu.</p>
+  <p>
+    Na dokončenie prihlásenia, prosím, klikni na odkaz v emaile, ktorý sme ti
+    práve poslali.
+  </p>
 </Layout>

@@ -6,12 +6,12 @@ const { author, date, tags = [] } = Astro.props;
 // <!-- import slugify from 'slugify'; -->
 ---
 
-<div class="mb-4">
-  <span>
-    <a href={Astro.url} class="u-url"><Time date={date} /></a>, {author}
-  </span>
+<span>
+  <a href={Astro.url} class="u-url"><Time date={date} /></a><br />
+  <em>{author}</em>
+</span>
 
-  {
+<!-- TODO: {
     tags && tags.length > 0 && (
       <ul class="list-reset text-xxs uppercase mt-1 tracking-tight">
         {tags.map((tag) => (
@@ -26,5 +26,11 @@ const { author, date, tags = [] } = Astro.props;
         ))}
       </ul>
     )
+  } -->
+
+<style>
+  span {
+    place-self: end end;
+    text-align: end;
   }
-</div>
+</style>

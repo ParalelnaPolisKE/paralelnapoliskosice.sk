@@ -1,5 +1,5 @@
 ---
-const { currentPage, pagesCount, prefix } = Astro.props;
+const { class: className, currentPage, pagesCount, prefix } = Astro.props;
 
 const isFirst = currentPage === 1;
 const isLast = currentPage === pagesCount;
@@ -31,21 +31,27 @@ const pagination =
 {!isFirst && <link rel="prev" href={`${prefix}/${prevPage}`} />}
 {!isLast && <link rel="next" href={`${prefix}/${nextPage}`} />}
 {!isLast && <link rel="last" href={`${prefix}/${pagesCount}`} />} -->
-<nav aria-label="Stránkovanie">
-  {
-    !isFirst && (
-      <a href={`${prefix}${prevPage === 1 ? "" : `/${prevPage}`}`} rel="prev">
-        ← Novšie príspevky
-      </a>
-    )
-  }
-  {
-    !isLast && (
-      <a href={`${prefix}/${nextPage}`} rel="next">
-        Staršie príspevky →
-      </a>
-    )
-  }
+<nav aria-label="Stránkovanie" class:list={[className]}>
+  <div>
+    {
+      !isFirst && (
+        <a
+          href={`${prefix}${prevPage === 1 ? "" : `/${prevPage}`}`}
+          rel="prev"
+          class="line"
+        >
+          <span aria-hidden="true">← </span>Novšie príspevky
+        </a>
+      )
+    }
+    {
+      !isLast && (
+        <a href={`${prefix}/${nextPage}`} rel="next" class="line">
+          Staršie príspevky<span aria-hidden="true"> →</span>
+        </a>
+      )
+    }
+  </div>
   {
     pagination(5)(currentPage, pagesCount).map((page) => {
       const isCurrent = page === currentPage;
@@ -54,6 +60,7 @@ const pagination =
         <a
           href={page === 1 ? prefix : `${prefix}/${page}`}
           aria-current={isCurrent ? "page" : undefined}
+          class="line"
         >
           {page}
         </a>
@@ -66,27 +73,29 @@ const pagination =
 
 <style>
   nav {
-    margin-top: 1em;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
   }
 
-  a[rel] + a:not([rel]) {
-    margin-inline-start: auto;
+  div {
+    display: flex;
+    width: 100%;
   }
 
-  a {
-    padding-inline: 0.75em;
-    text-decoration: none;
-    display: inline-block;
-    border: 1px solid currentColor;
+  a:not([rel]) {
+    padding-inline-start: 1em;
+
+    &::after {
+      left: 0;
+    }
   }
 
-  nav > * {
-    margin-block-start: -1px;
+  a[rel] {
+    flex: 1;
   }
 
-  nav * + * {
-    margin-inline-start: -1px;
+  a[rel="next"] {
+    text-align: end;
   }
 </style>

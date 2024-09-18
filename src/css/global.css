@@ -28,30 +28,67 @@ html {
   font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
     source-sans-pro, sans-serif;
 
+  color-scheme: dark light;
   overflow-y: scroll;
 }
 
 /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,24,1.5,5,2,2560&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
-/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,24,1.5,5,2,2560&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-
 :root {
-  --step--2: clamp(0.6667rem, 0.7041rem + -0.0483vi, 0.6944rem);
-  --step--1: clamp(0.8333rem, 0.7754rem + 0.2899vi, 1rem);
-  --step-0: clamp(1rem, 0.8261rem + 0.8696vi, 1.5rem);
-  --step-1: clamp(1.2rem, 0.8348rem + 1.8261vi, 2.25rem);
-  --step-2: clamp(1.44rem, 0.767rem + 3.3652vi, 3.375rem);
-  --step-3: clamp(1.728rem, 0.5682rem + 5.7991vi, 5.0625rem);
-  --step-4: clamp(2.0736rem, 0.1535rem + 9.6003vi, 7.5938rem);
-  --step-5: clamp(2.4883rem, -0.6081rem + 15.4823vi, 11.3906rem);
+  --step--2: clamp(0.6667rem, 0.8211rem + -0.1993vw, 0.7813rem);
+  --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+  --step-0: clamp(1.125rem, 0.9946rem + 0.6522vw, 1.5rem);
+  --step-1: clamp(1.35rem, 1.037rem + 1.5652vw, 2.25rem);
+  --step-2: clamp(1.62rem, 1.0096rem + 3.0522vw, 3.375rem);
+  --step-3: clamp(1.944rem, 0.8593rem + 5.4235vw, 5.0625rem);
+  --step-4: clamp(2.3328rem, 0.5029rem + 9.1495vw, 7.5938rem);
+  --step-5: clamp(2.7994rem, -0.1889rem + 14.9413vw, 11.3906rem);
+
+  /* /* --step--2: clamp(0.7901rem, 0.7741rem + 0.0801vw, 0.8442rem); */
+  --step--1: clamp(0.8889rem, 0.8188rem + 0.3502vw, 1.1253rem);
+  --step-0: clamp(1rem, 0.8519rem + 0.7407vw, 1.5rem);
+  --step-1: clamp(1.125rem, 0.8659rem + 1.2956vw, 1.9995rem);
+  --step-2: clamp(1.2656rem, 0.8509rem + 2.0736vw, 2.6653rem);
+  /* --step-3: clamp(1.4238rem, 0.793rem + 3.1542vw, 3.5529rem);
+  --step-4: clamp(1.6018rem, 0.6732rem + 4.6433vw, 4.736rem);
+  --step-5: clamp(1.802rem, 0.4654rem + 6.683vw, 6.3131rem); */
+
+  --grid-margin: 2ch;
+  --grid-expansion: 160px;
+  --grid-textcontent: 65ch;
+
+  --grid: [fullwidth-start] var(--grid-margin) [maxcontent-start
+    widecontent-start textcontent-start] 1fr [textcontent-end widecontent-end
+    maxcontent-end] var(--grid-margin) [fullwidth-end];
+
+  /* grid-margin + textcontent + grid-margin + scrollbar (~15px) */
+  @media (min-width: 720px) {
+    --grid: [fullwidth-start] minmax(var(--grid-margin), 1fr) [maxcontent-start]
+      minmax(0, var(--grid-expansion)) [widecontent-start]
+      minmax(0, var(--grid-expansion)) [textcontent-start]
+      var(--grid-textcontent) [textcontent-end] minmax(0, var(--grid-expansion))
+      [widecontent-end] minmax(0, var(--grid-expansion)) [maxcontent-end]
+      minmax(var(--grid-margin), 1fr) [fullwidth-end];
+  }
+
+  --color-grey-100: #e6ebec;
+  --color-grey-100: #eee;
+  --color-grey-800: #151417;
+
+  --color-bg: var(--color-grey-100);
+  --color-text: var(--color-grey-800);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--color-grey-800);
+    --color-text: #bec4c5;
+  }
 }
 
 body {
-  /* Farba ako recyklovany papier */
-  background-color: #e6ebec;
-  background-color: #eee;
-  color: black;
-  color: #151417;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   font-size: var(--step-0);
   line-height: 1.5;
 
@@ -59,29 +96,18 @@ body {
   margin: 0;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  gap: var(--step-1);
+  grid-template-rows: [header-start] auto [header-end main-start] 1fr [main-end footer-start] auto [footer-end];
+  grid-template-columns: var(--grid);
+  row-gap: var(--step-1);
 }
 
 a {
   color: currentColor;
-  text-decoration-skip-ink: auto;
-  /* text-decoration: none; */
-  /* transition: all 0.15s ease; */
-  /* border-bottom: 1px solid currentColor; */
 
   &:hover {
-    /* background-color: #dbdbdb;
-    border-width: 3px; */
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 0.15em;
   }
 }
-
-/* p a,
-ul a,
-ol a {
-  background-image: linear-gradient(180deg, transparent 70%, #ccc 0);
-} */
 
 h1,
 h2,
@@ -89,14 +115,16 @@ h3 {
   text-wrap: balance;
 }
 
-main :where(h1, h2, h3) {
-  font-weight: normal;
+:where(h1, h2, h3) {
+  /* font-weight: normal; */
+  line-height: 1.125em;
 }
 
 h1 {
   font-size: var(--step-3);
   line-height: 1;
-  margin-bottom: 1.5rem;
+  margin-block: 0.6em calc(3 * var(--step-0));
+  grid-column: maxcontent !important;
 }
 
 h2 {
@@ -107,10 +135,6 @@ h2 {
 h3 {
   font-size: var(--step-1);
   /* margin-bottom: 1em; */
-}
-
-p {
-  /* margin-bottom: 2em; */
 }
 
 img,
@@ -138,8 +162,16 @@ ol {
   margin-bottom: 2em;
 }
 
+ul p {
+  margin: 0;
+}
+
 section {
-  margin-bottom: 2.5rem;
+  /* margin-bottom: 2.5rem; */
+}
+
+main .grid > img {
+  margin-block: var(--step-1);
 }
 
 @media (min-width: 768px) {
@@ -148,10 +180,55 @@ section {
   }
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: var(--grid);
+  grid-column: fullwidth !important;
+
+  > * {
+    grid-column: textcontent;
+  }
+}
+
+.textcontent {
+  grid-column: textcontent;
+}
+
+.widecontent {
+  grid-column: widecontent;
+}
+
+.maxcontent {
+  grid-column: maxcontent;
+}
+
+.fullwidth {
+  grid-column: fullwidth;
+}
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--step-1);
+  margin-top: var(--step-2);
+}
+
+.split > * {
+  flex: 1 1 400px;
+}
+
 /* Utilities */
+
+.text-center {
+  text-align: center;
+}
 
 .font-bold {
   font-weight: 700;
+}
+
+.text-s-1 {
+  font-size: var(--step--1);
 }
 
 .text-s0 {
@@ -170,6 +247,10 @@ section {
   margin-top: 24px;
 }
 
+.mis-1 {
+  margin-inline-start: 0.5em;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -181,4 +262,26 @@ section {
   -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   border: 0;
+}
+
+.line {
+  border-bottom: 1px solid currentColor;
+  position: relative;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    background-color: currentColor;
+    transition: width ease 0.2s;
+  }
+
+  &[aria-current]::after,
+  &:hover::after {
+    width: 100%;
+  }
 }

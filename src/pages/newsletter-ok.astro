@@ -1,6 +1,5 @@
 ---
 import Layout from "../components/Layout.astro";
-import Container from "../components/Container.astro";
 
 const title = "Prihlásenie bolo úspešné";
 ---
@@ -8,9 +7,7 @@ const title = "Prihlásenie bolo úspešné";
 <Layout title={title}>
   <meta name="robots" content="noindex" slot="meta" />
 
-  <Container>
-    <h1>{title}</h1>
-    <p>Odber newslettera je úspešne potvrdený.</p>
-    <p>Ďakujeme</p>
-  </Container>
+  <h1 class="maxcontent">{title}</h1>
+  <p>Odber newslettera je úspešne potvrdený.</p>
+  <p>Ďakujeme</p>
 </Layout>

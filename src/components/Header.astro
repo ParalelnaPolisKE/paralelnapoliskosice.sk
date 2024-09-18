@@ -1,32 +1,84 @@
 ---
-import Logo from "./Logo.astro";
-import Container from "./Container.astro";
-import Navigation from "./Navigation.astro";
+const links = {
+  "/o-paralelnej-polis": "O Paralelnej Polis",
+  "/coworking": "Coworking",
+  "https://www.facebook.com/paralelnapoliske/events/": "Akcie",
+  "/blog": "Blog",
+  "https://ppke.sk/shop": "Obchod",
+  "/kontakt": "Kontakt",
+};
+
+const { pathname } = Astro.url;
+const path = pathname.length > 1 ? pathname.replace(/\/$/, "") : pathname;
 ---
 
 <header>
-  <Container>
-    <div class="foo">
-      <div class="logo">
-        <Logo />
-      </div>
-      <Navigation />
-    </div>
-  </Container>
+  <!-- <img src="/img/logo.svg" alt="logo" /> -->
+
+  <a class="logo" href="/">
+    <picture
+      ><source
+        media="(max-width: 600px)"
+        srcset="/img/logo-long.svg"
+        type="image/svg+xml"
+      /><img src="/img/logo.svg" alt="logo" /></picture
+    >
+  </a>
+
+  <nav class="navigation">
+    {
+      Object.entries(links).map(([link, title]) => (
+        <a
+          href={link}
+          class="link line"
+          aria-current={link === path ? "page" : undefined}
+        >
+          {title}
+        </a>
+      ))
+    }
+  </nav>
 </header>
 
 <style>
   header {
-    border-bottom: 1px solid black;
-    padding-block: var(--step-1);
-    /* position: sticky;
-    top: 0;
-    background-color: #eeeeee90;
-    backdrop-filter: blur(16px); */
-  }
-
-  .foo {
+    border-bottom: 5px solid var(--color-text);
+    grid-column: maxcontent;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding-block: var(--step-1);
+    gap: var(--step-2);
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    img {
+      width: 100%;
+      max-width: 400px;
+
+      @media (prefers-color-scheme: dark) {
+        filter: invert();
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .navigation {
+    column-count: 2;
+    column-gap: 1em;
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 50%;
+    text-transform: lowercase;
+  }
+
+  .link {
+    display: block;
+    text-align: end;
+    text-wrap: nowrap;
   }
 </style>

@@ -1,13 +1,10 @@
 ---
 import { getCollection } from "astro:content";
 
-import Container from "../components/Container.astro";
 import Layout from "../components/Layout.astro";
 import NewsCard from "../components/NewsCard.astro";
 import Posts from "../components/Posts.astro";
-import Card from "../components/Card.astro";
-import { Image } from "astro:assets";
-import src from "../../public/space/ppke006.jpg";
+import CardAbout from "../components/CardAbout.astro";
 
 const news = await getCollection("news");
 const postsData = await getCollection("blog");
@@ -16,41 +13,48 @@ const posts = postsData.reverse().slice(0, 6);
 ---
 
 <Layout>
-  <Container>
-    <div class="lg:flex -mx-4">
-      <Card>
-        <Image src={src} alt="priestr" width={1200} slot="image" />
-        <h1 slot="title">O Paralelnej Polis Košice</h1>
-        <p>
-          V Paralelnej Polis Košice chceme vytvoriť prostredie zamerané na
-          <b>
-            vzdelávanie, objavovanie a tvorenie lepších systémov pre naše okolie
-          </b>
-          - teba, nás, firmy, jednotlivcov - všetkých, ktorí majú záujem fungovať
-          slobodnejšie a nezávislejšie. Zameriavame sa na experimentovanie a aplikáciu
-          kryptomien a spojených technológií do bežného života.
-        </p>
-        <a class="button" href="/o-paralelnej-polis">Viac informácií</a>
-      </Card>
-    </div>
-    {
-      news.length > 0 && (
-        <section>
-          <h1 id="news">Akcie</h1>
-          <div class="flex -mx-2 flex-wrap">
-            {news.map((post) => (
-              <NewsCard post={post} />
-            ))}
-          </div>
-        </section>
-      )
-    }
-    <section>
-      <h1>Blog</h1>
+  <div class="maxcontent">
+    <CardAbout />
+  </div>
 
-      <Posts posts={posts}>
-        <a href="/blog" class="font-bold">Všetky príspevky</a>
-      </Posts>
-    </section>
-  </Container>
+  {
+    news.length > 0 && (
+      <>
+        <h1 id="news">Akcie</h1>
+        <section class="maxcontent">
+          {news.map((post) => (
+            <NewsCard post={post} />
+          ))}
+        </section>
+      </>
+    )
+  }
+
+  <h1>Blog</h1>
+  <Posts posts={posts} class="maxcontent">
+    <a href="/blog">Všetky príspevky</a>
+  </Posts>
 </Layout>
+
+<style>
+  #news + section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--step-1);
+
+    font-size: var(--step--1);
+
+    h1 {
+      font-size: var(--step-0);
+      /* word-break: break-all; */
+    }
+
+    p + * {
+      margin-top: 1em;
+    }
+
+    p:has(img) {
+      line-height: 0;
+    }
+  }
+</style>

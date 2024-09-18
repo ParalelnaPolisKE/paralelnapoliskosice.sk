@@ -3,7 +3,7 @@ import authors from "../data/author.json";
 
 import Gravatar from "./Gravatar.astro";
 
-const { author } = Astro.props;
+const { author, class: className } = Astro.props;
 
 const {
   id: name,
@@ -14,15 +14,25 @@ const {
 } = authors.find((entry) => entry.id === author)!;
 ---
 
-<div class="author">
+<div class:list={["author", className]}>
   <Gravatar email={email} />
   <div>
-    <div>
-      <strong class="text-black">
-        {web ? <a href={web}>{name}</a> : name}
-      </strong>
-      {twitter && <a href={`https://www.twitter.com/${twitter}`}>@{twitter}</a>}
-    </div>
+    {
+      web ? (
+        <a href={web} class="font-bold">
+          {name}
+        </a>
+      ) : (
+        <span class="font-bold">name</span>
+      )
+    }
+    {
+      twitter && (
+        <a href={`https://www.twitter.com/${twitter}`} class="mis-1">
+          @{twitter}
+        </a>
+      )
+    }
     {!!info && <p>{info}</p>}
   </div>
 </div>
@@ -30,18 +40,19 @@ const {
 <style>
   .author {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
     gap: 24px;
-    padding: 24px;
+    padding: 1em;
     border: 1px solid black;
+    margin-block: var(--step--1);
   }
 
-  @container (min-width: 400px) {
-    .author {
-      align-items: flex-start;
-      flex-direction: row;
-    }
+  .author > div {
+    flex-grow: 9999;
+    flex-basis: 20em;
   }
 
   p {

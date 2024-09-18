@@ -1,13 +1,13 @@
 ---
 import { Image } from "astro:assets";
-import src from "../../public/space/ppke-prenajom.jpeg";
+import src from "../../public/space/hero-rent.jpg";
 
 import Card from "./Card.astro";
 ---
 
 <Card>
-  <Image src={src} alt="priestr" width={1200} slot="image" />
-  <h1 slot="title">Paralelná Polis ako priestor pre vašu akciu</h1>
+  <Image src={src} alt="" width={1500} slot="image" />
+  <Fragment slot="title">Paralelná Polis ako priestor pre vašu akciu</Fragment>
   <p>Celý priestor alebo jeho časti je možné prenajať pre vašu udalosť.</p>
   <a href="/prenajom">Detaily o prenájme</a>
 </Card>

@@ -15,13 +15,12 @@ const { page } = Astro.props;
 ---
 
 <LayoutPage frontmatter={{ title: "Blog" }}>
-  <Posts posts={page.data} />
+  <Posts class="maxcontent" posts={page.data} />
 
   <Pagination
+    class="maxcontent"
     currentPage={page.currentPage}
     pagesCount={page.lastPage}
     prefix="/blog"
   />
 </LayoutPage>
-
-<style></style>
