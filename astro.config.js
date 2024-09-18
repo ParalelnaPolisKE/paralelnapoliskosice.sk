@@ -8,11 +8,15 @@ export default defineConfig({
   integrations: [
     mdx(),
     icon({
-      'simple-icons': Object.keys(data.social),
+      "simple-icons": Object.keys(data.social),
     }),
   ],
   redirects: {
-    '/akcie': '/#news'
+    "/akcie": "/#news",
   },
   site: "https://www.paralelnapoliskosice.sk/",
+  trailingSlash: "never",
+  build: {
+    format: "file",
+  },
 });
