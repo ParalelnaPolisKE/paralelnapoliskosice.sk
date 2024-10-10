@@ -10,7 +10,7 @@ export const data = {
     instagram: "https://www.instagram.com/paralelnapoliske",
     youtube: "https://www.youtube.com/channel/UCC90ybnmSHgleXJaWPces9g",
     x: "https://twitter.com/parallelpoliske",
-    rss: "/blog/rss.xml",
+    // rss: "/blog/rss.xml",
   },
   mailchimpUrl:
     "https://paralelnapoliskosice.us19.list-manage.com/subscribe/post?u=8affbd08463d07e25a8bbcca4&id=b02c302d92",

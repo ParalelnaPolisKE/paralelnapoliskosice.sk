@@ -14,16 +14,13 @@ figure,
 blockquote,
 dl,
 dd {
-  /* margin-block-end: 0; */
+  margin-block-end: 0;
 }
 
 html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
-
-  font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
-    Arial, sans-serif;
 
   font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
     source-sans-pro, sans-serif;
@@ -44,14 +41,10 @@ html {
   --step-4: clamp(2.3328rem, 0.5029rem + 9.1495vw, 7.5938rem);
   --step-5: clamp(2.7994rem, -0.1889rem + 14.9413vw, 11.3906rem);
 
-  /* /* --step--2: clamp(0.7901rem, 0.7741rem + 0.0801vw, 0.8442rem); */
   --step--1: clamp(0.8889rem, 0.8188rem + 0.3502vw, 1.1253rem);
   --step-0: clamp(1rem, 0.8519rem + 0.7407vw, 1.5rem);
   --step-1: clamp(1.125rem, 0.8659rem + 1.2956vw, 1.9995rem);
   --step-2: clamp(1.2656rem, 0.8509rem + 2.0736vw, 2.6653rem);
-  /* --step-3: clamp(1.4238rem, 0.793rem + 3.1542vw, 3.5529rem);
-  --step-4: clamp(1.6018rem, 0.6732rem + 4.6433vw, 4.736rem);
-  --step-5: clamp(1.802rem, 0.4654rem + 6.683vw, 6.3131rem); */
 
   --grid-margin: 2ch;
   --grid-expansion: 160px;
@@ -61,8 +54,7 @@ html {
     widecontent-start textcontent-start] 1fr [textcontent-end widecontent-end
     maxcontent-end] var(--grid-margin) [fullwidth-end];
 
-  /* grid-margin + textcontent + grid-margin + scrollbar (~15px) */
-  @media (min-width: 720px) {
+  @media (min-width: 700px) {
     --grid: [fullwidth-start] minmax(var(--grid-margin), 1fr) [maxcontent-start]
       minmax(0, var(--grid-expansion)) [widecontent-start]
       minmax(0, var(--grid-expansion)) [textcontent-start]
@@ -74,6 +66,7 @@ html {
   --color-grey-100: #e6ebec;
   --color-grey-100: #eee;
   --color-grey-200: #dbdbdb;
+  --color-grey-700: #302e33;
   --color-grey-800: #151417;
 
   --color-bg: var(--color-grey-100);
@@ -85,6 +78,7 @@ html {
   :root {
     --color-bg: var(--color-grey-800);
     --color-text: #bec4c5;
+    --color-alt: var(--color-grey-700);
   }
 }
 
@@ -118,7 +112,6 @@ h3 {
 }
 
 :where(h1, h2, h3) {
-  /* font-weight: normal; */
   line-height: 1.125em;
 }
 
@@ -136,7 +129,6 @@ h2 {
 
 h3 {
   font-size: var(--step-1);
-  /* margin-bottom: 1em; */
 }
 
 img,
@@ -147,7 +139,6 @@ picture {
 
 blockquote {
   color: #585858;
-  /* font-size: 1.25rem; */
   font-style: italic;
 }
 
@@ -168,19 +159,9 @@ ul p {
   margin: 0;
 }
 
-section {
-  /* margin-bottom: 2.5rem; */
-}
-
 main .grid > :is(img, figure) {
   margin-inline: 0;
   margin-block: var(--step-1);
-}
-
-@media (min-width: 768px) {
-  html {
-    /* font-size: 18px; */
-  }
 }
 
 .grid {
