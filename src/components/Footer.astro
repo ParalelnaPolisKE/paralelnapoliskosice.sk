@@ -1,5 +1,4 @@
 ---
-import CryptoAddresses from "./CryptoAddresses.astro";
 import CryptoNodes from "./CryptoNodes.astro";
 import Social from "./Social.astro";
 import Newsletter from "./Newsletter.astro";
@@ -8,7 +7,7 @@ import Newsletter from "./Newsletter.astro";
 <footer>
   <div class="part">
     <div>
-      <h2>Paralelná Polis Košice</h2>
+      <h2>Paralelná&nbsp;Polis Košice</h2>
       <address>
         <a href="https://www.openstreetmap.org/node/9740899349">
           Hlavná 36,<br />040 01 Košice,<br />Slovensko
@@ -18,27 +17,20 @@ import Newsletter from "./Newsletter.astro";
         <a href="/o-paralelnej-polis"><strong>O nás</strong></a>
         <a href="/kontakt" class="mis-1"><strong>Kontakt</strong></a>
       </p>
+    </div>
 
-      <div>
-        <h2>Zostaňme v kontakte</h2>
-        <p>Prihlás sa na odber newslettera:</p>
-        <Newsletter />
-        <p>
-          Z času na čas ťa budeme informovať o aktuálnom dianí z prostredia
-          Paralelnej Polis.
-          <br />
-          Žiaden spam - len relevantné informácie.
-        </p>
-      </div>
+    <div>
+      <h2>Prihlás sa na odber newslettera</h2>
+      <Newsletter />
+      <p>
+        Z času na čas ťa budeme informovať o aktuálnom dianí z prostredia
+        Paralelnej&nbsp;Polis.
+      </p>
     </div>
 
     <div>
       <h2>Naše uzly (nodes)</h2>
       <CryptoNodes />
-
-      <h2>Podporte nás!</h2>
-      <p>Budeme vďační za akúkoľvek podporu. Prijímame:</p>
-      <CryptoAddresses />
     </div>
   </div>
 
@@ -48,7 +40,9 @@ import Newsletter from "./Newsletter.astro";
   </div>
 
   <div class="mt-1 text-center">
-    <a href="https://romanvesely.com">&lt;rmnvsl /&gt;</a>
+    <a href="https://romanvesely.com" aria-label="Roman Veselý"
+      >&lt;rmnvsl /&gt;</a
+    >
   </div>
 </footer>
 
@@ -58,8 +52,6 @@ import Newsletter from "./Newsletter.astro";
     font-size: var(--step--1);
     padding-block: var(--step-0);
     grid-column: maxcontent;
-    /* grid-row: footer; */
-
     margin-bottom: var(--step-1);
   }
 
@@ -67,16 +59,20 @@ import Newsletter from "./Newsletter.astro";
     font-size: var(--step-0);
   }
 
-  footer :global(.part) {
+  .part {
     display: flex;
-    gap: 32px;
+    gap: 2em;
     flex-direction: column;
 
     @media (min-width: 700px) {
       flex-direction: row;
     }
 
-    & > * {
+    & > div {
+      flex: 2;
+    }
+
+    & > div:first-child {
       flex: 1;
     }
   }

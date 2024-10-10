@@ -73,10 +73,12 @@ html {
 
   --color-grey-100: #e6ebec;
   --color-grey-100: #eee;
+  --color-grey-200: #dbdbdb;
   --color-grey-800: #151417;
 
   --color-bg: var(--color-grey-100);
   --color-text: var(--color-grey-800);
+  --color-alt: var(--color-grey-200);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -170,7 +172,8 @@ section {
   /* margin-bottom: 2.5rem; */
 }
 
-main .grid > img {
+main .grid > :is(img, figure) {
+  margin-inline: 0;
   margin-block: var(--step-1);
 }
 

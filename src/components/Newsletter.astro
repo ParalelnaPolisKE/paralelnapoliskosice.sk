@@ -20,9 +20,34 @@ import { data } from "../data";
 
 <style>
   form {
-    background-color: #dbdbdb;
-    border-radius: 5px;
-    padding: 16px;
-    width: fit-content;
+    display: flex;
+    align-items: end;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-weight: bold;
+  }
+
+  label input {
+    width: 100%;
+    padding: 1em;
+    border: none;
+  }
+
+  input[type="submit"] {
+    background-color: var(--color-text);
+    border: none;
+    cursor: pointer;
+    color: var(--color-bg);
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:active {
+      transform: scale(0.9);
+    }
   }
 </style>

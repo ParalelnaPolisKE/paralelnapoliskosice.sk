@@ -24,12 +24,14 @@
   ],
   "license": "MIT",
   "scripts": {
+    "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/mdx": "^2.2.0",
+    "@iconify-json/ph": "^1.2.0",
     "@iconify-json/simple-icons": "^1.1.64",
     "astro": "^4.5.5",
     "astro-icon": "^1.1.0"
