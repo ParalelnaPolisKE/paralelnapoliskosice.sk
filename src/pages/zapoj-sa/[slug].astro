@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import LayoutPage from "../../components/LayoutPage.astro";
+
+export async function getStaticPaths() {
+  const data = await getCollection("join-us");
+
+  return data.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content, remarkPluginFrontmatter } = await post.render();
+---
+
+<LayoutPage
+  frontmatter={{
+    ...remarkPluginFrontmatter,
+    ...post.data,
+    image: "/ppke-join.png",
+  }}
+>
+  <Content />
+  <div>
+    <a href="/kontakt">Kontaktuj nás</a> alebo pozri <a href="/zapoj-sa"
+      >ďalšie možnosti ako sa zapojiť</a
+    >
+  </div>
+</LayoutPage>

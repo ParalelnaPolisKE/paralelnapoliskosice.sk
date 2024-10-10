@@ -1,0 +1,36 @@
+---
+import Time from "./Time.astro";
+
+const { author, date, tags = [] } = Astro.props;
+
+// <!-- import slugify from 'slugify'; -->
+---
+
+<span>
+  <a href={Astro.url} class="u-url"><Time date={date} /></a><br />
+  <em>{author}</em>
+</span>
+
+<!-- TODO: {
+    tags && tags.length > 0 && (
+      <ul class="list-reset text-xxs uppercase mt-1 tracking-tight">
+        {tags.map((tag) => (
+          <li class="inline-block mr-1 mb-1">
+            <a
+              href={`/tag/${tag}`}
+              class="text-white bg-grey hover:bg-grey-darker px-1 rounded shadow inline-block"
+            >
+              #{tag}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  } -->
+
+<style>
+  span {
+    place-self: end end;
+    text-align: end;
+  }
+</style>

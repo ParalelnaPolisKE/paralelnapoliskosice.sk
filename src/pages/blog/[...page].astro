@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+
+import LayoutPage from "../../components/LayoutPage.astro";
+import Pagination from "../../components/Pagination.astro";
+import Posts from "../../components/Posts.astro";
+
+export async function getStaticPaths({ paginate }) {
+  const data = await getCollection("blog");
+
+  return paginate(data.reverse(), { pageSize: 12 });
+}
+
+const { page } = Astro.props;
+---
+
+<LayoutPage frontmatter={{ title: "Blog" }}>
+  <Posts class="maxcontent" posts={page.data} />
+
+  <Pagination
+    class="maxcontent"
+    currentPage={page.currentPage}
+    pagesCount={page.lastPage}
+    prefix="/blog"
+  />
+</LayoutPage>

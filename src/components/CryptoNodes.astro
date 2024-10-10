@@ -1,0 +1,113 @@
+---
+import { Icon } from "astro-icon/components";
+
+const data = [
+  {
+    name: "XMR full node",
+    value: "xmr.ppke.sk:18081",
+  },
+  {
+    name: "EpicBox",
+    value: "https://epicbox.ppke.sk",
+  },
+  {
+    name: "EpicCash full node",
+    value: "epic.ppke.sk:3413",
+  },
+  {
+    name: "LN node",
+    value:
+      "0387001685e8e80c0b4bced187335b38f90103be0eca541c5fd99bb83db7a30a46@88.212.32.151:9735",
+  },
+  {
+    name: "LN TOR node",
+    value:
+      "0387001685e8e80c0b4bced187335b38f90103be0eca541c5fd99bb83db7a30a46@voaignjkisfoogkbewnlwyhvl7752jhgvcmwbq5wjmwjwpgrvt6tsoid.onion:9735",
+  },
+];
+---
+
+<dl id="nodes">
+  {
+    data.map((item) => (
+      <>
+        <dt>{item.name}</dt>
+        <dd>
+          <span>{item.value}</span>
+          <button>
+            <Icon name="ph:copy" aria-label="Kopírovať" />
+          </button>
+        </dd>
+      </>
+    ))
+  }
+</dl>
+
+<script>
+  const spans = document.getElementById("nodes")!.querySelectorAll("span");
+
+  spans.forEach((span) =>
+    span.addEventListener("click", async () => {
+      window.getSelection()?.selectAllChildren(span);
+    })
+  );
+
+  const buttons = document.getElementById("nodes")!.querySelectorAll("button");
+
+  buttons.forEach((button) =>
+    button.addEventListener("click", async () => {
+      const span = button.previousElementSibling as Element;
+
+      window.getSelection()?.selectAllChildren(span);
+      await navigator.clipboard.writeText(span.textContent as string);
+    })
+  );
+</script>
+
+<style>
+  dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: var(--step-0);
+    row-gap: 1px;
+  }
+
+  dt {
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  dd {
+    background-color: #dbdbdb;
+    margin: 0;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 1fr auto;
+    padding-inline-start: 0.5ch;
+    column-gap: 0.5ch;
+  }
+
+  dd span {
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  button {
+    padding: 0;
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+</style>

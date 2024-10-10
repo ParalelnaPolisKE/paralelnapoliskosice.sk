@@ -1,0 +1,25 @@
+---
+interface Props {
+  class?: string;
+  date: Date;
+  options?: Intl.DateTimeFormatOptions;
+}
+
+const {
+  date,
+  options = {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  },
+} = Astro.props;
+
+const formatted = new Intl.DateTimeFormat("sk", options).format(date);
+---
+
+<time
+  datetime={date.toISOString()}
+  title={date.toISOString()}
+  class:list={["dt-published", Astro.props.class]}
+  ><slot>{formatted}</slot></time
+>

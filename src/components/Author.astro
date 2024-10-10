@@ -1,0 +1,62 @@
+---
+import authors from "../data/author.json";
+
+import Gravatar from "./Gravatar.astro";
+
+const { author, class: className } = Astro.props;
+
+const {
+  id: name,
+  email,
+  info,
+  web,
+  twitter,
+} = authors.find((entry) => entry.id === author)!;
+---
+
+<div class:list={["author", className]}>
+  <Gravatar email={email} />
+  <div>
+    {
+      web ? (
+        <a href={web} class="font-bold">
+          {name}
+        </a>
+      ) : (
+        <span class="font-bold">{name}</span>
+      )
+    }
+    {
+      twitter && (
+        <a href={`https://www.twitter.com/${twitter}`} class="mis-1">
+          @{twitter}
+        </a>
+      )
+    }
+    {!!info && <p>{info}</p>}
+  </div>
+</div>
+
+<style>
+  .author {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    padding: 1em;
+    border: 1px solid black;
+    margin-block: var(--step--1);
+  }
+
+  .author > div {
+    flex-grow: 9999;
+    flex-basis: 20em;
+  }
+
+  p {
+    font-size: var(--step--1);
+    margin: 0;
+  }
+</style>

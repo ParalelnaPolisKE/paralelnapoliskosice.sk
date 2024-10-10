@@ -1,0 +1,96 @@
+---
+
+---
+
+<section class="card-container widecontent">
+  <div class="card">
+    <slot name="image" />
+    <h1>
+      <mark>
+        <slot name="title" />
+      </mark>
+    </h1>
+    <div>
+      <slot />
+    </div>
+  </div>
+</section>
+
+<style>
+  .card-container {
+    container-type: inline-size;
+  }
+
+  .card {
+    outline: 1px solid black;
+    outline-offset: -1px;
+
+    position: relative;
+    box-shadow: 5px 5px 0 black;
+    transition:
+      box-shadow 0.2s ease,
+      translate 0.2s ease;
+    translate: -2px -2px;
+
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1em 1fr 1em;
+    grid-template-rows: 1em 1fr;
+
+    @container (min-width: 700px) {
+      grid-template-rows: 1em auto 1fr auto 1em;
+    }
+
+    &:hover {
+      box-shadow: 9px 9px 0 black;
+      translate: -5px -5px;
+    }
+
+    h1 {
+      grid-area: 2 / 2 !important;
+      margin: 0;
+    }
+
+    mark {
+      background: linear-gradient(
+        to top,
+        transparent 21%,
+        var(--color-bg) 21%,
+        var(--color-bg) 78%,
+        transparent 78%
+      );
+      color: inherit;
+    }
+
+    img {
+      grid-area: 1 / 1 / -1 / -1;
+    }
+
+    div {
+      grid-area: 4 / 1 / -1 / -1;
+      padding: 1em;
+      background: var(--color-bg);
+
+      @container (min-width: 700px) {
+        place-self: end end;
+        max-width: 60ch;
+        grid-area: 4 / 2;
+      }
+    }
+
+    div > * {
+      margin: 0;
+    }
+
+    div > * + a {
+      display: inline-block;
+      margin-top: 1em;
+    }
+
+    a::after {
+      content: "";
+      inset: 0;
+      position: absolute;
+    }
+  }
+</style>

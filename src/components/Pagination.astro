@@ -1,0 +1,101 @@
+---
+const { class: className, currentPage, pagesCount, prefix } = Astro.props;
+
+const isFirst = currentPage === 1;
+const isLast = currentPage === pagesCount;
+const prevPage = currentPage - 1;
+const nextPage = currentPage + 1;
+
+const range = (lo, hi) => Array.from({ length: hi - lo }, (_, i) => i + lo);
+
+const pagination =
+  (count, ellipsis = "…") =>
+  (page, total) => {
+    const start = Math.max(
+      1,
+      Math.min(page - Math.floor((count - 3) / 2), total - count + 2)
+    );
+    const end = Math.min(
+      total,
+      Math.max(page + Math.floor((count - 2) / 2), count - 1)
+    );
+    return [
+      ...(start > 2 ? [1, ellipsis] : start > 1 ? [1] : []),
+      ...range(start, end + 1),
+      ...(end < total - 1 ? [ellipsis, total] : end < total ? [total] : []),
+    ];
+  };
+---
+
+<!-- {!isFirst && <link rel="first" href={`${prefix}`} />}
+{!isFirst && <link rel="prev" href={`${prefix}/${prevPage}`} />}
+{!isLast && <link rel="next" href={`${prefix}/${nextPage}`} />}
+{!isLast && <link rel="last" href={`${prefix}/${pagesCount}`} />} -->
+<nav aria-label="Stránkovanie" class:list={[className]}>
+  <div>
+    {
+      !isFirst && (
+        <a
+          href={`${prefix}${prevPage === 1 ? "" : `/${prevPage}`}`}
+          rel="prev"
+          class="line"
+        >
+          <span aria-hidden="true">← </span>Novšie príspevky
+        </a>
+      )
+    }
+    {
+      !isLast && (
+        <a href={`${prefix}/${nextPage}`} rel="next" class="line">
+          Staršie príspevky<span aria-hidden="true"> →</span>
+        </a>
+      )
+    }
+  </div>
+  {
+    pagination(5)(currentPage, pagesCount).map((page) => {
+      const isCurrent = page === currentPage;
+
+      return Number.isInteger(page) ? (
+        <a
+          href={page === 1 ? prefix : `${prefix}/${page}`}
+          aria-current={isCurrent ? "page" : undefined}
+          class="line"
+        >
+          {page}
+        </a>
+      ) : (
+        <span>{page}</span>
+      );
+    })
+  }
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+  }
+
+  div {
+    display: flex;
+    width: 100%;
+  }
+
+  a:not([rel]) {
+    padding-inline-start: 1em;
+
+    &::after {
+      left: 0;
+    }
+  }
+
+  a[rel] {
+    flex: 1;
+  }
+
+  a[rel="next"] {
+    text-align: end;
+  }
+</style>

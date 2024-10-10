@@ -1,0 +1,79 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { data } from "../data";
+
+import "../css/global.css";
+
+const { description, image = data.image, isArticle, title } = Astro.props;
+
+const formatTitle = (name?: string) => {
+  if (name) {
+    return `${name} | ${data.title}`;
+  }
+
+  return data.title;
+};
+
+const meta = {
+  title: title || data.title,
+  description: description || data.description,
+  image: new URL(image, Astro.site),
+  type: isArticle ? "article" : "website",
+  url: Astro.url,
+};
+---
+
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8" />
+    <title>{formatTitle(title)}</title>
+    <!-- <ViewTransitions /> -->
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <slot name="meta" />
+
+    {/* Primary Meta Tags */}
+    <meta name="description" content={meta.description} />
+
+    {/* Open Graph / Facebook */}
+    <meta property="og:type" content={meta.type} />
+    <meta property="og:title" content={meta.title} />
+    <meta property="og:description" content={meta.description} />
+    <meta property="og:image" content={meta.image} />
+    <meta property="og:url" content={meta.url} />
+
+    {/* Twitter */}
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content={meta.title} />
+    <meta property="twitter:description" content={meta.description} />
+    <meta property="twitter:image" content={meta.image} />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fff" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+  </head>
+  <body>
+    <Header />
+
+    <main>
+      <div class="grid">
+        <slot />
+      </div>
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  main {
+    /* grid-row: main; */
+    grid-column: fullwidth;
+  }
+</style>

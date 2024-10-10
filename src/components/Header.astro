@@ -1,0 +1,81 @@
+---
+const links = {
+  "/o-paralelnej-polis": "O Paralelnej Polis",
+  "/coworking": "Coworking",
+  "https://www.facebook.com/paralelnapoliske/events/": "Akcie",
+  "/blog": "Blog",
+  "https://ppke.sk/shop": "Obchod",
+  "/kontakt": "Kontakt",
+};
+
+const { pathname } = Astro.url;
+---
+
+<header>
+  <a class="logo" href="/">
+    <picture
+      ><source
+        media="(max-width: 600px)"
+        srcset="/img/logo-long.svg"
+        type="image/svg+xml"
+      /><img src="/img/logo.svg" alt="logo" /></picture
+    >
+  </a>
+
+  <nav class="navigation">
+    {
+      Object.entries(links).map(([link, title]) => (
+        <a
+          href={link}
+          class="link line"
+          aria-current={pathname.startsWith(link) ? "page" : undefined}
+        >
+          {title}
+        </a>
+      ))
+    }
+  </nav>
+</header>
+
+<style>
+  header {
+    border-bottom: 5px solid var(--color-text);
+    grid-column: maxcontent;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-block: var(--step-1);
+    gap: var(--step-2);
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    img {
+      width: 100%;
+      max-width: 400px;
+
+      @media (prefers-color-scheme: dark) {
+        filter: invert();
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .navigation {
+    column-count: 2;
+    column-gap: 1em;
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 50%;
+    text-transform: lowercase;
+  }
+
+  .link {
+    display: block;
+    text-align: end;
+    text-wrap: nowrap;
+  }
+</style>

@@ -1,0 +1,23 @@
+---
+import Card from "./Card.astro";
+
+const { post } = Astro.props;
+
+const { title } = post.data;
+const { Content } = await post.render();
+---
+
+<article>
+  <Card>
+    <!-- <Image src={src} alt="priestor" width={1500} slot="image" /> -->
+    <Fragment slot="title">{title}</Fragment>
+    <Content />
+    <!-- <a href="/o-paralelnej-polis">Viac informácií</a> -->
+  </Card>
+</article>
+
+<style>
+  article {
+    flex: 1 1 300px;
+  }
+</style>

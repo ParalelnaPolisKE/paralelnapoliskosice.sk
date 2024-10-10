@@ -1,0 +1,63 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "./Layout.astro";
+import Author from "./Author.astro";
+import Posts from "./Posts.astro";
+import PostMeta from "./PostMeta.astro";
+
+const { frontmatter } = Astro.props;
+const { description, title, author = "PPKE", tags, pubDate } = frontmatter;
+
+const postsData = await getCollection("blog");
+let posts = postsData.reverse();
+
+const isCurrentPost = (slug) => {
+  return Astro.url.pathname.startsWith(`/blog/${slug}`);
+};
+
+const currentPostIndex = posts.findIndex((post) => isCurrentPost(post.slug));
+
+posts = posts.slice(
+  Math.max(0, currentPostIndex - 3),
+  Math.min(currentPostIndex + 4, posts.length)
+);
+---
+
+<Layout description={description} isArticle title={title}>
+  <article class="grid">
+    <header class="maxcontent">
+      <h1 class="p-name">{title}</h1>
+      <PostMeta author={author} date={pubDate} tags={tags} />
+    </header>
+
+    <div class="e-content grid">
+      <slot />
+      <Author author={author} />
+    </div>
+  </article>
+
+  <section class="maxcontent">
+    <h2>Ďalšie príspevky</h2>
+    <Posts posts={posts}>
+      <a href="/blog">Všetky príspevky</a>
+    </Posts>
+  </section>
+</Layout>
+
+<style>
+  header {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 3em;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 70%;
+  }
+</style>

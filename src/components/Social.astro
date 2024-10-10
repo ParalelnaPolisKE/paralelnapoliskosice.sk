@@ -1,0 +1,33 @@
+---
+import { Icon } from "astro-icon/components";
+import { data } from "../data";
+---
+
+<div>
+  {
+    Object.entries(data.social).map(([key, url]) => (
+      <a href={url}>
+        <Icon name={`simple-icons:${key}`} />
+        <span class="sr-only">{key}</span>
+      </a>
+    ))
+  }
+</div>
+
+<style>
+  div {
+    display: inline-flex;
+    font-size: 1.5em;
+    line-height: 0;
+  }
+
+  a {
+    border-radius: 5px;
+    padding: 5px;
+    transition: background-color 0.2s ease;
+  }
+
+  a:hover {
+    background-color: #dbdbdb;
+  }
+</style>

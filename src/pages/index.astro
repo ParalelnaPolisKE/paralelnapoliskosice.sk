@@ -1,0 +1,59 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "../components/Layout.astro";
+import NewsCard from "../components/NewsCard.astro";
+import Posts from "../components/Posts.astro";
+import CardAbout from "../components/CardAbout.astro";
+
+const news = await getCollection("news");
+const postsData = await getCollection("blog");
+
+const posts = postsData.reverse().slice(0, 6);
+---
+
+<Layout>
+  <div class="maxcontent">
+    <CardAbout />
+  </div>
+
+  {
+    news.length > 0 && (
+      <>
+        <h1 id="news">Akcie</h1>
+        <section class="maxcontent">
+          {news.map((post) => (
+            <NewsCard post={post} />
+          ))}
+        </section>
+      </>
+    )
+  }
+
+  <h1>Blog</h1>
+  <Posts posts={posts} class="maxcontent">
+    <a href="/blog">Všetky príspevky</a>
+  </Posts>
+</Layout>
+
+<style>
+  #news + section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--step-1);
+
+    font-size: var(--step--1);
+
+    h1 {
+      font-size: var(--step-0);
+    }
+
+    p + * {
+      margin-top: 1em;
+    }
+
+    p:has(img) {
+      line-height: 0;
+    }
+  }
+</style>

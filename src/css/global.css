@@ -1,68 +1,153 @@
-html {
-  @apply bg-black;
-  @apply font-sans;
-  font-size: 16px;
-  overflow-y: scroll;
-}
-
-body {
-  @apply bg-white;
-  @apply text-black;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0;
-  overflow-wrap: break-word;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 body,
-#___gatsby {
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  /* margin-block-end: 0; */
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+
+  font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
+    Arial, sans-serif;
+
+  font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
+    source-sans-pro, sans-serif;
+
+  color-scheme: dark light;
+  overflow-y: scroll;
+}
+
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,24,1.5,5,2,2560&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --step--2: clamp(0.6667rem, 0.8211rem + -0.1993vw, 0.7813rem);
+  --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+  --step-0: clamp(1.125rem, 0.9946rem + 0.6522vw, 1.5rem);
+  --step-1: clamp(1.35rem, 1.037rem + 1.5652vw, 2.25rem);
+  --step-2: clamp(1.62rem, 1.0096rem + 3.0522vw, 3.375rem);
+  --step-3: clamp(1.944rem, 0.8593rem + 5.4235vw, 5.0625rem);
+  --step-4: clamp(2.3328rem, 0.5029rem + 9.1495vw, 7.5938rem);
+  --step-5: clamp(2.7994rem, -0.1889rem + 14.9413vw, 11.3906rem);
+
+  /* /* --step--2: clamp(0.7901rem, 0.7741rem + 0.0801vw, 0.8442rem); */
+  --step--1: clamp(0.8889rem, 0.8188rem + 0.3502vw, 1.1253rem);
+  --step-0: clamp(1rem, 0.8519rem + 0.7407vw, 1.5rem);
+  --step-1: clamp(1.125rem, 0.8659rem + 1.2956vw, 1.9995rem);
+  --step-2: clamp(1.2656rem, 0.8509rem + 2.0736vw, 2.6653rem);
+  /* --step-3: clamp(1.4238rem, 0.793rem + 3.1542vw, 3.5529rem);
+  --step-4: clamp(1.6018rem, 0.6732rem + 4.6433vw, 4.736rem);
+  --step-5: clamp(1.802rem, 0.4654rem + 6.683vw, 6.3131rem); */
+
+  --grid-margin: 2ch;
+  --grid-expansion: 160px;
+  --grid-textcontent: 65ch;
+
+  --grid: [fullwidth-start] var(--grid-margin) [maxcontent-start
+    widecontent-start textcontent-start] 1fr [textcontent-end widecontent-end
+    maxcontent-end] var(--grid-margin) [fullwidth-end];
+
+  /* grid-margin + textcontent + grid-margin + scrollbar (~15px) */
+  @media (min-width: 720px) {
+    --grid: [fullwidth-start] minmax(var(--grid-margin), 1fr) [maxcontent-start]
+      minmax(0, var(--grid-expansion)) [widecontent-start]
+      minmax(0, var(--grid-expansion)) [textcontent-start]
+      var(--grid-textcontent) [textcontent-end] minmax(0, var(--grid-expansion))
+      [widecontent-end] minmax(0, var(--grid-expansion)) [maxcontent-end]
+      minmax(var(--grid-margin), 1fr) [fullwidth-end];
+  }
+
+  --color-grey-100: #e6ebec;
+  --color-grey-100: #eee;
+  --color-grey-200: #dbdbdb;
+  --color-grey-800: #151417;
+
+  --color-bg: var(--color-grey-100);
+  --color-text: var(--color-grey-800);
+  --color-alt: var(--color-grey-200);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--color-grey-800);
+    --color-text: #bec4c5;
+  }
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-size: var(--step-0);
+  line-height: 1.5;
+
+  overflow-wrap: break-word;
+  margin: 0;
   min-height: 100vh;
+  display: grid;
+  grid-template-rows: [header-start] auto [header-end main-start] 1fr [main-end footer-start] auto [footer-end];
+  grid-template-columns: var(--grid);
+  row-gap: var(--step-1);
 }
 
 a {
-  @apply text-black;
-  text-decoration: none;
+  color: currentColor;
+
+  &:hover {
+    text-decoration-thickness: 0.15em;
+  }
 }
 
-a:hover,
-.group:hover h2 a {
-  background-image: linear-gradient(
-    180deg,
-    transparent 70%,
-    config('colors.grey-darker') 0
-  );
-  text-decoration: none;
+h1,
+h2,
+h3 {
+  text-wrap: balance;
 }
 
-p a,
-ul a,
-ol a {
-  background-image: linear-gradient(
-    180deg,
-    transparent 70%,
-    config('colors.grey') 0
-  );
+:where(h1, h2, h3) {
+  /* font-weight: normal; */
+  line-height: 1.125em;
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: normal;
+  font-size: var(--step-3);
+  line-height: 1;
+  margin-block: 0.6em calc(3 * var(--step-0));
+  grid-column: maxcontent !important;
+}
+
+h2 {
+  font-size: var(--step-2);
   margin-bottom: 1.5rem;
 }
 
-h2,
 h3 {
-  font-weight: normal;
-  margin-bottom: 1em;
+  font-size: var(--step-1);
+  /* margin-bottom: 1em; */
 }
 
-p {
-  margin-bottom: 2em;
+img,
+picture {
+  max-width: 100%;
+  height: auto;
 }
 
 blockquote {
-  color: config('colors.grey-darker');
-  font-size: 1.25rem;
+  color: #585858;
+  /* font-size: 1.25rem; */
   font-style: italic;
 }
 
@@ -79,17 +164,127 @@ ol {
   margin-bottom: 2em;
 }
 
+ul p {
+  margin: 0;
+}
+
 section {
-  margin-bottom: 2.5rem;
+  /* margin-bottom: 2.5rem; */
+}
+
+main .grid > :is(img, figure) {
+  margin-inline: 0;
+  margin-block: var(--step-1);
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 18px;
+    /* font-size: 18px; */
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: var(--grid);
+  grid-column: fullwidth !important;
+
+  > * {
+    grid-column: textcontent;
+  }
+}
+
+.textcontent {
+  grid-column: textcontent;
+}
+
+.widecontent {
+  grid-column: widecontent;
+}
+
+.maxcontent {
+  grid-column: maxcontent;
+}
+
+.fullwidth {
+  grid-column: fullwidth;
+}
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--step-1);
+  margin-top: var(--step-2);
+}
+
+.split > * {
+  flex: 1 1 400px;
+}
+
+/* Utilities */
+
+.text-center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-s-1 {
+  font-size: var(--step--1);
+}
+
+.text-s0 {
+  font-size: var(--step-0);
+}
+
+.text-s1 {
+  font-size: var(--step-1);
+}
+
+.text-end {
+  text-align: end;
+}
+
+.mt-1 {
+  margin-top: 24px;
+}
+
+.mis-1 {
+  margin-inline-start: 0.5em;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}
+
+.line {
+  border-bottom: 1px solid currentColor;
+  position: relative;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    background-color: currentColor;
+    transition: width ease 0.2s;
   }
 
-  h1 {
-    font-size: 3.75rem;
-    line-height: 1;
+  &[aria-current]::after,
+  &:hover::after {
+    width: 100%;
   }
 }

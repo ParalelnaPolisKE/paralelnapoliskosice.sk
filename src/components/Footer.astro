@@ -1,0 +1,79 @@
+---
+import CryptoNodes from "./CryptoNodes.astro";
+import Social from "./Social.astro";
+import Newsletter from "./Newsletter.astro";
+---
+
+<footer>
+  <div class="part">
+    <div>
+      <h2>Paralelná&nbsp;Polis Košice</h2>
+      <address>
+        <a href="https://www.openstreetmap.org/node/9740899349">
+          Hlavná 36,<br />040 01 Košice,<br />Slovensko
+        </a>
+      </address>
+      <p>
+        <a href="/o-paralelnej-polis"><strong>O nás</strong></a>
+        <a href="/kontakt" class="mis-1"><strong>Kontakt</strong></a>
+      </p>
+    </div>
+
+    <div>
+      <h2>Prihlás sa na odber newslettera</h2>
+      <Newsletter />
+      <p>
+        Z času na čas ťa budeme informovať o aktuálnom dianí z prostredia
+        Paralelnej&nbsp;Polis.
+      </p>
+    </div>
+
+    <div>
+      <h2>Naše uzly (nodes)</h2>
+      <CryptoNodes />
+    </div>
+  </div>
+
+  <div class="mt-1 text-center">
+    <Social />
+    <a href="https://vojdivon.sk" class="font-bold text-s0 mis-1">vojdi von!</a>
+  </div>
+
+  <div class="mt-1 text-center">
+    <a href="https://romanvesely.com" aria-label="Roman Veselý"
+      >&lt;rmnvsl /&gt;</a
+    >
+  </div>
+</footer>
+
+<style>
+  footer {
+    border-top: 5px solid var(--color-text);
+    font-size: var(--step--1);
+    padding-block: var(--step-0);
+    grid-column: maxcontent;
+    margin-bottom: var(--step-1);
+  }
+
+  h2 {
+    font-size: var(--step-0);
+  }
+
+  .part {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+
+    @media (min-width: 700px) {
+      flex-direction: row;
+    }
+
+    & > div {
+      flex: 2;
+    }
+
+    & > div:first-child {
+      flex: 1;
+    }
+  }
+</style>

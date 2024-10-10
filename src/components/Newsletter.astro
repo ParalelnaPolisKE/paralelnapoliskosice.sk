@@ -1,0 +1,53 @@
+---
+import { data } from "../data";
+---
+
+<form action={data.mailchimpUrl} method="POST">
+  <label>
+    Email:
+    <input
+      autocapitalize="off"
+      autocomplete="email"
+      autocorrect="off"
+      id="MERGE0"
+      name="MERGE0"
+      type="email"
+      required
+    />
+  </label>
+  <input type="submit" name="submit" value="Odoberať" />
+</form>
+
+<style>
+  form {
+    display: flex;
+    align-items: end;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-weight: bold;
+  }
+
+  label input {
+    width: 100%;
+    padding: 1em;
+    border: none;
+  }
+
+  input[type="submit"] {
+    background-color: var(--color-text);
+    border: none;
+    cursor: pointer;
+    color: var(--color-bg);
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+</style>

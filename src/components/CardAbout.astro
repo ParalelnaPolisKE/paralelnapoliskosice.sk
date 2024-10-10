@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+import src from "../../public/space/hero-ppke.jpg";
+
+import Card from "./Card.astro";
+---
+
+<Card>
+  <Image src={src} alt="priestor" width={1500} slot="image" />
+  <Fragment slot="title">Paralelná&nbsp;Polis Košice</Fragment>
+  <p>
+    V Paralelnej Polis Košice chceme vytvoriť prostredie zamerané na
+    <b>
+      vzdelávanie, objavovanie a tvorenie lepších systémov pre naše okolie
+    </b>
+    - teba, nás, firmy, jednotlivcov - všetkých, ktorí majú záujem fungovať slobodnejšie
+    a nezávislejšie. Zameriavame sa na experimentovanie a aplikáciu kryptomien a
+    spojených technológií do bežného života.
+  </p>
+  <a href="/o-paralelnej-polis">Viac informácií</a>
+</Card>
