@@ -9,12 +9,9 @@ const links = {
 };
 
 const { pathname } = Astro.url;
-const path = pathname.length > 1 ? pathname.replace(/\/$/, "") : pathname;
 ---
 
 <header>
-  <!-- <img src="/img/logo.svg" alt="logo" /> -->
-
   <a class="logo" href="/">
     <picture
       ><source
@@ -31,7 +28,7 @@ const path = pathname.length > 1 ? pathname.replace(/\/$/, "") : pathname;
         <a
           href={link}
           class="link line"
-          aria-current={link === path ? "page" : undefined}
+          aria-current={pathname.startsWith(link) ? "page" : undefined}
         >
           {title}
         </a>

@@ -13,10 +13,7 @@ const postsData = await getCollection("blog");
 let posts = postsData.reverse();
 
 const isCurrentPost = (slug) => {
-  return (
-    Astro.url.pathname === `/blog/${slug}` ||
-    Astro.url.pathname === `/blog/${slug}.html`
-  );
+  return Astro.url.pathname.startsWith(`/blog/${slug}`);
 };
 
 const currentPostIndex = posts.findIndex((post) => isCurrentPost(post.slug));
