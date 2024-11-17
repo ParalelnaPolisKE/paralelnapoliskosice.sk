@@ -1,3 +1,3 @@
 ### Kryptomeny pre podnikateľov
 #### 🗓️ 7.12.2024
-#### 🎫 Vstupné v bitcoine na [ticket.ppke.sk](https://ticket.ppke.sk) !
+#### 🎫 Vstupné v bitcoine na <a href="https://ticket.ppke.sk" target="_blank">ticket.ppke.sk</a> !
