@@ -1,0 +1,62 @@
+{
+  "availableHours": { "start": 6, "end": 22 },
+  "minimumHours": 2,
+  "nonMemberSurcharge": 5,
+  "rates": {
+    "1": {
+      "label": "Pondelok",
+      "slots": [
+        { "from": 6, "to": 12, "price": 15 },
+        { "from": 12, "to": 22, "price": 20 }
+      ],
+      "wholeDay": 200
+    },
+    "2": {
+      "label": "Utorok",
+      "slots": [
+        { "from": 6, "to": 12, "price": 15 },
+        { "from": 12, "to": 22, "price": 20 }
+      ],
+      "wholeDay": 200
+    },
+    "3": {
+      "label": "Streda",
+      "slots": [
+        { "from": 6, "to": 12, "price": 15 },
+        { "from": 12, "to": 22, "price": 20 }
+      ],
+      "wholeDay": 200
+    },
+    "4": {
+      "label": "Štvrtok",
+      "slots": [
+        { "from": 6, "to": 12, "price": 15 },
+        { "from": 12, "to": 16, "price": 20 },
+        { "from": 16, "to": 22, "price": 30 }
+      ],
+      "wholeDay": 250
+    },
+    "5": {
+      "label": "Piatok",
+      "slots": [
+        { "from": 6, "to": 12, "price": 15 },
+        { "from": 12, "to": 22, "price": 30 }
+      ],
+      "wholeDay": 300
+    },
+    "6": {
+      "label": "Sobota",
+      "slots": [
+        { "from": 6, "to": 22, "price": 25 }
+      ],
+      "wholeDay": 300
+    },
+    "0": {
+      "label": "Nedeľa",
+      "slots": [
+        { "from": 6, "to": 22, "price": 25 }
+      ],
+      "wholeDay": 300
+    }
+  }
+}

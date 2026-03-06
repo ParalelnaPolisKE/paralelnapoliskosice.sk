@@ -4,4 +4,8 @@ dist/
 node_modules/
 
 .env
+.DS_Store
+
+workers/calendar-api/node_modules/
+workers/calendar-api/.wrangler/
 
