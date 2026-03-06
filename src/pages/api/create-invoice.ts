@@ -3,7 +3,7 @@ export const prerender = false;
 import type { APIRoute } from "astro";
 
 export const POST: APIRoute = async ({ request }) => {
-  const { eventId, amount, title, start, end, hostEmail } = await request.json();
+  const { eventId, amount, title, start, end, hostEmail, testMode } = await request.json();
 
   const baseUrl = import.meta.env.BTCPAY_BASE_URL;
   const storeId = import.meta.env.BTCPAY_STORE_ID;
@@ -24,8 +24,8 @@ export const POST: APIRoute = async ({ request }) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      amount: String(amount),
-      currency: "EUR",
+      amount: testMode ? "10" : String(amount),
+      currency: testMode ? "SATS" : "EUR",
       metadata: {
         eventId,
         title,

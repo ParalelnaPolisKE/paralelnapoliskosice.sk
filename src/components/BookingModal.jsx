@@ -35,6 +35,7 @@ export default function BookingModal({
     meetingUrl: "",
     extraPersons: 0,
   });
+  const [testMode, setTestMode] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
 
@@ -90,17 +91,21 @@ export default function BookingModal({
       const event = await eventRes.json();
 
       // 2. Create BTCPay invoice
+      const invoicePayload = {
+        eventId: event.id,
+        amount: priceResult.total,
+        title: form.title,
+        start: start.toISOString(),
+        end: end.toISOString(),
+        hostEmail: form.hostEmail,
+      };
+      if (testMode) {
+        invoicePayload.testMode = true;
+      }
       const invoiceRes = await fetch("/api/create-invoice", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          eventId: event.id,
-          amount: priceResult.total,
-          title: form.title,
-          start: start.toISOString(),
-          end: end.toISOString(),
-          hostEmail: form.hostEmail,
-        }),
+        body: JSON.stringify(invoicePayload),
       });
 
       if (!invoiceRes.ok) {
@@ -216,6 +221,18 @@ export default function BookingModal({
             </div>
           )}
 
+          <div className="modal-toggle" style={{ marginTop: "1em", padding: "0.5em", background: "#fef3c7", color: "#92400e" }}>
+            <input
+              id="testMode"
+              type="checkbox"
+              checked={testMode}
+              onChange={(e) => setTestMode(e.target.checked)}
+            />
+            <label htmlFor="testMode" style={{ margin: 0 }}>
+              TEST: charge 10 sats only
+            </label>
+          </div>
+
           {/* Price breakdown */}
           <div className="price-breakdown">
             <table>
@@ -270,7 +287,9 @@ export default function BookingModal({
             >
               {submitting
                 ? "Spracovavam..."
-                : `Rezervuj za ${priceResult.total} EUR`}
+                : testMode
+                  ? "TEST: Rezervuj za 10 sats"
+                  : `Rezervuj za ${priceResult.total} EUR`}
             </button>
           </div>
         </form>
