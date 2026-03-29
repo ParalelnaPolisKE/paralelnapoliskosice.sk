@@ -1,6 +1,7 @@
 ---
 title: "AI Meetup #8: Prechádzka latentným priestorom"
 author: Peter Horváth
+cover: /assets/ai-meetup-8-prechadzka-latentnym-priestorom.jpeg
 tags:
   - AI
   - meetup
