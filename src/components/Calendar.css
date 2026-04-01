@@ -1,0 +1,276 @@
+/* FullCalendar theme overrides for Paralelna Polis */
+
+.calendar-wrapper {
+  --fc-border-color: var(--color-alt);
+  --fc-button-bg-color: var(--color-text);
+  --fc-button-border-color: var(--color-text);
+  --fc-button-text-color: var(--color-bg);
+  --fc-button-hover-bg-color: var(--color-alt);
+  --fc-button-hover-border-color: var(--color-alt);
+  --fc-button-active-bg-color: var(--color-text);
+  --fc-button-active-border-color: var(--color-text);
+  --fc-today-bg-color: color-mix(in srgb, var(--color-text) 5%, transparent);
+  --fc-event-bg-color: #2d8a4e;
+  --fc-event-border-color: #2d8a4e;
+  --fc-page-bg-color: var(--color-bg);
+  --fc-neutral-bg-color: var(--color-bg);
+
+  font-size: var(--step--1);
+  margin-block: var(--step-0);
+}
+
+.calendar-wrapper .fc .fc-button {
+  box-shadow: 2px 2px 0 var(--color-alt);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  border-radius: 0;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.calendar-wrapper .fc .fc-button:hover {
+  box-shadow: 3px 3px 0 var(--color-alt);
+  transform: translate(-1px, -1px);
+}
+
+.calendar-wrapper .fc .fc-button:active,
+.calendar-wrapper .fc .fc-button.fc-button-active {
+  box-shadow: 0 0 0 var(--color-alt);
+  transform: translate(2px, 2px);
+}
+
+.calendar-wrapper .fc .fc-toolbar-title {
+  font-size: var(--step-1);
+  text-transform: lowercase;
+}
+
+.calendar-wrapper .fc .fc-col-header-cell-cushion {
+  text-transform: lowercase;
+  font-weight: 600;
+}
+
+.calendar-wrapper .fc .fc-timegrid-slot {
+  height: 3em;
+}
+
+/* Event states */
+.calendar-wrapper .fc .event-confirmed {
+  background-color: #2d8a4e;
+  border-color: #2d8a4e;
+}
+
+.calendar-wrapper .fc .event-processing {
+  background-color: #d97706;
+  border-color: #d97706;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.calendar-wrapper .fc .event-pending {
+  background-color: #6b7280;
+  border-color: #6b7280;
+  opacity: 0.7;
+}
+
+.calendar-wrapper .fc .event-expired {
+  background-color: #9ca3af;
+  border-color: #9ca3af;
+  opacity: 0.4;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+/* Selection mirror */
+.calendar-wrapper .fc .fc-highlight {
+  background-color: color-mix(in srgb, var(--color-text) 15%, transparent);
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--step-0);
+}
+
+.modal {
+  background: var(--color-bg);
+  color: var(--color-text);
+  border: 2px solid var(--color-text);
+  box-shadow: 6px 6px 0 var(--color-alt);
+  max-width: 520px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: var(--step-1);
+}
+
+.modal h2 {
+  margin-top: 0;
+  font-size: var(--step-1);
+}
+
+.modal-time {
+  font-size: var(--step--1);
+  color: #6b7280;
+  margin-bottom: var(--step-0);
+}
+
+.modal label {
+  display: block;
+  font-weight: 600;
+  margin-top: 0.75em;
+  margin-bottom: 0.25em;
+  font-size: var(--step--1);
+}
+
+.modal input,
+.modal textarea,
+.modal select {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid var(--color-alt);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: var(--step--1);
+  font-family: inherit;
+}
+
+.modal input:focus,
+.modal textarea:focus,
+.modal select:focus {
+  outline: 2px solid var(--color-text);
+  outline-offset: 1px;
+}
+
+.modal textarea {
+  resize: vertical;
+  min-height: 4em;
+}
+
+.modal-toggle {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  margin-top: 0.75em;
+  font-size: var(--step--1);
+}
+
+.modal-toggle input[type="checkbox"] {
+  width: auto;
+}
+
+.price-breakdown {
+  margin-top: var(--step-0);
+  padding: 0.75em;
+  background: color-mix(in srgb, var(--color-text) 5%, transparent);
+  font-size: var(--step--1);
+}
+
+.price-breakdown table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.price-breakdown td {
+  padding: 0.2em 0;
+}
+
+.price-breakdown td:last-child {
+  text-align: right;
+}
+
+.price-breakdown .price-total {
+  font-weight: 700;
+  border-top: 1px solid var(--color-alt);
+  padding-top: 0.4em;
+  margin-top: 0.2em;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 0.75em;
+  margin-top: var(--step-0);
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 0.5em 1.25em;
+  border: 2px solid var(--color-text);
+  font-family: inherit;
+  font-size: var(--step--1);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 var(--color-alt);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  text-transform: lowercase;
+}
+
+.btn:hover {
+  box-shadow: 3px 3px 0 var(--color-alt);
+  transform: translate(-1px, -1px);
+}
+
+.btn:active {
+  box-shadow: 0 0 0 var(--color-alt);
+  transform: translate(2px, 2px);
+}
+
+.btn-primary {
+  background: var(--color-text);
+  color: var(--color-bg);
+}
+
+.btn-secondary {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: var(--step--1);
+  margin-top: 0.5em;
+}
+
+.success-banner {
+  background: #2d8a4e;
+  color: #fff;
+  padding: 0.75em var(--step-0);
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .calendar-wrapper .fc .fc-toolbar {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .calendar-wrapper .fc .fc-toolbar-title {
+    font-size: var(--step-0);
+  }
+
+  .modal {
+    padding: var(--step-0);
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

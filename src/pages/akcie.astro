@@ -1,0 +1,19 @@
+---
+import Layout from "../components/Layout.astro";
+import Calendar from "../components/Calendar.jsx";
+---
+
+<Layout title="Akcie" description="Rezervujte si priestor v Paralelnej Polis Kosice pre vase akcie, workshopy a stretnutia.">
+  <h1>Akcie</h1>
+  <div class="fullwidth calendar-page">
+    <Calendar client:load />
+  </div>
+</Layout>
+
+<style>
+  .calendar-page {
+    padding-inline: var(--grid-margin);
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+</style>
