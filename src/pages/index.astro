@@ -6,7 +6,8 @@ import NewsCard from "../components/NewsCard.astro";
 import Posts from "../components/Posts.astro";
 import CardAbout from "../components/CardAbout.astro";
 
-const news = await getCollection("news");
+const newsData = await getCollection("news");
+const news = newsData.sort((a, b) => new Date(a.data.pubDate).getTime() - new Date(b.data.pubDate).getTime());
 const postsData = await getCollection("blog");
 
 const posts = postsData.reverse().slice(0, 6);
