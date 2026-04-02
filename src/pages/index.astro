@@ -7,7 +7,9 @@ import Posts from "../components/Posts.astro";
 import CardAbout from "../components/CardAbout.astro";
 
 const newsData = await getCollection("news");
-const news = newsData.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
+const news = newsData.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()).slice(0, 5);
+const visibleNews = news.slice(0, 2);
+const hiddenNews = news.slice(2);
 const postsData = await getCollection("blog");
 
 const posts = postsData.reverse().slice(0, 6);
@@ -22,10 +24,22 @@ const posts = postsData.reverse().slice(0, 6);
     news.length > 0 && (
       <>
         <h1 id="news">Akcie</h1>
-        <section class="maxcontent">
-          {news.map((post) => (
+        <section class="maxcontent" id="akcie-section">
+          {visibleNews.map((post) => (
             <NewsCard post={post} />
           ))}
+          {hiddenNews.length > 0 && (
+            <div id="akcie-hidden" style="display:none; width:100%;">
+              {hiddenNews.map((post) => (
+                <NewsCard post={post} />
+              ))}
+            </div>
+          )}
+          {hiddenNews.length > 0 && (
+            <button id="akcie-toggle" type="button">
+              Zobraziť viac ({hiddenNews.length})
+            </button>
+          )}
         </section>
       </>
     )
@@ -57,4 +71,39 @@ const posts = postsData.reverse().slice(0, 6);
       line-height: 0;
     }
   }
+
+  #akcie-hidden {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--step-1);
+  }
+
+  #akcie-toggle {
+    width: 100%;
+    padding: 0.75em 1.5em;
+    background: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: var(--step--1);
+    font-family: inherit;
+    transition: background 0.2s ease;
+  }
+
+  #akcie-toggle:hover {
+    background: black;
+    color: white;
+  }
 </style>
+
+<script>
+  const toggle = document.getElementById('akcie-toggle');
+  const hidden = document.getElementById('akcie-hidden');
+  if (toggle && hidden) {
+    let expanded = false;
+    toggle.addEventListener('click', () => {
+      expanded = !expanded;
+      hidden.style.display = expanded ? 'flex' : 'none';
+      toggle.textContent = expanded ? 'Zobraziť menej' : `Zobraziť viac (${hidden.children.length})`;
+    });
+  }
+</script>
