@@ -15,7 +15,8 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
-const { title, pubDate, location, purchaseLink } = post.data;
+const { title, pubDate, location, image, purchaseLink } = post.data;
+const isFuture = pubDate && new Date(pubDate) > new Date();
 ---
 
 <Layout title={title}>
@@ -29,10 +30,11 @@ const { title, pubDate, location, purchaseLink } = post.data;
     </header>
 
     <div class="content maxcontent">
+      {image && <img src={image} alt={title} class="event-image" />}
       <Content />
     </div>
 
-    {purchaseLink && (
+    {isFuture && purchaseLink && (
       <div class="maxcontent">
         <a href={purchaseLink} class="ticket-link" target="_blank" rel="noopener">
           Kúpiť lístok
@@ -72,6 +74,13 @@ const { title, pubDate, location, purchaseLink } = post.data;
 
   .location {
     opacity: 0.7;
+  }
+
+  .event-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 2em;
   }
 
   .content {

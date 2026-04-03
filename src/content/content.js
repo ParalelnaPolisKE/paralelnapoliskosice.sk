@@ -17,6 +17,7 @@ export const collections = {
       title: z.string(),
       pubDate: z.date(),
       location: z.string().optional(),
+      image: z.string().optional(),
       purchaseLink: z.string().optional(),
     }),
   }),
