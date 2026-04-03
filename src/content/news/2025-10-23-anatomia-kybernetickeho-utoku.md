@@ -1,8 +1,10 @@
 ---
 title: "Anatómia kybernetického útoku"
 pubDate: 2025-10-23
+location: "PPKE, Hlavná 36, Košice"
+purchaseLink: "https://shop.ppke.sk/plugins/NhzrpLAMZY4YAUKwhLpJjpNgBVHao3C4VNAYNnj4VAT/ticket/public/event/0e852b17-9231-4ba7-9b08-20d6c852086d/summary"
 ---
 
-### Anatómia kybernetického útoku
-#### 🗓️ 23.10.2025 17:30
-#### 📍 PPKE, Hlavná 36, Košice
+O kybernetických útokoch sa hovorí čoraz častejšie. Nielen medzi bezpečákmi kdesi v tajomných komnatách plných počítačových obrazoviek. Hneď na začiatku roka to bola veľká téma už aj na verejnosti, v médiách, na školách a úradoch. Pomaly na nás tie útoky vyskakujú ešte aj z chladničky a mikrovlnky... Čo si však pod takým kybernetickým útokom predstaviť?
+
+Na prednáške si povieme, ako útok môže vyzerať, ako môže začať, kedy najskôr máme šancu ho detegovať. A aby to nebolo len o teórii, budú aj nejaké ukážky ;-)

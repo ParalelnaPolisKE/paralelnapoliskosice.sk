@@ -1,0 +1,73 @@
+---
+import { getCollection } from "astro:content";
+
+import LayoutPage from "../../components/LayoutPage.astro";
+import Time from "../../components/Time.astro";
+
+const newsData = await getCollection("news");
+const news = newsData.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
+---
+
+<LayoutPage frontmatter={{ title: "Akcie" }}>
+  <div class="events maxcontent">
+    {news.map((post) => (
+      <article class="line">
+        <a href={`/akcie/${post.slug}`}>
+          {post.data.title}
+        </a>
+        <span>{post.data.location || "PPKE"}</span>
+        <Time
+          class="text-end"
+          date={post.data.pubDate}
+          options={{ dateStyle: "short" }}
+        />
+      </article>
+    ))}
+  </div>
+</LayoutPage>
+
+<style>
+  .events {
+    container-type: inline-size;
+  }
+
+  article {
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1em;
+    align-items: center;
+
+    @container (min-width: 700px) {
+      grid-template-columns: 7fr 2fr 10ch;
+    }
+
+    time {
+      font-size: 0.8em;
+    }
+  }
+
+  article :global(a) {
+    grid-column: 1 / -1;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 400;
+
+    @container (min-width: 700px) {
+      grid-column: auto;
+    }
+
+    &::after {
+      content: "";
+      inset: 0;
+      position: absolute;
+    }
+  }
+
+  article:has([aria-current]) a::before {
+    content: "\25B6" / "";
+    display: inline;
+  }
+</style>
