@@ -11,9 +11,7 @@ export default defineConfig({
       "simple-icons": Object.keys(data.social),
     }),
   ],
-  redirects: {
-    "/akcie": "/#news",
-  },
+  redirects: {},
   site: "https://www.paralelnapoliskosice.sk/",
   trailingSlash: "never",
   build: {
