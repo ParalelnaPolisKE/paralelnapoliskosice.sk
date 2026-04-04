@@ -81,12 +81,22 @@ const isFuture = pubDate && new Date(pubDate) > new Date();
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     border-radius: 4px;
+  }
+
+  @media (min-width: 768px) {
+    .event-image {
+      float: left;
+      margin-right: 2em;
+      margin-bottom: 1em;
+      max-width: 320px;
+    }
   }
 
   .content {
     margin-bottom: 2em;
+    overflow: hidden;
   }
 
   .ticket-link {
