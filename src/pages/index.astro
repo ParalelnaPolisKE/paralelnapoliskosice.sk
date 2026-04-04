@@ -2,14 +2,12 @@
 import { getCollection } from "astro:content";
 
 import Layout from "../components/Layout.astro";
-import NewsCard from "../components/NewsCard.astro";
 import Posts from "../components/Posts.astro";
 import CardAbout from "../components/CardAbout.astro";
+import Time from "../components/Time.astro";
 
 const newsData = await getCollection("news");
-const news = newsData.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()).slice(0, 5);
-const visibleNews = news.slice(0, 2);
-const hiddenNews = news.slice(2);
+const news = newsData.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()).slice(0, 2);
 const postsData = await getCollection("blog");
 
 const posts = postsData.reverse().slice(0, 6);
@@ -24,23 +22,24 @@ const posts = postsData.reverse().slice(0, 6);
     news.length > 0 && (
       <>
         <h1 id="news">Akcie</h1>
-        <section class="maxcontent" id="akcie-section">
-          {visibleNews.map((post) => (
-            <NewsCard post={post} />
+        <div class="events maxcontent">
+          {news.map((post) => (
+            <article class="line">
+              <a href={`/akcie/${post.slug}`}>
+                {post.data.title}
+              </a>
+              <span>{post.data.location || "PPKE"}</span>
+              <Time
+                class="text-end"
+                date={post.data.pubDate}
+                options={{ dateStyle: "short" }}
+              />
+            </article>
           ))}
-          {hiddenNews.length > 0 && (
-            <div id="akcie-hidden" style="display:none; width:100%;">
-              {hiddenNews.map((post) => (
-                <NewsCard post={post} />
-              ))}
-            </div>
-          )}
-          {hiddenNews.length > 0 && (
-            <button id="akcie-toggle" type="button">
-              Zobraziť viac ({hiddenNews.length})
-            </button>
-          )}
-        </section>
+          <article class="line">
+            <a href="/akcie">Všetky akcie</a>
+          </article>
+        </div>
       </>
     )
   }
@@ -52,58 +51,46 @@ const posts = postsData.reverse().slice(0, 6);
 </Layout>
 
 <style>
-  #news + section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--step-1);
+  .events {
+    container-type: inline-size;
+  }
 
-    font-size: var(--step--1);
+  .events article {
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1em;
+    align-items: center;
 
-    h1 {
-      font-size: var(--step-0);
+    @container (min-width: 700px) {
+      grid-template-columns: 7fr 2fr 10ch;
     }
 
-    p + * {
-      margin-top: 1em;
-    }
-
-    p:has(img) {
-      line-height: 0;
+    time {
+      font-size: 0.8em;
     }
   }
 
-  #akcie-hidden {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--step-1);
+  .events article :global(a) {
+    grid-column: 1 / -1;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 400;
+
+    @container (min-width: 700px) {
+      grid-column: auto;
+    }
+
+    &::after {
+      content: "";
+      inset: 0;
+      position: absolute;
+    }
   }
 
-  #akcie-toggle {
-    width: 100%;
-    padding: 0.75em 1.5em;
-    background: transparent;
-    border: 1px solid black;
-    cursor: pointer;
-    font-size: var(--step--1);
-    font-family: inherit;
-    transition: background 0.2s ease;
-  }
-
-  #akcie-toggle:hover {
-    background: black;
-    color: white;
+  .events article:has(a:first-child):has(a:last-child) :global(a) {
+    font-weight: bold;
   }
 </style>
-
-<script>
-  const toggle = document.getElementById('akcie-toggle');
-  const hidden = document.getElementById('akcie-hidden');
-  if (toggle && hidden) {
-    let expanded = false;
-    toggle.addEventListener('click', () => {
-      expanded = !expanded;
-      hidden.style.display = expanded ? 'flex' : 'none';
-      toggle.textContent = expanded ? 'Zobraziť menej' : `Zobraziť viac (${hidden.children.length})`;
-    });
-  }
-</script>

@@ -1,0 +1,120 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "../../components/Layout.astro";
+import Time from "../../components/Time.astro";
+
+export async function getStaticPaths() {
+  const data = await getCollection("news");
+
+  return data.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+const { title, pubDate, location, image, purchaseLink } = post.data;
+const isFuture = pubDate && new Date(pubDate) > new Date();
+---
+
+<Layout title={title}>
+  <article class="grid">
+    <header class="maxcontent">
+      <h1>{title}</h1>
+      <div class="meta">
+        <Time date={pubDate} />
+        {location && <span class="location">{location}</span>}
+      </div>
+    </header>
+
+    <div class="content maxcontent">
+      {image && <img src={image} alt={title} class="event-image" />}
+      <Content />
+    </div>
+
+    {isFuture && purchaseLink && (
+      <div class="maxcontent">
+        <a href={purchaseLink} class="ticket-link" target="_blank" rel="noopener">
+          Kúpiť lístok
+        </a>
+      </div>
+    )}
+  </article>
+
+  <section class="maxcontent">
+    <a href="/akcie">Všetky akcie</a>
+  </section>
+</Layout>
+
+<style>
+  header {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 3em;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 70%;
+  }
+
+  .meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25em;
+    font-size: var(--step--1);
+  }
+
+  .location {
+    opacity: 0.7;
+  }
+
+  .event-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1em;
+    border-radius: 4px;
+  }
+
+  @media (min-width: 768px) {
+    .event-image {
+      float: left;
+      margin-right: 2em;
+      margin-bottom: 1em;
+      max-width: 320px;
+    }
+  }
+
+  .content {
+    margin-bottom: 2em;
+    overflow: hidden;
+  }
+
+  .ticket-link {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-family: inherit;
+    transition: opacity 0.2s ease;
+    margin-bottom: 2em;
+  }
+
+  .ticket-link:hover {
+    opacity: 0.8;
+  }
+
+  section {
+    margin-bottom: 2em;
+  }
+</style>
