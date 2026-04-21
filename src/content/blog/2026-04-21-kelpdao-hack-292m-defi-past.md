@@ -29,12 +29,14 @@ Výsledok: overovateľ „potvrdil" správu, ktorá nikdy nevznikla. Na Unichain
 
 Emergency multisig KelpDAO zmrazil protokol o 18:21 UTC — 46 minút po útoku. Dva ďalšie pokusy (o 18:26 a 18:28) sa pokúsili odčerpať ďalších 40 000 rsETH (~100 miliónov dolárov každý), ale narazili na zmrazené kontrakty.
 
-Medzitým útočník konal rýchlo:
+Medzitým útočník konal rýchlo. Ukradnutých 116 500 rsETH rozdelil medzi viaceré lending protokoly:
 
-- **89 567 rsETH** vložil ako zábezpeku do Aave V3
-- **Požičal si 126 000 WETH** (~236 miliónov dolárov)
-- Časti presunul cez **Tornado Cash** do 20 minút
-- **52 440 ETH** skonsolidoval na jednu adresu
+- **Do Aave** vložil **89 567 rsETH** ako zábezpeku a požičal si voči nej **~82 600 WETH** (~195 miliónov dolárov) — konkrétne 52 834 WETH na Ethereum a 29 782 WETH + 821 wstETH na Arbitrume ([Aave Incident Report](https://governance.aave.com/t/rseth-incident-report-april-20-2026/24580), [DeFi Prime](https://defiprime.com/kelpdao-rseth-exploit))
+- **Zvyšných ~27 000 rsETH** použil na ďalšie výpožičky cez **Compound V3 a Euler** (presné sumy nezverejnené)
+- Časti presunul cez **Tornado Cash** do 20 minút po útoku
+- **52 440 ETH** z výpožičiek skonsolidoval na jednu adresu ([Blockaid](https://www.blockaid.io/blog/how-a-single-layerzero-dvn-compromise-drained-292m-from-kelpdao))
+
+*Prečo mohol požičať 82 600 WETH proti 89 567 rsETH?* Aave povoľuje LTV (loan-to-value) pre rsETH na úrovni ~75–80%. Hodnota 89 567 rsETH ≈ 94 000 ETH (rsETH obchoduje s ~5% prémiou voči ETH kvôli naakumulovaným staking odmenám). Pri LTV 80% je maximálna výpožička ~75 200 WETH. Útočník čerpal z viacerých Aave trhov (Ethereum core + Arbitrum) s rôznymi LTV parametrami, pričom na Arbitrume čerpal agresívnejšie. Celkový pomer výpožičiek voči zábezpeke bol ~88%, čo naznačuje maximálne vyťaženie pred očakávanou likvidáciou.
 
 ## Kto zaplatí?
 
