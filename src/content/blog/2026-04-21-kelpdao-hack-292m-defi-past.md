@@ -1,6 +1,6 @@
 ---
-title: "292 miliónov dolárov preč: Ako jeden podpis zničil dôveru v cross-chain DeFi"
-author: Peter Horváth
+title: "KelpDAO hack: Ako jeden podpis zničil dôveru v cross-chain DeFi"
+author: Michal Takac
 cover: /assets/kelpdao-hack-cover.png
 tags:
   - defi
