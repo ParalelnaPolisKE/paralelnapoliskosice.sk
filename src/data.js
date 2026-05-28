@@ -10,6 +10,7 @@ export const data = {
     instagram: "https://www.instagram.com/paralelnapoliske",
     youtube: "https://www.youtube.com/channel/UCC90ybnmSHgleXJaWPces9g",
     x: "https://twitter.com/parallelpoliske",
+    nostr: "https://njump.me/npub19u6u0h9pwg8k63e9f535enqdkgzl8wqzwzlnrtnwr853wt4ypszsapm6e6",
     // rss: "/blog/rss.xml",
   },
   mailchimpUrl:

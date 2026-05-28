@@ -8,7 +8,7 @@ export default defineConfig({
   integrations: [
     mdx(),
     icon({
-      "simple-icons": Object.keys(data.social),
+      "simple-icons": Object.keys(data.social).filter((k) => k !== "nostr"),
     }),
   ],
   redirects: {},

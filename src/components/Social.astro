@@ -7,7 +7,7 @@ import { data } from "../data";
   {
     Object.entries(data.social).map(([key, url]) => (
       <a href={url}>
-        <Icon name={`simple-icons:${key}`} />
+        <Icon name={key === "nostr" ? "nostr" : `simple-icons:${key}`} />
         <span class="sr-only">{key}</span>
       </a>
     ))
