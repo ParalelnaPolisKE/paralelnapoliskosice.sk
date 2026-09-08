@@ -9,14 +9,6 @@ Je umelá inteligencia samostatný researcher alebo skôr research asistent? Roz
 
 Na ďalšom AI meetupe v Paralelnej Polis Košice **Dávid Jopek** (matfyz Praha, Quanscient) prinesie pohľad na agentov a LLMs v kontexte researchu (základného, ale aj aplikovaného), najmä v oblasti fyziky a modelovania.
 
-## Kedy a kde?
+🎟️ Vstupné: 7 € — [kúpiť lístky](https://events.ppke.sk/ai-meetup-11)
 
-- **Dátum:** streda, 16. septembra 2026
-- **Čas:** 17:00
-- **Miesto:** Paralelná Polis Košice, Hlavná 36
-
-## Lístky
-
-Vstupenky v hodnote 7 € si môžete zakúpiť na mieste alebo online.
-
-[Kúpiť lístky](https://events.ppke.sk/ai-meetup-11)
+📍 Paralelná Polis Košice, Hlavná 36, streda 16.9.2026 o 17:00
